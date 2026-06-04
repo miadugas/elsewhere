@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  /* cartographic palette — "the texture of moving" */
+  --color-paper: #f7f5ef; /* atlas paper background */
+  --color-ink: #1a1d1a; /* near-black slab + text */
+  --color-terrain: #3f7d4e; /* terrain green */
+  --color-water: #2f6fb0; /* water blue */
+  --color-route: #e0662a; /* highway-sign warm — the route motif */
+  --color-contour: #d8d2c2; /* contour linework */
+  --color-cheaper: #2f8a5b; /* delta positive (cheaper) */
+  --color-pricier: #c2452f; /* delta negative (pricier) */
+
+  --radius-sheet: 20px; /* bottom-sheet cards */
+  --radius-pill: 9999px; /* pill nav */
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  margin: 0;
+}
