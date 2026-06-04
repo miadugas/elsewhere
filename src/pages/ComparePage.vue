@@ -139,7 +139,7 @@ const themeLabel = computed(() =>
 
     <!-- ── Result stack ───────────────────────────────────────── -->
     <div
-      class="flex flex-col gap-[var(--space-stack)] px-5 pt-4"
+      class="reveal-stack flex flex-col gap-[var(--space-stack)] px-5 pt-4"
       v-if="hasBothMetros"
     >
       <ResultSlab
@@ -180,7 +180,7 @@ const themeLabel = computed(() =>
     </div>
 
     <!-- ── Empty hero: nothing picked yet ─────────────────────── -->
-    <section v-else class="mt-2 px-5 pb-2 pt-4">
+    <section v-else class="reveal mt-2 px-5 pb-2 pt-4">
       <div
         class="relative overflow-hidden px-6 py-8"
         :style="{

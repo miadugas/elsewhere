@@ -49,11 +49,7 @@ const summary = computed(() => {
         : "var(--color-water)";
   const glyph = kind === "cheaper" ? "▼" : kind === "pricier" ? "▲" : "≈";
   const word =
-    kind === "cheaper"
-      ? "cheaper"
-      : kind === "pricier"
-        ? "pricier"
-        : "similar";
+    kind === "cheaper" ? "cheaper" : kind === "pricier" ? "pricier" : "similar";
   return { avgPct, kind, color, glyph, word };
 });
 </script>
@@ -150,11 +146,7 @@ const summary = computed(() => {
           }"
           aria-hidden="true"
         >
-          <svg
-            class="h-3 w-3"
-            viewBox="0 0 12 12"
-            fill="none"
-          >
+          <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none">
             <path
               d="M2,4 L6,8 L10,4"
               stroke="var(--color-ink)"
@@ -172,25 +164,12 @@ const summary = computed(() => {
       <li
         v-for="r in decorated"
         :key="r.id"
-        class="relative grid items-center gap-3 px-5 py-3.5"
+        class="grid items-center gap-3 px-5 py-3.5"
         style="
           grid-template-columns: auto 1fr auto;
           border-bottom: 1px solid var(--color-contour);
         "
       >
-        <!-- left tint stripe shows direction (cheaper=terrain, pricier=route) -->
-        <span
-          aria-hidden="true"
-          class="absolute left-0 top-0 h-full w-1"
-          :style="{
-            background: r.cheaper
-              ? 'var(--color-cheaper)'
-              : r.pricier
-                ? 'var(--color-route)'
-                : 'var(--color-contour)',
-          }"
-        />
-
         <!-- emoji medallion -->
         <span
           class="flex h-10 w-10 items-center justify-center text-xl"

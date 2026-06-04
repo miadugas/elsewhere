@@ -244,6 +244,9 @@ h4,
     "ss01" 1;
   font-variant-numeric: tabular-nums;
   font-family: var(--font-numeric);
+  /* Overpass Mono tops out at 700 — forbid faux-bold so heavy numerals
+     stay crisp instead of synthetically smeared */
+  font-synthesis: none;
 }
 
 /* utility: tiny contour rule (for dividers + slab guidelines) */
@@ -257,4 +260,43 @@ h4,
   background-repeat: repeat-x;
   background-position: left center;
   height: 1px;
+}
+
+/* ── Motion: orchestrated page-load reveal ──────────────────────────
+   The result stack rises in with a short stagger — one well-timed
+   entrance reads as premium. Transform + opacity only, ease-out quint. */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.reveal-stack > * {
+  animation: rise-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.reveal-stack > *:nth-child(2) {
+  animation-delay: 0.07s;
+}
+.reveal-stack > *:nth-child(3) {
+  animation-delay: 0.14s;
+}
+.reveal-stack > *:nth-child(4) {
+  animation-delay: 0.21s;
+}
+
+/* single-element entrance (empty hero) */
+.reveal {
+  animation: rise-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-stack > * {
+    animation: none;
+  }
 }
