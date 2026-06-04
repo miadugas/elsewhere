@@ -1,0 +1,37 @@
+[
+  {
+    "id": "pizza-slice",
+    "label": "Slice of pizza",
+    "emoji": "🍕",
+    "nationalAvg": 3.5,
+    "category": "goods"
+  },
+  {
+    "id": "gas-gallon",
+    "label": "Gallon of gas",
+    "emoji": "⛽",
+    "nationalAvg": 3.4,
+    "category": "goods"
+  },
+  {
+    "id": "beer-sixpack",
+    "label": "Six-pack of beer",
+    "emoji": "🍺",
+    "nationalAvg": 9.5,
+    "category": "goods"
+  },
+  {
+    "id": "coffee",
+    "label": "Cup of coffee",
+    "emoji": "☕",
+    "nationalAvg": 4.25,
+    "category": "otherServices"
+  },
+  {
+    "id": "rent-1br",
+    "label": "1-bedroom rent",
+    "emoji": "🏠",
+    "nationalAvg": 1500,
+    "category": "housing"
+  }
+]

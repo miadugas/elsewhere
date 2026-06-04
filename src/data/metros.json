@@ -1,0 +1,212 @@
+[
+  {
+    "id": "detroit-mi",
+    "name": "Detroit-Warren-Dearborn, MI",
+    "short": "Detroit",
+    "states": ["MI"],
+    "lat": 42.331,
+    "lng": -83.046,
+    "rpp": {
+      "overall": 94.5,
+      "housing": 80.1,
+      "goods": 97.2,
+      "otherServices": 96.0
+    }
+  },
+  {
+    "id": "austin-tx",
+    "name": "Austin-Round Rock, TX",
+    "short": "Austin",
+    "states": ["TX"],
+    "lat": 30.267,
+    "lng": -97.743,
+    "rpp": {
+      "overall": 103.2,
+      "housing": 112.8,
+      "goods": 98.9,
+      "otherServices": 101.4
+    }
+  },
+  {
+    "id": "nyc-ny",
+    "name": "New York-Newark-Jersey City, NY-NJ",
+    "short": "New York",
+    "states": ["NY", "NJ"],
+    "lat": 40.713,
+    "lng": -74.006,
+    "rpp": {
+      "overall": 122.4,
+      "housing": 168.2,
+      "goods": 104.1,
+      "otherServices": 113.0
+    }
+  },
+  {
+    "id": "chicago-il",
+    "name": "Chicago-Naperville-Elgin, IL",
+    "short": "Chicago",
+    "states": ["IL"],
+    "lat": 41.878,
+    "lng": -87.63,
+    "rpp": {
+      "overall": 106.1,
+      "housing": 118.0,
+      "goods": 99.8,
+      "otherServices": 104.2
+    }
+  },
+  {
+    "id": "denver-co",
+    "name": "Denver-Aurora-Lakewood, CO",
+    "short": "Denver",
+    "states": ["CO"],
+    "lat": 39.739,
+    "lng": -104.99,
+    "rpp": {
+      "overall": 105.8,
+      "housing": 124.5,
+      "goods": 98.0,
+      "otherServices": 102.9
+    }
+  },
+  {
+    "id": "atlanta-ga",
+    "name": "Atlanta-Sandy Springs-Alpharetta, GA",
+    "short": "Atlanta",
+    "states": ["GA"],
+    "lat": 33.749,
+    "lng": -84.388,
+    "rpp": {
+      "overall": 99.0,
+      "housing": 95.3,
+      "goods": 98.4,
+      "otherServices": 100.1
+    }
+  },
+  {
+    "id": "phoenix-az",
+    "name": "Phoenix-Mesa-Chandler, AZ",
+    "short": "Phoenix",
+    "states": ["AZ"],
+    "lat": 33.448,
+    "lng": -112.074,
+    "rpp": {
+      "overall": 100.4,
+      "housing": 102.7,
+      "goods": 99.1,
+      "otherServices": 99.6
+    }
+  },
+  {
+    "id": "seattle-wa",
+    "name": "Seattle-Tacoma-Bellevue, WA",
+    "short": "Seattle",
+    "states": ["WA"],
+    "lat": 47.606,
+    "lng": -122.332,
+    "rpp": {
+      "overall": 113.6,
+      "housing": 142.0,
+      "goods": 101.2,
+      "otherServices": 108.0
+    }
+  },
+  {
+    "id": "miami-fl",
+    "name": "Miami-Fort Lauderdale-Pompano Beach, FL",
+    "short": "Miami",
+    "states": ["FL"],
+    "lat": 25.762,
+    "lng": -80.192,
+    "rpp": {
+      "overall": 107.7,
+      "housing": 126.4,
+      "goods": 100.0,
+      "otherServices": 104.6
+    }
+  },
+  {
+    "id": "nashville-tn",
+    "name": "Nashville-Davidson-Murfreesboro, TN",
+    "short": "Nashville",
+    "states": ["TN"],
+    "lat": 36.163,
+    "lng": -86.781,
+    "rpp": {
+      "overall": 97.6,
+      "housing": 98.0,
+      "goods": 97.0,
+      "otherServices": 97.8
+    }
+  },
+  {
+    "id": "minneapolis-mn",
+    "name": "Minneapolis-St. Paul-Bloomington, MN",
+    "short": "Minneapolis",
+    "states": ["MN"],
+    "lat": 44.978,
+    "lng": -93.265,
+    "rpp": {
+      "overall": 101.5,
+      "housing": 104.2,
+      "goods": 99.5,
+      "otherServices": 101.0
+    }
+  },
+  {
+    "id": "portland-or",
+    "name": "Portland-Vancouver-Hillsboro, OR-WA",
+    "short": "Portland",
+    "states": ["OR", "WA"],
+    "lat": 45.515,
+    "lng": -122.679,
+    "rpp": {
+      "overall": 107.0,
+      "housing": 128.0,
+      "goods": 99.0,
+      "otherServices": 103.5
+    }
+  },
+  {
+    "id": "columbus-oh",
+    "name": "Columbus, OH",
+    "short": "Columbus",
+    "states": ["OH"],
+    "lat": 39.961,
+    "lng": -82.999,
+    "rpp": {
+      "overall": 92.8,
+      "housing": 82.0,
+      "goods": 96.5,
+      "otherServices": 94.0
+    }
+  },
+  {
+    "id": "raleigh-nc",
+    "name": "Raleigh-Cary, NC",
+    "short": "Raleigh",
+    "states": ["NC"],
+    "lat": 35.78,
+    "lng": -78.639,
+    "rpp": {
+      "overall": 98.2,
+      "housing": 96.0,
+      "goods": 98.0,
+      "otherServices": 99.0
+    }
+  },
+  {
+    "id": "lasvegas-nv",
+    "name": "Las Vegas-Henderson-Paradise, NV",
+    "short": "Las Vegas",
+    "states": ["NV"],
+    "lat": 36.17,
+    "lng": -115.14,
+    "rpp": {
+      "overall": 98.6,
+      "housing": 100.5,
+      "goods": 98.2,
+      "otherServices": 98.0
+    }
+  }
+]
