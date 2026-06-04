@@ -75,10 +75,7 @@ const themeLabel = computed(() =>
               stroke-width="1.2"
               stroke-dasharray="1 2"
             />
-            <path
-              d="M12,4 A8,8 0 0,1 12,20 Z"
-              fill="var(--color-ink)"
-            />
+            <path d="M12,4 A8,8 0 0,1 12,20 Z" fill="var(--color-ink)" />
             <circle
               cx="12"
               cy="12"
@@ -115,12 +112,7 @@ const themeLabel = computed(() =>
           </svg>
 
           <!-- DARK: crescent moon with a contour star -->
-          <svg
-            v-else
-            class="h-5 w-5"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
+          <svg v-else class="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true">
             <path
               d="M19,14.5 A8.5,8.5 0 1,1 9.5,5 A6.5,6.5 0 0,0 19,14.5 Z"
               fill="var(--color-ink)"
@@ -222,7 +214,7 @@ const themeLabel = computed(() =>
           The question
         </p>
         <p
-          class="mt-2 font-black"
+          class="font-display mt-2 font-black"
           style="
             font-size: var(--text-display);
             line-height: var(--text-display--line-height);
@@ -323,12 +315,7 @@ const themeLabel = computed(() =>
           letterSpacing: 'var(--text-eyebrow--letter-spacing)',
         }"
       >
-        <svg
-          class="h-3 w-3"
-          viewBox="0 0 12 12"
-          fill="none"
-          aria-hidden="true"
-        >
+        <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
           <path
             d="M1,9 Q6,1 11,9"
             stroke="var(--color-route)"

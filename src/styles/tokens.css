@@ -82,12 +82,16 @@
   --space-stack: 0.875rem;
   --space-thumb: 5.5rem;
 
-  /* ── Fonts ──────────────────────────────────────────────────── */
+  /* ── Fonts ──────────────────────────────────────────────────────
+     Interstate-signage type system:
+     · display = Overpass (Highway-Gothic lineage — the route-orange in type)
+     · body    = Public Sans (US government design-system face; gov-data trust)
+     · numeric = Overpass Mono (tabular figures for the hero number + ticks)  */
+  --font-display:
+    "Overpass Variable", "Overpass", ui-sans-serif, system-ui, sans-serif;
   --font-sans:
-    ui-sans-serif, system-ui, -apple-system, "Inter", "Segoe UI", Roboto,
-    sans-serif;
-  --font-numeric:
-    "SF Pro Display", "Inter", ui-sans-serif, system-ui, sans-serif;
+    "Public Sans Variable", "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-numeric: "Overpass Mono", ui-monospace, "SF Mono", monospace;
 }
 
 /* ─────────────────────────────────────────────────────────────── */
@@ -207,6 +211,24 @@ body {
   transition:
     background-color 200ms ease,
     color 200ms ease;
+}
+
+/* Signage display face on headings + the wordmark/eyebrow utilities.
+   Body copy stays Public Sans (inherited from body). */
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-display);
+  /* weight left to component utilities (font-black / font-bold) so the
+     wordmark + hero question keep their intended heft */
+}
+
+/* uppercase signage eyebrow — pairs the route motif */
+.font-display-eyebrow {
+  font-family: var(--font-display);
+  text-transform: uppercase;
 }
 
 /* utility: tabular numerics for prices/salaries */
