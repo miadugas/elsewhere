@@ -28,12 +28,7 @@ function choose(m: Metro) {
   <div class="relative">
     <div class="flex items-center gap-2 pl-1">
       <!-- route pin icon — From or To -->
-      <svg
-        class="h-3 w-3"
-        viewBox="0 0 12 12"
-        fill="none"
-        aria-hidden="true"
-      >
+      <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
         <circle
           cx="6"
           cy="6"
@@ -53,11 +48,13 @@ function choose(m: Metro) {
     </div>
 
     <div
-      class="mt-1.5 flex items-center gap-3 px-4"
+      class="input-pop mt-1.5 flex items-center gap-3 px-4"
       :style="{
         background: 'var(--color-paper)',
         borderRadius: 'var(--radius-sheet)',
-        border: '1px solid var(--color-contour)',
+        border: selected
+          ? '1.5px solid var(--color-ink)'
+          : '1px solid var(--color-contour)',
         boxShadow: 'var(--shadow-sheet)',
         minHeight: '56px',
       }"

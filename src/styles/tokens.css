@@ -9,8 +9,10 @@
 
   /* OKLCH: accents faithful; neutrals unified to a warm hue (74) at low
      chroma so surfaces read cohesively warm and edges don't go garish. */
-  --color-paper: oklch(0.97 0.006 74); /* card surface */
-  --color-canvas: oklch(0.97 0.006 74); /* page background */
+  --color-paper: oklch(0.975 0.006 74); /* card surface — lifts above canvas */
+  --color-canvas: oklch(
+    0.94 0.009 74
+  ); /* page background — receded for depth */
   --color-paper-deep: oklch(0.937 0.006 74); /* inset surface / hover */
   --color-ink: oklch(0.226 0.01 74); /* primary text + flippable accents */
   --color-ink-soft: oklch(0.3 0.01 74); /* secondary text */
@@ -136,9 +138,9 @@
 
 /* Manual overrides — explicit theme wins over OS preference */
 :root[data-theme="light"] {
-  --color-canvas: oklch(0.97 0.006 74);
-  --color-paper: oklch(0.97 0.006 74);
-  --color-paper-deep: oklch(0.937 0.006 74);
+  --color-canvas: oklch(0.94 0.009 74);
+  --color-paper: oklch(0.975 0.006 74);
+  --color-paper-deep: oklch(0.93 0.007 74);
   --color-ink: oklch(0.226 0.01 74);
   --color-ink-soft: oklch(0.3 0.01 74);
   --color-surface-dark: oklch(0.226 0.01 74);
@@ -299,4 +301,21 @@ h4,
   .reveal-stack > * {
     animation: none;
   }
+}
+
+/* ── Inputs: clear focus + selected "pop" ───────────────────────────
+   Focus lifts the field with a route-orange ring; selected state gets
+   a heavier border via the component. */
+.input-pop {
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
+}
+.input-pop:focus-within {
+  border-color: var(--color-route) !important;
+  box-shadow:
+    0 0 0 3px color-mix(in oklch, var(--color-route) 26%, transparent),
+    var(--shadow-sheet-lifted) !important;
+  transform: translateY(-1px);
 }

@@ -14,12 +14,7 @@ const display = () =>
 <template>
   <label class="block">
     <div class="flex items-center gap-2 pl-1">
-      <svg
-        class="h-3 w-3"
-        viewBox="0 0 12 12"
-        fill="none"
-        aria-hidden="true"
-      >
+      <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
         <rect
           x="1.5"
           y="1.5"
@@ -38,11 +33,12 @@ const display = () =>
     </div>
 
     <div
-      class="mt-1.5 flex items-center gap-2 px-4"
+      class="input-pop mt-1.5 flex items-center gap-2 px-4"
       :style="{
         background: 'var(--color-surface-dark)',
         color: 'var(--color-on-dark)',
         borderRadius: 'var(--radius-sheet)',
+        border: '1.5px solid transparent',
         boxShadow: 'var(--shadow-sheet-lifted)',
         minHeight: '60px',
       }"
