@@ -1,27 +1,232 @@
 @import "tailwindcss";
 
 @theme {
-  /* cartographic palette — "the texture of moving" */
-  --color-paper: #f7f5ef; /* atlas paper background */
-  --color-ink: #1a1d1a; /* near-black slab + text */
+  /* ── Cartographic palette — "the texture of moving" ─────────── */
+  /* Two surface families:
+     · paper / ink / paper-deep — flip with theme (page text + cards)
+     · surface-dark / on-dark — DO NOT flip (the confident slab + pill nav
+       stay dark in both modes; that's the locked aesthetic)               */
+
+  --color-paper: #f7f5ef; /* card surface */
+  --color-canvas: #f7f5ef; /* page background (may differ from paper in dark) */
+  --color-paper-deep: #efeadc; /* inset surface / hover */
+  --color-ink: #1a1d1a; /* primary text + flippable accents */
+  --color-ink-soft: #2b2f2b; /* secondary text */
+
+  /* always-dark slab + pill nav surfaces (don't flip) */
+  --color-surface-dark: #1a1d1a;
+  --color-surface-dark-soft: #2b2f2b;
+  --color-on-dark: #f7f5ef;
+
   --color-terrain: #3f7d4e; /* terrain green */
+  --color-terrain-soft: #cfe1d2; /* terrain wash */
   --color-water: #2f6fb0; /* water blue */
+  --color-water-soft: #d6e4f2; /* water wash */
   --color-route: #e0662a; /* highway-sign warm — the route motif */
+  --color-route-soft: #f6dcc8; /* route wash */
   --color-contour: #d8d2c2; /* contour linework */
+  --color-contour-ink: #b7afa0; /* darker contour for borders/dividers */
   --color-cheaper: #2f8a5b; /* delta positive (cheaper) */
   --color-pricier: #c2452f; /* delta negative (pricier) */
 
-  --radius-sheet: 20px; /* bottom-sheet cards */
-  --radius-pill: 9999px; /* pill nav */
+  /* shadow rgb base — overrides in dark mode so shadows read on dark canvas */
+  --shadow-base: 26, 29, 26;
+
+  /* ── Radii ──────────────────────────────────────────────────── */
+  --radius-sheet: 20px;
+  --radius-slab: 24px;
+  --radius-chip: 12px;
+  --radius-pill: 9999px;
+
+  /* ── Type scale ─────────────────────────────────────────────── */
+  --text-eyebrow: 0.6875rem;
+  --text-eyebrow--line-height: 1;
+  --text-eyebrow--letter-spacing: 0.18em;
+
+  --text-meta: 0.75rem;
+  --text-meta--line-height: 1.35;
+  --text-meta--letter-spacing: 0.02em;
+
+  --text-body: 0.9375rem;
+  --text-body--line-height: 1.45;
+
+  --text-lede: 1.0625rem;
+  --text-lede--line-height: 1.4;
+
+  --text-numeric: 1.5rem;
+  --text-numeric--line-height: 1.1;
+
+  --text-display: 3.25rem;
+  --text-display--line-height: 0.95;
+  --text-display--letter-spacing: -0.02em;
+
+  --text-hero: 4.25rem;
+  --text-hero--line-height: 0.92;
+  --text-hero--letter-spacing: -0.035em;
+
+  /* ── Elevation (use --shadow-base so dark mode shadows can deepen) ─── */
+  --shadow-sheet:
+    0 1px 0 rgba(var(--shadow-base), 0.04),
+    0 8px 24px -10px rgba(var(--shadow-base), 0.18);
+  --shadow-sheet-lifted:
+    0 2px 0 rgba(var(--shadow-base), 0.05),
+    0 18px 38px -16px rgba(var(--shadow-base), 0.28);
+  --shadow-slab:
+    0 1px 0 rgba(255, 255, 255, 0.04) inset,
+    0 22px 44px -16px rgba(var(--shadow-base), 0.55);
+  --shadow-inset-contour: inset 0 0 0 1px var(--color-contour);
+
+  /* ── Spacing scale ──────────────────────────────────────────── */
+  --space-gutter: 1rem;
+  --space-sheet-pad: 1.25rem;
+  --space-stack: 0.875rem;
+  --space-thumb: 5.5rem;
+
+  /* ── Fonts ──────────────────────────────────────────────────── */
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, "Inter", "Segoe UI", Roboto,
+    sans-serif;
+  --font-numeric:
+    "SF Pro Display", "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
+/* ─────────────────────────────────────────────────────────────── */
+/*  DARK MODE — "night atlas"                                       */
+/*  System preference by default; <html data-theme="dark|light">    */
+/*  forces a mode regardless of OS setting.                         */
+/* ─────────────────────────────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-canvas: #0a0d0a; /* page bg — deepest */
+    --color-paper: #161a16; /* card surface, lifted above canvas */
+    --color-paper-deep: #1f2420; /* inset surface */
+    --color-ink: #ebe7da; /* primary text — paper-cream */
+    --color-ink-soft: #c8c0ad;
+
+    /* slab + nav stay confident-dark; deepen them so they still read
+       as the darkest surfaces against the dark canvas */
+    --color-surface-dark: #050706;
+    --color-surface-dark-soft: #14181a;
+    --color-on-dark: #f7f5ef;
+
+    --color-terrain: #5fa872;
+    --color-terrain-soft: #1a2820;
+    --color-water: #5b9ed8;
+    --color-water-soft: #14223a;
+    --color-route: #f08a4a;
+    --color-route-soft: #3a1d10;
+    --color-contour: #2d3330;
+    --color-contour-ink: #4a5450;
+    --color-cheaper: #4eb780;
+    --color-pricier: #e25e44;
+
+    --shadow-base: 0, 0, 0;
+  }
+}
+
+/* Manual overrides — explicit theme wins over OS preference */
+:root[data-theme="light"] {
+  --color-canvas: #f7f5ef;
+  --color-paper: #f7f5ef;
+  --color-paper-deep: #efeadc;
+  --color-ink: #1a1d1a;
+  --color-ink-soft: #2b2f2b;
+  --color-surface-dark: #1a1d1a;
+  --color-surface-dark-soft: #2b2f2b;
+  --color-on-dark: #f7f5ef;
+  --color-terrain: #3f7d4e;
+  --color-terrain-soft: #cfe1d2;
+  --color-water: #2f6fb0;
+  --color-water-soft: #d6e4f2;
+  --color-route: #e0662a;
+  --color-route-soft: #f6dcc8;
+  --color-contour: #d8d2c2;
+  --color-contour-ink: #b7afa0;
+  --color-cheaper: #2f8a5b;
+  --color-pricier: #c2452f;
+  --shadow-base: 26, 29, 26;
+}
+
+:root[data-theme="dark"] {
+  --color-canvas: #0a0d0a;
+  --color-paper: #161a16;
+  --color-paper-deep: #1f2420;
+  --color-ink: #ebe7da;
+  --color-ink-soft: #c8c0ad;
+  --color-surface-dark: #050706;
+  --color-surface-dark-soft: #14181a;
+  --color-on-dark: #f7f5ef;
+  --color-terrain: #5fa872;
+  --color-terrain-soft: #1a2820;
+  --color-water: #5b9ed8;
+  --color-water-soft: #14223a;
+  --color-route: #f08a4a;
+  --color-route-soft: #3a1d10;
+  --color-contour: #2d3330;
+  --color-contour-ink: #4a5450;
+  --color-cheaper: #4eb780;
+  --color-pricier: #e25e44;
+  --shadow-base: 0, 0, 0;
+}
+
+/* ── Page chrome ──────────────────────────────────────────────── */
 html,
 body,
 #app {
   height: 100%;
 }
 body {
-  background: var(--color-paper);
-  color: var(--color-ink);
   margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  background-color: var(--color-canvas);
+  /* atlas backdrop: paper + faint contour dot grid + soft washes */
+  background-image:
+    radial-gradient(
+      circle at 12% 8%,
+      var(--color-water-soft) 0%,
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 92% 86%,
+      var(--color-terrain-soft) 0%,
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 20% 90%,
+      var(--color-route-soft) 0%,
+      transparent 30%
+    ),
+    radial-gradient(var(--color-contour) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    22px 22px;
+  background-attachment: fixed, fixed, fixed, fixed;
+  transition:
+    background-color 200ms ease,
+    color 200ms ease;
+}
+
+/* utility: tabular numerics for prices/salaries */
+.tnum {
+  font-feature-settings:
+    "tnum" 1,
+    "ss01" 1;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-numeric);
+}
+
+/* utility: tiny contour rule (for dividers + slab guidelines) */
+.contour-rule {
+  background-image: linear-gradient(
+    to right,
+    var(--color-contour-ink) 0 6px,
+    transparent 6px 12px
+  );
+  background-size: 12px 1px;
+  background-repeat: repeat-x;
+  background-position: left center;
+  height: 1px;
 }

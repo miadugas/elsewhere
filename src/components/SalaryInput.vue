@@ -13,21 +13,58 @@ const display = () =>
 
 <template>
   <label class="block">
-    <span class="text-sm uppercase tracking-wide opacity-70"
-      >Your current salary</span
-    >
+    <div class="flex items-center gap-2 pl-1">
+      <svg
+        class="h-3 w-3"
+        viewBox="0 0 12 12"
+        fill="none"
+        aria-hidden="true"
+      >
+        <rect
+          x="1.5"
+          y="1.5"
+          width="9"
+          height="9"
+          rx="2"
+          stroke="var(--color-route)"
+          stroke-width="1.6"
+        />
+      </svg>
+      <span
+        class="text-[length:var(--text-eyebrow)] uppercase opacity-70"
+        style="letter-spacing: var(--text-eyebrow--letter-spacing)"
+        >Your current salary</span
+      >
+    </div>
+
     <div
-      class="mt-1 flex items-center rounded-[var(--radius-sheet)] bg-white px-4 py-3 shadow"
+      class="mt-1.5 flex items-center gap-2 px-4"
+      :style="{
+        background: 'var(--color-surface-dark)',
+        color: 'var(--color-on-dark)',
+        borderRadius: 'var(--radius-sheet)',
+        boxShadow: 'var(--shadow-sheet-lifted)',
+        minHeight: '60px',
+      }"
     >
-      <span class="text-2xl font-bold">$</span>
+      <span
+        class="tnum text-[length:var(--text-numeric)] font-black opacity-60"
+        aria-hidden="true"
+        >$</span
+      >
       <input
         :value="display()"
         @input="onInput"
         inputmode="numeric"
         placeholder="70,000"
-        class="ml-1 w-full bg-transparent text-2xl font-bold outline-none"
+        class="tnum w-full bg-transparent text-[length:var(--text-numeric)] font-black tracking-tight text-[var(--color-on-dark)] outline-none placeholder:opacity-40"
         aria-label="Current salary in dollars"
       />
+      <span
+        class="text-[length:var(--text-eyebrow)] font-bold uppercase opacity-60"
+        style="letter-spacing: var(--text-eyebrow--letter-spacing)"
+        >/ yr</span
+      >
     </div>
   </label>
 </template>
