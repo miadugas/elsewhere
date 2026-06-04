@@ -7,27 +7,33 @@
      · surface-dark / on-dark — DO NOT flip (the confident slab + pill nav
        stay dark in both modes; that's the locked aesthetic)               */
 
-  --color-paper: #f7f5ef; /* card surface */
-  --color-canvas: #f7f5ef; /* page background (may differ from paper in dark) */
-  --color-paper-deep: #efeadc; /* inset surface / hover */
-  --color-ink: #1a1d1a; /* primary text + flippable accents */
-  --color-ink-soft: #2b2f2b; /* secondary text */
+  /* OKLCH: accents faithful; neutrals unified to a warm hue (74) at low
+     chroma so surfaces read cohesively warm and edges don't go garish. */
+  --color-paper: oklch(0.97 0.006 74); /* card surface */
+  --color-canvas: oklch(0.97 0.006 74); /* page background */
+  --color-paper-deep: oklch(0.937 0.006 74); /* inset surface / hover */
+  --color-ink: oklch(0.226 0.01 74); /* primary text + flippable accents */
+  --color-ink-soft: oklch(0.3 0.01 74); /* secondary text */
 
   /* always-dark slab + pill nav surfaces (don't flip) */
-  --color-surface-dark: #1a1d1a;
-  --color-surface-dark-soft: #2b2f2b;
-  --color-on-dark: #f7f5ef;
+  --color-surface-dark: oklch(0.226 0.01 74);
+  --color-surface-dark-soft: oklch(0.3 0.01 74);
+  --color-on-dark: oklch(0.97 0.006 74);
 
-  --color-terrain: #3f7d4e; /* terrain green */
-  --color-terrain-soft: #cfe1d2; /* terrain wash */
-  --color-water: #2f6fb0; /* water blue */
-  --color-water-soft: #d6e4f2; /* water wash */
-  --color-route: #e0662a; /* highway-sign warm — the route motif */
-  --color-route-soft: #f6dcc8; /* route wash */
-  --color-contour: #d8d2c2; /* contour linework */
-  --color-contour-ink: #b7afa0; /* darker contour for borders/dividers */
-  --color-cheaper: #2f8a5b; /* delta positive (cheaper) */
-  --color-pricier: #c2452f; /* delta negative (pricier) */
+  --color-terrain: oklch(0.535 0.098 149.9); /* terrain green */
+  --color-terrain-soft: oklch(0.892 0.028 150.4); /* terrain wash */
+  --color-water: oklch(0.532 0.121 251.5); /* water blue */
+  --color-water-soft: oklch(0.913 0.024 248.1); /* water wash */
+  --color-route: oklch(
+    0.651 0.168 43.7
+  ); /* highway-sign warm — the route motif */
+  --color-route-soft: oklch(0.911 0.039 59.8); /* route wash */
+  --color-contour: oklch(0.864 0.01 74); /* contour linework */
+  --color-contour-ink: oklch(
+    0.756 0.01 74
+  ); /* darker contour for borders/dividers */
+  --color-cheaper: oklch(0.567 0.113 157); /* delta positive (cheaper) */
+  --color-pricier: oklch(0.561 0.164 32.3); /* delta negative (pricier) */
 
   /* shadow rgb base — overrides in dark mode so shadows read on dark canvas */
   --shadow-base: 26, 29, 26;
@@ -101,28 +107,28 @@
 /* ─────────────────────────────────────────────────────────────── */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-canvas: #0a0d0a; /* page bg — deepest */
-    --color-paper: #161a16; /* card surface, lifted above canvas */
-    --color-paper-deep: #1f2420; /* inset surface */
-    --color-ink: #ebe7da; /* primary text — paper-cream */
-    --color-ink-soft: #c8c0ad;
+    --color-canvas: oklch(0.154 0.008 74); /* page bg — deepest */
+    --color-paper: oklch(0.212 0.01 74); /* card surface, lifted above canvas */
+    --color-paper-deep: oklch(0.254 0.01 74); /* inset surface */
+    --color-ink: oklch(0.928 0.006 74); /* primary text — paper-cream */
+    --color-ink-soft: oklch(0.809 0.01 74);
 
     /* slab + nav stay confident-dark; deepen them so they still read
        as the darkest surfaces against the dark canvas */
-    --color-surface-dark: #050706;
-    --color-surface-dark-soft: #14181a;
-    --color-on-dark: #f7f5ef;
+    --color-surface-dark: oklch(0.125 0.008 74);
+    --color-surface-dark-soft: oklch(0.206 0.01 74);
+    --color-on-dark: oklch(0.97 0.006 74);
 
-    --color-terrain: #5fa872;
-    --color-terrain-soft: #1a2820;
-    --color-water: #5b9ed8;
-    --color-water-soft: #14223a;
-    --color-route: #f08a4a;
-    --color-route-soft: #3a1d10;
-    --color-contour: #2d3330;
-    --color-contour-ink: #4a5450;
-    --color-cheaper: #4eb780;
-    --color-pricier: #e25e44;
+    --color-terrain: oklch(0.669 0.109 150.9);
+    --color-terrain-soft: oklch(0.261 0.024 159.1);
+    --color-water: oklch(0.679 0.11 246.4);
+    --color-water-soft: oklch(0.253 0.05 260.6);
+    --color-route: oklch(0.732 0.147 50.7);
+    --color-route-soft: oklch(0.268 0.051 44.2);
+    --color-contour: oklch(0.314 0.01 74);
+    --color-contour-ink: oklch(0.436 0.01 74);
+    --color-cheaper: oklch(0.703 0.127 157.7);
+    --color-pricier: oklch(0.645 0.17 33);
 
     --shadow-base: 0, 0, 0;
   }
@@ -130,46 +136,46 @@
 
 /* Manual overrides — explicit theme wins over OS preference */
 :root[data-theme="light"] {
-  --color-canvas: #f7f5ef;
-  --color-paper: #f7f5ef;
-  --color-paper-deep: #efeadc;
-  --color-ink: #1a1d1a;
-  --color-ink-soft: #2b2f2b;
-  --color-surface-dark: #1a1d1a;
-  --color-surface-dark-soft: #2b2f2b;
-  --color-on-dark: #f7f5ef;
-  --color-terrain: #3f7d4e;
-  --color-terrain-soft: #cfe1d2;
-  --color-water: #2f6fb0;
-  --color-water-soft: #d6e4f2;
-  --color-route: #e0662a;
-  --color-route-soft: #f6dcc8;
-  --color-contour: #d8d2c2;
-  --color-contour-ink: #b7afa0;
-  --color-cheaper: #2f8a5b;
-  --color-pricier: #c2452f;
+  --color-canvas: oklch(0.97 0.006 74);
+  --color-paper: oklch(0.97 0.006 74);
+  --color-paper-deep: oklch(0.937 0.006 74);
+  --color-ink: oklch(0.226 0.01 74);
+  --color-ink-soft: oklch(0.3 0.01 74);
+  --color-surface-dark: oklch(0.226 0.01 74);
+  --color-surface-dark-soft: oklch(0.3 0.01 74);
+  --color-on-dark: oklch(0.97 0.006 74);
+  --color-terrain: oklch(0.535 0.098 149.9);
+  --color-terrain-soft: oklch(0.892 0.028 150.4);
+  --color-water: oklch(0.532 0.121 251.5);
+  --color-water-soft: oklch(0.913 0.024 248.1);
+  --color-route: oklch(0.651 0.168 43.7);
+  --color-route-soft: oklch(0.911 0.039 59.8);
+  --color-contour: oklch(0.864 0.01 74);
+  --color-contour-ink: oklch(0.756 0.01 74);
+  --color-cheaper: oklch(0.567 0.113 157);
+  --color-pricier: oklch(0.561 0.164 32.3);
   --shadow-base: 26, 29, 26;
 }
 
 :root[data-theme="dark"] {
-  --color-canvas: #0a0d0a;
-  --color-paper: #161a16;
-  --color-paper-deep: #1f2420;
-  --color-ink: #ebe7da;
-  --color-ink-soft: #c8c0ad;
-  --color-surface-dark: #050706;
-  --color-surface-dark-soft: #14181a;
-  --color-on-dark: #f7f5ef;
-  --color-terrain: #5fa872;
-  --color-terrain-soft: #1a2820;
-  --color-water: #5b9ed8;
-  --color-water-soft: #14223a;
-  --color-route: #f08a4a;
-  --color-route-soft: #3a1d10;
-  --color-contour: #2d3330;
-  --color-contour-ink: #4a5450;
-  --color-cheaper: #4eb780;
-  --color-pricier: #e25e44;
+  --color-canvas: oklch(0.154 0.008 74);
+  --color-paper: oklch(0.212 0.01 74);
+  --color-paper-deep: oklch(0.254 0.01 74);
+  --color-ink: oklch(0.928 0.006 74);
+  --color-ink-soft: oklch(0.809 0.01 74);
+  --color-surface-dark: oklch(0.125 0.008 74);
+  --color-surface-dark-soft: oklch(0.206 0.01 74);
+  --color-on-dark: oklch(0.97 0.006 74);
+  --color-terrain: oklch(0.669 0.109 150.9);
+  --color-terrain-soft: oklch(0.261 0.024 159.1);
+  --color-water: oklch(0.679 0.11 246.4);
+  --color-water-soft: oklch(0.253 0.05 260.6);
+  --color-route: oklch(0.732 0.147 50.7);
+  --color-route-soft: oklch(0.268 0.051 44.2);
+  --color-contour: oklch(0.314 0.01 74);
+  --color-contour-ink: oklch(0.436 0.01 74);
+  --color-cheaper: oklch(0.703 0.127 157.7);
+  --color-pricier: oklch(0.645 0.17 33);
   --shadow-base: 0, 0, 0;
 }
 

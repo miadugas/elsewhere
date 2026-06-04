@@ -21,6 +21,7 @@
     "@tailwindcss/vite": "^4.1.8",
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/test-utils": "^2.4.6",
+    "culori": "^4.0.2",
     "jsdom": "^26.1.0",
     "tailwindcss": "^4.1.8",
     "typescript": "^5.8.3",
