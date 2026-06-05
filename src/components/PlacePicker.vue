@@ -27,21 +27,15 @@ function choose(m: Metro) {
 <template>
   <div class="relative">
     <div class="flex items-center gap-2 pl-1">
-      <!-- route pin icon — From or To -->
-      <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-        <circle
-          cx="6"
-          cy="6"
-          r="4.5"
-          :fill="label === 'From' ? 'var(--color-route)' : 'var(--color-paper)'"
-          :stroke="
-            label === 'From' ? 'var(--color-route)' : 'var(--color-route)'
-          "
-          stroke-width="1.6"
-        />
-      </svg>
+      <!-- route waypoint — From (origin) / To (destination) emoji -->
+      <img
+        :src="label === 'From' ? '/emoji/from.svg' : '/emoji/to.svg'"
+        class="h-4 w-4"
+        alt=""
+        draggable="false"
+      />
       <span
-        class="text-[length:var(--text-eyebrow)] uppercase opacity-70"
+        class="font-display text-[length:var(--text-eyebrow)] font-semibold uppercase opacity-70"
         style="letter-spacing: var(--text-eyebrow--letter-spacing)"
         >{{ label }}</span
       >
@@ -54,7 +48,7 @@ function choose(m: Metro) {
         borderRadius: 'var(--radius-sheet)',
         border: selected
           ? '1.5px solid var(--color-ink)'
-          : '1px solid var(--color-contour)',
+          : '1.5px solid var(--color-contour-ink)',
         boxShadow: 'var(--shadow-sheet)',
         minHeight: '56px',
       }"
@@ -112,7 +106,7 @@ function choose(m: Metro) {
             m.short
           }}</span>
           <span
-            class="truncate text-[length:var(--text-eyebrow)] uppercase opacity-55"
+            class="truncate text-[length:var(--text-eyebrow)] uppercase opacity-70"
             style="letter-spacing: var(--text-eyebrow--letter-spacing)"
             >{{ m.name }}</span
           >

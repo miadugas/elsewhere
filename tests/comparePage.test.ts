@@ -40,7 +40,7 @@ describe("ComparePage", () => {
 
     const text = wrapper.text();
     expect(text).toContain("you'd need");
-    expect(text).toContain("$76,444");
+    expect(text).toContain("$68,465");
     expect(text).toContain("The Basket");
   });
 });

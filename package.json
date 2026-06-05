@@ -11,6 +11,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@fontsource-variable/geist": "^5.2.9",
     "@fontsource-variable/overpass": "^5.2.8",
     "@fontsource-variable/public-sans": "^5.2.7",
     "@fontsource/overpass-mono": "^5.2.8",

@@ -5,8 +5,9 @@ export interface Metro {
   name: string; // "Detroit-Warren-Dearborn, MI"
   short: string; // "Detroit"
   states: string[]; // ["MI"]
-  lat: number;
-  lng: number;
+  lat?: number; // optional — populated with the map (Plan B); unused in v1
+  lng?: number;
+  pop?: number; // CBSA population (Census) — ranks search results by metro size
   rpp: {
     overall: number; // 100 = national average
     housing: number;

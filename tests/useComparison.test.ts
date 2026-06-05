@@ -9,7 +9,8 @@ describe("useComparison", () => {
     c.setTo("austin-tx");
     expect(c.result.value).toBeNull(); // salary still 0
     c.setSalary(70000);
-    expect(c.result.value?.requiredSalary).toBe(76444);
+    // real BEA 2024 RPPs: Detroit 100.3, Austin 98.1 → 70000 * 98.1/100.3
+    expect(c.result.value?.requiredSalary).toBe(68465);
   });
 
   it("produces basket rows once both metros are chosen", () => {
