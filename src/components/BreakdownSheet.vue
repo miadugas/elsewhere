@@ -10,7 +10,12 @@ const LABELS = {
   goods: "Goods & groceries",
   otherServices: "Services",
 } as const;
-const ICONS = { housing: "🏠", goods: "🛒", otherServices: "🛠️" } as const;
+const ICONS = {
+  housing: "/emoji/house.svg",
+  goods: "/emoji/cart.svg",
+  otherServices: "/emoji/wrench.svg",
+} as const;
+const MIN_PIN_GAP = 5; // keep the two pins visibly separate at tiny diffs
 const MAX_PCT = 50; // bar scale cap (±50% from the home baseline)
 
 // Display-only: translate the raw BEA index into a human "% more/less vs the
@@ -31,8 +36,14 @@ const rows = computed(() => {
       cheaper: pct < 0,
       pricier: pct > 0,
       same: pct === 0,
-      // 50% = home baseline; Austin sits right (pricier) or left (cheaper)
-      austinPos: 50 + (clamped / MAX_PCT) * 50,
+      // 50% = home baseline; Austin sits right (pricier) or left (cheaper).
+      // Floor the offset so the pins never fully stack on tiny differences.
+      austinPos:
+        pct === 0
+          ? 50
+          : 50 +
+            Math.sign(pct) *
+              Math.max(MIN_PIN_GAP, (Math.abs(clamped) / MAX_PCT) * 50),
     };
   });
   // the single biggest mover drives the parity number — flag it
@@ -130,7 +141,7 @@ const rows = computed(() => {
           <!-- headline: category ……… the human takeaway -->
           <div class="flex items-baseline justify-between gap-3">
             <span class="flex items-center gap-2">
-              <span class="text-base" aria-hidden="true">{{ r.icon }}</span>
+              <img :src="r.icon" alt="" draggable="false" class="h-5 w-5" />
               <span class="text-[length:var(--text-body)] font-semibold">{{
                 r.label
               }}</span>

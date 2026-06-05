@@ -8,7 +8,7 @@ const props = defineProps<{
   metros: Metro[];
   modelValue: string | null;
 }>();
-const emit = defineEmits<{ "update:modelValue": [id: string] }>();
+const emit = defineEmits<{ "update:modelValue": [id: string]; swap: [] }>();
 
 const query = ref("");
 const open = ref(false);
@@ -80,6 +80,34 @@ function choose(m: Metro) {
       >
         {{ selected.states.join("·") }}
       </span>
+
+      <!-- swap button — muted arrow (From points down to To, To points up) -->
+      <button
+        type="button"
+        @click="emit('swap')"
+        class="-mr-1.5 flex h-9 w-9 shrink-0 items-center justify-center transition-colors active:scale-90"
+        style="
+          border-radius: var(--radius-pill);
+          color: var(--color-contour-ink);
+        "
+        :class="'hover:bg-[var(--color-paper-deep)] hover:text-[var(--color-ink)]'"
+        aria-label="Swap From and To cities"
+        title="Swap From and To"
+      >
+        <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path
+            :d="
+              label === 'From'
+                ? 'M8,3 L8,12 M4.5,8.5 L8,12 L11.5,8.5'
+                : 'M8,13 L8,4 M4.5,7.5 L8,4 L11.5,7.5'
+            "
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
     </div>
 
     <!-- Dropdown — bottom-sheet style -->

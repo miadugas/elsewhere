@@ -238,41 +238,21 @@ const themeLabel = computed(() =>
     <section class="mt-auto px-5 pb-4 pt-6" aria-label="Comparison inputs">
       <!-- From → To read as one route pair; the dashed rail on the left
            threads the From waypoint down into the To waypoint. -->
-      <div class="flex flex-col gap-1.5">
+      <div class="flex flex-col gap-3">
         <PlacePicker
           label="From"
           :metros="c.metros"
           :model-value="c.from.value?.id ?? null"
           @update:model-value="c.setFrom"
+          @swap="c.swap"
         />
-
-        <!-- route connector — aligned under the From/To pins (x≈10px) -->
-        <div class="-my-0.5 flex pl-[4px]" aria-hidden="true">
-          <svg class="h-6 w-3" viewBox="0 0 12 24" fill="none">
-            <defs>
-              <linearGradient id="rt-conn" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="var(--color-route-from)" />
-                <stop offset="100%" stop-color="var(--color-route-to)" />
-              </linearGradient>
-            </defs>
-            <line
-              x1="6"
-              y1="1"
-              x2="6"
-              y2="23"
-              stroke="url(#rt-conn)"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-dasharray="2 3.5"
-            />
-          </svg>
-        </div>
 
         <PlacePicker
           label="To"
           :metros="c.metros"
           :model-value="c.to.value?.id ?? null"
           @update:model-value="c.setTo"
+          @swap="c.swap"
         />
       </div>
 

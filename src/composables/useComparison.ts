@@ -59,6 +59,12 @@ export function useComparison() {
     basket,
     setFrom: (id: string) => (fromId.value = id),
     setTo: (id: string) => (toId.value = id),
+    // Flip origin and destination (salary stays — it's still "your pay").
+    swap: () => {
+      const f = fromId.value;
+      fromId.value = toId.value;
+      toId.value = f;
+    },
     // `n` is entered in the current period; store it as canonical annual.
     setSalary: (n: number) =>
       (salary.value =
