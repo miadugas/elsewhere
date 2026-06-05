@@ -12,5 +12,7 @@ export function requiredSalary(
     requiredSalary: required,
     delta: required - salary,
     pct: ratio - 1,
+    // inverse: keep your pay, what its purchasing power is worth in `to`
+    buyingPower: Math.round(salary / ratio),
   };
 }

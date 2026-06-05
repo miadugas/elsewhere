@@ -5,6 +5,7 @@ import { useTheme } from "../composables/useTheme";
 import PlacePicker from "../components/PlacePicker.vue";
 import SalaryInput from "../components/SalaryInput.vue";
 import ResultSlab from "../components/ResultSlab.vue";
+import PlainEnglish from "../components/PlainEnglish.vue";
 import BasketList from "../components/BasketList.vue";
 import BreakdownSheet from "../components/BreakdownSheet.vue";
 
@@ -125,6 +126,15 @@ const themeLabel = computed(() =>
           Enter your salary below to see the parity number.
         </p>
       </section>
+
+      <PlainEnglish
+        v-if="hasResult"
+        :from="c.from.value!"
+        :to="c.to.value!"
+        :result="c.result.value!"
+        :period="c.period.value"
+        :hours-per-week="c.hoursPerWeek.value"
+      />
 
       <BasketList
         :rows="c.basket.value"

@@ -26,9 +26,10 @@ export interface BasketItem {
 
 export interface ParityResult {
   fromSalary: number;
-  requiredSalary: number; // rounded to whole dollars
+  requiredSalary: number; // to keep the same life in `to` (rounded whole $)
   delta: number; // requiredSalary - fromSalary
   pct: number; // fraction, e.g. 0.18 = 18% pricier
+  buyingPower: number; // what fromSalary's purchasing power is worth in `to`
 }
 
 export interface BasketRow {
