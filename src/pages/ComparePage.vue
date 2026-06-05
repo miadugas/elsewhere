@@ -33,16 +33,16 @@ const themeLabel = computed(() =>
     <!-- ── Brand mark ─────────────────────────────────────────── -->
     <header class="px-5 pb-2 pt-6">
       <div class="flex items-center justify-between">
-        <div class="flex items-baseline gap-2">
+        <div class="flex flex-col gap-1">
           <h1
-            class="text-[length:var(--text-numeric)] font-black tracking-tight"
+            class="text-[length:var(--text-numeric)] font-black leading-none tracking-tight"
           >
             Elsewhere
           </h1>
           <span
-            class="text-[length:var(--text-eyebrow)] uppercase opacity-60"
+            class="text-[length:var(--text-eyebrow)] uppercase opacity-75"
             style="letter-spacing: var(--text-eyebrow--letter-spacing)"
-            >cost-of-living parity</span
+            >cost of living parity</span
           >
         </div>
         <!-- Theme toggle — cycles auto → light → dark → auto -->
@@ -59,66 +59,19 @@ const themeLabel = computed(() =>
           :aria-label="themeLabel"
           :title="themeLabel"
         >
-          <!-- AUTO: half-filled disc (sun + moon merged) with dashed atlas ring -->
-          <svg
-            v-if="theme === 'auto'"
-            class="h-5 w-5"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <circle
-              cx="12"
-              cy="12"
-              r="10"
-              fill="none"
-              stroke="var(--color-ink)"
-              stroke-width="1.2"
-              stroke-dasharray="1 2"
-            />
-            <path d="M12,4 A8,8 0 0,1 12,20 Z" fill="var(--color-ink)" />
-            <circle
-              cx="12"
-              cy="12"
-              r="6.5"
-              fill="none"
-              stroke="var(--color-route)"
-              stroke-width="1"
-              stroke-dasharray="1.5 2"
-            />
-          </svg>
-
-          <!-- LIGHT: sun -->
-          <svg
-            v-else-if="theme === 'light'"
-            class="h-5 w-5"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <circle cx="12" cy="12" r="4.2" fill="var(--color-route)" />
-            <g
-              stroke="var(--color-ink)"
-              stroke-width="1.6"
-              stroke-linecap="round"
-            >
-              <line x1="12" y1="2.5" x2="12" y2="5" />
-              <line x1="12" y1="19" x2="12" y2="21.5" />
-              <line x1="2.5" y1="12" x2="5" y2="12" />
-              <line x1="19" y1="12" x2="21.5" y2="12" />
-              <line x1="5.2" y1="5.2" x2="7" y2="7" />
-              <line x1="17" y1="17" x2="18.8" y2="18.8" />
-              <line x1="5.2" y1="18.8" x2="7" y2="17" />
-              <line x1="17" y1="7" x2="18.8" y2="5.2" />
-            </g>
-          </svg>
-
-          <!-- DARK: crescent moon with a contour star -->
-          <svg v-else class="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M19,14.5 A8.5,8.5 0 1,1 9.5,5 A6.5,6.5 0 0,0 19,14.5 Z"
-              fill="var(--color-ink)"
-            />
-            <circle cx="17.5" cy="6.5" r="1" fill="var(--color-route)" />
-          </svg>
+          <!-- current mode as a bundled Fluent-Flat emoji -->
+          <img
+            :src="
+              theme === 'auto'
+                ? '/emoji/auto.svg'
+                : theme === 'light'
+                  ? '/emoji/sun.svg'
+                  : '/emoji/moon.svg'
+            "
+            class="h-6 w-6"
+            alt=""
+            draggable="false"
+          />
 
           <!-- tiny "A"/"L"/"D" tag at the corner for clarity -->
           <span
@@ -147,6 +100,8 @@ const themeLabel = computed(() =>
         :from="c.from.value!"
         :to="c.to.value!"
         :result="c.result.value!"
+        :period="c.period.value"
+        :hours-per-week="c.hoursPerWeek.value"
       />
 
       <!-- Prompt when metros picked but no salary yet -->
@@ -228,71 +183,100 @@ const themeLabel = computed(() =>
           same — and what changes when you swap zip codes.
         </p>
 
-        <!-- decorative route arc -->
-        <svg
-          class="mt-5 h-8 w-full"
-          viewBox="0 0 200 32"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path
-            d="M4,26 Q100,-10 196,26"
-            fill="none"
-            stroke="var(--color-route)"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-dasharray="1.5 4"
+        <!-- decorative route arc, anchored by the From/To pins -->
+        <div class="relative mt-5 h-8 w-full">
+          <svg
+            class="absolute inset-0 h-full w-full"
+            viewBox="0 0 200 32"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="rt-hero" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="var(--color-route-from)" />
+                <stop offset="100%" stop-color="var(--color-route-to)" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M4,26 Q100,-10 196,26"
+              fill="none"
+              stroke="url(#rt-hero)"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-dasharray="1.5 4"
+            />
+          </svg>
+          <img
+            src="/emoji/from.svg"
+            alt=""
+            draggable="false"
+            class="pointer-events-none absolute h-5 w-5"
+            style="left: 2%; top: 26px; transform: translate(-50%, -86%)"
           />
-          <circle cx="4" cy="26" r="4" fill="var(--color-route)" />
-          <circle
-            cx="196"
-            cy="26"
-            r="4"
-            fill="var(--color-on-dark)"
-            stroke="var(--color-route)"
-            stroke-width="2"
+          <img
+            src="/emoji/to.svg"
+            alt=""
+            draggable="false"
+            class="pointer-events-none absolute h-5 w-5"
+            style="left: 98%; top: 26px; transform: translate(-50%, -86%)"
           />
-        </svg>
+        </div>
       </div>
     </section>
 
     <!-- ── Thumb zone: inputs ─────────────────────────────────── -->
-    <section
-      class="mt-auto flex flex-col gap-3 px-5 pb-4 pt-6"
-      aria-label="Comparison inputs"
-    >
-      <PlacePicker
-        label="From"
-        :metros="c.metros"
-        :model-value="c.from.value?.id ?? null"
-        @update:model-value="c.setFrom"
-      />
+    <section class="mt-auto px-5 pb-4 pt-6" aria-label="Comparison inputs">
+      <!-- From → To read as one route pair; the dashed rail on the left
+           threads the From waypoint down into the To waypoint. -->
+      <div class="flex flex-col gap-1.5">
+        <PlacePicker
+          label="From"
+          :metros="c.metros"
+          :model-value="c.from.value?.id ?? null"
+          @update:model-value="c.setFrom"
+        />
 
-      <!-- vertical route arrow between pickers -->
-      <div class="flex justify-center" aria-hidden="true">
-        <svg class="h-5 w-3" viewBox="0 0 12 20" fill="none">
-          <path
-            d="M6,1 L6,16 M2,12 L6,16 L10,12"
-            stroke="var(--color-route)"
-            stroke-width="1.6"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-dasharray="1.5 2.5"
-          />
-        </svg>
+        <!-- route connector — aligned under the From/To pins (x≈10px) -->
+        <div class="-my-0.5 flex pl-[4px]" aria-hidden="true">
+          <svg class="h-6 w-3" viewBox="0 0 12 24" fill="none">
+            <defs>
+              <linearGradient id="rt-conn" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="var(--color-route-from)" />
+                <stop offset="100%" stop-color="var(--color-route-to)" />
+              </linearGradient>
+            </defs>
+            <line
+              x1="6"
+              y1="1"
+              x2="6"
+              y2="23"
+              stroke="url(#rt-conn)"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-dasharray="2 3.5"
+            />
+          </svg>
+        </div>
+
+        <PlacePicker
+          label="To"
+          :metros="c.metros"
+          :model-value="c.to.value?.id ?? null"
+          @update:model-value="c.setTo"
+        />
       </div>
 
-      <PlacePicker
-        label="To"
-        :metros="c.metros"
-        :model-value="c.to.value?.id ?? null"
-        @update:model-value="c.setTo"
-      />
-
-      <SalaryInput
-        :model-value="c.salary.value"
-        @update:model-value="c.setSalary"
-      />
+      <!-- salary is a separate question — give it room to breathe -->
+      <div class="mt-7">
+        <SalaryInput
+          :model-value="c.displaySalary.value"
+          :period="c.period.value"
+          :hours-per-week="c.hoursPerWeek.value"
+          @update:model-value="c.setSalary"
+          @update:period="c.setPeriod"
+          @update:hours-per-week="c.setHoursPerWeek"
+        />
+      </div>
     </section>
 
     <!-- ── Pill bottom nav (shell — non-functional for now) ───── -->
@@ -307,7 +291,8 @@ const themeLabel = computed(() =>
     >
       <button
         type="button"
-        class="flex flex-1 items-center justify-center gap-1.5 px-3 py-2 text-[length:var(--text-eyebrow)] font-black uppercase"
+        aria-current="page"
+        class="font-display flex flex-1 items-center justify-center gap-1.5 px-3 py-2 text-[length:var(--text-eyebrow)] font-black uppercase"
         :style="{
           borderRadius: 'var(--radius-pill)',
           background: 'var(--color-on-dark)',
@@ -327,14 +312,20 @@ const themeLabel = computed(() =>
       </button>
       <button
         type="button"
-        class="flex flex-1 items-center justify-center px-3 py-2 text-[length:var(--text-eyebrow)] font-bold uppercase text-[var(--color-on-dark)] opacity-60"
+        disabled
+        aria-disabled="true"
+        title="Coming soon"
+        class="font-display flex flex-1 cursor-not-allowed items-center justify-center gap-1.5 px-3 py-2 text-[length:var(--text-eyebrow)] font-bold uppercase text-[var(--color-on-dark)] opacity-35"
         style="letter-spacing: var(--text-eyebrow--letter-spacing)"
       >
         Saved
       </button>
       <button
         type="button"
-        class="flex flex-1 items-center justify-center px-3 py-2 text-[length:var(--text-eyebrow)] font-bold uppercase text-[var(--color-on-dark)] opacity-60"
+        disabled
+        aria-disabled="true"
+        title="Coming soon"
+        class="font-display flex flex-1 cursor-not-allowed items-center justify-center gap-1.5 px-3 py-2 text-[length:var(--text-eyebrow)] font-bold uppercase text-[var(--color-on-dark)] opacity-35"
         style="letter-spacing: var(--text-eyebrow--letter-spacing)"
       >
         About

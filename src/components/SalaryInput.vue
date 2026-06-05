@@ -1,37 +1,112 @@
 <script setup lang="ts">
-const props = defineProps<{ modelValue: number }>();
-const emit = defineEmits<{ "update:modelValue": [n: number] }>();
+import { ref, computed, watch } from "vue";
+import type { PayPeriod } from "../engines/pay";
+
+const props = defineProps<{
+  modelValue: number; // amount in the CURRENT period (annual $ or hourly $/hr)
+  period: PayPeriod;
+  hoursPerWeek: number;
+}>();
+const emit = defineEmits<{
+  "update:modelValue": [n: number];
+  "update:period": [p: PayPeriod];
+  "update:hoursPerWeek": [h: number];
+}>();
+
+const PERIODS: { id: PayPeriod; label: string }[] = [
+  { id: "annual", label: "Annual" },
+  { id: "hourly", label: "Hourly" },
+];
+
+// Local editable string so decimals type smoothly (trailing dot, etc.).
+const raw = ref("");
+const editing = ref(false);
+
+function fmt(n: number): string {
+  if (n <= 0) return "";
+  return props.period === "hourly"
+    ? String(Math.round(n * 100) / 100)
+    : Math.round(n).toLocaleString("en-US");
+}
+watch(
+  () => [props.modelValue, props.period, props.hoursPerWeek],
+  () => {
+    if (!editing.value) raw.value = fmt(props.modelValue);
+  },
+  { immediate: true },
+);
 
 function onInput(e: Event) {
-  const raw = (e.target as HTMLInputElement).value.replace(/[^0-9]/g, "");
-  emit("update:modelValue", raw ? Number(raw) : 0);
+  const v = (e.target as HTMLInputElement).value;
+  if (props.period === "hourly") {
+    // digits + a single decimal point
+    const cleaned = v.replace(/[^0-9.]/g, "").replace(/(\..*)\./g, "$1");
+    raw.value = cleaned;
+    emit("update:modelValue", cleaned ? Number(cleaned) : 0);
+  } else {
+    const digits = v.replace(/[^0-9]/g, "");
+    raw.value = digits ? Number(digits).toLocaleString("en-US") : "";
+    emit("update:modelValue", digits ? Number(digits) : 0);
+  }
 }
 
-const display = () =>
-  props.modelValue > 0 ? props.modelValue.toLocaleString("en-US") : "";
+function onHours(e: Event) {
+  const h = Number((e.target as HTMLInputElement).value.replace(/[^0-9]/g, ""));
+  emit("update:hoursPerWeek", h > 0 ? Math.min(h, 168) : 0);
+}
+
+const placeholder = computed(() =>
+  props.period === "hourly" ? "34.00" : "70,000",
+);
+const suffix = computed(() => (props.period === "hourly" ? "/ hr" : "/ yr"));
 </script>
 
 <template>
-  <label class="block">
-    <div class="flex items-center gap-2 pl-1">
-      <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-        <rect
-          x="1.5"
-          y="1.5"
-          width="9"
-          height="9"
-          rx="2"
-          stroke="var(--color-route)"
-          stroke-width="1.6"
-        />
-      </svg>
-      <span
-        class="text-[length:var(--text-eyebrow)] uppercase opacity-70"
-        style="letter-spacing: var(--text-eyebrow--letter-spacing)"
-        >Your current salary</span
+  <div class="block">
+    <!-- label + Annual/Hourly toggle -->
+    <div class="flex items-center justify-between pl-1">
+      <div class="flex items-center gap-2">
+        <img class="h-4 w-4" src="/emoji/salary.svg" alt="" draggable="false" />
+        <span
+          class="font-display text-[length:var(--text-eyebrow)] font-semibold uppercase opacity-70"
+          style="letter-spacing: var(--text-eyebrow--letter-spacing)"
+          >Your current pay</span
+        >
+      </div>
+
+      <div
+        class="flex items-center gap-0.5 p-0.5"
+        role="group"
+        aria-label="Pay period"
+        :style="{
+          borderRadius: 'var(--radius-pill)',
+          background: 'var(--color-paper-deep)',
+          border: '1px solid var(--color-contour)',
+        }"
       >
+        <button
+          v-for="opt in PERIODS"
+          :key="opt.id"
+          type="button"
+          @click="opt.id !== period && emit('update:period', opt.id)"
+          :aria-pressed="period === opt.id"
+          class="font-display rounded-[var(--radius-pill)] px-2.5 py-1 text-[length:var(--text-eyebrow)] font-bold uppercase transition-colors"
+          style="letter-spacing: var(--text-eyebrow--letter-spacing)"
+          :style="
+            period === opt.id
+              ? {
+                  background: 'var(--color-route)',
+                  color: 'var(--color-on-dark)',
+                }
+              : { color: 'var(--color-ink-soft)' }
+          "
+        >
+          {{ opt.label }}
+        </button>
+      </div>
     </div>
 
+    <!-- the dark pay slab -->
     <div
       class="input-pop mt-1.5 flex items-center gap-2 px-4"
       :style="{
@@ -44,23 +119,92 @@ const display = () =>
       }"
     >
       <span
-        class="tnum text-[length:var(--text-numeric)] font-black opacity-60"
+        class="tnum text-[length:var(--text-numeric)] font-black"
+        style="color: var(--color-route)"
         aria-hidden="true"
         >$</span
       >
       <input
-        :value="display()"
+        :value="raw"
         @input="onInput"
-        inputmode="numeric"
-        placeholder="70,000"
-        class="tnum w-full bg-transparent text-[length:var(--text-numeric)] font-black tracking-tight text-[var(--color-on-dark)] outline-none placeholder:opacity-40"
-        aria-label="Current salary in dollars"
+        @focus="editing = true"
+        @blur="
+          editing = false;
+          raw = fmt(props.modelValue);
+        "
+        :inputmode="period === 'hourly' ? 'decimal' : 'numeric'"
+        :placeholder="placeholder"
+        class="tnum min-w-0 flex-1 bg-transparent text-[length:var(--text-numeric)] font-black tracking-tight text-[var(--color-on-dark)] outline-none placeholder:opacity-40"
+        :aria-label="
+          period === 'hourly'
+            ? 'Current hourly pay in dollars'
+            : 'Current annual salary in dollars'
+        "
       />
+
+      <!-- hourly: hours/week lives INSIDE the field, using the dead space -->
+      <label
+        v-if="period === 'hourly'"
+        class="flex shrink-0 items-center gap-1.5"
+        title="Hours worked per week"
+      >
+        <input
+          :value="hoursPerWeek || ''"
+          @input="onHours"
+          inputmode="numeric"
+          placeholder="40"
+          aria-label="Hours per week"
+          class="tnum hrs-chip w-9 bg-transparent py-0.5 text-center text-[length:var(--text-meta)] font-bold text-[var(--color-on-dark)] outline-none"
+          :class="{ 'hrs-chip--callout': editing }"
+          style="border-radius: var(--radius-chip)"
+        />
+        <span
+          class="font-display text-[length:var(--text-eyebrow)] font-semibold uppercase transition-opacity"
+          style="letter-spacing: var(--text-eyebrow--letter-spacing)"
+          :style="{ opacity: editing ? 0.9 : 0.5 }"
+          >hrs/wk</span
+        >
+      </label>
+
       <span
-        class="text-[length:var(--text-eyebrow)] font-bold uppercase opacity-60"
+        class="font-display shrink-0 text-[length:var(--text-eyebrow)] font-bold uppercase opacity-70"
         style="letter-spacing: var(--text-eyebrow--letter-spacing)"
-        >/ yr</span
+        >{{ suffix }}</span
       >
     </div>
-  </label>
+  </div>
 </template>
+
+<style scoped>
+/* hours/week chip — quiet by default, called out while the rate is focused */
+.hrs-chip {
+  border: 1px solid color-mix(in oklch, var(--color-on-dark) 24%, transparent);
+  background: color-mix(in oklch, var(--color-on-dark) 8%, transparent);
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    box-shadow 160ms ease;
+}
+.hrs-chip--callout {
+  border-color: var(--color-route);
+  background: color-mix(in oklch, var(--color-route) 18%, transparent);
+  animation: hrs-pulse 1.6s ease-out infinite;
+}
+@keyframes hrs-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in oklch, var(--color-route) 45%, transparent);
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 6px
+      color-mix(in oklch, var(--color-route) 0%, transparent);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hrs-chip--callout {
+    animation: none;
+    box-shadow: 0 0 0 3px
+      color-mix(in oklch, var(--color-route) 30%, transparent);
+  }
+}
+</style>

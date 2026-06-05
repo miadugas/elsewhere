@@ -5,6 +5,11 @@ import type { Metro, BasketItem, ParityResult, BasketRow } from "../types";
 import { findMetro } from "../engines/places";
 import { requiredSalary } from "../engines/parity";
 import { localizeBasket } from "../engines/basket";
+import {
+  annualFromHourly,
+  hourlyFromAnnual,
+  type PayPeriod,
+} from "../engines/pay";
 
 const metros = metrosData as Metro[];
 const basketItems = basketData as BasketItem[];
@@ -12,7 +17,18 @@ const basketItems = basketData as BasketItem[];
 export function useComparison() {
   const fromId = ref<string | null>(null);
   const toId = ref<string | null>(null);
+  // `salary` is the canonical ANNUAL figure the parity math runs on.
+  // `period` + `hoursPerWeek` are the input/display lens only.
   const salary = ref(0);
+  const period = ref<PayPeriod>("annual");
+  const hoursPerWeek = ref(40);
+
+  // The salary expressed in the currently selected period (for the input).
+  const displaySalary = computed(() =>
+    period.value === "hourly"
+      ? hourlyFromAnnual(salary.value, hoursPerWeek.value)
+      : salary.value,
+  );
 
   const from = computed(() =>
     fromId.value ? (findMetro(metros, fromId.value) ?? null) : null,
@@ -36,10 +52,20 @@ export function useComparison() {
     from,
     to,
     salary,
+    period,
+    hoursPerWeek,
+    displaySalary,
     result,
     basket,
     setFrom: (id: string) => (fromId.value = id),
     setTo: (id: string) => (toId.value = id),
-    setSalary: (n: number) => (salary.value = n),
+    // `n` is entered in the current period; store it as canonical annual.
+    setSalary: (n: number) =>
+      (salary.value =
+        period.value === "hourly"
+          ? annualFromHourly(n, hoursPerWeek.value)
+          : n),
+    setPeriod: (p: PayPeriod) => (period.value = p),
+    setHoursPerWeek: (h: number) => (hoursPerWeek.value = h),
   };
 }

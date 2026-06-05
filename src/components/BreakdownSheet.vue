@@ -5,30 +5,45 @@ import type { Metro } from "../types";
 const props = defineProps<{ from: Metro; to: Metro }>();
 const open = ref(false);
 
-const rows = computed(() =>
-  (["housing", "goods", "otherServices"] as const).map((k) => {
+const LABELS = {
+  housing: "Housing",
+  goods: "Goods & groceries",
+  otherServices: "Services",
+} as const;
+const ICONS = { housing: "🏠", goods: "🛒", otherServices: "🛠️" } as const;
+const MAX_PCT = 50; // bar scale cap (±50% from the home baseline)
+
+// Display-only: translate the raw BEA index into a human "% more/less vs the
+// From city" + a baseline-bar position. No business math — parity is untouched.
+const rows = computed(() => {
+  const built = (["housing", "goods", "otherServices"] as const).map((k) => {
     const fromRpp = props.from.rpp[k];
     const toRpp = props.to.rpp[k];
-    const diff = toRpp - fromRpp;
+    const pct = Math.round((toRpp / fromRpp - 1) * 100);
+    const clamped = Math.max(-MAX_PCT, Math.min(MAX_PCT, pct));
     return {
       key: k,
-      label: {
-        housing: "Housing",
-        goods: "Goods & groceries",
-        otherServices: "Services",
-      }[k],
-      icon: { housing: "🏠", goods: "🛒", otherServices: "🛠️" }[k],
-      from: fromRpp,
-      to: toRpp,
-      diff,
-      cheaper: diff < 0,
-      pricier: diff > 0,
-      // 0-100 bar position relative to a 70–130 range, clamped
-      barFromPos: Math.max(0, Math.min(100, ((fromRpp - 70) / 60) * 100)),
-      barToPos: Math.max(0, Math.min(100, ((toRpp - 70) / 60) * 100)),
+      label: LABELS[k],
+      icon: ICONS[k],
+      fromRpp: Math.round(fromRpp),
+      toRpp: Math.round(toRpp),
+      pct,
+      cheaper: pct < 0,
+      pricier: pct > 0,
+      same: pct === 0,
+      // 50% = home baseline; Austin sits right (pricier) or left (cheaper)
+      austinPos: 50 + (clamped / MAX_PCT) * 50,
     };
-  }),
-);
+  });
+  // the single biggest mover drives the parity number — flag it
+  const driver = built.reduce((a, b) =>
+    Math.abs(b.pct) > Math.abs(a.pct) ? b : a,
+  );
+  return built.map((r) => ({
+    ...r,
+    isDriver: r.key === driver.key && !r.same,
+  }));
+});
 </script>
 
 <template>
@@ -46,15 +61,15 @@ const rows = computed(() =>
       class="flex w-full items-center justify-between px-5 py-4 text-left"
       :aria-expanded="open"
     >
-      <div>
+      <div class="min-w-0 flex-1">
+        <p class="text-[length:var(--text-lede)] font-bold leading-tight">
+          Category breakdown
+        </p>
         <p
-          class="text-[length:var(--text-eyebrow)] uppercase opacity-60"
+          class="mt-1 text-[length:var(--text-eyebrow)] uppercase opacity-75"
           style="letter-spacing: var(--text-eyebrow--letter-spacing)"
         >
-          Why? · BEA RPP
-        </p>
-        <p class="mt-0.5 text-[length:var(--text-lede)] font-bold">
-          Category breakdown
+          Why your number changes
         </p>
       </div>
 
@@ -69,11 +84,7 @@ const rows = computed(() =>
         }"
         aria-hidden="true"
       >
-        <svg
-          class="h-3 w-3"
-          viewBox="0 0 12 12"
-          fill="none"
-        >
+        <svg class="h-3 w-3" viewBox="0 0 12 12" fill="none">
           <path
             d="M2,4 L6,8 L10,4"
             stroke="var(--color-ink)"
@@ -86,7 +97,29 @@ const rows = computed(() =>
     </button>
 
     <div v-if="open" style="border-top: 1px solid var(--color-contour)">
-      <ul class="px-5 pb-3 pt-2">
+      <!-- legend: name the pins so the bars are self-explanatory -->
+      <div
+        class="flex flex-wrap items-center gap-x-4 gap-y-1 px-5 pb-1 pt-3 text-[length:var(--text-eyebrow)] uppercase opacity-75"
+        style="letter-spacing: var(--text-eyebrow--letter-spacing)"
+      >
+        <span class="flex items-center gap-1.5">
+          <img src="/emoji/from.svg" alt="" class="h-3.5 w-3.5" />
+          {{ from.short }} · where you are
+        </span>
+        <span class="flex items-center gap-1.5">
+          <img src="/emoji/to.svg" alt="" class="h-3.5 w-3.5" />
+          {{ to.short }} · where you're headed
+        </span>
+      </div>
+      <p
+        class="px-5 pb-2 text-[length:var(--text-meta)] opacity-60"
+        style="letter-spacing: 0.01em"
+      >
+        The farther the {{ to.short }} pin sits from {{ from.short }}, the
+        bigger the price gap.
+      </p>
+
+      <ul class="px-5 pb-3 pt-1">
         <li
           v-for="r in rows"
           :key="r.key"
@@ -94,8 +127,8 @@ const rows = computed(() =>
           style="border-bottom: 1px solid var(--color-contour)"
           :class="'last:border-0'"
         >
-          <!-- label + diff -->
-          <div class="flex items-center justify-between">
+          <!-- headline: category ……… the human takeaway -->
+          <div class="flex items-baseline justify-between gap-3">
             <span class="flex items-center gap-2">
               <span class="text-base" aria-hidden="true">{{ r.icon }}</span>
               <span class="text-[length:var(--text-body)] font-semibold">{{
@@ -103,108 +136,97 @@ const rows = computed(() =>
               }}</span>
             </span>
             <span
-              class="tnum text-[length:var(--text-eyebrow)] font-black uppercase"
-              style="letter-spacing: var(--text-eyebrow--letter-spacing)"
+              class="shrink-0 text-[length:var(--text-lede)] font-black"
               :style="{
-                color: r.cheaper
-                  ? 'var(--color-cheaper)'
-                  : r.pricier
-                    ? 'var(--color-pricier)'
-                    : 'var(--color-ink)',
+                color: r.same
+                  ? 'var(--color-ink-soft)'
+                  : r.cheaper
+                    ? 'var(--color-cheaper)'
+                    : 'var(--color-pricier)',
               }"
             >
-              {{ r.cheaper ? "▼" : r.pricier ? "▲" : "·" }}
-              {{ Math.abs(Math.round(r.diff)) }} pts
+              <template v-if="r.same">about the same</template>
+              <template v-else
+                ><span class="tnum">{{ Math.abs(r.pct) }}%</span>
+                {{ r.cheaper ? "less" : "more" }}</template
+              >
             </span>
           </div>
 
-          <!-- index scale: 70 ────●────────●──── 130 -->
-          <div class="relative mt-3 h-7">
-            <!-- the axis -->
-            <div
-              class="absolute inset-x-0 top-3 h-px"
-              style="background: var(--color-contour-ink); opacity: 0.5"
-            />
-            <!-- center tick (national avg = 100) -->
-            <div
-              class="absolute top-2 h-3 w-px"
-              style="left: 50%; background: var(--color-contour-ink)"
-              aria-hidden="true"
-            />
-            <!-- FROM marker -->
-            <span
-              class="absolute -translate-x-1/2"
-              :style="{
-                left: r.barFromPos + '%',
-                top: '6px',
-              }"
-              aria-hidden="true"
-            >
-              <span
-                class="block h-3 w-3"
-                :style="{
-                  borderRadius: 'var(--radius-pill)',
-                  background: 'var(--color-paper)',
-                  border: '2px solid var(--color-ink)',
-                }"
-              />
-            </span>
-            <!-- TO marker -->
-            <span
-              class="absolute -translate-x-1/2"
-              :style="{
-                left: r.barToPos + '%',
-                top: '6px',
-              }"
-              aria-hidden="true"
-            >
-              <span
-                class="block h-3 w-3"
-                :style="{
-                  borderRadius: 'var(--radius-pill)',
-                  background: 'var(--color-route)',
-                  border: '2px solid var(--color-ink)',
-                }"
-              />
-            </span>
-            <!-- scale labels -->
-            <span
-              class="absolute left-0 top-5 text-[length:var(--text-eyebrow)] opacity-50"
-              style="letter-spacing: var(--text-eyebrow--letter-spacing)"
-              >70</span
-            >
-            <span
-              class="absolute right-0 top-5 text-[length:var(--text-eyebrow)] opacity-50"
-              style="letter-spacing: var(--text-eyebrow--letter-spacing)"
-              >130</span
-            >
-          </div>
-
-          <!-- explicit indices -->
-          <div
-            class="mt-1 flex items-center justify-between text-[length:var(--text-eyebrow)] uppercase opacity-70"
+          <!-- caption: which direction, which cities -->
+          <p
+            v-if="!r.same"
+            class="mt-0.5 text-[length:var(--text-eyebrow)] uppercase opacity-70"
             style="letter-spacing: var(--text-eyebrow--letter-spacing)"
           >
-            <span class="tnum"
-              >{{ from.short }} · <b>{{ r.from }}</b></span
-            >
-            <span class="tnum"
-              >{{ to.short }} ·
-              <b style="color: var(--color-route)">{{ r.to }}</b></span
-            >
+            in {{ to.short }} vs {{ from.short }}
+          </p>
+
+          <!-- baseline route: home city is the green origin pin (center),
+               the To city is the pink destination pin — gap = the cost difference -->
+          <div class="relative mt-2.5 h-7" aria-hidden="true">
+            <div
+              class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2"
+              style="background: var(--color-contour-ink); opacity: 0.5"
+            />
+            <div
+              v-if="!r.same"
+              class="absolute top-1/2 h-1.5 -translate-y-1/2"
+              :style="{
+                left: Math.min(50, r.austinPos) + '%',
+                width: Math.abs(r.austinPos - 50) + '%',
+                borderRadius: 'var(--radius-pill)',
+                background: r.cheaper
+                  ? 'var(--color-cheaper)'
+                  : 'var(--color-pricier)',
+              }"
+            />
+            <!-- home origin pin (baseline) -->
+            <img
+              src="/emoji/from.svg"
+              alt=""
+              draggable="false"
+              class="pointer-events-none absolute h-4 w-4"
+              style="left: 50%; top: 50%; transform: translate(-50%, -86%)"
+            />
+            <!-- To destination pin -->
+            <img
+              src="/emoji/to.svg"
+              alt=""
+              draggable="false"
+              class="pointer-events-none absolute h-4 w-4"
+              :style="{
+                left: r.austinPos + '%',
+                top: '50%',
+                transform: 'translate(-50%, -86%)',
+              }"
+            />
           </div>
+
+          <!-- plain-English driver line on the biggest mover -->
+          <p
+            v-if="r.isDriver"
+            class="mt-1.5 text-[length:var(--text-meta)] font-semibold"
+            style="color: var(--color-ink-soft)"
+          >
+            {{
+              r.cheaper
+                ? "Biggest reason your number comes down."
+                : "Biggest reason your number goes up."
+            }}
+          </p>
         </li>
       </ul>
 
       <p
-        class="px-5 py-3 text-[length:var(--text-eyebrow)] uppercase opacity-55"
+        class="px-5 py-3 text-[length:var(--text-eyebrow)] uppercase opacity-70"
         style="
           letter-spacing: var(--text-eyebrow--letter-spacing);
           background: var(--color-paper-deep);
           border-top: 1px solid var(--color-contour);
         "
       >
-        Index · 100 = U.S. average · Source BEA RPP
+        Real cost-of-living data · U.S. Bureau of Economic Analysis
       </p>
     </div>
   </section>

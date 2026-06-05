@@ -7,6 +7,16 @@ const props = defineProps<{ rows: BasketRow[]; from: Metro; to: Metro }>();
 const money = (n: number) =>
   n.toLocaleString("en-US", { style: "currency", currency: "USD" });
 
+/** Presentation-only: which bundled Fluent-Flat asset stands in for each
+ *  unicode glyph. Falls back to the native emoji if a row isn't mapped. */
+const EMOJI_ICON: Record<string, string> = {
+  "🍕": "/emoji/pizza.svg",
+  "⛽": "/emoji/fuel.svg",
+  "🍺": "/emoji/beer.svg",
+  "☕": "/emoji/coffee.svg",
+  "🏠": "/emoji/house.svg",
+};
+
 const open = ref(true);
 
 /** Display-only: per-row delta % for the color cue + tiny indicator bar.
@@ -75,25 +85,26 @@ const summary = computed(() => {
       :aria-expanded="open"
       aria-controls="basket-rows"
     >
-      <div>
+      <div class="min-w-0 flex-1">
+        <h2
+          class="text-[length:var(--text-numeric)] font-black leading-none tracking-tight"
+        >
+          The Basket
+        </h2>
         <p
-          class="text-[length:var(--text-eyebrow)] uppercase opacity-60"
+          class="mt-1.5 text-[length:var(--text-eyebrow)] whitespace-nowrap uppercase opacity-75"
           style="letter-spacing: var(--text-eyebrow--letter-spacing)"
         >
           Same item · Two cities
         </p>
-        <h2
-          class="mt-1 text-[length:var(--text-numeric)] font-black tracking-tight"
-        >
-          The Basket
-        </h2>
       </div>
 
-      <div class="flex items-center gap-2">
-        <!-- Collapsed-state summary chip: avg basket delta, color-coded -->
+      <div class="flex shrink-0 items-center gap-2">
+        <!-- Avg basket delta — compact + color-coded, shown in BOTH states
+             so the header layout is identical open vs collapsed. -->
         <span
-          v-if="!open && summary"
-          class="tnum flex items-center gap-1.5 rounded-[var(--radius-pill)] px-2.5 py-1 text-[length:var(--text-eyebrow)] font-black uppercase"
+          v-if="summary"
+          class="tnum flex items-center gap-1 rounded-[var(--radius-pill)] px-2.5 py-1 text-[length:var(--text-eyebrow)] font-black uppercase"
           style="letter-spacing: var(--text-eyebrow--letter-spacing)"
           :style="{
             background: summary.color,
@@ -103,36 +114,6 @@ const summary = computed(() => {
         >
           <span aria-hidden="true">{{ summary.glyph }}</span>
           <span>{{ Math.abs(summary.avgPct) }}%</span>
-          <span>{{ summary.word }}</span>
-        </span>
-
-        <!-- mini route badge: FROM > TO state codes (shown when expanded) -->
-        <span
-          v-if="open"
-          class="flex items-center gap-1.5 rounded-[var(--radius-pill)] px-2.5 py-1 text-[length:var(--text-eyebrow)] font-bold uppercase"
-          style="
-            letter-spacing: var(--text-eyebrow--letter-spacing);
-            background: var(--color-paper-deep);
-            color: var(--color-ink);
-            border: 1px solid var(--color-contour);
-          "
-        >
-          <span>{{ from.short }}</span>
-          <svg
-            class="h-2.5 w-4"
-            viewBox="0 0 16 10"
-            fill="none"
-            aria-hidden="true"
-          >
-            <path
-              d="M1,8 Q8,-2 15,8"
-              stroke="var(--color-route)"
-              stroke-width="1.4"
-              stroke-linecap="round"
-              stroke-dasharray="1 1.5"
-            />
-          </svg>
-          <span>{{ to.short }}</span>
         </span>
 
         <!-- chevron pill -->
@@ -170,7 +151,7 @@ const summary = computed(() => {
           border-bottom: 1px solid var(--color-contour);
         "
       >
-        <!-- emoji medallion -->
+        <!-- emoji medallion (bundled Fluent-Flat icon; native glyph fallback) -->
         <span
           class="flex h-10 w-10 items-center justify-center text-xl"
           :style="{
@@ -178,8 +159,16 @@ const summary = computed(() => {
             background: 'var(--color-paper-deep)',
             border: '1px solid var(--color-contour)',
           }"
-          >{{ r.emoji }}</span
         >
+          <img
+            v-if="EMOJI_ICON[r.emoji]"
+            :src="EMOJI_ICON[r.emoji]"
+            :alt="r.label"
+            class="h-6 w-6"
+            draggable="false"
+          />
+          <template v-else>{{ r.emoji }}</template>
+        </span>
 
         <!-- label + tiny diff scale -->
         <div class="min-w-0">
@@ -190,8 +179,8 @@ const summary = computed(() => {
             class="mt-1.5 flex items-center gap-2 text-[length:var(--text-eyebrow)] uppercase"
             style="letter-spacing: var(--text-eyebrow--letter-spacing)"
           >
-            <span class="opacity-60">{{ from.short }}</span>
-            <span class="tnum opacity-70">{{ money(r.fromPrice) }}</span>
+            <span class="opacity-75">{{ from.short }}</span>
+            <span class="tnum opacity-80">{{ money(r.fromPrice) }}</span>
           </div>
         </div>
 
@@ -211,14 +200,17 @@ const summary = computed(() => {
           </p>
           <p
             v-if="r.pct !== 0"
-            class="tnum mt-1 text-[length:var(--text-eyebrow)] font-bold uppercase opacity-70"
+            class="mt-1 flex items-center justify-end gap-1 text-[length:var(--text-eyebrow)] font-bold uppercase opacity-70"
             style="letter-spacing: var(--text-eyebrow--letter-spacing)"
+            :aria-label="`${Math.abs(r.pct)}% ${r.cheaper ? 'less' : 'more'} in ${to.short}`"
           >
-            {{ r.cheaper ? "▼" : "▲" }} {{ Math.abs(r.pct) }}%
+            <span aria-hidden="true">{{ r.cheaper ? "▼" : "▲" }}</span>
+            <span class="tnum">{{ Math.abs(r.pct) }}%</span>
+            {{ r.cheaper ? "less" : "more" }}
           </p>
           <p
             v-else
-            class="text-[length:var(--text-eyebrow)] uppercase opacity-50"
+            class="text-[length:var(--text-eyebrow)] uppercase opacity-70"
             style="letter-spacing: var(--text-eyebrow--letter-spacing)"
           >
             same
@@ -230,7 +222,7 @@ const summary = computed(() => {
     <!-- ── Footer note ────────────────────────────────────────── -->
     <p
       v-if="open"
-      class="px-5 py-3 text-[length:var(--text-eyebrow)] uppercase opacity-55"
+      class="px-5 py-3 text-[length:var(--text-eyebrow)] uppercase opacity-70"
       style="
         letter-spacing: var(--text-eyebrow--letter-spacing);
         background: var(--color-paper-deep);

@@ -1,21 +1,46 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import type { Metro, ParityResult } from "../types";
+import {
+  formatPayFromAnnual,
+  unitSuffix,
+  type PayPeriod,
+} from "../engines/pay";
 
-const props = defineProps<{ from: Metro; to: Metro; result: ParityResult }>();
+const props = defineProps<{
+  from: Metro;
+  to: Metro;
+  result: ParityResult;
+  period: PayPeriod;
+  hoursPerWeek: number;
+}>();
 
+// result figures are canonical annual; render them in the chosen period.
 const money = (n: number) =>
-  n.toLocaleString("en-US", {
-    style: "currency",
-    currency: "USD",
-    maximumFractionDigits: 0,
-  });
+  formatPayFromAnnual(n, props.period, props.hoursPerWeek);
+const suffix = computed(() => unitSuffix(props.period));
 const cheaper = computed(() => props.result.delta < 0);
 const pctText = computed(
   () => `${Math.abs(Math.round(props.result.pct * 100))}%`,
 );
 const fromState = computed(() => props.from.states[0] ?? "—");
 const toState = computed(() => props.to.states[0] ?? "—");
+
+// The "other unit" equivalent of the hero number, so an hourly result also
+// shows its yearly figure (and vice-versa). result.* is canonical annual.
+const equivPeriod = computed<PayPeriod>(() =>
+  props.period === "hourly" ? "annual" : "hourly",
+);
+const equivValue = computed(() =>
+  formatPayFromAnnual(
+    props.result.requiredSalary,
+    equivPeriod.value,
+    props.hoursPerWeek,
+  ),
+);
+const equivWord = computed(() =>
+  props.period === "hourly" ? "a year" : "an hour",
+);
 </script>
 
 <template>
@@ -58,7 +83,7 @@ const toState = computed(() => props.to.states[0] ?? "—");
       <div class="flex items-center gap-3">
         <div class="flex min-w-0 flex-col">
           <span
-            class="text-[length:var(--text-eyebrow)] uppercase opacity-60"
+            class="text-[length:var(--text-eyebrow)] uppercase opacity-70"
             style="letter-spacing: var(--text-eyebrow--letter-spacing)"
             >From</span
           >
@@ -67,35 +92,48 @@ const toState = computed(() => props.to.states[0] ?? "—");
           }}</span>
         </div>
 
-        <!-- the brand motif: a low arc with a route dot mid-air -->
-        <svg
-          class="h-7 flex-1"
-          viewBox="0 0 100 28"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path
-            d="M2,24 Q50,-8 98,24"
-            fill="none"
-            stroke="var(--color-route)"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-dasharray="1.5 4"
+        <!-- the brand motif: a low arc anchored by the From/To pins -->
+        <div class="relative h-7 flex-1">
+          <svg
+            class="absolute inset-0 h-full w-full"
+            viewBox="0 0 100 28"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="rt-slab" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="var(--color-route-from)" />
+                <stop offset="100%" stop-color="var(--color-route-to)" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M2,24 Q50,-8 98,24"
+              fill="none"
+              stroke="url(#rt-slab)"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-dasharray="1.5 4"
+            />
+          </svg>
+          <img
+            src="/emoji/from.svg"
+            alt=""
+            draggable="false"
+            class="pointer-events-none absolute h-4 w-4"
+            style="left: 2%; top: 24px; transform: translate(-50%, -86%)"
           />
-          <circle cx="2" cy="24" r="3" fill="var(--color-route)" />
-          <circle
-            cx="98"
-            cy="24"
-            r="3"
-            fill="var(--color-on-dark)"
-            stroke="var(--color-route)"
-            stroke-width="2"
+          <img
+            src="/emoji/to.svg"
+            alt=""
+            draggable="false"
+            class="pointer-events-none absolute h-4 w-4"
+            style="left: 98%; top: 24px; transform: translate(-50%, -86%)"
           />
-        </svg>
+        </div>
 
         <div class="flex min-w-0 flex-col items-end">
           <span
-            class="text-[length:var(--text-eyebrow)] uppercase opacity-60"
+            class="text-[length:var(--text-eyebrow)] uppercase opacity-70"
             style="letter-spacing: var(--text-eyebrow--letter-spacing)"
             >To</span
           >
@@ -114,9 +152,9 @@ const toState = computed(() => props.to.states[0] ?? "—");
         style="letter-spacing: var(--text-eyebrow--letter-spacing)"
       >
         To live like
-        <span class="tnum font-bold opacity-100">{{
-          money(result.fromSalary)
-        }}</span>
+        <span class="tnum font-bold opacity-100"
+          >{{ money(result.fromSalary) }}{{ suffix }}</span
+        >
         in {{ from.short }}, {{ fromState }}
       </p>
 
@@ -135,11 +173,24 @@ const toState = computed(() => props.to.states[0] ?? "—");
           letter-spacing: var(--text-hero--letter-spacing);
         "
       >
-        {{ money(result.requiredSalary) }}
+        {{ money(result.requiredSalary)
+        }}<span
+          v-if="suffix"
+          class="font-bold opacity-60"
+          style="font-size: 0.32em"
+          >{{ suffix }}</span
+        >
       </p>
 
       <p class="mt-2 text-[length:var(--text-lede)] opacity-90">
         in <span class="font-bold">{{ to.short }}, {{ toState }}</span>
+      </p>
+
+      <!-- the same number expressed the other way (hourly ⇄ yearly) -->
+      <p class="mt-1.5 text-[length:var(--text-meta)] opacity-60">
+        ≈ <span class="tnum font-semibold opacity-90">{{ equivValue }}</span>
+        {{ equivWord }}
+        <span class="opacity-75">· {{ hoursPerWeek }} hrs/wk</span>
       </p>
 
       <!-- ── Delta pill ─────────────────────────────────────────── -->
@@ -155,7 +206,9 @@ const toState = computed(() => props.to.states[0] ?? "—");
           }"
         >
           <span aria-hidden="true">{{ cheaper ? "▼" : "▲" }}</span>
-          <span class="tnum">{{ money(Math.abs(result.delta)) }}</span>
+          <span class="tnum"
+            >{{ money(Math.abs(result.delta)) }}{{ suffix }}</span
+          >
           <span class="opacity-80">·</span>
           <span class="tnum">{{ pctText }}</span>
           <span>{{ cheaper ? "cheaper" : "pricier" }}</span>
@@ -164,7 +217,7 @@ const toState = computed(() => props.to.states[0] ?? "—");
 
       <!-- ── Atlas seal: tiny meta in the corner, shareable feel ── -->
       <div
-        class="mt-6 flex items-center justify-between text-[length:var(--text-eyebrow)] uppercase opacity-50"
+        class="mt-6 flex items-center justify-between text-[length:var(--text-eyebrow)] uppercase opacity-65"
         style="letter-spacing: var(--text-eyebrow--letter-spacing)"
       >
         <span>Elsewhere · Parity Index</span>

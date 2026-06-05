@@ -7,35 +7,44 @@
      · surface-dark / on-dark — DO NOT flip (the confident slab + pill nav
        stay dark in both modes; that's the locked aesthetic)               */
 
-  /* OKLCH: accents faithful; neutrals unified to a warm hue (74) at low
-     chroma so surfaces read cohesively warm and edges don't go garish. */
-  --color-paper: oklch(0.975 0.006 74); /* card surface — lifts above canvas */
+  /* OKLCH — "midnight / vibrant violet" atlas: cool indigo-slate neutrals
+     with a saturated violet-magenta accent (the route motif). Bold and
+     luminous, not a restrained single hue. Deltas stay green / red. */
+  --color-paper: oklch(
+    0.99 0.003 250
+  ); /* card surface — near-white, floats crisply */
   --color-canvas: oklch(
-    0.94 0.009 74
-  ); /* page background — receded for depth */
-  --color-paper-deep: oklch(0.937 0.006 74); /* inset surface / hover */
-  --color-ink: oklch(0.226 0.01 74); /* primary text + flippable accents */
-  --color-ink-soft: oklch(0.3 0.01 74); /* secondary text */
+    0.915 0.007 250
+  ); /* page background — receded cool slate so sheets pop off it */
+  --color-paper-deep: oklch(0.945 0.005 250); /* inset surface / hover */
+  --color-ink: oklch(0.24 0.014 250); /* primary text + flippable accents */
+  --color-ink-soft: oklch(0.35 0.016 250); /* secondary text */
 
   /* always-dark slab + pill nav surfaces (don't flip) */
-  --color-surface-dark: oklch(0.226 0.01 74);
-  --color-surface-dark-soft: oklch(0.3 0.01 74);
-  --color-on-dark: oklch(0.97 0.006 74);
+  --color-surface-dark: oklch(0.235 0.016 250);
+  --color-surface-dark-soft: oklch(0.31 0.018 250);
+  --color-on-dark: oklch(0.97 0.004 250);
 
-  --color-terrain: oklch(0.535 0.098 149.9); /* terrain green */
-  --color-terrain-soft: oklch(0.892 0.028 150.4); /* terrain wash */
-  --color-water: oklch(0.532 0.121 251.5); /* water blue */
-  --color-water-soft: oklch(0.913 0.024 248.1); /* water wash */
+  --color-terrain: oklch(0.52 0.09 152); /* terrain green (washes) */
+  --color-terrain-soft: oklch(0.9 0.02 152); /* terrain wash */
+  --color-water: oklch(0.52 0.1 248); /* water blue */
+  --color-water-soft: oklch(0.92 0.018 248); /* water wash */
   --color-route: oklch(
-    0.651 0.168 43.7
-  ); /* highway-sign warm — the route motif */
-  --color-route-soft: oklch(0.911 0.039 59.8); /* route wash */
-  --color-contour: oklch(0.864 0.01 74); /* contour linework */
+    0.58 0.205 352
+  ); /* hot pink-magenta — solid accent (text/$/focus) */
+  --color-route-from: oklch(0.56 0.21 300); /* gradient stop — violet */
+  --color-route-to: oklch(0.62 0.23 354); /* gradient stop — hot pink */
+  --color-route-soft: oklch(0.94 0.05 340); /* pink wash */
+  --color-contour: oklch(0.87 0.005 250); /* contour linework */
   --color-contour-ink: oklch(
-    0.756 0.01 74
+    0.75 0.008 250
   ); /* darker contour for borders/dividers */
-  --color-cheaper: oklch(0.567 0.113 157); /* delta positive (cheaper) */
-  --color-pricier: oklch(0.561 0.164 32.3); /* delta negative (pricier) */
+  --color-cheaper: oklch(
+    0.57 0.12 150
+  ); /* delta positive (cheaper) — grassier */
+  --color-pricier: oklch(
+    0.55 0.17 28
+  ); /* delta negative (pricier) — clear red */
 
   /* shadow rgb base — overrides in dark mode so shadows read on dark canvas */
   --shadow-base: 26, 29, 26;
@@ -74,11 +83,13 @@
 
   /* ── Elevation (use --shadow-base so dark mode shadows can deepen) ─── */
   --shadow-sheet:
-    0 1px 0 rgba(var(--shadow-base), 0.04),
-    0 8px 24px -10px rgba(var(--shadow-base), 0.18);
+    0 1px 2px -1px rgba(var(--shadow-base), 0.1),
+    0 8px 20px -8px rgba(var(--shadow-base), 0.18),
+    0 16px 36px -16px rgba(var(--shadow-base), 0.12);
   --shadow-sheet-lifted:
-    0 2px 0 rgba(var(--shadow-base), 0.05),
-    0 18px 38px -16px rgba(var(--shadow-base), 0.28);
+    0 2px 4px -1px rgba(var(--shadow-base), 0.14),
+    0 14px 30px -10px rgba(var(--shadow-base), 0.26),
+    0 28px 56px -20px rgba(var(--shadow-base), 0.18);
   --shadow-slab:
     0 1px 0 rgba(255, 255, 255, 0.04) inset,
     0 22px 44px -16px rgba(var(--shadow-base), 0.55);
@@ -91,15 +102,15 @@
   --space-thumb: 5.5rem;
 
   /* ── Fonts ──────────────────────────────────────────────────────
-     Interstate-signage type system:
-     · display = Overpass (Highway-Gothic lineage — the route-orange in type)
-     · body    = Public Sans (US government design-system face; gov-data trust)
-     · numeric = Overpass Mono (tabular figures for the hero number + ticks)  */
+     One family — Geist (Tailwind-Plus-adjacent clean grotesque).
+     Hierarchy comes from weight + size; numbers use Geist's TABULAR
+     figures (tnum) so columns + the hero number stay aligned.  */
   --font-display:
-    "Overpass Variable", "Overpass", ui-sans-serif, system-ui, sans-serif;
+    "Geist Variable", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-sans:
-    "Public Sans Variable", "Public Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-numeric: "Overpass Mono", ui-monospace, "SF Mono", monospace;
+    "Geist Variable", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-numeric:
+    "Geist Variable", ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
 
 /* ─────────────────────────────────────────────────────────────── */
@@ -109,28 +120,32 @@
 /* ─────────────────────────────────────────────────────────────── */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-canvas: oklch(0.154 0.008 74); /* page bg — deepest */
-    --color-paper: oklch(0.212 0.01 74); /* card surface, lifted above canvas */
-    --color-paper-deep: oklch(0.254 0.01 74); /* inset surface */
-    --color-ink: oklch(0.928 0.006 74); /* primary text — paper-cream */
-    --color-ink-soft: oklch(0.809 0.01 74);
+    --color-canvas: oklch(0.16 0.035 275); /* page bg — midnight indigo navy */
+    --color-paper: oklch(
+      0.215 0.028 272
+    ); /* card surface, lifted above canvas */
+    --color-paper-deep: oklch(0.258 0.026 272); /* inset surface */
+    --color-ink: oklch(0.94 0.01 285); /* primary text — cool paper */
+    --color-ink-soft: oklch(0.8 0.014 285);
 
     /* slab + nav stay confident-dark; deepen them so they still read
        as the darkest surfaces against the dark canvas */
-    --color-surface-dark: oklch(0.125 0.008 74);
-    --color-surface-dark-soft: oklch(0.206 0.01 74);
-    --color-on-dark: oklch(0.97 0.006 74);
+    --color-surface-dark: oklch(0.125 0.03 273);
+    --color-surface-dark-soft: oklch(0.205 0.028 272);
+    --color-on-dark: oklch(0.97 0.006 285);
 
-    --color-terrain: oklch(0.669 0.109 150.9);
-    --color-terrain-soft: oklch(0.261 0.024 159.1);
-    --color-water: oklch(0.679 0.11 246.4);
-    --color-water-soft: oklch(0.253 0.05 260.6);
-    --color-route: oklch(0.732 0.147 50.7);
-    --color-route-soft: oklch(0.268 0.051 44.2);
-    --color-contour: oklch(0.314 0.01 74);
-    --color-contour-ink: oklch(0.436 0.01 74);
-    --color-cheaper: oklch(0.703 0.127 157.7);
-    --color-pricier: oklch(0.645 0.17 33);
+    --color-terrain: oklch(0.67 0.1 152);
+    --color-terrain-soft: oklch(0.26 0.024 159);
+    --color-water: oklch(0.68 0.1 246);
+    --color-water-soft: oklch(0.253 0.045 260);
+    --color-route: oklch(0.74 0.19 352); /* hot pink, lifted for dark */
+    --color-route-from: oklch(0.7 0.19 300); /* violet */
+    --color-route-to: oklch(0.78 0.19 354); /* hot pink */
+    --color-route-soft: oklch(0.34 0.1 340);
+    --color-contour: oklch(0.32 0.022 272);
+    --color-contour-ink: oklch(0.45 0.026 272);
+    --color-cheaper: oklch(0.72 0.13 150);
+    --color-pricier: oklch(0.64 0.17 28);
 
     --shadow-base: 0, 0, 0;
   }
@@ -138,46 +153,50 @@
 
 /* Manual overrides — explicit theme wins over OS preference */
 :root[data-theme="light"] {
-  --color-canvas: oklch(0.94 0.009 74);
-  --color-paper: oklch(0.975 0.006 74);
-  --color-paper-deep: oklch(0.93 0.007 74);
-  --color-ink: oklch(0.226 0.01 74);
-  --color-ink-soft: oklch(0.3 0.01 74);
-  --color-surface-dark: oklch(0.226 0.01 74);
-  --color-surface-dark-soft: oklch(0.3 0.01 74);
-  --color-on-dark: oklch(0.97 0.006 74);
-  --color-terrain: oklch(0.535 0.098 149.9);
-  --color-terrain-soft: oklch(0.892 0.028 150.4);
-  --color-water: oklch(0.532 0.121 251.5);
-  --color-water-soft: oklch(0.913 0.024 248.1);
-  --color-route: oklch(0.651 0.168 43.7);
-  --color-route-soft: oklch(0.911 0.039 59.8);
-  --color-contour: oklch(0.864 0.01 74);
-  --color-contour-ink: oklch(0.756 0.01 74);
-  --color-cheaper: oklch(0.567 0.113 157);
-  --color-pricier: oklch(0.561 0.164 32.3);
+  --color-canvas: oklch(0.915 0.007 250);
+  --color-paper: oklch(0.99 0.003 250);
+  --color-paper-deep: oklch(0.945 0.005 250);
+  --color-ink: oklch(0.24 0.014 250);
+  --color-ink-soft: oklch(0.35 0.016 250);
+  --color-surface-dark: oklch(0.235 0.016 250);
+  --color-surface-dark-soft: oklch(0.31 0.018 250);
+  --color-on-dark: oklch(0.97 0.004 250);
+  --color-terrain: oklch(0.52 0.09 152);
+  --color-terrain-soft: oklch(0.9 0.02 152);
+  --color-water: oklch(0.52 0.1 248);
+  --color-water-soft: oklch(0.92 0.018 248);
+  --color-route: oklch(0.58 0.205 352);
+  --color-route-from: oklch(0.56 0.21 300);
+  --color-route-to: oklch(0.62 0.23 354);
+  --color-route-soft: oklch(0.94 0.05 340);
+  --color-contour: oklch(0.87 0.005 250);
+  --color-contour-ink: oklch(0.75 0.008 250);
+  --color-cheaper: oklch(0.57 0.12 150);
+  --color-pricier: oklch(0.55 0.17 28);
   --shadow-base: 26, 29, 26;
 }
 
 :root[data-theme="dark"] {
-  --color-canvas: oklch(0.154 0.008 74);
-  --color-paper: oklch(0.212 0.01 74);
-  --color-paper-deep: oklch(0.254 0.01 74);
-  --color-ink: oklch(0.928 0.006 74);
-  --color-ink-soft: oklch(0.809 0.01 74);
-  --color-surface-dark: oklch(0.125 0.008 74);
-  --color-surface-dark-soft: oklch(0.206 0.01 74);
-  --color-on-dark: oklch(0.97 0.006 74);
-  --color-terrain: oklch(0.669 0.109 150.9);
-  --color-terrain-soft: oklch(0.261 0.024 159.1);
-  --color-water: oklch(0.679 0.11 246.4);
-  --color-water-soft: oklch(0.253 0.05 260.6);
-  --color-route: oklch(0.732 0.147 50.7);
-  --color-route-soft: oklch(0.268 0.051 44.2);
-  --color-contour: oklch(0.314 0.01 74);
-  --color-contour-ink: oklch(0.436 0.01 74);
-  --color-cheaper: oklch(0.703 0.127 157.7);
-  --color-pricier: oklch(0.645 0.17 33);
+  --color-canvas: oklch(0.16 0.035 275);
+  --color-paper: oklch(0.215 0.028 272);
+  --color-paper-deep: oklch(0.258 0.026 272);
+  --color-ink: oklch(0.94 0.01 285);
+  --color-ink-soft: oklch(0.8 0.014 285);
+  --color-surface-dark: oklch(0.125 0.03 273);
+  --color-surface-dark-soft: oklch(0.205 0.028 272);
+  --color-on-dark: oklch(0.97 0.006 285);
+  --color-terrain: oklch(0.67 0.1 152);
+  --color-terrain-soft: oklch(0.26 0.024 159);
+  --color-water: oklch(0.68 0.1 246);
+  --color-water-soft: oklch(0.253 0.045 260);
+  --color-route: oklch(0.74 0.19 352);
+  --color-route-from: oklch(0.7 0.19 300);
+  --color-route-to: oklch(0.78 0.19 354);
+  --color-route-soft: oklch(0.34 0.1 340);
+  --color-contour: oklch(0.32 0.022 272);
+  --color-contour-ink: oklch(0.45 0.026 272);
+  --color-cheaper: oklch(0.72 0.13 150);
+  --color-pricier: oklch(0.64 0.17 28);
   --shadow-base: 0, 0, 0;
 }
 
@@ -239,16 +258,12 @@ h4,
   text-transform: uppercase;
 }
 
-/* utility: tabular numerics for prices/salaries */
+/* utility: tabular numerics for prices/salaries — Geist tabular figures
+   keep price columns + the hero number aligned without switching family */
 .tnum {
-  font-feature-settings:
-    "tnum" 1,
-    "ss01" 1;
+  font-feature-settings: "tnum" 1;
   font-variant-numeric: tabular-nums;
   font-family: var(--font-numeric);
-  /* Overpass Mono tops out at 700 — forbid faux-bold so heavy numerals
-     stay crisp instead of synthetically smeared */
-  font-synthesis: none;
 }
 
 /* utility: tiny contour rule (for dividers + slab guidelines) */

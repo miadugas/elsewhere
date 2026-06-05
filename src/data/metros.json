@@ -1,212 +1,5813 @@
 [
   {
-    "id": "detroit-mi",
-    "name": "Detroit-Warren-Dearborn, MI",
-    "short": "Detroit",
-    "states": ["MI"],
-    "lat": 42.331,
-    "lng": -83.046,
-    "rpp": {
-      "overall": 94.5,
-      "housing": 80.1,
-      "goods": 97.2,
-      "otherServices": 96.0
-    }
-  },
-  {
-    "id": "austin-tx",
-    "name": "Austin-Round Rock, TX",
-    "short": "Austin",
-    "states": ["TX"],
-    "lat": 30.267,
-    "lng": -97.743,
-    "rpp": {
-      "overall": 103.2,
-      "housing": 112.8,
-      "goods": 98.9,
-      "otherServices": 101.4
-    }
-  },
-  {
-    "id": "nyc-ny",
+    "id": "new-york-ny",
     "name": "New York-Newark-Jersey City, NY-NJ",
     "short": "New York",
-    "states": ["NY", "NJ"],
-    "lat": 40.713,
-    "lng": -74.006,
+    "states": [
+      "NY",
+      "NJ"
+    ],
     "rpp": {
-      "overall": 122.4,
-      "housing": 168.2,
-      "goods": 104.1,
-      "otherServices": 113.0
-    }
+      "overall": 112.6,
+      "goods": 110.3,
+      "housing": 148.6,
+      "otherServices": 105.8
+    },
+    "pop": 19498249
+  },
+  {
+    "id": "los-angeles-ca",
+    "name": "Los Angeles-Long Beach-Anaheim, CA",
+    "short": "Los Angeles",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 113.6,
+      "goods": 106.6,
+      "housing": 170.4,
+      "otherServices": 104.4
+    },
+    "pop": 12799100
   },
   {
     "id": "chicago-il",
-    "name": "Chicago-Naperville-Elgin, IL",
+    "name": "Chicago-Naperville-Elgin, IL-IN",
     "short": "Chicago",
-    "states": ["IL"],
-    "lat": 41.878,
-    "lng": -87.63,
+    "states": [
+      "IL",
+      "IN"
+    ],
     "rpp": {
-      "overall": 106.1,
-      "housing": 118.0,
-      "goods": 99.8,
-      "otherServices": 104.2
-    }
+      "overall": 103.6,
+      "goods": 107.3,
+      "housing": 112.0,
+      "otherServices": 100.5
+    },
+    "pop": 9262825
   },
   {
-    "id": "denver-co",
-    "name": "Denver-Aurora-Lakewood, CO",
-    "short": "Denver",
-    "states": ["CO"],
-    "lat": 39.739,
-    "lng": -104.99,
+    "id": "dallas-tx",
+    "name": "Dallas-Fort Worth-Arlington, TX",
+    "short": "Dallas",
+    "states": [
+      "TX"
+    ],
     "rpp": {
-      "overall": 105.8,
-      "housing": 124.5,
-      "goods": 98.0,
-      "otherServices": 102.9
-    }
+      "overall": 103.1,
+      "goods": 102.8,
+      "housing": 117.9,
+      "otherServices": 99.7
+    },
+    "pop": 8100037
+  },
+  {
+    "id": "houston-tx",
+    "name": "Houston-Pasadena-The Woodlands, TX",
+    "short": "Houston",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 98.6,
+      "goods": 100.6,
+      "housing": 104.5,
+      "otherServices": 95.6
+    },
+    "pop": 7510253
   },
   {
     "id": "atlanta-ga",
-    "name": "Atlanta-Sandy Springs-Alpharetta, GA",
+    "name": "Atlanta-Sandy Springs-Roswell, GA",
     "short": "Atlanta",
-    "states": ["GA"],
-    "lat": 33.749,
-    "lng": -84.388,
+    "states": [
+      "GA"
+    ],
     "rpp": {
-      "overall": 99.0,
-      "housing": 95.3,
-      "goods": 98.4,
-      "otherServices": 100.1
-    }
+      "overall": 100.1,
+      "goods": 100.4,
+      "housing": 111.0,
+      "otherServices": 96.7
+    },
+    "pop": 6307261
+  },
+  {
+    "id": "washington-dc",
+    "name": "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+    "short": "Washington",
+    "states": [
+      "DC",
+      "VA",
+      "MD",
+      "WV"
+    ],
+    "rpp": {
+      "overall": 108.9,
+      "goods": 104.8,
+      "housing": 151.1,
+      "otherServices": 102.3
+    },
+    "pop": 6304975
+  },
+  {
+    "id": "philadelphia-pa",
+    "name": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+    "short": "Philadelphia",
+    "states": [
+      "PA",
+      "NJ",
+      "DE",
+      "MD"
+    ],
+    "rpp": {
+      "overall": 102.6,
+      "goods": 96.8,
+      "housing": 113.1,
+      "otherServices": 103.1
+    },
+    "pop": 6246160
+  },
+  {
+    "id": "miami-fl",
+    "name": "Miami-Fort Lauderdale-West Palm Beach, FL",
+    "short": "Miami",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 114.2,
+      "goods": 103.6,
+      "housing": 155.6,
+      "otherServices": 109.1
+    },
+    "pop": 6183199
   },
   {
     "id": "phoenix-az",
     "name": "Phoenix-Mesa-Chandler, AZ",
     "short": "Phoenix",
-    "states": ["AZ"],
-    "lat": 33.448,
-    "lng": -112.074,
+    "states": [
+      "AZ"
+    ],
     "rpp": {
-      "overall": 100.4,
-      "housing": 102.7,
-      "goods": 99.1,
-      "otherServices": 99.6
-    }
+      "overall": 103.3,
+      "goods": 95.0,
+      "housing": 121.2,
+      "otherServices": 104.0
+    },
+    "pop": 5070110
+  },
+  {
+    "id": "boston-ma",
+    "name": "Boston-Cambridge-Newton, MA-NH",
+    "short": "Boston",
+    "states": [
+      "MA",
+      "NH"
+    ],
+    "rpp": {
+      "overall": 108.3,
+      "goods": 99.7,
+      "housing": 148.4,
+      "otherServices": 103.6
+    },
+    "pop": 4919179
+  },
+  {
+    "id": "riverside-ca",
+    "name": "Riverside-San Bernardino-Ontario, CA",
+    "short": "Riverside",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 106.4,
+      "goods": 101.4,
+      "housing": 129.3,
+      "otherServices": 101.3
+    },
+    "pop": 4688053
+  },
+  {
+    "id": "san-francisco-ca",
+    "name": "San Francisco-Oakland-Fremont, CA",
+    "short": "San Francisco",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 115.6,
+      "goods": 108.5,
+      "housing": 194.7,
+      "otherServices": 106.2
+    },
+    "pop": 4566961
+  },
+  {
+    "id": "detroit-mi",
+    "name": "Detroit-Warren-Dearborn, MI",
+    "short": "Detroit",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 100.3,
+      "goods": 98.8,
+      "housing": 94.7,
+      "otherServices": 102.6
+    },
+    "pop": 4342304
   },
   {
     "id": "seattle-wa",
     "name": "Seattle-Tacoma-Bellevue, WA",
     "short": "Seattle",
-    "states": ["WA"],
-    "lat": 47.606,
-    "lng": -122.332,
+    "states": [
+      "WA"
+    ],
     "rpp": {
-      "overall": 113.6,
-      "housing": 142.0,
-      "goods": 101.2,
-      "otherServices": 108.0
-    }
-  },
-  {
-    "id": "miami-fl",
-    "name": "Miami-Fort Lauderdale-Pompano Beach, FL",
-    "short": "Miami",
-    "states": ["FL"],
-    "lat": 25.762,
-    "lng": -80.192,
-    "rpp": {
-      "overall": 107.7,
-      "housing": 126.4,
-      "goods": 100.0,
-      "otherServices": 104.6
-    }
-  },
-  {
-    "id": "nashville-tn",
-    "name": "Nashville-Davidson-Murfreesboro, TN",
-    "short": "Nashville",
-    "states": ["TN"],
-    "lat": 36.163,
-    "lng": -86.781,
-    "rpp": {
-      "overall": 97.6,
-      "housing": 98.0,
-      "goods": 97.0,
-      "otherServices": 97.8
-    }
+      "overall": 111.1,
+      "goods": 104.0,
+      "housing": 151.3,
+      "otherServices": 106.8
+    },
+    "pop": 4044837
   },
   {
     "id": "minneapolis-mn",
-    "name": "Minneapolis-St. Paul-Bloomington, MN",
+    "name": "Minneapolis-St. Paul-Bloomington, MN-WI",
     "short": "Minneapolis",
-    "states": ["MN"],
-    "lat": 44.978,
-    "lng": -93.265,
+    "states": [
+      "MN",
+      "WI"
+    ],
     "rpp": {
-      "overall": 101.5,
-      "housing": 104.2,
-      "goods": 99.5,
-      "otherServices": 101.0
-    }
+      "overall": 104.8,
+      "goods": 103.1,
+      "housing": 111.8,
+      "otherServices": 104.4
+    },
+    "pop": 3712020
+  },
+  {
+    "id": "tampa-fl",
+    "name": "Tampa-St. Petersburg-Clearwater, FL",
+    "short": "Tampa",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 100.9,
+      "goods": 95.5,
+      "housing": 125.8,
+      "otherServices": 97.6
+    },
+    "pop": 3342963
+  },
+  {
+    "id": "san-diego-ca",
+    "name": "San Diego-Chula Vista-Carlsbad, CA",
+    "short": "San Diego",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 111.9,
+      "goods": 108.0,
+      "housing": 179.3,
+      "otherServices": 99.6
+    },
+    "pop": 3269973
+  },
+  {
+    "id": "denver-co",
+    "name": "Denver-Aurora-Centennial, CO",
+    "short": "Denver",
+    "states": [
+      "CO"
+    ],
+    "rpp": {
+      "overall": 105.8,
+      "goods": 101.0,
+      "housing": 146.9,
+      "otherServices": 99.4
+    },
+    "pop": 3005131
+  },
+  {
+    "id": "baltimore-md",
+    "name": "Baltimore-Columbia-Towson, MD",
+    "short": "Baltimore",
+    "states": [
+      "MD"
+    ],
+    "rpp": {
+      "overall": 104.5,
+      "goods": 102.4,
+      "housing": 118.2,
+      "otherServices": 101.5
+    },
+    "pop": 2834316
+  },
+  {
+    "id": "orlando-fl",
+    "name": "Orlando-Kissimmee-Sanford, FL",
+    "short": "Orlando",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 101.4,
+      "goods": 96.2,
+      "housing": 123.4,
+      "otherServices": 98.9
+    },
+    "pop": 2817933
+  },
+  {
+    "id": "charlotte-nc",
+    "name": "Charlotte-Concord-Gastonia, NC-SC",
+    "short": "Charlotte",
+    "states": [
+      "NC",
+      "SC"
+    ],
+    "rpp": {
+      "overall": 97.3,
+      "goods": 96.6,
+      "housing": 97.6,
+      "otherServices": 98.2
+    },
+    "pop": 2805115
+  },
+  {
+    "id": "st-louis-mo",
+    "name": "St. Louis, MO-IL",
+    "short": "St. Louis",
+    "states": [
+      "MO",
+      "IL"
+    ],
+    "rpp": {
+      "overall": 95.1,
+      "goods": 100.0,
+      "housing": 79.0,
+      "otherServices": 98.6
+    },
+    "pop": 2796999
+  },
+  {
+    "id": "san-antonio-tx",
+    "name": "San Antonio-New Braunfels, TX",
+    "short": "San Antonio",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 94.7,
+      "goods": 93.8,
+      "housing": 94.6,
+      "otherServices": 96.2
+    },
+    "pop": 2703999
   },
   {
     "id": "portland-or",
     "name": "Portland-Vancouver-Hillsboro, OR-WA",
     "short": "Portland",
-    "states": ["OR", "WA"],
-    "lat": 45.515,
-    "lng": -122.679,
+    "states": [
+      "OR",
+      "WA"
+    ],
     "rpp": {
-      "overall": 107.0,
-      "housing": 128.0,
-      "goods": 99.0,
-      "otherServices": 103.5
-    }
+      "overall": 105.4,
+      "goods": 105.2,
+      "housing": 125.1,
+      "otherServices": 100.1
+    },
+    "pop": 2508050
+  },
+  {
+    "id": "austin-tx",
+    "name": "Austin-Round Rock-San Marcos, TX",
+    "short": "Austin",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 98.1,
+      "goods": 93.8,
+      "housing": 120.4,
+      "otherServices": 96.2
+    },
+    "pop": 2473275
+  },
+  {
+    "id": "pittsburgh-pa",
+    "name": "Pittsburgh, PA",
+    "short": "Pittsburgh",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 94.7,
+      "goods": 100.7,
+      "housing": 72.0,
+      "otherServices": 97.7
+    },
+    "pop": 2422725
+  },
+  {
+    "id": "sacramento-ca",
+    "name": "Sacramento-Roseville-Folsom, CA",
+    "short": "Sacramento",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 106.7,
+      "goods": 105.2,
+      "housing": 130.2,
+      "otherServices": 100.3
+    },
+    "pop": 2420608
+  },
+  {
+    "id": "las-vegas-nv",
+    "name": "Las Vegas-Henderson-North Las Vegas, NV",
+    "short": "Las Vegas",
+    "states": [
+      "NV"
+    ],
+    "rpp": {
+      "overall": 100.2,
+      "goods": 96.3,
+      "housing": 115.5,
+      "otherServices": 98.7
+    },
+    "pop": 2336573
+  },
+  {
+    "id": "cincinnati-oh",
+    "name": "Cincinnati, OH-KY-IN",
+    "short": "Cincinnati",
+    "states": [
+      "OH",
+      "KY",
+      "IN"
+    ],
+    "rpp": {
+      "overall": 95.4,
+      "goods": 93.8,
+      "housing": 87.6,
+      "otherServices": 99.0
+    },
+    "pop": 2271479
+  },
+  {
+    "id": "kansas-city-mo",
+    "name": "Kansas City, MO-KS",
+    "short": "Kansas City",
+    "states": [
+      "MO",
+      "KS"
+    ],
+    "rpp": {
+      "overall": 92.5,
+      "goods": 94.1,
+      "housing": 86.6,
+      "otherServices": 93.4
+    },
+    "pop": 2221343
   },
   {
     "id": "columbus-oh",
     "name": "Columbus, OH",
     "short": "Columbus",
-    "states": ["OH"],
-    "lat": 39.961,
-    "lng": -82.999,
+    "states": [
+      "OH"
+    ],
     "rpp": {
-      "overall": 92.8,
-      "housing": 82.0,
-      "goods": 96.5,
-      "otherServices": 94.0
-    }
+      "overall": 95.5,
+      "goods": 93.6,
+      "housing": 87.9,
+      "otherServices": 98.9
+    },
+    "pop": 2180271
+  },
+  {
+    "id": "cleveland-oh",
+    "name": "Cleveland, OH",
+    "short": "Cleveland",
+    "states": [
+      "OH"
+    ],
+    "rpp": {
+      "overall": 93.9,
+      "goods": 93.6,
+      "housing": 79.4,
+      "otherServices": 98.9
+    },
+    "pop": 2158932
+  },
+  {
+    "id": "indianapolis-in",
+    "name": "Indianapolis-Carmel-Greenwood, IN",
+    "short": "Indianapolis",
+    "states": [
+      "IN"
+    ],
+    "rpp": {
+      "overall": 95.7,
+      "goods": 94.3,
+      "housing": 88.9,
+      "otherServices": 99.1
+    },
+    "pop": 2138468
+  },
+  {
+    "id": "nashville-tn",
+    "name": "Nashville-Davidson--Murfreesboro--Franklin, TN",
+    "short": "Nashville",
+    "states": [
+      "TN"
+    ],
+    "rpp": {
+      "overall": 96.3,
+      "goods": 96.2,
+      "housing": 104.6,
+      "otherServices": 95.1
+    },
+    "pop": 2102573
+  },
+  {
+    "id": "san-jose-ca",
+    "name": "San Jose-Sunnyvale-Santa Clara, CA",
+    "short": "San Jose",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 110.4,
+      "goods": 105.2,
+      "housing": 211.9,
+      "otherServices": 100.3
+    },
+    "pop": 1945767
+  },
+  {
+    "id": "virginia-beach-va",
+    "name": "Virginia Beach-Chesapeake-Norfolk, VA-NC",
+    "short": "Virginia Beach",
+    "states": [
+      "VA",
+      "NC"
+    ],
+    "rpp": {
+      "overall": 97.9,
+      "goods": 96.8,
+      "housing": 99.8,
+      "otherServices": 98.6
+    },
+    "pop": 1787169
+  },
+  {
+    "id": "jacksonville-fl",
+    "name": "Jacksonville, FL",
+    "short": "Jacksonville",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 99.5,
+      "goods": 96.2,
+      "housing": 109.8,
+      "otherServices": 98.9
+    },
+    "pop": 1713240
+  },
+  {
+    "id": "providence-ri",
+    "name": "Providence-Warwick, RI-MA",
+    "short": "Providence",
+    "states": [
+      "RI",
+      "MA"
+    ],
+    "rpp": {
+      "overall": 101.8,
+      "goods": 97.1,
+      "housing": 103.9,
+      "otherServices": 102.3
+    },
+    "pop": 1677803
+  },
+  {
+    "id": "milwaukee-wi",
+    "name": "Milwaukee-Waukesha, WI",
+    "short": "Milwaukee",
+    "states": [
+      "WI"
+    ],
+    "rpp": {
+      "overall": 96.9,
+      "goods": 93.8,
+      "housing": 97.1,
+      "otherServices": 99.4
+    },
+    "pop": 1560424
   },
   {
     "id": "raleigh-nc",
     "name": "Raleigh-Cary, NC",
     "short": "Raleigh",
-    "states": ["NC"],
-    "lat": 35.78,
-    "lng": -78.639,
+    "states": [
+      "NC"
+    ],
     "rpp": {
       "overall": 98.2,
-      "housing": 96.0,
-      "goods": 98.0,
-      "otherServices": 99.0
-    }
+      "goods": 96.6,
+      "housing": 103.5,
+      "otherServices": 98.2
+    },
+    "pop": 1509231
   },
   {
-    "id": "lasvegas-nv",
-    "name": "Las Vegas-Henderson-Paradise, NV",
-    "short": "Las Vegas",
-    "states": ["NV"],
-    "lat": 36.17,
-    "lng": -115.14,
+    "id": "oklahoma-city-ok",
+    "name": "Oklahoma City, OK",
+    "short": "Oklahoma City",
+    "states": [
+      "OK"
+    ],
     "rpp": {
-      "overall": 98.6,
-      "housing": 100.5,
-      "goods": 98.2,
-      "otherServices": 98.0
-    }
+      "overall": 90.4,
+      "goods": 93.8,
+      "housing": 73.9,
+      "otherServices": 95.5
+    },
+    "pop": 1477926
+  },
+  {
+    "id": "louisville-jefferson-county-ky",
+    "name": "Louisville/Jefferson County, KY-IN",
+    "short": "Louisville/Jefferson County",
+    "states": [
+      "KY",
+      "IN"
+    ],
+    "rpp": {
+      "overall": 93.1,
+      "goods": 96.2,
+      "housing": 78.6,
+      "otherServices": 96.8
+    },
+    "pop": 1365557
+  },
+  {
+    "id": "richmond-va",
+    "name": "Richmond, VA",
+    "short": "Richmond",
+    "states": [
+      "VA"
+    ],
+    "rpp": {
+      "overall": 97.9,
+      "goods": 96.8,
+      "housing": 99.1,
+      "otherServices": 98.6
+    },
+    "pop": 1349732
+  },
+  {
+    "id": "memphis-tn",
+    "name": "Memphis, TN-MS-AR",
+    "short": "Memphis",
+    "states": [
+      "TN",
+      "MS",
+      "AR"
+    ],
+    "rpp": {
+      "overall": 92.2,
+      "goods": 96.2,
+      "housing": 79.8,
+      "otherServices": 95.4
+    },
+    "pop": 1335674
+  },
+  {
+    "id": "salt-lake-city-ut",
+    "name": "Salt Lake City-Murray, UT",
+    "short": "Salt Lake City",
+    "states": [
+      "UT"
+    ],
+    "rpp": {
+      "overall": 100.9,
+      "goods": 96.4,
+      "housing": 123.3,
+      "otherServices": 99.0
+    },
+    "pop": 1267864
+  },
+  {
+    "id": "birmingham-al",
+    "name": "Birmingham, AL",
+    "short": "Birmingham",
+    "states": [
+      "AL"
+    ],
+    "rpp": {
+      "overall": 91.6,
+      "goods": 96.4,
+      "housing": 71.9,
+      "otherServices": 96.7
+    },
+    "pop": 1184290
+  },
+  {
+    "id": "fresno-ca",
+    "name": "Fresno, CA",
+    "short": "Fresno",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 102.2,
+      "goods": 105.2,
+      "housing": 95.7,
+      "otherServices": 100.3
+    },
+    "pop": 1180020
+  },
+  {
+    "id": "grand-rapids-mi",
+    "name": "Grand Rapids-Wyoming-Kentwood, MI",
+    "short": "Grand Rapids",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 95.5,
+      "goods": 93.7,
+      "housing": 86.6,
+      "otherServices": 99.6
+    },
+    "pop": 1162950
+  },
+  {
+    "id": "buffalo-ny",
+    "name": "Buffalo-Cheektowaga, NY",
+    "short": "Buffalo",
+    "states": [
+      "NY"
+    ],
+    "rpp": {
+      "overall": 95.8,
+      "goods": 99.7,
+      "housing": 81.0,
+      "otherServices": 97.8
+    },
+    "pop": 1155604
+  },
+  {
+    "id": "hartford-ct",
+    "name": "Hartford-West Hartford-East Hartford, CT",
+    "short": "Hartford",
+    "states": [
+      "CT"
+    ],
+    "rpp": {
+      "overall": 102.7,
+      "goods": 97.3,
+      "housing": 110.2,
+      "otherServices": 102.7
+    },
+    "pop": 1151543
+  },
+  {
+    "id": "tucson-az",
+    "name": "Tucson, AZ",
+    "short": "Tucson",
+    "states": [
+      "AZ"
+    ],
+    "rpp": {
+      "overall": 96.9,
+      "goods": 96.2,
+      "housing": 91.8,
+      "otherServices": 99.8
+    },
+    "pop": 1063162
+  },
+  {
+    "id": "rochester-ny",
+    "name": "Rochester, NY",
+    "short": "Rochester",
+    "states": [
+      "NY"
+    ],
+    "rpp": {
+      "overall": 97.0,
+      "goods": 99.7,
+      "housing": 87.5,
+      "otherServices": 97.8
+    },
+    "pop": 1052087
+  },
+  {
+    "id": "tulsa-ok",
+    "name": "Tulsa, OK",
+    "short": "Tulsa",
+    "states": [
+      "OK"
+    ],
+    "rpp": {
+      "overall": 89.2,
+      "goods": 93.8,
+      "housing": 68.2,
+      "otherServices": 95.5
+    },
+    "pop": 1044757
+  },
+  {
+    "id": "urban-honolulu-hi",
+    "name": "Urban Honolulu, HI",
+    "short": "Urban Honolulu",
+    "states": [
+      "HI"
+    ],
+    "rpp": {
+      "overall": 111.0,
+      "goods": 111.6,
+      "housing": 135.5,
+      "otherServices": 102.9
+    },
+    "pop": 989408
+  },
+  {
+    "id": "omaha-ne",
+    "name": "Omaha, NE-IA",
+    "short": "Omaha",
+    "states": [
+      "NE",
+      "IA"
+    ],
+    "rpp": {
+      "overall": 91.9,
+      "goods": 94.1,
+      "housing": 86.4,
+      "otherServices": 93.0
+    },
+    "pop": 983969
+  },
+  {
+    "id": "greenville-sc",
+    "name": "Greenville-Anderson-Greer, SC",
+    "short": "Greenville",
+    "states": [
+      "SC"
+    ],
+    "rpp": {
+      "overall": 93.3,
+      "goods": 96.3,
+      "housing": 76.8,
+      "otherServices": 98.3
+    },
+    "pop": 975480
+  },
+  {
+    "id": "new-orleans-la",
+    "name": "New Orleans-Metairie, LA",
+    "short": "New Orleans",
+    "states": [
+      "LA"
+    ],
+    "rpp": {
+      "overall": 92.6,
+      "goods": 93.7,
+      "housing": 86.0,
+      "otherServices": 95.7
+    },
+    "pop": 962165
+  },
+  {
+    "id": "knoxville-tn",
+    "name": "Knoxville, TN",
+    "short": "Knoxville",
+    "states": [
+      "TN"
+    ],
+    "rpp": {
+      "overall": 92.6,
+      "goods": 96.2,
+      "housing": 82.8,
+      "otherServices": 95.1
+    },
+    "pop": 946264
+  },
+  {
+    "id": "albuquerque-nm",
+    "name": "Albuquerque, NM",
+    "short": "Albuquerque",
+    "states": [
+      "NM"
+    ],
+    "rpp": {
+      "overall": 95.5,
+      "goods": 96.1,
+      "housing": 89.2,
+      "otherServices": 98.5
+    },
+    "pop": 922296
+  },
+  {
+    "id": "bakersfield-ca",
+    "name": "Bakersfield-Delano, CA",
+    "short": "Bakersfield",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 100.9,
+      "goods": 105.2,
+      "housing": 90.3,
+      "otherServices": 100.3
+    },
+    "pop": 913820
+  },
+  {
+    "id": "north-port-fl",
+    "name": "North Port-Bradenton-Sarasota, FL",
+    "short": "North Port",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 102.4,
+      "goods": 96.2,
+      "housing": 128.0,
+      "otherServices": 98.9
+    },
+    "pop": 910108
+  },
+  {
+    "id": "albany-ny",
+    "name": "Albany-Schenectady-Troy, NY",
+    "short": "Albany",
+    "states": [
+      "NY"
+    ],
+    "rpp": {
+      "overall": 99.6,
+      "goods": 99.7,
+      "housing": 102.6,
+      "otherServices": 97.8
+    },
+    "pop": 904682
+  },
+  {
+    "id": "mcallen-tx",
+    "name": "McAllen-Edinburg-Mission, TX",
+    "short": "McAllen",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 85.9,
+      "goods": 93.8,
+      "housing": 55.9,
+      "otherServices": 96.2
+    },
+    "pop": 898471
+  },
+  {
+    "id": "baton-rouge-la",
+    "name": "Baton Rouge, LA",
+    "short": "Baton Rouge",
+    "states": [
+      "LA"
+    ],
+    "rpp": {
+      "overall": 90.8,
+      "goods": 93.7,
+      "housing": 74.2,
+      "otherServices": 95.7
+    },
+    "pop": 873661
+  },
+  {
+    "id": "allentown-pa",
+    "name": "Allentown-Bethlehem-Easton, PA-NJ",
+    "short": "Allentown",
+    "states": [
+      "PA",
+      "NJ"
+    ],
+    "rpp": {
+      "overall": 100.0,
+      "goods": 100.6,
+      "housing": 105.5,
+      "otherServices": 97.8
+    },
+    "pop": 873555
+  },
+  {
+    "id": "el-paso-tx",
+    "name": "El Paso, TX",
+    "short": "El Paso",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 89.9,
+      "goods": 93.8,
+      "housing": 71.2,
+      "otherServices": 96.2
+    },
+    "pop": 873331
+  },
+  {
+    "id": "worcester-ma",
+    "name": "Worcester, MA",
+    "short": "Worcester",
+    "states": [
+      "MA"
+    ],
+    "rpp": {
+      "overall": 102.5,
+      "goods": 97.0,
+      "housing": 113.0,
+      "otherServices": 101.2
+    },
+    "pop": 866866
+  },
+  {
+    "id": "columbia-sc",
+    "name": "Columbia, SC",
+    "short": "Columbia",
+    "states": [
+      "SC"
+    ],
+    "rpp": {
+      "overall": 93.7,
+      "goods": 96.3,
+      "housing": 79.5,
+      "otherServices": 98.3
+    },
+    "pop": 858302
+  },
+  {
+    "id": "charleston-sc",
+    "name": "Charleston-North Charleston, SC",
+    "short": "Charleston",
+    "states": [
+      "SC"
+    ],
+    "rpp": {
+      "overall": 101.0,
+      "goods": 96.3,
+      "housing": 119.8,
+      "otherServices": 98.3
+    },
+    "pop": 849417
+  },
+  {
+    "id": "cape-coral-fl",
+    "name": "Cape Coral-Fort Myers, FL",
+    "short": "Cape Coral",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 102.3,
+      "goods": 96.2,
+      "housing": 125.1,
+      "otherServices": 98.9
+    },
+    "pop": 834573
+  },
+  {
+    "id": "oxnard-ca",
+    "name": "Oxnard-Thousand Oaks-Ventura, CA",
+    "short": "Oxnard",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 110.5,
+      "goods": 105.2,
+      "housing": 171.1,
+      "otherServices": 100.3
+    },
+    "pop": 829590
+  },
+  {
+    "id": "boise-city-id",
+    "name": "Boise City, ID",
+    "short": "Boise City",
+    "states": [
+      "ID"
+    ],
+    "rpp": {
+      "overall": 98.4,
+      "goods": 96.2,
+      "housing": 105.6,
+      "otherServices": 99.0
+    },
+    "pop": 824657
+  },
+  {
+    "id": "lakeland-fl",
+    "name": "Lakeland-Winter Haven, FL",
+    "short": "Lakeland",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 97.1,
+      "goods": 96.2,
+      "housing": 95.9,
+      "otherServices": 98.9
+    },
+    "pop": 818330
+  },
+  {
+    "id": "dayton-oh",
+    "name": "Dayton-Kettering-Beavercreek, OH",
+    "short": "Dayton",
+    "states": [
+      "OH"
+    ],
+    "rpp": {
+      "overall": 92.7,
+      "goods": 93.6,
+      "housing": 72.7,
+      "otherServices": 98.9
+    },
+    "pop": 814363
+  },
+  {
+    "id": "stockton-ca",
+    "name": "Stockton-Lodi, CA",
+    "short": "Stockton",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 105.1,
+      "goods": 105.2,
+      "housing": 115.6,
+      "otherServices": 100.3
+    },
+    "pop": 800965
+  },
+  {
+    "id": "greensboro-nc",
+    "name": "Greensboro-High Point, NC",
+    "short": "Greensboro",
+    "states": [
+      "NC"
+    ],
+    "rpp": {
+      "overall": 92.9,
+      "goods": 96.6,
+      "housing": 74.5,
+      "otherServices": 98.2
+    },
+    "pop": 789842
+  },
+  {
+    "id": "colorado-springs-co",
+    "name": "Colorado Springs, CO",
+    "short": "Colorado Springs",
+    "states": [
+      "CO"
+    ],
+    "rpp": {
+      "overall": 100.7,
+      "goods": 96.1,
+      "housing": 116.2,
+      "otherServices": 99.8
+    },
+    "pop": 768832
+  },
+  {
+    "id": "little-rock-ar",
+    "name": "Little Rock-North Little Rock-Conway, AR",
+    "short": "Little Rock",
+    "states": [
+      "AR"
+    ],
+    "rpp": {
+      "overall": 89.4,
+      "goods": 93.6,
+      "housing": 68.3,
+      "otherServices": 95.3
+    },
+    "pop": 764045
+  },
+  {
+    "id": "des-moines-ia",
+    "name": "Des Moines-West Des Moines, IA",
+    "short": "Des Moines",
+    "states": [
+      "IA"
+    ],
+    "rpp": {
+      "overall": 91.7,
+      "goods": 93.7,
+      "housing": 84.7,
+      "otherServices": 92.9
+    },
+    "pop": 737164
+  },
+  {
+    "id": "provo-ut",
+    "name": "Provo-Orem-Lehi, UT",
+    "short": "Provo",
+    "states": [
+      "UT"
+    ],
+    "rpp": {
+      "overall": 98.2,
+      "goods": 96.4,
+      "housing": 104.1,
+      "otherServices": 99.0
+    },
+    "pop": 732197
+  },
+  {
+    "id": "deltona-fl",
+    "name": "Deltona-Daytona Beach-Ormond Beach, FL",
+    "short": "Deltona",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 99.4,
+      "goods": 96.2,
+      "housing": 108.4,
+      "otherServices": 98.9
+    },
+    "pop": 721796
+  },
+  {
+    "id": "kiryas-joel-ny",
+    "name": "Kiryas Joel-Poughkeepsie-Newburgh, NY",
+    "short": "Kiryas Joel",
+    "states": [
+      "NY"
+    ],
+    "rpp": {
+      "overall": 109.4,
+      "goods": 110.3,
+      "housing": 115.8,
+      "otherServices": 106.5
+    },
+    "pop": 704620
+  },
+  {
+    "id": "akron-oh",
+    "name": "Akron, OH",
+    "short": "Akron",
+    "states": [
+      "OH"
+    ],
+    "rpp": {
+      "overall": 93.4,
+      "goods": 93.6,
+      "housing": 76.8,
+      "otherServices": 98.9
+    },
+    "pop": 698398
+  },
+  {
+    "id": "winston-nc",
+    "name": "Winston-Salem, NC",
+    "short": "Winston",
+    "states": [
+      "NC"
+    ],
+    "rpp": {
+      "overall": 92.0,
+      "goods": 96.6,
+      "housing": 71.4,
+      "otherServices": 98.2
+    },
+    "pop": 695630
+  },
+  {
+    "id": "madison-wi",
+    "name": "Madison, WI",
+    "short": "Madison",
+    "states": [
+      "WI"
+    ],
+    "rpp": {
+      "overall": 97.3,
+      "goods": 93.8,
+      "housing": 99.7,
+      "otherServices": 99.4
+    },
+    "pop": 694345
+  },
+  {
+    "id": "ogden-ut",
+    "name": "Ogden, UT",
+    "short": "Ogden",
+    "states": [
+      "UT"
+    ],
+    "rpp": {
+      "overall": 100.3,
+      "goods": 96.4,
+      "housing": 117.9,
+      "otherServices": 99.0
+    },
+    "pop": 658133
+  },
+  {
+    "id": "syracuse-ny",
+    "name": "Syracuse, NY",
+    "short": "Syracuse",
+    "states": [
+      "NY"
+    ],
+    "rpp": {
+      "overall": 95.7,
+      "goods": 99.7,
+      "housing": 80.7,
+      "otherServices": 97.8
+    },
+    "pop": 652956
+  },
+  {
+    "id": "wichita-ks",
+    "name": "Wichita, KS",
+    "short": "Wichita",
+    "states": [
+      "KS"
+    ],
+    "rpp": {
+      "overall": 88.9,
+      "goods": 94.0,
+      "housing": 66.2,
+      "otherServices": 93.8
+    },
+    "pop": 652939
+  },
+  {
+    "id": "palm-bay-fl",
+    "name": "Palm Bay-Melbourne-Titusville, FL",
+    "short": "Palm Bay",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 100.0,
+      "goods": 96.2,
+      "housing": 111.7,
+      "otherServices": 98.9
+    },
+    "pop": 643979
+  },
+  {
+    "id": "augusta-ga",
+    "name": "Augusta-Richmond County, GA-SC",
+    "short": "Augusta",
+    "states": [
+      "GA",
+      "SC"
+    ],
+    "rpp": {
+      "overall": 91.9,
+      "goods": 96.3,
+      "housing": 70.6,
+      "otherServices": 98.5
+    },
+    "pop": 629429
+  },
+  {
+    "id": "jackson-ms",
+    "name": "Jackson, MS",
+    "short": "Jackson",
+    "states": [
+      "MS"
+    ],
+    "rpp": {
+      "overall": 89.0,
+      "goods": 96.2,
+      "housing": 64.8,
+      "otherServices": 96.1
+    },
+    "pop": 610257
+  },
+  {
+    "id": "durham-nc",
+    "name": "Durham-Chapel Hill, NC",
+    "short": "Durham",
+    "states": [
+      "NC"
+    ],
+    "rpp": {
+      "overall": 97.6,
+      "goods": 96.6,
+      "housing": 98.9,
+      "otherServices": 98.2
+    },
+    "pop": 608879
+  },
+  {
+    "id": "harrisburg-pa",
+    "name": "Harrisburg-Carlisle, PA",
+    "short": "Harrisburg",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 98.7,
+      "goods": 100.7,
+      "housing": 96.3,
+      "otherServices": 97.7
+    },
+    "pop": 606055
+  },
+  {
+    "id": "spokane-wa",
+    "name": "Spokane-Spokane Valley, WA",
+    "short": "Spokane",
+    "states": [
+      "WA"
+    ],
+    "rpp": {
+      "overall": 100.3,
+      "goods": 105.0,
+      "housing": 97.1,
+      "otherServices": 99.5
+    },
+    "pop": 600292
+  },
+  {
+    "id": "toledo-oh",
+    "name": "Toledo, OH",
+    "short": "Toledo",
+    "states": [
+      "OH"
+    ],
+    "rpp": {
+      "overall": 91.5,
+      "goods": 93.6,
+      "housing": 67.3,
+      "otherServices": 98.9
+    },
+    "pop": 600141
+  },
+  {
+    "id": "fayetteville-ar",
+    "name": "Fayetteville-Springdale-Rogers, AR",
+    "short": "Fayetteville",
+    "states": [
+      "AR"
+    ],
+    "rpp": {
+      "overall": 91.4,
+      "goods": 93.6,
+      "housing": 76.9,
+      "otherServices": 95.3
+    },
+    "pop": 590337
+  },
+  {
+    "id": "chattanooga-tn",
+    "name": "Chattanooga, TN-GA",
+    "short": "Chattanooga",
+    "states": [
+      "TN",
+      "GA"
+    ],
+    "rpp": {
+      "overall": 91.5,
+      "goods": 96.0,
+      "housing": 76.5,
+      "otherServices": 95.3
+    },
+    "pop": 580971
+  },
+  {
+    "id": "scranton-pa",
+    "name": "Scranton--Wilkes-Barre, PA",
+    "short": "Scranton",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 93.6,
+      "goods": 100.7,
+      "housing": 67.0,
+      "otherServices": 97.7
+    },
+    "pop": 569413
+  },
+  {
+    "id": "new-haven-ct",
+    "name": "New Haven, CT",
+    "short": "New Haven",
+    "states": [
+      "CT"
+    ],
+    "rpp": {
+      "overall": 104.6,
+      "goods": 97.3,
+      "housing": 124.3,
+      "otherServices": 102.7
+    },
+    "pop": 568158
+  },
+  {
+    "id": "portland-me",
+    "name": "Portland-South Portland, ME",
+    "short": "Portland",
+    "states": [
+      "ME"
+    ],
+    "rpp": {
+      "overall": 101.9,
+      "goods": 97.2,
+      "housing": 105.2,
+      "otherServices": 103.2
+    },
+    "pop": 566329
+  },
+  {
+    "id": "reno-nv",
+    "name": "Reno, NV",
+    "short": "Reno",
+    "states": [
+      "NV"
+    ],
+    "rpp": {
+      "overall": 101.0,
+      "goods": 96.3,
+      "housing": 123.5,
+      "otherServices": 98.7
+    },
+    "pop": 564782
+  },
+  {
+    "id": "lancaster-pa",
+    "name": "Lancaster, PA",
+    "short": "Lancaster",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 98.3,
+      "goods": 100.7,
+      "housing": 93.8,
+      "otherServices": 97.7
+    },
+    "pop": 558589
+  },
+  {
+    "id": "modesto-ca",
+    "name": "Modesto, CA",
+    "short": "Modesto",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 104.1,
+      "goods": 105.2,
+      "housing": 108.5,
+      "otherServices": 100.3
+    },
+    "pop": 551430
+  },
+  {
+    "id": "port-st-lucie-fl",
+    "name": "Port St. Lucie, FL",
+    "short": "Port St. Lucie",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 100.2,
+      "goods": 96.2,
+      "housing": 113.6,
+      "otherServices": 98.9
+    },
+    "pop": 536901
+  },
+  {
+    "id": "pensacola-fl",
+    "name": "Pensacola-Ferry Pass-Brent, FL",
+    "short": "Pensacola",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 97.7,
+      "goods": 96.2,
+      "housing": 98.8,
+      "otherServices": 98.9
+    },
+    "pop": 530090
+  },
+  {
+    "id": "huntsville-al",
+    "name": "Huntsville, AL",
+    "short": "Huntsville",
+    "states": [
+      "AL"
+    ],
+    "rpp": {
+      "overall": 93.1,
+      "goods": 96.4,
+      "housing": 77.9,
+      "otherServices": 96.7
+    },
+    "pop": 527254
+  },
+  {
+    "id": "lexington-ky",
+    "name": "Lexington-Fayette, KY",
+    "short": "Lexington",
+    "states": [
+      "KY"
+    ],
+    "rpp": {
+      "overall": 92.9,
+      "goods": 96.2,
+      "housing": 77.1,
+      "otherServices": 96.9
+    },
+    "pop": 520045
+  },
+  {
+    "id": "killeen-tx",
+    "name": "Killeen-Temple, TX",
+    "short": "Killeen",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 91.1,
+      "goods": 93.8,
+      "housing": 77.9,
+      "otherServices": 96.2
+    },
+    "pop": 501333
+  },
+  {
+    "id": "springfield-mo",
+    "name": "Springfield, MO",
+    "short": "Springfield",
+    "states": [
+      "MO"
+    ],
+    "rpp": {
+      "overall": 88.6,
+      "goods": 94.2,
+      "housing": 65.6,
+      "otherServices": 93.0
+    },
+    "pop": 491053
+  },
+  {
+    "id": "santa-rosa-ca",
+    "name": "Santa Rosa-Petaluma, CA",
+    "short": "Santa Rosa",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 107.8,
+      "goods": 105.2,
+      "housing": 139.6,
+      "otherServices": 100.3
+    },
+    "pop": 481812
+  },
+  {
+    "id": "visalia-ca",
+    "name": "Visalia, CA",
+    "short": "Visalia",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 99.8,
+      "goods": 105.2,
+      "housing": 84.1,
+      "otherServices": 100.3
+    },
+    "pop": 479468
+  },
+  {
+    "id": "lansing-mi",
+    "name": "Lansing-East Lansing, MI",
+    "short": "Lansing",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 95.0,
+      "goods": 93.7,
+      "housing": 83.5,
+      "otherServices": 99.6
+    },
+    "pop": 473177
+  },
+  {
+    "id": "wilmington-nc",
+    "name": "Wilmington, NC",
+    "short": "Wilmington",
+    "states": [
+      "NC"
+    ],
+    "rpp": {
+      "overall": 96.4,
+      "goods": 96.6,
+      "housing": 93.2,
+      "otherServices": 98.2
+    },
+    "pop": 467337
+  },
+  {
+    "id": "york-pa",
+    "name": "York-Hanover, PA",
+    "short": "York",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 96.0,
+      "goods": 100.7,
+      "housing": 79.8,
+      "otherServices": 97.7
+    },
+    "pop": 464640
+  },
+  {
+    "id": "springfield-ma",
+    "name": "Springfield, MA",
+    "short": "Springfield",
+    "states": [
+      "MA"
+    ],
+    "rpp": {
+      "overall": 96.1,
+      "goods": 97.0,
+      "housing": 75.8,
+      "otherServices": 101.2
+    },
+    "pop": 460291
+  },
+  {
+    "id": "fort-wayne-in",
+    "name": "Fort Wayne, IN",
+    "short": "Fort Wayne",
+    "states": [
+      "IN"
+    ],
+    "rpp": {
+      "overall": 92.6,
+      "goods": 94.3,
+      "housing": 72.3,
+      "otherServices": 99.1
+    },
+    "pop": 457842
+  },
+  {
+    "id": "waterbury-ct",
+    "name": "Waterbury-Shelton, CT",
+    "short": "Waterbury",
+    "states": [
+      "CT"
+    ],
+    "rpp": {
+      "overall": 99.8,
+      "goods": 97.3,
+      "housing": 89.1,
+      "otherServices": 102.7
+    },
+    "pop": 456128
+  },
+  {
+    "id": "vallejo-ca",
+    "name": "Vallejo, CA",
+    "short": "Vallejo",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 108.5,
+      "goods": 105.2,
+      "housing": 142.0,
+      "otherServices": 100.3
+    },
+    "pop": 449218
+  },
+  {
+    "id": "corpus-christi-tx",
+    "name": "Corpus Christi, TX",
+    "short": "Corpus Christi",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 92.7,
+      "goods": 93.8,
+      "housing": 84.9,
+      "otherServices": 96.2
+    },
+    "pop": 448323
+  },
+  {
+    "id": "santa-maria-ca",
+    "name": "Santa Maria-Santa Barbara, CA",
+    "short": "Santa Maria",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 108.8,
+      "goods": 105.2,
+      "housing": 151.4,
+      "otherServices": 100.3
+    },
+    "pop": 441257
+  },
+  {
+    "id": "salem-or",
+    "name": "Salem, OR",
+    "short": "Salem",
+    "states": [
+      "OR"
+    ],
+    "rpp": {
+      "overall": 103.6,
+      "goods": 105.3,
+      "housing": 110.3,
+      "otherServices": 100.3
+    },
+    "pop": 436546
+  },
+  {
+    "id": "reading-pa",
+    "name": "Reading, PA",
+    "short": "Reading",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 97.1,
+      "goods": 100.7,
+      "housing": 85.4,
+      "otherServices": 97.7
+    },
+    "pop": 432821
+  },
+  {
+    "id": "salinas-ca",
+    "name": "Salinas, CA",
+    "short": "Salinas",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 109.0,
+      "goods": 105.2,
+      "housing": 145.7,
+      "otherServices": 100.3
+    },
+    "pop": 430723
+  },
+  {
+    "id": "manchester-nh",
+    "name": "Manchester-Nashua, NH",
+    "short": "Manchester",
+    "states": [
+      "NH"
+    ],
+    "rpp": {
+      "overall": 105.7,
+      "goods": 97.7,
+      "housing": 134.2,
+      "otherServices": 103.7
+    },
+    "pop": 427354
+  },
+  {
+    "id": "brownsville-tx",
+    "name": "Brownsville-Harlingen, TX",
+    "short": "Brownsville",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 86.0,
+      "goods": 93.8,
+      "housing": 57.7,
+      "otherServices": 96.2
+    },
+    "pop": 426710
+  },
+  {
+    "id": "youngstown-oh",
+    "name": "Youngstown-Warren, OH",
+    "short": "Youngstown",
+    "states": [
+      "OH"
+    ],
+    "rpp": {
+      "overall": 87.4,
+      "goods": 93.6,
+      "housing": 53.4,
+      "otherServices": 98.9
+    },
+    "pop": 425969
+  },
+  {
+    "id": "savannah-ga",
+    "name": "Savannah, GA",
+    "short": "Savannah",
+    "states": [
+      "GA"
+    ],
+    "rpp": {
+      "overall": 95.2,
+      "goods": 96.3,
+      "housing": 86.0,
+      "otherServices": 98.7
+    },
+    "pop": 424935
+  },
+  {
+    "id": "gulfport-ms",
+    "name": "Gulfport-Biloxi, MS",
+    "short": "Gulfport",
+    "states": [
+      "MS"
+    ],
+    "rpp": {
+      "overall": 90.0,
+      "goods": 96.2,
+      "housing": 67.9,
+      "otherServices": 96.1
+    },
+    "pop": 421916
+  },
+  {
+    "id": "asheville-nc",
+    "name": "Asheville, NC",
+    "short": "Asheville",
+    "states": [
+      "NC"
+    ],
+    "rpp": {
+      "overall": 96.5,
+      "goods": 96.6,
+      "housing": 93.4,
+      "otherServices": 98.2
+    },
+    "pop": 417202
+  },
+  {
+    "id": "lafayette-la",
+    "name": "Lafayette, LA",
+    "short": "Lafayette",
+    "states": [
+      "LA"
+    ],
+    "rpp": {
+      "overall": 87.2,
+      "goods": 93.7,
+      "housing": 58.8,
+      "otherServices": 95.7
+    },
+    "pop": 414288
+  },
+  {
+    "id": "mobile-al",
+    "name": "Mobile, AL",
+    "short": "Mobile",
+    "states": [
+      "AL"
+    ],
+    "rpp": {
+      "overall": 88.1,
+      "goods": 96.4,
+      "housing": 60.1,
+      "otherServices": 96.7
+    },
+    "pop": 411640
+  },
+  {
+    "id": "ocala-fl",
+    "name": "Ocala, FL",
+    "short": "Ocala",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 95.2,
+      "goods": 96.2,
+      "housing": 86.2,
+      "otherServices": 98.9
+    },
+    "pop": 409959
+  },
+  {
+    "id": "naples-fl",
+    "name": "Naples-Marco Island, FL",
+    "short": "Naples",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 103.2,
+      "goods": 96.2,
+      "housing": 129.4,
+      "otherServices": 98.9
+    },
+    "pop": 404310
+  },
+  {
+    "id": "flint-mi",
+    "name": "Flint, MI",
+    "short": "Flint",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 93.0,
+      "goods": 93.7,
+      "housing": 74.0,
+      "otherServices": 99.6
+    },
+    "pop": 401522
+  },
+  {
+    "id": "anchorage-ak",
+    "name": "Anchorage, AK",
+    "short": "Anchorage",
+    "states": [
+      "AK"
+    ],
+    "rpp": {
+      "overall": 105.4,
+      "goods": 107.3,
+      "housing": 109.9,
+      "otherServices": 103.3
+    },
+    "pop": 401314
+  },
+  {
+    "id": "canton-oh",
+    "name": "Canton-Massillon, OH",
+    "short": "Canton",
+    "states": [
+      "OH"
+    ],
+    "rpp": {
+      "overall": 89.4,
+      "goods": 93.6,
+      "housing": 58.1,
+      "otherServices": 98.9
+    },
+    "pop": 399474
+  },
+  {
+    "id": "myrtle-beach-sc",
+    "name": "Myrtle Beach-Conway-North Myrtle Beach, SC",
+    "short": "Myrtle Beach",
+    "states": [
+      "SC"
+    ],
+    "rpp": {
+      "overall": 93.6,
+      "goods": 96.3,
+      "housing": 83.1,
+      "otherServices": 98.3
+    },
+    "pop": 397478
+  },
+  {
+    "id": "beaumont-tx",
+    "name": "Beaumont-Port Arthur, TX",
+    "short": "Beaumont",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 90.0,
+      "goods": 93.8,
+      "housing": 70.9,
+      "otherServices": 96.2
+    },
+    "pop": 395479
+  },
+  {
+    "id": "tallahassee-fl",
+    "name": "Tallahassee, FL",
+    "short": "Tallahassee",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 93.9,
+      "goods": 96.2,
+      "housing": 78.5,
+      "otherServices": 98.9
+    },
+    "pop": 392645
+  },
+  {
+    "id": "fayetteville-nc",
+    "name": "Fayetteville, NC",
+    "short": "Fayetteville",
+    "states": [
+      "NC"
+    ],
+    "rpp": {
+      "overall": 92.0,
+      "goods": 96.6,
+      "housing": 73.1,
+      "otherServices": 98.2
+    },
+    "pop": 392336
+  },
+  {
+    "id": "montgomery-al",
+    "name": "Montgomery, AL",
+    "short": "Montgomery",
+    "states": [
+      "AL"
+    ],
+    "rpp": {
+      "overall": 89.7,
+      "goods": 96.4,
+      "housing": 64.3,
+      "otherServices": 96.7
+    },
+    "pop": 385480
+  },
+  {
+    "id": "spartanburg-sc",
+    "name": "Spartanburg, SC",
+    "short": "Spartanburg",
+    "states": [
+      "SC"
+    ],
+    "rpp": {
+      "overall": 91.1,
+      "goods": 96.3,
+      "housing": 68.0,
+      "otherServices": 98.3
+    },
+    "pop": 383327
+  },
+  {
+    "id": "shreveport-la",
+    "name": "Shreveport-Bossier City, LA",
+    "short": "Shreveport",
+    "states": [
+      "LA"
+    ],
+    "rpp": {
+      "overall": 84.8,
+      "goods": 93.7,
+      "housing": 52.3,
+      "otherServices": 95.7
+    },
+    "pop": 383295
+  },
+  {
+    "id": "trenton-nj",
+    "name": "Trenton-Princeton, NJ",
+    "short": "Trenton",
+    "states": [
+      "NJ"
+    ],
+    "rpp": {
+      "overall": 103.2,
+      "goods": 99.8,
+      "housing": 135.1,
+      "otherServices": 97.9
+    },
+    "pop": 381671
+  },
+  {
+    "id": "eugene-or",
+    "name": "Eugene-Springfield, OR",
+    "short": "Eugene",
+    "states": [
+      "OR"
+    ],
+    "rpp": {
+      "overall": 101.6,
+      "goods": 105.3,
+      "housing": 98.3,
+      "otherServices": 100.3
+    },
+    "pop": 381181
+  },
+  {
+    "id": "davenport-ia",
+    "name": "Davenport-Moline-Rock Island, IA-IL",
+    "short": "Davenport",
+    "states": [
+      "IA",
+      "IL"
+    ],
+    "rpp": {
+      "overall": 89.1,
+      "goods": 94.2,
+      "housing": 68.3,
+      "otherServices": 93.5
+    },
+    "pop": 379441
+  },
+  {
+    "id": "fort-collins-co",
+    "name": "Fort Collins-Loveland, CO",
+    "short": "Fort Collins",
+    "states": [
+      "CO"
+    ],
+    "rpp": {
+      "overall": 101.1,
+      "goods": 96.1,
+      "housing": 120.6,
+      "otherServices": 99.8
+    },
+    "pop": 370771
+  },
+  {
+    "id": "hickory-nc",
+    "name": "Hickory-Lenoir-Morganton, NC",
+    "short": "Hickory",
+    "states": [
+      "NC"
+    ],
+    "rpp": {
+      "overall": 88.5,
+      "goods": 96.6,
+      "housing": 59.6,
+      "otherServices": 98.2
+    },
+    "pop": 370030
+  },
+  {
+    "id": "atlantic-city-nj",
+    "name": "Atlantic City-Hammonton, NJ",
+    "short": "Atlantic City",
+    "states": [
+      "NJ"
+    ],
+    "rpp": {
+      "overall": 98.9,
+      "goods": 99.8,
+      "housing": 98.7,
+      "otherServices": 97.9
+    },
+    "pop": 369823
+  },
+  {
+    "id": "huntington-wv",
+    "name": "Huntington-Ashland, WV-KY-OH",
+    "short": "Huntington",
+    "states": [
+      "WV",
+      "KY",
+      "OH"
+    ],
+    "rpp": {
+      "overall": 88.4,
+      "goods": 96.3,
+      "housing": 51.3,
+      "otherServices": 99.4
+    },
+    "pop": 368261
+  },
+  {
+    "id": "ann-arbor-mi",
+    "name": "Ann Arbor, MI",
+    "short": "Ann Arbor",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 100.9,
+      "goods": 93.7,
+      "housing": 125.3,
+      "otherServices": 99.6
+    },
+    "pop": 365536
+  },
+  {
+    "id": "peoria-il",
+    "name": "Peoria, IL",
+    "short": "Peoria",
+    "states": [
+      "IL"
+    ],
+    "rpp": {
+      "overall": 91.2,
+      "goods": 93.6,
+      "housing": 63.8,
+      "otherServices": 99.6
+    },
+    "pop": 362240
+  },
+  {
+    "id": "lubbock-tx",
+    "name": "Lubbock, TX",
+    "short": "Lubbock",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 91.3,
+      "goods": 93.8,
+      "housing": 76.4,
+      "otherServices": 96.2
+    },
+    "pop": 360104
+  },
+  {
+    "id": "greeley-co",
+    "name": "Greeley, CO",
+    "short": "Greeley",
+    "states": [
+      "CO"
+    ],
+    "rpp": {
+      "overall": 100.2,
+      "goods": 96.1,
+      "housing": 112.6,
+      "otherServices": 99.8
+    },
+    "pop": 359442
+  },
+  {
+    "id": "gainesville-fl",
+    "name": "Gainesville, FL",
+    "short": "Gainesville",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 96.7,
+      "goods": 96.2,
+      "housing": 93.0,
+      "otherServices": 98.9
+    },
+    "pop": 352126
+  },
+  {
+    "id": "lincoln-ne",
+    "name": "Lincoln, NE",
+    "short": "Lincoln",
+    "states": [
+      "NE"
+    ],
+    "rpp": {
+      "overall": 91.6,
+      "goods": 94.1,
+      "housing": 84.2,
+      "otherServices": 93.0
+    },
+    "pop": 344387
+  },
+  {
+    "id": "clarksville-tn",
+    "name": "Clarksville, TN-KY",
+    "short": "Clarksville",
+    "states": [
+      "TN",
+      "KY"
+    ],
+    "rpp": {
+      "overall": 90.9,
+      "goods": 96.2,
+      "housing": 73.8,
+      "otherServices": 95.5
+    },
+    "pop": 340495
+  },
+  {
+    "id": "rockford-il",
+    "name": "Rockford, IL",
+    "short": "Rockford",
+    "states": [
+      "IL"
+    ],
+    "rpp": {
+      "overall": 92.2,
+      "goods": 93.6,
+      "housing": 70.1,
+      "otherServices": 99.6
+    },
+    "pop": 334124
+  },
+  {
+    "id": "green-bay-wi",
+    "name": "Green Bay, WI",
+    "short": "Green Bay",
+    "states": [
+      "WI"
+    ],
+    "rpp": {
+      "overall": 93.1,
+      "goods": 93.8,
+      "housing": 74.7,
+      "otherServices": 99.4
+    },
+    "pop": 331882
+  },
+  {
+    "id": "boulder-co",
+    "name": "Boulder, CO",
+    "short": "Boulder",
+    "states": [
+      "CO"
+    ],
+    "rpp": {
+      "overall": 105.2,
+      "goods": 96.1,
+      "housing": 157.0,
+      "otherServices": 99.8
+    },
+    "pop": 326831
+  },
+  {
+    "id": "south-bend-in",
+    "name": "South Bend-Mishawaka, IN-MI",
+    "short": "South Bend",
+    "states": [
+      "IN",
+      "MI"
+    ],
+    "rpp": {
+      "overall": 92.9,
+      "goods": 94.2,
+      "housing": 74.6,
+      "otherServices": 99.2
+    },
+    "pop": 324490
+  },
+  {
+    "id": "columbus-ga",
+    "name": "Columbus, GA-AL",
+    "short": "Columbus",
+    "states": [
+      "GA",
+      "AL"
+    ],
+    "rpp": {
+      "overall": 89.3,
+      "goods": 96.3,
+      "housing": 61.2,
+      "otherServices": 98.6
+    },
+    "pop": 323768
+  },
+  {
+    "id": "roanoke-va",
+    "name": "Roanoke, VA",
+    "short": "Roanoke",
+    "states": [
+      "VA"
+    ],
+    "rpp": {
+      "overall": 93.6,
+      "goods": 96.8,
+      "housing": 78.5,
+      "otherServices": 98.6
+    },
+    "pop": 314314
+  },
+  {
+    "id": "kennewick-wa",
+    "name": "Kennewick-Richland, WA",
+    "short": "Kennewick",
+    "states": [
+      "WA"
+    ],
+    "rpp": {
+      "overall": 100.1,
+      "goods": 105.0,
+      "housing": 94.8,
+      "otherServices": 99.5
+    },
+    "pop": 314253
+  },
+  {
+    "id": "kingsport-tn",
+    "name": "Kingsport-Bristol, TN-VA",
+    "short": "Kingsport",
+    "states": [
+      "TN",
+      "VA"
+    ],
+    "rpp": {
+      "overall": 86.4,
+      "goods": 96.2,
+      "housing": 56.5,
+      "otherServices": 95.8
+    },
+    "pop": 313025
+  },
+  {
+    "id": "hagerstown-md",
+    "name": "Hagerstown-Martinsburg, MD-WV",
+    "short": "Hagerstown",
+    "states": [
+      "MD",
+      "WV"
+    ],
+    "rpp": {
+      "overall": 94.2,
+      "goods": 96.4,
+      "housing": 75.7,
+      "otherServices": 99.5
+    },
+    "pop": 305902
+  },
+  {
+    "id": "waco-tx",
+    "name": "Waco, TX",
+    "short": "Waco",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 92.5,
+      "goods": 93.8,
+      "housing": 83.5,
+      "otherServices": 96.2
+    },
+    "pop": 304865
+  },
+  {
+    "id": "crestview-fl",
+    "name": "Crestview-Fort Walton Beach-Destin, FL",
+    "short": "Crestview",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 97.0,
+      "goods": 96.2,
+      "housing": 94.9,
+      "otherServices": 98.9
+    },
+    "pop": 304818
+  },
+  {
+    "id": "sioux-falls-sd",
+    "name": "Sioux Falls, SD-MN",
+    "short": "Sioux Falls",
+    "states": [
+      "SD",
+      "MN"
+    ],
+    "rpp": {
+      "overall": 90.6,
+      "goods": 95.5,
+      "housing": 77.6,
+      "otherServices": 91.9
+    },
+    "pop": 304555
+  },
+  {
+    "id": "olympia-wa",
+    "name": "Olympia-Lacey-Tumwater, WA",
+    "short": "Olympia",
+    "states": [
+      "WA"
+    ],
+    "rpp": {
+      "overall": 103.7,
+      "goods": 105.0,
+      "housing": 116.7,
+      "otherServices": 99.5
+    },
+    "pop": 299003
+  },
+  {
+    "id": "longview-tx",
+    "name": "Longview, TX",
+    "short": "Longview",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 89.5,
+      "goods": 93.8,
+      "housing": 66.7,
+      "otherServices": 96.2
+    },
+    "pop": 293498
+  },
+  {
+    "id": "merced-ca",
+    "name": "Merced, CA",
+    "short": "Merced",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 98.3,
+      "goods": 105.2,
+      "housing": 78.6,
+      "otherServices": 100.3
+    },
+    "pop": 291920
+  },
+  {
+    "id": "utica-ny",
+    "name": "Utica-Rome, NY",
+    "short": "Utica",
+    "states": [
+      "NY"
+    ],
+    "rpp": {
+      "overall": 92.7,
+      "goods": 99.7,
+      "housing": 66.1,
+      "otherServices": 97.8
+    },
+    "pop": 287039
+  },
+  {
+    "id": "san-luis-obispo-ca",
+    "name": "San Luis Obispo-Paso Robles, CA",
+    "short": "San Luis Obispo",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 108.6,
+      "goods": 105.2,
+      "housing": 144.4,
+      "otherServices": 100.3
+    },
+    "pop": 281639
+  },
+  {
+    "id": "duluth-mn",
+    "name": "Duluth, MN-WI",
+    "short": "Duluth",
+    "states": [
+      "MN",
+      "WI"
+    ],
+    "rpp": {
+      "overall": 88.8,
+      "goods": 95.3,
+      "housing": 71.1,
+      "otherServices": 92.2
+    },
+    "pop": 281603
+  },
+  {
+    "id": "college-station-tx",
+    "name": "College Station-Bryan, TX",
+    "short": "College Station",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 91.0,
+      "goods": 93.8,
+      "housing": 75.1,
+      "otherServices": 96.2
+    },
+    "pop": 281445
+  },
+  {
+    "id": "norwich-ct",
+    "name": "Norwich-New London-Willimantic, CT",
+    "short": "Norwich",
+    "states": [
+      "CT"
+    ],
+    "rpp": {
+      "overall": 100.4,
+      "goods": 97.3,
+      "housing": 93.7,
+      "otherServices": 102.7
+    },
+    "pop": 279634
+  },
+  {
+    "id": "tuscaloosa-al",
+    "name": "Tuscaloosa, AL",
+    "short": "Tuscaloosa",
+    "states": [
+      "AL"
+    ],
+    "rpp": {
+      "overall": 87.7,
+      "goods": 96.4,
+      "housing": 58.2,
+      "otherServices": 96.7
+    },
+    "pop": 278290
+  },
+  {
+    "id": "bremerton-wa",
+    "name": "Bremerton-Silverdale-Port Orchard, WA",
+    "short": "Bremerton",
+    "states": [
+      "WA"
+    ],
+    "rpp": {
+      "overall": 105.6,
+      "goods": 105.0,
+      "housing": 129.6,
+      "otherServices": 99.5
+    },
+    "pop": 277658
+  },
+  {
+    "id": "cedar-rapids-ia",
+    "name": "Cedar Rapids, IA",
+    "short": "Cedar Rapids",
+    "states": [
+      "IA"
+    ],
+    "rpp": {
+      "overall": 89.0,
+      "goods": 93.7,
+      "housing": 71.4,
+      "otherServices": 92.9
+    },
+    "pop": 275668
+  },
+  {
+    "id": "slidell-la",
+    "name": "Slidell-Mandeville-Covington, LA",
+    "short": "Slidell",
+    "states": [
+      "LA"
+    ],
+    "rpp": {
+      "overall": 92.7,
+      "goods": 93.7,
+      "housing": 85.4,
+      "otherServices": 95.7
+    },
+    "pop": 275583
+  },
+  {
+    "id": "amarillo-tx",
+    "name": "Amarillo, TX",
+    "short": "Amarillo",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 91.8,
+      "goods": 93.8,
+      "housing": 78.4,
+      "otherServices": 96.2
+    },
+    "pop": 272395
+  },
+  {
+    "id": "evansville-in",
+    "name": "Evansville, IN",
+    "short": "Evansville",
+    "states": [
+      "IN"
+    ],
+    "rpp": {
+      "overall": 91.5,
+      "goods": 94.3,
+      "housing": 66.7,
+      "otherServices": 99.1
+    },
+    "pop": 270717
+  },
+  {
+    "id": "laredo-tx",
+    "name": "Laredo, TX",
+    "short": "Laredo",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 87.0,
+      "goods": 93.8,
+      "housing": 59.7,
+      "otherServices": 96.2
+    },
+    "pop": 269148
+  },
+  {
+    "id": "erie-pa",
+    "name": "Erie, PA",
+    "short": "Erie",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 91.0,
+      "goods": 100.7,
+      "housing": 56.8,
+      "otherServices": 97.7
+    },
+    "pop": 267571
+  },
+  {
+    "id": "lynchburg-va",
+    "name": "Lynchburg, VA",
+    "short": "Lynchburg",
+    "states": [
+      "VA"
+    ],
+    "rpp": {
+      "overall": 89.4,
+      "goods": 96.8,
+      "housing": 63.9,
+      "otherServices": 98.6
+    },
+    "pop": 264590
+  },
+  {
+    "id": "fargo-nd",
+    "name": "Fargo, ND-MN",
+    "short": "Fargo",
+    "states": [
+      "ND",
+      "MN"
+    ],
+    "rpp": {
+      "overall": 90.9,
+      "goods": 95.7,
+      "housing": 81.1,
+      "otherServices": 91.3
+    },
+    "pop": 262620
+  },
+  {
+    "id": "kalamazoo-mi",
+    "name": "Kalamazoo-Portage, MI",
+    "short": "Kalamazoo",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 94.8,
+      "goods": 93.7,
+      "housing": 81.6,
+      "otherServices": 99.6
+    },
+    "pop": 262215
+  },
+  {
+    "id": "santa-cruz-ca",
+    "name": "Santa Cruz-Watsonville, CA",
+    "short": "Santa Cruz",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 109.9,
+      "goods": 105.2,
+      "housing": 164.3,
+      "otherServices": 100.3
+    },
+    "pop": 261547
+  },
+  {
+    "id": "bend-or",
+    "name": "Bend, OR",
+    "short": "Bend",
+    "states": [
+      "OR"
+    ],
+    "rpp": {
+      "overall": 103.6,
+      "goods": 105.3,
+      "housing": 110.0,
+      "otherServices": 100.3
+    },
+    "pop": 260919
+  },
+  {
+    "id": "yakima-wa",
+    "name": "Yakima, WA",
+    "short": "Yakima",
+    "states": [
+      "WA"
+    ],
+    "rpp": {
+      "overall": 95.5,
+      "goods": 105.0,
+      "housing": 72.6,
+      "otherServices": 99.5
+    },
+    "pop": 256643
+  },
+  {
+    "id": "daphne-al",
+    "name": "Daphne-Fairhope-Foley, AL",
+    "short": "Daphne",
+    "states": [
+      "AL"
+    ],
+    "rpp": {
+      "overall": 94.7,
+      "goods": 96.4,
+      "housing": 89.2,
+      "otherServices": 96.7
+    },
+    "pop": 253507
+  },
+  {
+    "id": "prescott-valley-az",
+    "name": "Prescott Valley-Prescott, AZ",
+    "short": "Prescott Valley",
+    "states": [
+      "AZ"
+    ],
+    "rpp": {
+      "overall": 98.3,
+      "goods": 96.2,
+      "housing": 98.8,
+      "otherServices": 99.8
+    },
+    "pop": 249081
+  },
+  {
+    "id": "appleton-wi",
+    "name": "Appleton, WI",
+    "short": "Appleton",
+    "states": [
+      "WI"
+    ],
+    "rpp": {
+      "overall": 92.4,
+      "goods": 93.8,
+      "housing": 70.8,
+      "otherServices": 99.4
+    },
+    "pop": 246433
+  },
+  {
+    "id": "tyler-tx",
+    "name": "Tyler, TX",
+    "short": "Tyler",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 92.2,
+      "goods": 93.8,
+      "housing": 79.9,
+      "otherServices": 96.2
+    },
+    "pop": 245209
+  },
+  {
+    "id": "binghamton-ny",
+    "name": "Binghamton, NY",
+    "short": "Binghamton",
+    "states": [
+      "NY"
+    ],
+    "rpp": {
+      "overall": 92.9,
+      "goods": 99.7,
+      "housing": 69.7,
+      "otherServices": 97.8
+    },
+    "pop": 243792
+  },
+  {
+    "id": "lake-charles-la",
+    "name": "Lake Charles, LA",
+    "short": "Lake Charles",
+    "states": [
+      "LA"
+    ],
+    "rpp": {
+      "overall": 85.9,
+      "goods": 93.7,
+      "housing": 51.8,
+      "otherServices": 95.7
+    },
+    "pop": 240082
+  },
+  {
+    "id": "macon-ga",
+    "name": "Macon-Bibb County, GA",
+    "short": "Macon",
+    "states": [
+      "GA"
+    ],
+    "rpp": {
+      "overall": 88.5,
+      "goods": 96.3,
+      "housing": 58.9,
+      "otherServices": 98.7
+    },
+    "pop": 236074
+  },
+  {
+    "id": "champaign-il",
+    "name": "Champaign-Urbana, IL",
+    "short": "Champaign",
+    "states": [
+      "IL"
+    ],
+    "rpp": {
+      "overall": 92.7,
+      "goods": 93.6,
+      "housing": 71.6,
+      "otherServices": 99.6
+    },
+    "pop": 235608
+  },
+  {
+    "id": "hilton-head-island-sc",
+    "name": "Hilton Head Island-Bluffton-Port Royal, SC",
+    "short": "Hilton Head Island",
+    "states": [
+      "SC"
+    ],
+    "rpp": {
+      "overall": 98.0,
+      "goods": 96.3,
+      "housing": 101.2,
+      "otherServices": 98.3
+    },
+    "pop": 232523
+  },
+  {
+    "id": "topeka-ks",
+    "name": "Topeka, KS",
+    "short": "Topeka",
+    "states": [
+      "KS"
+    ],
+    "rpp": {
+      "overall": 88.8,
+      "goods": 94.0,
+      "housing": 65.0,
+      "otherServices": 93.8
+    },
+    "pop": 232322
+  },
+  {
+    "id": "bellingham-wa",
+    "name": "Bellingham, WA",
+    "short": "Bellingham",
+    "states": [
+      "WA"
+    ],
+    "rpp": {
+      "overall": 103.3,
+      "goods": 105.0,
+      "housing": 112.9,
+      "otherServices": 99.5
+    },
+    "pop": 231919
+  },
+  {
+    "id": "barnstable-town-ma",
+    "name": "Barnstable Town, MA",
+    "short": "Barnstable Town",
+    "states": [
+      "MA"
+    ],
+    "rpp": {
+      "overall": 98.4,
+      "goods": 97.0,
+      "housing": 90.0,
+      "otherServices": 101.2
+    },
+    "pop": 231735
+  },
+  {
+    "id": "fort-smith-ar",
+    "name": "Fort Smith, AR-OK",
+    "short": "Fort Smith",
+    "states": [
+      "AR",
+      "OK"
+    ],
+    "rpp": {
+      "overall": 85.9,
+      "goods": 93.6,
+      "housing": 53.4,
+      "otherServices": 95.3
+    },
+    "pop": 231280
+  },
+  {
+    "id": "rochester-mn",
+    "name": "Rochester, MN",
+    "short": "Rochester",
+    "states": [
+      "MN"
+    ],
+    "rpp": {
+      "overall": 90.8,
+      "goods": 95.4,
+      "housing": 78.6,
+      "otherServices": 92.2
+    },
+    "pop": 229077
+  },
+  {
+    "id": "burlington-vt",
+    "name": "Burlington-South Burlington, VT",
+    "short": "Burlington",
+    "states": [
+      "VT"
+    ],
+    "rpp": {
+      "overall": 100.9,
+      "goods": 97.3,
+      "housing": 103.8,
+      "otherServices": 101.6
+    },
+    "pop": 227942
+  },
+  {
+    "id": "lafayette-in",
+    "name": "Lafayette-West Lafayette, IN",
+    "short": "Lafayette",
+    "states": [
+      "IN"
+    ],
+    "rpp": {
+      "overall": 93.4,
+      "goods": 94.3,
+      "housing": 76.4,
+      "otherServices": 99.1
+    },
+    "pop": 226564
+  },
+  {
+    "id": "las-cruces-nm",
+    "name": "Las Cruces, NM",
+    "short": "Las Cruces",
+    "states": [
+      "NM"
+    ],
+    "rpp": {
+      "overall": 90.2,
+      "goods": 96.1,
+      "housing": 63.0,
+      "otherServices": 98.5
+    },
+    "pop": 225210
+  },
+  {
+    "id": "charlottesville-va",
+    "name": "Charlottesville, VA",
+    "short": "Charlottesville",
+    "states": [
+      "VA"
+    ],
+    "rpp": {
+      "overall": 99.1,
+      "goods": 96.8,
+      "housing": 107.0,
+      "otherServices": 98.6
+    },
+    "pop": 225127
+  },
+  {
+    "id": "lake-havasu-city-az",
+    "name": "Lake Havasu City-Kingman, AZ",
+    "short": "Lake Havasu City",
+    "states": [
+      "AZ"
+    ],
+    "rpp": {
+      "overall": 94.1,
+      "goods": 96.2,
+      "housing": 79.8,
+      "otherServices": 99.8
+    },
+    "pop": 223682
+  },
+  {
+    "id": "athens-ga",
+    "name": "Athens-Clarke County, GA",
+    "short": "Athens",
+    "states": [
+      "GA"
+    ],
+    "rpp": {
+      "overall": 93.3,
+      "goods": 96.3,
+      "housing": 76.8,
+      "otherServices": 98.7
+    },
+    "pop": 222060
+  },
+  {
+    "id": "monroe-la",
+    "name": "Monroe, LA",
+    "short": "Monroe",
+    "states": [
+      "LA"
+    ],
+    "rpp": {
+      "overall": 83.6,
+      "goods": 93.7,
+      "housing": 42.8,
+      "otherServices": 95.7
+    },
+    "pop": 221885
+  },
+  {
+    "id": "medford-or",
+    "name": "Medford, OR",
+    "short": "Medford",
+    "states": [
+      "OR"
+    ],
+    "rpp": {
+      "overall": 101.4,
+      "goods": 105.3,
+      "housing": 97.7,
+      "otherServices": 100.3
+    },
+    "pop": 220768
+  },
+  {
+    "id": "gainesville-ga",
+    "name": "Gainesville, GA",
+    "short": "Gainesville",
+    "states": [
+      "GA"
+    ],
+    "rpp": {
+      "overall": 96.8,
+      "goods": 96.3,
+      "housing": 93.5,
+      "otherServices": 98.7
+    },
+    "pop": 217267
+  },
+  {
+    "id": "columbia-mo",
+    "name": "Columbia, MO",
+    "short": "Columbia",
+    "states": [
+      "MO"
+    ],
+    "rpp": {
+      "overall": 89.4,
+      "goods": 94.2,
+      "housing": 69.2,
+      "otherServices": 93.0
+    },
+    "pop": 216511
+  },
+  {
+    "id": "panama-city-fl",
+    "name": "Panama City-Panama City Beach, FL",
+    "short": "Panama City",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 97.3,
+      "goods": 96.2,
+      "housing": 96.4,
+      "otherServices": 98.9
+    },
+    "pop": 216371
+  },
+  {
+    "id": "jacksonville-nc",
+    "name": "Jacksonville, NC",
+    "short": "Jacksonville",
+    "states": [
+      "NC"
+    ],
+    "rpp": {
+      "overall": 92.1,
+      "goods": 96.6,
+      "housing": 72.1,
+      "otherServices": 98.2
+    },
+    "pop": 213676
+  },
+  {
+    "id": "yuma-az",
+    "name": "Yuma, AZ",
+    "short": "Yuma",
+    "states": [
+      "AZ"
+    ],
+    "rpp": {
+      "overall": 92.7,
+      "goods": 96.2,
+      "housing": 73.8,
+      "otherServices": 99.8
+    },
+    "pop": 213221
+  },
+  {
+    "id": "johnson-city-tn",
+    "name": "Johnson City, TN",
+    "short": "Johnson City",
+    "states": [
+      "TN"
+    ],
+    "rpp": {
+      "overall": 87.9,
+      "goods": 96.2,
+      "housing": 63.2,
+      "otherServices": 95.1
+    },
+    "pop": 213198
+  },
+  {
+    "id": "lexington-park-md",
+    "name": "Lexington Park, MD",
+    "short": "Lexington Park",
+    "states": [
+      "MD"
+    ],
+    "rpp": {
+      "overall": 100.8,
+      "goods": 99.7,
+      "housing": 103.8,
+      "otherServices": 100.3
+    },
+    "pop": 210009
+  },
+  {
+    "id": "chico-ca",
+    "name": "Chico, CA",
+    "short": "Chico",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 101.2,
+      "goods": 105.2,
+      "housing": 91.9,
+      "otherServices": 100.3
+    },
+    "pop": 207172
+  },
+  {
+    "id": "elkhart-in",
+    "name": "Elkhart-Goshen, IN",
+    "short": "Elkhart",
+    "states": [
+      "IN"
+    ],
+    "rpp": {
+      "overall": 90.3,
+      "goods": 94.3,
+      "housing": 64.3,
+      "otherServices": 99.1
+    },
+    "pop": 206409
+  },
+  {
+    "id": "punta-gorda-fl",
+    "name": "Punta Gorda, FL",
+    "short": "Punta Gorda",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 100.5,
+      "goods": 96.2,
+      "housing": 113.3,
+      "otherServices": 98.9
+    },
+    "pop": 206134
+  },
+  {
+    "id": "springfield-il",
+    "name": "Springfield, IL",
+    "short": "Springfield",
+    "states": [
+      "IL"
+    ],
+    "rpp": {
+      "overall": 92.7,
+      "goods": 93.6,
+      "housing": 71.6,
+      "otherServices": 99.6
+    },
+    "pop": 205445
+  },
+  {
+    "id": "joplin-mo",
+    "name": "Joplin, MO-KS",
+    "short": "Joplin",
+    "states": [
+      "MO",
+      "KS"
+    ],
+    "rpp": {
+      "overall": 85.7,
+      "goods": 94.2,
+      "housing": 54.0,
+      "otherServices": 93.1
+    },
+    "pop": 204787
+  },
+  {
+    "id": "charleston-wv",
+    "name": "Charleston, WV",
+    "short": "Charleston",
+    "states": [
+      "WV"
+    ],
+    "rpp": {
+      "overall": 88.7,
+      "goods": 96.3,
+      "housing": 51.4,
+      "otherServices": 99.8
+    },
+    "pop": 203164
+  },
+  {
+    "id": "st-cloud-mn",
+    "name": "St. Cloud, MN",
+    "short": "St. Cloud",
+    "states": [
+      "MN"
+    ],
+    "rpp": {
+      "overall": 87.6,
+      "goods": 95.4,
+      "housing": 65.1,
+      "otherServices": 92.2
+    },
+    "pop": 202577
+  },
+  {
+    "id": "st-george-ut",
+    "name": "St. George, UT",
+    "short": "St. George",
+    "states": [
+      "UT"
+    ],
+    "rpp": {
+      "overall": 97.3,
+      "goods": 96.4,
+      "housing": 98.1,
+      "otherServices": 99.0
+    },
+    "pop": 202452
+  },
+  {
+    "id": "auburn-al",
+    "name": "Auburn-Opelika, AL",
+    "short": "Auburn",
+    "states": [
+      "AL"
+    ],
+    "rpp": {
+      "overall": 87.9,
+      "goods": 96.4,
+      "housing": 62.1,
+      "otherServices": 96.7
+    },
+    "pop": 201585
+  },
+  {
+    "id": "warner-robins-ga",
+    "name": "Warner Robins, GA",
+    "short": "Warner Robins",
+    "states": [
+      "GA"
+    ],
+    "rpp": {
+      "overall": 93.8,
+      "goods": 96.3,
+      "housing": 79.2,
+      "otherServices": 98.7
+    },
+    "pop": 200779
+  },
+  {
+    "id": "florence-sc",
+    "name": "Florence, SC",
+    "short": "Florence",
+    "states": [
+      "SC"
+    ],
+    "rpp": {
+      "overall": 86.8,
+      "goods": 96.3,
+      "housing": 52.4,
+      "otherServices": 98.3
+    },
+    "pop": 199630
+  },
+  {
+    "id": "houma-la",
+    "name": "Houma-Bayou Cane-Thibodaux, LA",
+    "short": "Houma",
+    "states": [
+      "LA"
+    ],
+    "rpp": {
+      "overall": 85.1,
+      "goods": 93.7,
+      "housing": 51.3,
+      "otherServices": 95.7
+    },
+    "pop": 198672
+  },
+  {
+    "id": "racine-wi",
+    "name": "Racine-Mount Pleasant, WI",
+    "short": "Racine",
+    "states": [
+      "WI"
+    ],
+    "rpp": {
+      "overall": 96.0,
+      "goods": 93.8,
+      "housing": 92.0,
+      "otherServices": 99.4
+    },
+    "pop": 196613
+  },
+  {
+    "id": "billings-mt",
+    "name": "Billings, MT",
+    "short": "Billings",
+    "states": [
+      "MT"
+    ],
+    "rpp": {
+      "overall": 93.5,
+      "goods": 96.0,
+      "housing": 77.4,
+      "otherServices": 98.7
+    },
+    "pop": 191435
+  },
+  {
+    "id": "dover-de",
+    "name": "Dover, DE",
+    "short": "Dover",
+    "states": [
+      "DE"
+    ],
+    "rpp": {
+      "overall": 97.5,
+      "goods": 96.4,
+      "housing": 95.9,
+      "otherServices": 98.8
+    },
+    "pop": 189789
+  },
+  {
+    "id": "bowling-green-ky",
+    "name": "Bowling Green, KY",
+    "short": "Bowling Green",
+    "states": [
+      "KY"
+    ],
+    "rpp": {
+      "overall": 90.2,
+      "goods": 96.2,
+      "housing": 63.4,
+      "otherServices": 96.9
+    },
+    "pop": 188840
+  },
+  {
+    "id": "saginaw-mi",
+    "name": "Saginaw, MI",
+    "short": "Saginaw",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 90.9,
+      "goods": 93.7,
+      "housing": 63.6,
+      "otherServices": 99.6
+    },
+    "pop": 187782
+  },
+  {
+    "id": "coeur-d-alene-id",
+    "name": "Coeur d'Alene, ID",
+    "short": "Coeur d'Alene",
+    "states": [
+      "ID"
+    ],
+    "rpp": {
+      "overall": 98.3,
+      "goods": 96.2,
+      "housing": 105.6,
+      "otherServices": 99.0
+    },
+    "pop": 185010
+  },
+  {
+    "id": "yuba-city-ca",
+    "name": "Yuba City, CA",
+    "short": "Yuba City",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 104.2,
+      "goods": 105.2,
+      "housing": 108.3,
+      "otherServices": 100.3
+    },
+    "pop": 183670
+  },
+  {
+    "id": "kingston-ny",
+    "name": "Kingston, NY",
+    "short": "Kingston",
+    "states": [
+      "NY"
+    ],
+    "rpp": {
+      "overall": 100.7,
+      "goods": 99.7,
+      "housing": 110.2,
+      "otherServices": 97.8
+    },
+    "pop": 182333
+  },
+  {
+    "id": "midland-tx",
+    "name": "Midland, TX",
+    "short": "Midland",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 95.8,
+      "goods": 93.8,
+      "housing": 101.5,
+      "otherServices": 96.2
+    },
+    "pop": 182324
+  },
+  {
+    "id": "jackson-tn",
+    "name": "Jackson, TN",
+    "short": "Jackson",
+    "states": [
+      "TN"
+    ],
+    "rpp": {
+      "overall": 85.5,
+      "goods": 96.2,
+      "housing": 56.6,
+      "otherServices": 95.1
+    },
+    "pop": 181826
+  },
+  {
+    "id": "abilene-tx",
+    "name": "Abilene, TX",
+    "short": "Abilene",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 90.4,
+      "goods": 93.8,
+      "housing": 73.8,
+      "otherServices": 96.2
+    },
+    "pop": 181591
+  },
+  {
+    "id": "blacksburg-va",
+    "name": "Blacksburg-Christiansburg-Radford, VA",
+    "short": "Blacksburg",
+    "states": [
+      "VA"
+    ],
+    "rpp": {
+      "overall": 92.7,
+      "goods": 96.8,
+      "housing": 74.4,
+      "otherServices": 98.6
+    },
+    "pop": 181428
+  },
+  {
+    "id": "redding-ca",
+    "name": "Redding, CA",
+    "short": "Redding",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 100.7,
+      "goods": 105.2,
+      "housing": 89.4,
+      "otherServices": 100.3
+    },
+    "pop": 180366
+  },
+  {
+    "id": "iowa-city-ia",
+    "name": "Iowa City, IA",
+    "short": "Iowa City",
+    "states": [
+      "IA"
+    ],
+    "rpp": {
+      "overall": 91.5,
+      "goods": 93.7,
+      "housing": 84.0,
+      "otherServices": 92.9
+    },
+    "pop": 180088
+  },
+  {
+    "id": "burlington-nc",
+    "name": "Burlington, NC",
+    "short": "Burlington",
+    "states": [
+      "NC"
+    ],
+    "rpp": {
+      "overall": 93.2,
+      "goods": 96.6,
+      "housing": 77.9,
+      "otherServices": 98.2
+    },
+    "pop": 179165
+  },
+  {
+    "id": "el-centro-ca",
+    "name": "El Centro, CA",
+    "short": "El Centro",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 95.2,
+      "goods": 105.2,
+      "housing": 66.3,
+      "otherServices": 100.3
+    },
+    "pop": 179057
+  },
+  {
+    "id": "muskegon-mi",
+    "name": "Muskegon-Norton Shores, MI",
+    "short": "Muskegon",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 92.5,
+      "goods": 93.7,
+      "housing": 74.2,
+      "otherServices": 99.6
+    },
+    "pop": 176564
+  },
+  {
+    "id": "greenville-nc",
+    "name": "Greenville, NC",
+    "short": "Greenville",
+    "states": [
+      "NC"
+    ],
+    "rpp": {
+      "overall": 88.4,
+      "goods": 96.6,
+      "housing": 57.3,
+      "otherServices": 98.2
+    },
+    "pop": 175119
+  },
+  {
+    "id": "eau-claire-wi",
+    "name": "Eau Claire, WI",
+    "short": "Eau Claire",
+    "states": [
+      "WI"
+    ],
+    "rpp": {
+      "overall": 92.8,
+      "goods": 93.8,
+      "housing": 72.8,
+      "otherServices": 99.4
+    },
+    "pop": 174873
+  },
+  {
+    "id": "oshkosh-wi",
+    "name": "Oshkosh-Neenah, WI",
+    "short": "Oshkosh",
+    "states": [
+      "WI"
+    ],
+    "rpp": {
+      "overall": 92.9,
+      "goods": 93.8,
+      "housing": 74.4,
+      "otherServices": 99.4
+    },
+    "pop": 171735
+  },
+  {
+    "id": "bloomington-il",
+    "name": "Bloomington, IL",
+    "short": "Bloomington",
+    "states": [
+      "IL"
+    ],
+    "rpp": {
+      "overall": 93.5,
+      "goods": 93.6,
+      "housing": 74.7,
+      "otherServices": 99.6
+    },
+    "pop": 170441
+  },
+  {
+    "id": "la-crosse-wi",
+    "name": "La Crosse-Onalaska, WI-MN",
+    "short": "La Crosse",
+    "states": [
+      "WI",
+      "MN"
+    ],
+    "rpp": {
+      "overall": 91.8,
+      "goods": 93.8,
+      "housing": 69.4,
+      "otherServices": 99.4
+    },
+    "pop": 170238
+  },
+  {
+    "id": "sebastian-fl",
+    "name": "Sebastian-Vero Beach-West Vero Corridor, FL",
+    "short": "Sebastian",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 98.3,
+      "goods": 96.2,
+      "housing": 101.6,
+      "otherServices": 98.9
+    },
+    "pop": 169795
+  },
+  {
+    "id": "pueblo-co",
+    "name": "Pueblo, CO",
+    "short": "Pueblo",
+    "states": [
+      "CO"
+    ],
+    "rpp": {
+      "overall": 91.8,
+      "goods": 96.1,
+      "housing": 71.3,
+      "otherServices": 99.8
+    },
+    "pop": 169422
+  },
+  {
+    "id": "terre-haute-in",
+    "name": "Terre Haute, IN",
+    "short": "Terre Haute",
+    "states": [
+      "IN"
+    ],
+    "rpp": {
+      "overall": 87.8,
+      "goods": 94.3,
+      "housing": 51.9,
+      "otherServices": 99.1
+    },
+    "pop": 168787
+  },
+  {
+    "id": "idaho-falls-id",
+    "name": "Idaho Falls, ID",
+    "short": "Idaho Falls",
+    "states": [
+      "ID"
+    ],
+    "rpp": {
+      "overall": 94.4,
+      "goods": 96.2,
+      "housing": 84.0,
+      "otherServices": 99.0
+    },
+    "pop": 168322
+  },
+  {
+    "id": "waterloo-ia",
+    "name": "Waterloo-Cedar Falls, IA",
+    "short": "Waterloo",
+    "states": [
+      "IA"
+    ],
+    "rpp": {
+      "overall": 87.1,
+      "goods": 93.7,
+      "housing": 63.1,
+      "otherServices": 92.9
+    },
+    "pop": 168162
+  },
+  {
+    "id": "kenosha-wi",
+    "name": "Kenosha, WI",
+    "short": "Kenosha",
+    "states": [
+      "WI"
+    ],
+    "rpp": {
+      "overall": 101.1,
+      "goods": 106.2,
+      "housing": 95.8,
+      "otherServices": 100.3
+    },
+    "pop": 167488
+  },
+  {
+    "id": "homosassa-springs-fl",
+    "name": "Homosassa Springs, FL",
+    "short": "Homosassa Springs",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 93.5,
+      "goods": 96.2,
+      "housing": 78.4,
+      "otherServices": 98.9
+    },
+    "pop": 166696
+  },
+  {
+    "id": "odessa-tx",
+    "name": "Odessa, TX",
+    "short": "Odessa",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 93.9,
+      "goods": 93.8,
+      "housing": 89.7,
+      "otherServices": 96.2
+    },
+    "pop": 164494
+  },
+  {
+    "id": "janesville-wi",
+    "name": "Janesville-Beloit, WI",
+    "short": "Janesville",
+    "states": [
+      "WI"
+    ],
+    "rpp": {
+      "overall": 93.7,
+      "goods": 93.8,
+      "housing": 79.6,
+      "otherServices": 99.4
+    },
+    "pop": 164278
+  },
+  {
+    "id": "kahului-hi",
+    "name": "Kahului-Wailuku, HI",
+    "short": "Kahului",
+    "states": [
+      "HI"
+    ],
+    "rpp": {
+      "overall": 109.4,
+      "goods": 111.6,
+      "housing": 119.2,
+      "otherServices": 102.9
+    },
+    "pop": 164264
+  },
+  {
+    "id": "amherst-town-ma",
+    "name": "Amherst Town-Northampton, MA",
+    "short": "Amherst Town",
+    "states": [
+      "MA"
+    ],
+    "rpp": {
+      "overall": 100.2,
+      "goods": 97.0,
+      "housing": 97.5,
+      "otherServices": 101.2
+    },
+    "pop": 162502
+  },
+  {
+    "id": "bloomington-in",
+    "name": "Bloomington, IN",
+    "short": "Bloomington",
+    "states": [
+      "IN"
+    ],
+    "rpp": {
+      "overall": 95.1,
+      "goods": 94.3,
+      "housing": 85.6,
+      "otherServices": 99.1
+    },
+    "pop": 160874
+  },
+  {
+    "id": "grand-junction-co",
+    "name": "Grand Junction, CO",
+    "short": "Grand Junction",
+    "states": [
+      "CO"
+    ],
+    "rpp": {
+      "overall": 95.5,
+      "goods": 96.1,
+      "housing": 86.4,
+      "otherServices": 99.8
+    },
+    "pop": 159681
+  },
+  {
+    "id": "jackson-mi",
+    "name": "Jackson, MI",
+    "short": "Jackson",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 91.8,
+      "goods": 93.7,
+      "housing": 67.1,
+      "otherServices": 99.6
+    },
+    "pop": 159424
+  },
+  {
+    "id": "decatur-al",
+    "name": "Decatur, AL",
+    "short": "Decatur",
+    "states": [
+      "AL"
+    ],
+    "rpp": {
+      "overall": 87.2,
+      "goods": 96.4,
+      "housing": 58.1,
+      "otherServices": 96.7
+    },
+    "pop": 158635
+  },
+  {
+    "id": "logan-ut",
+    "name": "Logan, UT-ID",
+    "short": "Logan",
+    "states": [
+      "UT",
+      "ID"
+    ],
+    "rpp": {
+      "overall": 95.9,
+      "goods": 96.4,
+      "housing": 91.0,
+      "otherServices": 99.0
+    },
+    "pop": 157887
+  },
+  {
+    "id": "chambersburg-pa",
+    "name": "Chambersburg, PA",
+    "short": "Chambersburg",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 94.6,
+      "goods": 100.7,
+      "housing": 71.9,
+      "otherServices": 97.7
+    },
+    "pop": 157854
+  },
+  {
+    "id": "state-college-pa",
+    "name": "State College, PA",
+    "short": "State College",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 96.8,
+      "goods": 100.7,
+      "housing": 85.7,
+      "otherServices": 97.7
+    },
+    "pop": 157795
+  },
+  {
+    "id": "traverse-city-mi",
+    "name": "Traverse City, MI",
+    "short": "Traverse City",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 93.4,
+      "goods": 93.7,
+      "housing": 78.1,
+      "otherServices": 99.6
+    },
+    "pop": 156371
+  },
+  {
+    "id": "rapid-city-sd",
+    "name": "Rapid City, SD",
+    "short": "Rapid City",
+    "states": [
+      "SD"
+    ],
+    "rpp": {
+      "overall": 89.2,
+      "goods": 95.5,
+      "housing": 72.6,
+      "otherServices": 91.9
+    },
+    "pop": 155974
+  },
+  {
+    "id": "santa-fe-nm",
+    "name": "Santa Fe, NM",
+    "short": "Santa Fe",
+    "states": [
+      "NM"
+    ],
+    "rpp": {
+      "overall": 98.8,
+      "goods": 96.1,
+      "housing": 108.0,
+      "otherServices": 98.5
+    },
+    "pop": 155956
+  },
+  {
+    "id": "hattiesburg-ms",
+    "name": "Hattiesburg, MS",
+    "short": "Hattiesburg",
+    "states": [
+      "MS"
+    ],
+    "rpp": {
+      "overall": 87.6,
+      "goods": 96.2,
+      "housing": 60.1,
+      "otherServices": 96.1
+    },
+    "pop": 155740
+  },
+  {
+    "id": "bangor-me",
+    "name": "Bangor, ME",
+    "short": "Bangor",
+    "states": [
+      "ME"
+    ],
+    "rpp": {
+      "overall": 96.5,
+      "goods": 97.2,
+      "housing": 77.7,
+      "otherServices": 103.2
+    },
+    "pop": 155312
+  },
+  {
+    "id": "florence-al",
+    "name": "Florence-Muscle Shoals, AL",
+    "short": "Florence",
+    "states": [
+      "AL"
+    ],
+    "rpp": {
+      "overall": 84.8,
+      "goods": 96.4,
+      "housing": 47.7,
+      "otherServices": 96.7
+    },
+    "pop": 155175
+  },
+  {
+    "id": "monroe-mi",
+    "name": "Monroe, MI",
+    "short": "Monroe",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 93.5,
+      "goods": 93.7,
+      "housing": 74.6,
+      "otherServices": 99.6
+    },
+    "pop": 155045
+  },
+  {
+    "id": "dothan-al",
+    "name": "Dothan, AL",
+    "short": "Dothan",
+    "states": [
+      "AL"
+    ],
+    "rpp": {
+      "overall": 83.8,
+      "goods": 96.4,
+      "housing": 46.9,
+      "otherServices": 96.7
+    },
+    "pop": 153349
+  },
+  {
+    "id": "hanford-ca",
+    "name": "Hanford-Corcoran, CA",
+    "short": "Hanford",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 101.6,
+      "goods": 105.2,
+      "housing": 93.5,
+      "otherServices": 100.3
+    },
+    "pop": 152682
+  },
+  {
+    "id": "vineland-nj",
+    "name": "Vineland, NJ",
+    "short": "Vineland",
+    "states": [
+      "NJ"
+    ],
+    "rpp": {
+      "overall": 96.0,
+      "goods": 99.8,
+      "housing": 83.9,
+      "otherServices": 97.9
+    },
+    "pop": 152326
+  },
+  {
+    "id": "niles-mi",
+    "name": "Niles, MI",
+    "short": "Niles",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 92.4,
+      "goods": 93.7,
+      "housing": 71.6,
+      "otherServices": 99.6
+    },
+    "pop": 152261
+  },
+  {
+    "id": "wildwood-fl",
+    "name": "Wildwood-The Villages, FL",
+    "short": "Wildwood",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 85.4,
+      "goods": 96.2,
+      "housing": 51.7,
+      "otherServices": 98.9
+    },
+    "pop": 151565
+  },
+  {
+    "id": "valdosta-ga",
+    "name": "Valdosta, GA",
+    "short": "Valdosta",
+    "states": [
+      "GA"
+    ],
+    "rpp": {
+      "overall": 88.3,
+      "goods": 96.3,
+      "housing": 58.8,
+      "otherServices": 98.7
+    },
+    "pop": 151118
+  },
+  {
+    "id": "jefferson-city-mo",
+    "name": "Jefferson City, MO",
+    "short": "Jefferson City",
+    "states": [
+      "MO"
+    ],
+    "rpp": {
+      "overall": 88.0,
+      "goods": 94.2,
+      "housing": 62.1,
+      "otherServices": 93.0
+    },
+    "pop": 150733
+  },
+  {
+    "id": "wichita-falls-tx",
+    "name": "Wichita Falls, TX",
+    "short": "Wichita Falls",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 89.5,
+      "goods": 93.8,
+      "housing": 68.2,
+      "otherServices": 96.2
+    },
+    "pop": 149947
+  },
+  {
+    "id": "alexandria-la",
+    "name": "Alexandria, LA",
+    "short": "Alexandria",
+    "states": [
+      "LA"
+    ],
+    "rpp": {
+      "overall": 85.7,
+      "goods": 93.7,
+      "housing": 53.7,
+      "otherServices": 95.7
+    },
+    "pop": 148171
+  },
+  {
+    "id": "winchester-va",
+    "name": "Winchester, VA-WV",
+    "short": "Winchester",
+    "states": [
+      "VA",
+      "WV"
+    ],
+    "rpp": {
+      "overall": 96.5,
+      "goods": 96.7,
+      "housing": 90.0,
+      "otherServices": 98.8
+    },
+    "pop": 147260
+  },
+  {
+    "id": "sherman-tx",
+    "name": "Sherman-Denison, TX",
+    "short": "Sherman",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 93.8,
+      "goods": 93.8,
+      "housing": 89.5,
+      "otherServices": 96.2
+    },
+    "pop": 146907
+  },
+  {
+    "id": "texarkana-tx",
+    "name": "Texarkana, TX-AR",
+    "short": "Texarkana",
+    "states": [
+      "TX",
+      "AR"
+    ],
+    "rpp": {
+      "overall": 84.0,
+      "goods": 93.7,
+      "housing": 49.9,
+      "otherServices": 95.9
+    },
+    "pop": 145907
+  },
+  {
+    "id": "albany-ga",
+    "name": "Albany, GA",
+    "short": "Albany",
+    "states": [
+      "GA"
+    ],
+    "rpp": {
+      "overall": 87.7,
+      "goods": 96.3,
+      "housing": 54.6,
+      "otherServices": 98.7
+    },
+    "pop": 145508
+  },
+  {
+    "id": "rocky-mount-nc",
+    "name": "Rocky Mount, NC",
+    "short": "Rocky Mount",
+    "states": [
+      "NC"
+    ],
+    "rpp": {
+      "overall": 88.0,
+      "goods": 96.6,
+      "housing": 56.1,
+      "otherServices": 98.2
+    },
+    "pop": 145383
+  },
+  {
+    "id": "dalton-ga",
+    "name": "Dalton, GA",
+    "short": "Dalton",
+    "states": [
+      "GA"
+    ],
+    "rpp": {
+      "overall": 89.8,
+      "goods": 96.3,
+      "housing": 63.3,
+      "otherServices": 98.7
+    },
+    "pop": 144722
+  },
+  {
+    "id": "flagstaff-az",
+    "name": "Flagstaff, AZ",
+    "short": "Flagstaff",
+    "states": [
+      "AZ"
+    ],
+    "rpp": {
+      "overall": 100.3,
+      "goods": 96.2,
+      "housing": 109.0,
+      "otherServices": 99.8
+    },
+    "pop": 144472
+  },
+  {
+    "id": "sioux-city-ia",
+    "name": "Sioux City, IA-NE-SD",
+    "short": "Sioux City",
+    "states": [
+      "IA",
+      "NE",
+      "SD"
+    ],
+    "rpp": {
+      "overall": 86.5,
+      "goods": 94.0,
+      "housing": 57.8,
+      "otherServices": 92.7
+    },
+    "pop": 144402
+  },
+  {
+    "id": "lebanon-pa",
+    "name": "Lebanon, PA",
+    "short": "Lebanon",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 93.2,
+      "goods": 100.7,
+      "housing": 66.0,
+      "otherServices": 97.7
+    },
+    "pop": 144252
+  },
+  {
+    "id": "morgantown-wv",
+    "name": "Morgantown, WV",
+    "short": "Morgantown",
+    "states": [
+      "WV"
+    ],
+    "rpp": {
+      "overall": 93.3,
+      "goods": 96.3,
+      "housing": 69.1,
+      "otherServices": 99.8
+    },
+    "pop": 141817
+  },
+  {
+    "id": "wausau-wi",
+    "name": "Wausau, WI",
+    "short": "Wausau",
+    "states": [
+      "WI"
+    ],
+    "rpp": {
+      "overall": 92.7,
+      "goods": 93.8,
+      "housing": 71.5,
+      "otherServices": 99.4
+    },
+    "pop": 138612
+  },
+  {
+    "id": "hammond-la",
+    "name": "Hammond, LA",
+    "short": "Hammond",
+    "states": [
+      "LA"
+    ],
+    "rpp": {
+      "overall": 84.5,
+      "goods": 93.7,
+      "housing": 48.2,
+      "otherServices": 95.7
+    },
+    "pop": 138064
+  },
+  {
+    "id": "harrisonburg-va",
+    "name": "Harrisonburg, VA",
+    "short": "Harrisonburg",
+    "states": [
+      "VA"
+    ],
+    "rpp": {
+      "overall": 94.9,
+      "goods": 96.8,
+      "housing": 82.3,
+      "otherServices": 98.6
+    },
+    "pop": 137650
+  },
+  {
+    "id": "jonesboro-ar",
+    "name": "Jonesboro, AR",
+    "short": "Jonesboro",
+    "states": [
+      "AR"
+    ],
+    "rpp": {
+      "overall": 85.9,
+      "goods": 93.6,
+      "housing": 53.8,
+      "otherServices": 95.3
+    },
+    "pop": 136390
+  },
+  {
+    "id": "bismarck-nd",
+    "name": "Bismarck, ND",
+    "short": "Bismarck",
+    "states": [
+      "ND"
+    ],
+    "rpp": {
+      "overall": 91.0,
+      "goods": 95.7,
+      "housing": 84.0,
+      "otherServices": 91.2
+    },
+    "pop": 135786
+  },
+  {
+    "id": "wheeling-wv",
+    "name": "Wheeling, WV-OH",
+    "short": "Wheeling",
+    "states": [
+      "WV",
+      "OH"
+    ],
+    "rpp": {
+      "overall": 88.3,
+      "goods": 96.4,
+      "housing": 51.4,
+      "otherServices": 99.7
+    },
+    "pop": 135517
+  },
+  {
+    "id": "springfield-oh",
+    "name": "Springfield, OH",
+    "short": "Springfield",
+    "states": [
+      "OH"
+    ],
+    "rpp": {
+      "overall": 90.5,
+      "goods": 93.6,
+      "housing": 61.7,
+      "otherServices": 98.9
+    },
+    "pop": 134610
+  },
+  {
+    "id": "battle-creek-mi",
+    "name": "Battle Creek, MI",
+    "short": "Battle Creek",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 90.5,
+      "goods": 93.7,
+      "housing": 61.0,
+      "otherServices": 99.6
+    },
+    "pop": 133366
+  },
+  {
+    "id": "napa-ca",
+    "name": "Napa, CA",
+    "short": "Napa",
+    "states": [
+      "CA"
+    ],
+    "rpp": {
+      "overall": 112.6,
+      "goods": 105.2,
+      "housing": 197.4,
+      "otherServices": 100.3
+    },
+    "pop": 133216
+  },
+  {
+    "id": "manhattan-ks",
+    "name": "Manhattan, KS",
+    "short": "Manhattan",
+    "states": [
+      "KS"
+    ],
+    "rpp": {
+      "overall": 90.2,
+      "goods": 94.0,
+      "housing": 72.0,
+      "otherServices": 93.8
+    },
+    "pop": 132831
+  },
+  {
+    "id": "albany-or",
+    "name": "Albany, OR",
+    "short": "Albany",
+    "states": [
+      "OR"
+    ],
+    "rpp": {
+      "overall": 102.1,
+      "goods": 105.3,
+      "housing": 101.1,
+      "otherServices": 100.3
+    },
+    "pop": 131496
+  },
+  {
+    "id": "mount-vernon-wa",
+    "name": "Mount Vernon-Anacortes, WA",
+    "short": "Mount Vernon",
+    "states": [
+      "WA"
+    ],
+    "rpp": {
+      "overall": 102.4,
+      "goods": 105.0,
+      "housing": 108.2,
+      "otherServices": 99.5
+    },
+    "pop": 131417
+  },
+  {
+    "id": "johnstown-pa",
+    "name": "Johnstown, PA",
+    "short": "Johnstown",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 85.9,
+      "goods": 100.7,
+      "housing": 42.3,
+      "otherServices": 97.7
+    },
+    "pop": 130668
+  },
+  {
+    "id": "salisbury-md",
+    "name": "Salisbury, MD",
+    "short": "Salisbury",
+    "states": [
+      "MD"
+    ],
+    "rpp": {
+      "overall": 95.6,
+      "goods": 96.6,
+      "housing": 87.2,
+      "otherServices": 99.0
+    },
+    "pop": 129710
+  },
+  {
+    "id": "cleveland-tn",
+    "name": "Cleveland, TN",
+    "short": "Cleveland",
+    "states": [
+      "TN"
+    ],
+    "rpp": {
+      "overall": 88.1,
+      "goods": 96.2,
+      "housing": 60.3,
+      "otherServices": 95.1
+    },
+    "pop": 129612
+  },
+  {
+    "id": "elizabethtown-ky",
+    "name": "Elizabethtown, KY",
+    "short": "Elizabethtown",
+    "states": [
+      "KY"
+    ],
+    "rpp": {
+      "overall": 90.6,
+      "goods": 96.2,
+      "housing": 66.7,
+      "otherServices": 96.9
+    },
+    "pop": 127576
+  },
+  {
+    "id": "staunton-va",
+    "name": "Staunton-Stuarts Draft, VA",
+    "short": "Staunton",
+    "states": [
+      "VA"
+    ],
+    "rpp": {
+      "overall": 91.1,
+      "goods": 96.8,
+      "housing": 68.2,
+      "otherServices": 98.6
+    },
+    "pop": 127344
+  },
+  {
+    "id": "lawton-ok",
+    "name": "Lawton, OK",
+    "short": "Lawton",
+    "states": [
+      "OK"
+    ],
+    "rpp": {
+      "overall": 85.9,
+      "goods": 93.8,
+      "housing": 57.4,
+      "otherServices": 95.5
+    },
+    "pop": 127001
+  },
+  {
+    "id": "missoula-mt",
+    "name": "Missoula, MT",
+    "short": "Missoula",
+    "states": [
+      "MT"
+    ],
+    "rpp": {
+      "overall": 96.4,
+      "goods": 96.0,
+      "housing": 94.9,
+      "otherServices": 98.7
+    },
+    "pop": 126939
+  },
+  {
+    "id": "pittsfield-ma",
+    "name": "Pittsfield, MA",
+    "short": "Pittsfield",
+    "states": [
+      "MA"
+    ],
+    "rpp": {
+      "overall": 95.1,
+      "goods": 97.0,
+      "housing": 73.5,
+      "otherServices": 101.2
+    },
+    "pop": 126818
+  },
+  {
+    "id": "bozeman-mt",
+    "name": "Bozeman, MT",
+    "short": "Bozeman",
+    "states": [
+      "MT"
+    ],
+    "rpp": {
+      "overall": 102.5,
+      "goods": 96.0,
+      "housing": 139.2,
+      "otherServices": 98.7
+    },
+    "pop": 126409
+  },
+  {
+    "id": "glens-falls-ny",
+    "name": "Glens Falls, NY",
+    "short": "Glens Falls",
+    "states": [
+      "NY"
+    ],
+    "rpp": {
+      "overall": 94.9,
+      "goods": 99.7,
+      "housing": 76.2,
+      "otherServices": 97.8
+    },
+    "pop": 125427
+  },
+  {
+    "id": "ames-ia",
+    "name": "Ames, IA",
+    "short": "Ames",
+    "states": [
+      "IA"
+    ],
+    "rpp": {
+      "overall": 88.8,
+      "goods": 93.7,
+      "housing": 69.2,
+      "otherServices": 92.9
+    },
+    "pop": 125156
+  },
+  {
+    "id": "mansfield-oh",
+    "name": "Mansfield, OH",
+    "short": "Mansfield",
+    "states": [
+      "OH"
+    ],
+    "rpp": {
+      "overall": 88.9,
+      "goods": 93.6,
+      "housing": 54.9,
+      "otherServices": 98.9
+    },
+    "pop": 125064
+  },
+  {
+    "id": "wenatchee-wa",
+    "name": "Wenatchee-East Wenatchee, WA",
+    "short": "Wenatchee",
+    "states": [
+      "WA"
+    ],
+    "rpp": {
+      "overall": 103.9,
+      "goods": 105.0,
+      "housing": 115.0,
+      "otherServices": 99.5
+    },
+    "pop": 124795
+  },
+  {
+    "id": "sierra-vista-az",
+    "name": "Sierra Vista-Douglas, AZ",
+    "short": "Sierra Vista",
+    "states": [
+      "AZ"
+    ],
+    "rpp": {
+      "overall": 89.2,
+      "goods": 96.2,
+      "housing": 61.9,
+      "otherServices": 99.8
+    },
+    "pop": 124640
+  },
+  {
+    "id": "morristown-tn",
+    "name": "Morristown, TN",
+    "short": "Morristown",
+    "states": [
+      "TN"
+    ],
+    "rpp": {
+      "overall": 86.4,
+      "goods": 96.2,
+      "housing": 59.0,
+      "otherServices": 95.1
+    },
+    "pop": 124054
+  },
+  {
+    "id": "farmington-nm",
+    "name": "Farmington, NM",
+    "short": "Farmington",
+    "states": [
+      "NM"
+    ],
+    "rpp": {
+      "overall": 87.7,
+      "goods": 96.1,
+      "housing": 56.6,
+      "otherServices": 98.5
+    },
+    "pop": 120675
+  },
+  {
+    "id": "san-angelo-tx",
+    "name": "San Angelo, TX",
+    "short": "San Angelo",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 92.5,
+      "goods": 93.8,
+      "housing": 81.4,
+      "otherServices": 96.2
+    },
+    "pop": 120606
+  },
+  {
+    "id": "lawrence-ks",
+    "name": "Lawrence, KS",
+    "short": "Lawrence",
+    "states": [
+      "KS"
+    ],
+    "rpp": {
+      "overall": 90.2,
+      "goods": 94.0,
+      "housing": 71.6,
+      "otherServices": 93.8
+    },
+    "pop": 120553
+  },
+  {
+    "id": "altoona-pa",
+    "name": "Altoona, PA",
+    "short": "Altoona",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 89.5,
+      "goods": 100.7,
+      "housing": 55.0,
+      "otherServices": 97.7
+    },
+    "pop": 120273
+  },
+  {
+    "id": "goldsboro-nc",
+    "name": "Goldsboro, NC",
+    "short": "Goldsboro",
+    "states": [
+      "NC"
+    ],
+    "rpp": {
+      "overall": 88.5,
+      "goods": 96.6,
+      "housing": 57.7,
+      "otherServices": 98.2
+    },
+    "pop": 118686
+  },
+  {
+    "id": "st-joseph-mo",
+    "name": "St. Joseph, MO-KS",
+    "short": "St. Joseph",
+    "states": [
+      "MO",
+      "KS"
+    ],
+    "rpp": {
+      "overall": 86.4,
+      "goods": 94.2,
+      "housing": 55.4,
+      "otherServices": 93.1
+    },
+    "pop": 118475
+  },
+  {
+    "id": "sheboygan-wi",
+    "name": "Sheboygan, WI",
+    "short": "Sheboygan",
+    "states": [
+      "WI"
+    ],
+    "rpp": {
+      "overall": 94.0,
+      "goods": 93.8,
+      "housing": 80.5,
+      "otherServices": 99.4
+    },
+    "pop": 117752
+  },
+  {
+    "id": "anniston-al",
+    "name": "Anniston-Oxford, AL",
+    "short": "Anniston",
+    "states": [
+      "AL"
+    ],
+    "rpp": {
+      "overall": 85.9,
+      "goods": 96.4,
+      "housing": 54.7,
+      "otherServices": 96.7
+    },
+    "pop": 116429
+  },
+  {
+    "id": "brunswick-ga",
+    "name": "Brunswick-St. Simons, GA",
+    "short": "Brunswick",
+    "states": [
+      "GA"
+    ],
+    "rpp": {
+      "overall": 87.7,
+      "goods": 96.3,
+      "housing": 56.3,
+      "otherServices": 98.7
+    },
+    "pop": 116074
+  },
+  {
+    "id": "watertown-ny",
+    "name": "Watertown-Fort Drum, NY",
+    "short": "Watertown",
+    "states": [
+      "NY"
+    ],
+    "rpp": {
+      "overall": 87.7,
+      "goods": 99.7,
+      "housing": 53.2,
+      "otherServices": 97.8
+    },
+    "pop": 114787
+  },
+  {
+    "id": "sandusky-oh",
+    "name": "Sandusky, OH",
+    "short": "Sandusky",
+    "states": [
+      "OH"
+    ],
+    "rpp": {
+      "overall": 89.3,
+      "goods": 93.6,
+      "housing": 59.5,
+      "otherServices": 98.9
+    },
+    "pop": 113838
+  },
+  {
+    "id": "lewiston-me",
+    "name": "Lewiston-Auburn, ME",
+    "short": "Lewiston",
+    "states": [
+      "ME"
+    ],
+    "rpp": {
+      "overall": 94.7,
+      "goods": 97.2,
+      "housing": 69.0,
+      "otherServices": 103.2
+    },
+    "pop": 113765
+  },
+  {
+    "id": "weirton-wv",
+    "name": "Weirton-Steubenville, WV-OH",
+    "short": "Weirton",
+    "states": [
+      "WV",
+      "OH"
+    ],
+    "rpp": {
+      "overall": 89.0,
+      "goods": 96.4,
+      "housing": 52.4,
+      "otherServices": 99.7
+    },
+    "pop": 113544
+  },
+  {
+    "id": "longview-wa",
+    "name": "Longview-Kelso, WA",
+    "short": "Longview",
+    "states": [
+      "WA"
+    ],
+    "rpp": {
+      "overall": 97.5,
+      "goods": 105.0,
+      "housing": 82.5,
+      "otherServices": 99.5
+    },
+    "pop": 112864
+  },
+  {
+    "id": "williamsport-pa",
+    "name": "Williamsport, PA",
+    "short": "Williamsport",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 92.3,
+      "goods": 100.7,
+      "housing": 64.4,
+      "otherServices": 97.7
+    },
+    "pop": 112724
+  },
+  {
+    "id": "owensboro-ky",
+    "name": "Owensboro, KY",
+    "short": "Owensboro",
+    "states": [
+      "KY"
+    ],
+    "rpp": {
+      "overall": 88.6,
+      "goods": 96.2,
+      "housing": 55.7,
+      "otherServices": 96.9
+    },
+    "pop": 112512
+  },
+  {
+    "id": "muncie-in",
+    "name": "Muncie, IN",
+    "short": "Muncie",
+    "states": [
+      "IN"
+    ],
+    "rpp": {
+      "overall": 88.1,
+      "goods": 94.3,
+      "housing": 57.5,
+      "otherServices": 99.1
+    },
+    "pop": 112321
+  },
+  {
+    "id": "michigan-city-in",
+    "name": "Michigan City-La Porte, IN",
+    "short": "Michigan City",
+    "states": [
+      "IN"
+    ],
+    "rpp": {
+      "overall": 91.7,
+      "goods": 94.3,
+      "housing": 68.5,
+      "otherServices": 99.1
+    },
+    "pop": 111706
+  },
+  {
+    "id": "beckley-wv",
+    "name": "Beckley, WV",
+    "short": "Beckley",
+    "states": [
+      "WV"
+    ],
+    "rpp": {
+      "overall": 88.4,
+      "goods": 96.3,
+      "housing": 52.2,
+      "otherServices": 99.8
+    },
+    "pop": 111428
+  },
+  {
+    "id": "sebring-fl",
+    "name": "Sebring, FL",
+    "short": "Sebring",
+    "states": [
+      "FL"
+    ],
+    "rpp": {
+      "overall": 92.5,
+      "goods": 96.2,
+      "housing": 73.5,
+      "otherServices": 98.9
+    },
+    "pop": 107614
+  },
+  {
+    "id": "pinehurst-nc",
+    "name": "Pinehurst-Southern Pines, NC",
+    "short": "Pinehurst",
+    "states": [
+      "NC"
+    ],
+    "rpp": {
+      "overall": 88.3,
+      "goods": 96.6,
+      "housing": 59.3,
+      "otherServices": 98.2
+    },
+    "pop": 106898
+  },
+  {
+    "id": "gettysburg-pa",
+    "name": "Gettysburg, PA",
+    "short": "Gettysburg",
+    "states": [
+      "PA"
+    ],
+    "rpp": {
+      "overall": 95.4,
+      "goods": 100.7,
+      "housing": 73.9,
+      "otherServices": 97.7
+    },
+    "pop": 106748
+  },
+  {
+    "id": "kankakee-il",
+    "name": "Kankakee, IL",
+    "short": "Kankakee",
+    "states": [
+      "IL"
+    ],
+    "rpp": {
+      "overall": 96.4,
+      "goods": 93.6,
+      "housing": 92.9,
+      "otherServices": 99.6
+    },
+    "pop": 105940
+  },
+  {
+    "id": "mankato-mn",
+    "name": "Mankato, MN",
+    "short": "Mankato",
+    "states": [
+      "MN"
+    ],
+    "rpp": {
+      "overall": 91.0,
+      "goods": 95.4,
+      "housing": 79.9,
+      "otherServices": 92.2
+    },
+    "pop": 104248
+  },
+  {
+    "id": "sumter-sc",
+    "name": "Sumter, SC",
+    "short": "Sumter",
+    "states": [
+      "SC"
+    ],
+    "rpp": {
+      "overall": 88.0,
+      "goods": 96.3,
+      "housing": 60.8,
+      "otherServices": 98.3
+    },
+    "pop": 104165
+  },
+  {
+    "id": "fond-du-lac-wi",
+    "name": "Fond du Lac, WI",
+    "short": "Fond du Lac",
+    "states": [
+      "WI"
+    ],
+    "rpp": {
+      "overall": 91.6,
+      "goods": 93.8,
+      "housing": 67.3,
+      "otherServices": 99.4
+    },
+    "pop": 103948
+  },
+  {
+    "id": "ithaca-ny",
+    "name": "Ithaca, NY",
+    "short": "Ithaca",
+    "states": [
+      "NY"
+    ],
+    "rpp": {
+      "overall": 103.3,
+      "goods": 99.7,
+      "housing": 128.4,
+      "otherServices": 97.8
+    },
+    "pop": 103558
+  },
+  {
+    "id": "gadsden-al",
+    "name": "Gadsden, AL",
+    "short": "Gadsden",
+    "states": [
+      "AL"
+    ],
+    "rpp": {
+      "overall": 85.7,
+      "goods": 96.4,
+      "housing": 53.7,
+      "otherServices": 96.7
+    },
+    "pop": 103241
+  },
+  {
+    "id": "grand-forks-nd",
+    "name": "Grand Forks, ND-MN",
+    "short": "Grand Forks",
+    "states": [
+      "ND",
+      "MN"
+    ],
+    "rpp": {
+      "overall": 86.7,
+      "goods": 95.6,
+      "housing": 59.7,
+      "otherServices": 91.4
+    },
+    "pop": 103120
+  },
+  {
+    "id": "bay-city-mi",
+    "name": "Bay City, MI",
+    "short": "Bay City",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 91.9,
+      "goods": 93.7,
+      "housing": 66.7,
+      "otherServices": 99.6
+    },
+    "pop": 102500
+  },
+  {
+    "id": "paducah-ky",
+    "name": "Paducah, KY-IL",
+    "short": "Paducah",
+    "states": [
+      "KY",
+      "IL"
+    ],
+    "rpp": {
+      "overall": 86.1,
+      "goods": 96.0,
+      "housing": 48.8,
+      "otherServices": 96.9
+    },
+    "pop": 102267
+  },
+  {
+    "id": "cheyenne-wy",
+    "name": "Cheyenne, WY",
+    "short": "Cheyenne",
+    "states": [
+      "WY"
+    ],
+    "rpp": {
+      "overall": 96.5,
+      "goods": 95.4,
+      "housing": 89.8,
+      "otherServices": 100.4
+    },
+    "pop": 100984
+  },
+  {
+    "id": "lima-oh",
+    "name": "Lima, OH",
+    "short": "Lima",
+    "states": [
+      "OH"
+    ],
+    "rpp": {
+      "overall": 89.7,
+      "goods": 93.6,
+      "housing": 57.3,
+      "otherServices": 98.9
+    },
+    "pop": 100838
+  },
+  {
+    "id": "decatur-il",
+    "name": "Decatur, IL",
+    "short": "Decatur",
+    "states": [
+      "IL"
+    ],
+    "rpp": {
+      "overall": 88.4,
+      "goods": 93.6,
+      "housing": 56.2,
+      "otherServices": 99.6
+    },
+    "pop": 100591
+  },
+  {
+    "id": "rome-ga",
+    "name": "Rome, GA",
+    "short": "Rome",
+    "states": [
+      "GA"
+    ],
+    "rpp": {
+      "overall": 90.2,
+      "goods": 96.3,
+      "housing": 60.3,
+      "otherServices": 98.7
+    },
+    "pop": 100113
+  },
+  {
+    "id": "hot-springs-ar",
+    "name": "Hot Springs, AR",
+    "short": "Hot Springs",
+    "states": [
+      "AR"
+    ],
+    "rpp": {
+      "overall": 85.7,
+      "goods": 93.6,
+      "housing": 57.3,
+      "otherServices": 95.3
+    },
+    "pop": 99784
+  },
+  {
+    "id": "dubuque-ia",
+    "name": "Dubuque, IA",
+    "short": "Dubuque",
+    "states": [
+      "IA"
+    ],
+    "rpp": {
+      "overall": 87.3,
+      "goods": 93.7,
+      "housing": 64.0,
+      "otherServices": 92.9
+    },
+    "pop": 98887
+  },
+  {
+    "id": "victoria-tx",
+    "name": "Victoria, TX",
+    "short": "Victoria",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 89.8,
+      "goods": 93.8,
+      "housing": 69.3,
+      "otherServices": 96.2
+    },
+    "pop": 98808
+  },
+  {
+    "id": "cape-girardeau-mo",
+    "name": "Cape Girardeau, MO-IL",
+    "short": "Cape Girardeau",
+    "states": [
+      "MO",
+      "IL"
+    ],
+    "rpp": {
+      "overall": 86.1,
+      "goods": 94.2,
+      "housing": 56.4,
+      "otherServices": 93.1
+    },
+    "pop": 98223
+  },
+  {
+    "id": "corvallis-or",
+    "name": "Corvallis, OR",
+    "short": "Corvallis",
+    "states": [
+      "OR"
+    ],
+    "rpp": {
+      "overall": 104.0,
+      "goods": 105.3,
+      "housing": 114.4,
+      "otherServices": 100.3
+    },
+    "pop": 97713
+  },
+  {
+    "id": "helena-mt",
+    "name": "Helena, MT",
+    "short": "Helena",
+    "states": [
+      "MT"
+    ],
+    "rpp": {
+      "overall": 95.7,
+      "goods": 96.0,
+      "housing": 90.1,
+      "otherServices": 98.7
+    },
+    "pop": 96091
+  },
+  {
+    "id": "fairbanks-ak",
+    "name": "Fairbanks-College, AK",
+    "short": "Fairbanks",
+    "states": [
+      "AK"
+    ],
+    "rpp": {
+      "overall": 103.2,
+      "goods": 107.3,
+      "housing": 92.6,
+      "otherServices": 103.3
+    },
+    "pop": 94840
+  },
+  {
+    "id": "pocatello-id",
+    "name": "Pocatello, ID",
+    "short": "Pocatello",
+    "states": [
+      "ID"
+    ],
+    "rpp": {
+      "overall": 88.9,
+      "goods": 96.2,
+      "housing": 66.4,
+      "otherServices": 99.0
+    },
+    "pop": 90400
+  },
+  {
+    "id": "hinesville-ga",
+    "name": "Hinesville, GA",
+    "short": "Hinesville",
+    "states": [
+      "GA"
+    ],
+    "rpp": {
+      "overall": 93.9,
+      "goods": 96.3,
+      "housing": 79.5,
+      "otherServices": 98.7
+    },
+    "pop": 88804
+  },
+  {
+    "id": "parkersburg-wv",
+    "name": "Parkersburg-Vienna, WV",
+    "short": "Parkersburg",
+    "states": [
+      "WV"
+    ],
+    "rpp": {
+      "overall": 87.1,
+      "goods": 96.3,
+      "housing": 45.9,
+      "otherServices": 99.8
+    },
+    "pop": 88052
+  },
+  {
+    "id": "grants-pass-or",
+    "name": "Grants Pass, OR",
+    "short": "Grants Pass",
+    "states": [
+      "OR"
+    ],
+    "rpp": {
+      "overall": 97.8,
+      "goods": 105.3,
+      "housing": 79.9,
+      "otherServices": 100.3
+    },
+    "pop": 87821
+  },
+  {
+    "id": "great-falls-mt",
+    "name": "Great Falls, MT",
+    "short": "Great Falls",
+    "states": [
+      "MT"
+    ],
+    "rpp": {
+      "overall": 96.8,
+      "goods": 96.0,
+      "housing": 97.1,
+      "otherServices": 98.7
+    },
+    "pop": 84900
+  },
+  {
+    "id": "midland-mi",
+    "name": "Midland, MI",
+    "short": "Midland",
+    "states": [
+      "MI"
+    ],
+    "rpp": {
+      "overall": 91.9,
+      "goods": 93.7,
+      "housing": 66.7,
+      "otherServices": 99.6
+    },
+    "pop": 84039
+  },
+  {
+    "id": "columbus-in",
+    "name": "Columbus, IN",
+    "short": "Columbus",
+    "states": [
+      "IN"
+    ],
+    "rpp": {
+      "overall": 93.0,
+      "goods": 94.3,
+      "housing": 75.5,
+      "otherServices": 99.1
+    },
+    "pop": 84003
+  },
+  {
+    "id": "kokomo-in",
+    "name": "Kokomo, IN",
+    "short": "Kokomo",
+    "states": [
+      "IN"
+    ],
+    "rpp": {
+      "overall": 89.6,
+      "goods": 94.3,
+      "housing": 59.3,
+      "otherServices": 99.1
+    },
+    "pop": 83831
+  },
+  {
+    "id": "elmira-ny",
+    "name": "Elmira, NY",
+    "short": "Elmira",
+    "states": [
+      "NY"
+    ],
+    "rpp": {
+      "overall": 94.4,
+      "goods": 99.7,
+      "housing": 76.4,
+      "otherServices": 97.8
+    },
+    "pop": 81325
+  },
+  {
+    "id": "casper-wy",
+    "name": "Casper, WY",
+    "short": "Casper",
+    "states": [
+      "WY"
+    ],
+    "rpp": {
+      "overall": 93.8,
+      "goods": 95.4,
+      "housing": 74.2,
+      "otherServices": 100.4
+    },
+    "pop": 79941
+  },
+  {
+    "id": "grand-island-ne",
+    "name": "Grand Island, NE",
+    "short": "Grand Island",
+    "states": [
+      "NE"
+    ],
+    "rpp": {
+      "overall": 86.7,
+      "goods": 94.1,
+      "housing": 61.7,
+      "otherServices": 93.0
+    },
+    "pop": 76479
+  },
+  {
+    "id": "minot-nd",
+    "name": "Minot, ND",
+    "short": "Minot",
+    "states": [
+      "ND"
+    ],
+    "rpp": {
+      "overall": 87.0,
+      "goods": 95.7,
+      "housing": 63.2,
+      "otherServices": 91.2
+    },
+    "pop": 75742
+  },
+  {
+    "id": "lewiston-id",
+    "name": "Lewiston, ID-WA",
+    "short": "Lewiston",
+    "states": [
+      "ID",
+      "WA"
+    ],
+    "rpp": {
+      "overall": 91.2,
+      "goods": 96.2,
+      "housing": 71.9,
+      "otherServices": 99.4
+    },
+    "pop": 65536
+  },
+  {
+    "id": "walla-walla-wa",
+    "name": "Walla Walla, WA",
+    "short": "Walla Walla",
+    "states": [
+      "WA"
+    ],
+    "rpp": {
+      "overall": 98.5,
+      "goods": 105.0,
+      "housing": 86.6,
+      "otherServices": 99.5
+    },
+    "pop": 61568
+  },
+  {
+    "id": "carson-city-nv",
+    "name": "Carson City, NV",
+    "short": "Carson City",
+    "states": [
+      "NV"
+    ],
+    "rpp": {
+      "overall": 98.1,
+      "goods": 96.3,
+      "housing": 101.2,
+      "otherServices": 98.7
+    },
+    "pop": 58036
+  },
+  {
+    "id": "eagle-pass-tx",
+    "name": "Eagle Pass, TX",
+    "short": "Eagle Pass",
+    "states": [
+      "TX"
+    ],
+    "rpp": {
+      "overall": 83.8,
+      "goods": 93.8,
+      "housing": 53.7,
+      "otherServices": 96.2
+    },
+    "pop": 57762
   }
 ]
