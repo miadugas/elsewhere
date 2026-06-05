@@ -4,6 +4,7 @@ import basketData from "../data/basket.json";
 import type { Metro, BasketItem, ParityResult, BasketRow } from "../types";
 import { findMetro } from "../engines/places";
 import { requiredSalary } from "../engines/parity";
+import { rankByAffordability, type AffordRow } from "../engines/explore";
 import { localizeBasket } from "../engines/basket";
 import {
   annualFromHourly,
@@ -47,6 +48,13 @@ export function useComparison() {
     return localizeBasket(from.value, to.value, basketItems);
   });
 
+  // "Where could I afford?" — all metros ranked by your current pay + city.
+  const affordable = computed<AffordRow[]>(() =>
+    from.value && salary.value > 0
+      ? rankByAffordability(from.value, salary.value, metros)
+      : [],
+  );
+
   return {
     metros,
     from,
@@ -57,6 +65,7 @@ export function useComparison() {
     displaySalary,
     result,
     basket,
+    affordable,
     setFrom: (id: string) => (fromId.value = id),
     setTo: (id: string) => (toId.value = id),
     // Flip origin and destination (salary stays — it's still "your pay").

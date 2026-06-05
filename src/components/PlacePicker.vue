@@ -4,9 +4,11 @@ import type { Metro } from "../types";
 import { searchMetros, findMetro } from "../engines/places";
 
 const props = defineProps<{
-  label: string;
+  label: string; // drives the pin (From = green origin, else pink)
   metros: Metro[];
   modelValue: string | null;
+  labelText?: string; // override the displayed eyebrow (defaults to label)
+  swappable?: boolean; // show the corner swap arrow (default true)
 }>();
 const emit = defineEmits<{ "update:modelValue": [id: string]; swap: [] }>();
 
@@ -37,7 +39,7 @@ function choose(m: Metro) {
       <span
         class="font-display text-[length:var(--text-eyebrow)] font-semibold uppercase opacity-70"
         style="letter-spacing: var(--text-eyebrow--letter-spacing)"
-        >{{ label }}</span
+        >{{ labelText ?? label }}</span
       >
     </div>
 
@@ -83,6 +85,7 @@ function choose(m: Metro) {
 
       <!-- swap button — muted arrow (From points down to To, To points up) -->
       <button
+        v-if="swappable !== false"
         type="button"
         @click="emit('swap')"
         class="-mr-1.5 flex h-9 w-9 shrink-0 items-center justify-center transition-colors active:scale-90"
