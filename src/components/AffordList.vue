@@ -2,6 +2,7 @@
 import { computed } from "vue";
 import type { AffordRow } from "../engines/explore";
 import { formatPayFromAnnual, type PayPeriod } from "../engines/pay";
+import { metroBadges } from "../engines/filters";
 
 const props = defineProps<{
   rows: AffordRow[];
@@ -58,6 +59,18 @@ const shown = computed(() => props.rows.slice(0, props.limit ?? 40));
             style="letter-spacing: var(--text-eyebrow--letter-spacing)"
           >
             {{ row.metro.states.join("·") }}
+          </p>
+          <p
+            v-if="metroBadges(row.metro).length"
+            class="mt-0.5 flex flex-wrap gap-x-1.5 gap-y-0.5 text-[length:var(--text-eyebrow)] opacity-70"
+          >
+            <span
+              v-for="b in metroBadges(row.metro)"
+              :key="b.text"
+              class="whitespace-nowrap"
+            >
+              {{ b.emoji }} {{ b.text }}
+            </span>
           </p>
         </div>
 
