@@ -74,6 +74,14 @@ describe("applyFilters", () => {
     expect(out.rows.map((r) => r.metro.id)).toEqual(["red-hot"]);
   });
 
+  it("counts a metro as hidden-no-data when it lacks data for any active filter under AND", () => {
+    // purple-notemp has politics but no tempF; with both filters active it is
+    // excluded for the missing tempF and tallied once.
+    const out = applyFilters(ALL, { politics: "purple", temp: "mild" });
+    expect(out.rows).toHaveLength(0); // purple-notemp passes politics but has no temp
+    expect(out.hiddenNoData).toBe(1);
+  });
+
   it("never reorders rows (ranking is preserved)", () => {
     expect(applyFilters(ALL, {}).rows[0].metro.id).toBe("blue-mild");
   });

@@ -199,11 +199,18 @@ export const FILTERS: FilterDef[] = [
         id: "low",
         label: "Low (0–5%)",
         test: (m) => {
-          const r = taxRate(m)!;
-          return r > 0 && r <= 5;
+          const r = taxRate(m);
+          return r !== undefined && r > 0 && r <= 5;
         },
       },
-      { id: "high", label: "High (>5%)", test: (m) => taxRate(m)! > 5 },
+      {
+        id: "high",
+        label: "High (>5%)",
+        test: (m) => {
+          const r = taxRate(m);
+          return r !== undefined && r > 5;
+        },
+      },
     ],
   },
 ];
