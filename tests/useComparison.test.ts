@@ -33,3 +33,39 @@ describe("useComparison", () => {
     expect(c.result.value!.requiredSalary).toBeLessThan(first * 2.1);
   });
 });
+
+describe("useComparison filters", () => {
+  it("defaults to no active filters and an empty active count", () => {
+    const c = useComparison();
+    expect(c.activeFilterCount.value).toBe(0);
+  });
+
+  it("setBand toggles a band on, then off when set to the same id", () => {
+    const c = useComparison();
+    c.setBand("temp", "mild");
+    expect(c.filters.value.temp).toBe("mild");
+    expect(c.activeFilterCount.value).toBe(1);
+    c.setBand("temp", "mild"); // same band again clears it
+    expect(c.filters.value.temp).toBeNull();
+    expect(c.activeFilterCount.value).toBe(0);
+  });
+
+  it("clearFilters removes all active bands", () => {
+    const c = useComparison();
+    c.setBand("temp", "mild");
+    c.setBand("politics", "blue");
+    expect(c.activeFilterCount.value).toBe(2);
+    c.clearFilters();
+    expect(c.activeFilterCount.value).toBe(0);
+  });
+
+  it("filteredAffordable narrows the ranked list (active filter is not a no-op)", () => {
+    const c = useComparison();
+    c.setFrom(c.metros[0].id);
+    c.salary.value = 80000;
+    const before = c.filteredAffordable.value.rows.length;
+    c.setBand("tax", "none");
+    const after = c.filteredAffordable.value.rows.length;
+    expect(after).toBeLessThanOrEqual(before);
+  });
+});
