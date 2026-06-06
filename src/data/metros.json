@@ -15,7 +15,8 @@
     },
     "pop": 19498249,
     "politics": 14.9,
-    "aqi": 52.0
+    "aqi": 52.0,
+    "risk": 95.3
   },
   {
     "id": "los-angeles-ca",
@@ -32,7 +33,8 @@
     },
     "pop": 12799100,
     "politics": 25.5,
-    "aqi": 80.0
+    "aqi": 80.0,
+    "risk": 99.9
   },
   {
     "id": "chicago-il",
@@ -50,7 +52,8 @@
     },
     "pop": 9262825,
     "politics": 25.2,
-    "aqi": 56.0
+    "aqi": 56.0,
+    "risk": 95.4
   },
   {
     "id": "dallas-tx",
@@ -67,7 +70,8 @@
     },
     "pop": 8100037,
     "politics": -6.5,
-    "aqi": 59.0
+    "aqi": 59.0,
+    "risk": 96.9
   },
   {
     "id": "houston-tx",
@@ -84,7 +88,8 @@
     },
     "pop": 7510253,
     "politics": -7.0,
-    "aqi": 63.0
+    "aqi": 63.0,
+    "risk": 98.9
   },
   {
     "id": "atlanta-ga",
@@ -101,7 +106,8 @@
     },
     "pop": 6307261,
     "politics": 13.8,
-    "aqi": 56.0
+    "aqi": 56.0,
+    "risk": 82.1
   },
   {
     "id": "washington-dc",
@@ -121,7 +127,8 @@
     },
     "pop": 6304975,
     "politics": 38.1,
-    "aqi": 49.0
+    "aqi": 49.0,
+    "risk": 84.9
   },
   {
     "id": "philadelphia-pa",
@@ -141,7 +148,8 @@
     },
     "pop": 6246160,
     "politics": 25.7,
-    "aqi": 53.0
+    "aqi": 53.0,
+    "risk": 93.1
   },
   {
     "id": "miami-fl",
@@ -158,7 +166,8 @@
     },
     "pop": 6183199,
     "politics": 1.1,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 99.8
   },
   {
     "id": "phoenix-az",
@@ -175,7 +184,8 @@
     },
     "pop": 5070110,
     "politics": -5.3,
-    "aqi": 86.0
+    "aqi": 86.0,
+    "risk": 97.0
   },
   {
     "id": "boston-ma",
@@ -193,7 +203,8 @@
     },
     "pop": 4919179,
     "politics": 28.9,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 92.5
   },
   {
     "id": "riverside-ca",
@@ -210,7 +221,8 @@
     },
     "pop": 4688053,
     "politics": -1.7,
-    "aqi": 97.0
+    "aqi": 97.0,
+    "risk": 99.9
   },
   {
     "id": "san-francisco-ca",
@@ -227,7 +239,8 @@
     },
     "pop": 4566961,
     "politics": 54.0,
-    "aqi": 53.0
+    "aqi": 53.0,
+    "risk": 99.3
   },
   {
     "id": "detroit-mi",
@@ -244,7 +257,8 @@
     },
     "pop": 4342304,
     "politics": 7.3,
-    "aqi": 55.0
+    "aqi": 55.0,
+    "risk": 93.8
   },
   {
     "id": "seattle-wa",
@@ -261,7 +275,8 @@
     },
     "pop": 4044837,
     "politics": 37.0,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 99.1
   },
   {
     "id": "minneapolis-mn",
@@ -279,7 +294,8 @@
     },
     "pop": 3712020,
     "politics": 17.2,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 88.1
   },
   {
     "id": "tampa-fl",
@@ -296,7 +312,8 @@
     },
     "pop": 3342963,
     "politics": -10.6,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 99.1
   },
   {
     "id": "san-diego-ca",
@@ -313,7 +330,8 @@
     },
     "pop": 3269973,
     "politics": 17.3,
-    "aqi": 71.0
+    "aqi": 71.0,
+    "risk": 99.7
   },
   {
     "id": "denver-co",
@@ -330,7 +348,8 @@
     },
     "pop": 3005131,
     "politics": 22.0,
-    "aqi": 64.0
+    "aqi": 64.0,
+    "risk": 90.9
   },
   {
     "id": "baltimore-md",
@@ -347,7 +366,8 @@
     },
     "pop": 2834316,
     "politics": 24.1,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 89.0
   },
   {
     "id": "orlando-fl",
@@ -364,7 +384,8 @@
     },
     "pop": 2817933,
     "politics": 1.2,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 97.1
   },
   {
     "id": "charlotte-nc",
@@ -382,7 +403,8 @@
     },
     "pop": 2805115,
     "politics": -1.3,
-    "aqi": 53.0
+    "aqi": 53.0,
+    "risk": 84.7
   },
   {
     "id": "st-louis-mo",
@@ -400,7 +422,8 @@
     },
     "pop": 2796999,
     "politics": 0.8,
-    "aqi": 55.0
+    "aqi": 55.0,
+    "risk": 91.4
   },
   {
     "id": "san-antonio-tx",
@@ -417,7 +440,8 @@
     },
     "pop": 2703999,
     "politics": -5.4,
-    "aqi": 53.0
+    "aqi": 53.0,
+    "risk": 94.7
   },
   {
     "id": "portland-or",
@@ -435,7 +459,8 @@
     },
     "pop": 2508050,
     "politics": 30.5,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 96.6
   },
   {
     "id": "austin-tx",
@@ -452,7 +477,8 @@
     },
     "pop": 2473275,
     "politics": 20.7,
-    "aqi": 52.0
+    "aqi": 52.0,
+    "risk": 93.0
   },
   {
     "id": "pittsburgh-pa",
@@ -469,7 +495,8 @@
     },
     "pop": 2422725,
     "politics": -4.5,
-    "aqi": 53.0
+    "aqi": 53.0,
+    "risk": 66.2
   },
   {
     "id": "sacramento-ca",
@@ -486,7 +513,8 @@
     },
     "pop": 2420608,
     "politics": 12.2,
-    "aqi": 55.0
+    "aqi": 55.0,
+    "risk": 95.7
   },
   {
     "id": "las-vegas-nv",
@@ -503,7 +531,8 @@
     },
     "pop": 2336573,
     "politics": 2.7,
-    "aqi": 64.0
+    "aqi": 64.0,
+    "risk": 99.3
   },
   {
     "id": "cincinnati-oh",
@@ -522,7 +551,8 @@
     },
     "pop": 2271479,
     "politics": -16.0,
-    "aqi": 54.0
+    "aqi": 54.0,
+    "risk": 78.8
   },
   {
     "id": "kansas-city-mo",
@@ -540,7 +570,8 @@
     },
     "pop": 2221343,
     "politics": 2.7,
-    "aqi": 53.0
+    "aqi": 53.0,
+    "risk": 87.3
   },
   {
     "id": "columbus-oh",
@@ -557,7 +588,8 @@
     },
     "pop": 2180271,
     "politics": 5.0,
-    "aqi": 54.0
+    "aqi": 54.0,
+    "risk": 76.9
   },
   {
     "id": "cleveland-oh",
@@ -573,7 +605,8 @@
       "otherServices": 98.9
     },
     "pop": 2158932,
-    "politics": 9.6
+    "politics": 9.6,
+    "risk": 78.3
   },
   {
     "id": "indianapolis-in",
@@ -590,7 +623,8 @@
     },
     "pop": 2138468,
     "politics": -3.4,
-    "aqi": 55.0
+    "aqi": 55.0,
+    "risk": 81.3
   },
   {
     "id": "nashville-tn",
@@ -607,7 +641,8 @@
     },
     "pop": 2102573,
     "politics": -17.8,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 83.3
   },
   {
     "id": "san-jose-ca",
@@ -624,7 +659,8 @@
     },
     "pop": 1945767,
     "politics": 40.5,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 99.6
   },
   {
     "id": "virginia-beach-va",
@@ -642,7 +678,8 @@
     },
     "pop": 1787169,
     "politics": 10.4,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 84.8
   },
   {
     "id": "jacksonville-fl",
@@ -659,7 +696,8 @@
     },
     "pop": 1713240,
     "politics": -18.5,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 94.3
   },
   {
     "id": "providence-ri",
@@ -677,7 +715,8 @@
     },
     "pop": 1677803,
     "politics": 9.6,
-    "aqi": 42.0
+    "aqi": 42.0,
+    "risk": 84.0
   },
   {
     "id": "milwaukee-wi",
@@ -694,7 +733,8 @@
     },
     "pop": 1560424,
     "politics": 9.6,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 87.1
   },
   {
     "id": "raleigh-nc",
@@ -711,7 +751,8 @@
     },
     "pop": 1509231,
     "politics": 16.6,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 91.0
   },
   {
     "id": "oklahoma-city-ok",
@@ -728,7 +769,8 @@
     },
     "pop": 1477926,
     "politics": -18.5,
-    "aqi": 53.0
+    "aqi": 53.0,
+    "risk": 92.0
   },
   {
     "id": "louisville-jefferson-county-ky",
@@ -746,7 +788,8 @@
     },
     "pop": 1365557,
     "politics": -6.8,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 82.6
   },
   {
     "id": "richmond-va",
@@ -763,7 +806,8 @@
     },
     "pop": 1349732,
     "politics": 13.6,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 68.0
   },
   {
     "id": "memphis-tn",
@@ -782,7 +826,8 @@
     },
     "pop": 1335674,
     "politics": 6.7,
-    "aqi": 56.0
+    "aqi": 56.0,
+    "risk": 93.6
   },
   {
     "id": "salt-lake-city-ut",
@@ -799,7 +844,8 @@
     },
     "pop": 1267864,
     "politics": 7.2,
-    "aqi": 56.0
+    "aqi": 56.0,
+    "risk": 97.7
   },
   {
     "id": "birmingham-al",
@@ -816,7 +862,8 @@
     },
     "pop": 1184290,
     "politics": -20.1,
-    "aqi": 57.0
+    "aqi": 57.0,
+    "risk": 87.3
   },
   {
     "id": "fresno-ca",
@@ -833,7 +880,8 @@
     },
     "pop": 1180020,
     "politics": -6.9,
-    "aqi": 67.0
+    "aqi": 67.0,
+    "risk": 97.6
   },
   {
     "id": "grand-rapids-mi",
@@ -850,7 +898,8 @@
     },
     "pop": 1162950,
     "politics": -8.4,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 80.1
   },
   {
     "id": "buffalo-ny",
@@ -867,7 +916,8 @@
     },
     "pop": 1155604,
     "politics": 5.2,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 78.2
   },
   {
     "id": "hartford-ct",
@@ -901,7 +951,8 @@
     },
     "pop": 1063162,
     "politics": 15.3,
-    "aqi": 56.0
+    "aqi": 56.0,
+    "risk": 95.0
   },
   {
     "id": "rochester-ny",
@@ -918,7 +969,8 @@
     },
     "pop": 1052087,
     "politics": 8.6,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 62.8
   },
   {
     "id": "tulsa-ok",
@@ -935,7 +987,8 @@
     },
     "pop": 1044757,
     "politics": -29.5,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 90.0
   },
   {
     "id": "urban-honolulu-hi",
@@ -952,7 +1005,8 @@
     },
     "pop": 989408,
     "politics": 22.0,
-    "aqi": 31.0
+    "aqi": 31.0,
+    "risk": 94.1
   },
   {
     "id": "omaha-ne",
@@ -970,7 +1024,8 @@
     },
     "pop": 983969,
     "politics": -3.6,
-    "aqi": 50.0
+    "aqi": 50.0,
+    "risk": 88.1
   },
   {
     "id": "greenville-sc",
@@ -987,7 +1042,8 @@
     },
     "pop": 975480,
     "politics": -33.5,
-    "aqi": 49.0
+    "aqi": 49.0,
+    "risk": 80.5
   },
   {
     "id": "new-orleans-la",
@@ -1004,7 +1060,8 @@
     },
     "pop": 962165,
     "politics": 17.3,
-    "aqi": 48.0
+    "aqi": 48.0,
+    "risk": 95.5
   },
   {
     "id": "knoxville-tn",
@@ -1021,7 +1078,8 @@
     },
     "pop": 946264,
     "politics": -36.0,
-    "aqi": 52.0
+    "aqi": 52.0,
+    "risk": 71.0
   },
   {
     "id": "albuquerque-nm",
@@ -1038,7 +1096,8 @@
     },
     "pop": 922296,
     "politics": 14.7,
-    "aqi": 61.0
+    "aqi": 61.0,
+    "risk": 85.5
   },
   {
     "id": "bakersfield-ca",
@@ -1055,7 +1114,8 @@
     },
     "pop": 913820,
     "politics": -21.6,
-    "aqi": 72.0
+    "aqi": 72.0,
+    "risk": 99.0
   },
   {
     "id": "north-port-fl",
@@ -1072,7 +1132,8 @@
     },
     "pop": 910108,
     "politics": -20.7,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 98.4
   },
   {
     "id": "albany-ny",
@@ -1089,7 +1150,8 @@
     },
     "pop": 904682,
     "politics": 10.0,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 67.6
   },
   {
     "id": "mcallen-tx",
@@ -1106,7 +1168,8 @@
     },
     "pop": 898471,
     "politics": -2.9,
-    "aqi": 54.0
+    "aqi": 54.0,
+    "risk": 98.8
   },
   {
     "id": "baton-rouge-la",
@@ -1123,7 +1186,8 @@
     },
     "pop": 873661,
     "politics": -15.1,
-    "aqi": 53.0
+    "aqi": 53.0,
+    "risk": 92.9
   },
   {
     "id": "allentown-pa",
@@ -1141,7 +1205,8 @@
     },
     "pop": 873555,
     "politics": -5.0,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 78.5
   },
   {
     "id": "el-paso-tx",
@@ -1158,7 +1223,8 @@
     },
     "pop": 873331,
     "politics": 15.1,
-    "aqi": 67.0
+    "aqi": 67.0,
+    "risk": 94.0
   },
   {
     "id": "worcester-ma",
@@ -1175,7 +1241,8 @@
     },
     "pop": 866866,
     "politics": 10.2,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 92.7
   },
   {
     "id": "columbia-sc",
@@ -1192,7 +1259,8 @@
     },
     "pop": 858302,
     "politics": 0.2,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 87.7
   },
   {
     "id": "charleston-sc",
@@ -1209,7 +1277,8 @@
     },
     "pop": 849417,
     "politics": -4.4,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 98.6
   },
   {
     "id": "cape-coral-fl",
@@ -1226,7 +1295,8 @@
     },
     "pop": 834573,
     "politics": -28.6,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 99.5
   },
   {
     "id": "oxnard-ca",
@@ -1243,7 +1313,8 @@
     },
     "pop": 829590,
     "politics": 15.6,
-    "aqi": 50.0
+    "aqi": 50.0,
+    "risk": 99.4
   },
   {
     "id": "boise-city-id",
@@ -1260,7 +1331,8 @@
     },
     "pop": 824657,
     "politics": -23.2,
-    "aqi": 54.0
+    "aqi": 54.0,
+    "risk": 79.1
   },
   {
     "id": "lakeland-fl",
@@ -1277,7 +1349,8 @@
     },
     "pop": 818330,
     "politics": -20.9,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 98.0
   },
   {
     "id": "dayton-oh",
@@ -1293,7 +1366,8 @@
       "otherServices": 98.9
     },
     "pop": 814363,
-    "politics": -10.8
+    "politics": -10.8,
+    "risk": 77.4
   },
   {
     "id": "stockton-ca",
@@ -1310,7 +1384,8 @@
     },
     "pop": 800965,
     "politics": -0.9,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 97.8
   },
   {
     "id": "greensboro-nc",
@@ -1327,7 +1402,8 @@
     },
     "pop": 789842,
     "politics": 0.2,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 80.8
   },
   {
     "id": "colorado-springs-co",
@@ -1344,7 +1420,8 @@
     },
     "pop": 768832,
     "politics": -11.2,
-    "aqi": 49.0
+    "aqi": 49.0,
+    "risk": 92.5
   },
   {
     "id": "little-rock-ar",
@@ -1361,7 +1438,8 @@
     },
     "pop": 764045,
     "politics": -10.4,
-    "aqi": 55.0
+    "aqi": 55.0,
+    "risk": 87.1
   },
   {
     "id": "des-moines-ia",
@@ -1378,7 +1456,8 @@
     },
     "pop": 737164,
     "politics": 1.6,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 81.7
   },
   {
     "id": "provo-ut",
@@ -1395,7 +1474,8 @@
     },
     "pop": 732197,
     "politics": -41.9,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 96.1
   },
   {
     "id": "deltona-fl",
@@ -1412,7 +1492,8 @@
     },
     "pop": 721796,
     "politics": -23.3,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 95.9
   },
   {
     "id": "kiryas-joel-ny",
@@ -1428,7 +1509,8 @@
       "otherServices": 106.5
     },
     "pop": 704620,
-    "politics": -2.0
+    "politics": -2.0,
+    "risk": 81.7
   },
   {
     "id": "akron-oh",
@@ -1445,7 +1527,8 @@
     },
     "pop": 698398,
     "politics": 1.7,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 78.0
   },
   {
     "id": "winston-nc",
@@ -1462,7 +1545,8 @@
     },
     "pop": 695630,
     "politics": -15.9,
-    "aqi": 50.0
+    "aqi": 50.0,
+    "risk": 69.8
   },
   {
     "id": "madison-wi",
@@ -1479,7 +1563,8 @@
     },
     "pop": 694345,
     "politics": 43.8,
-    "aqi": 42.0
+    "aqi": 42.0,
+    "risk": 84.5
   },
   {
     "id": "ogden-ut",
@@ -1496,7 +1581,8 @@
     },
     "pop": 658133,
     "politics": -25.9,
-    "aqi": 50.0
+    "aqi": 50.0,
+    "risk": 92.3
   },
   {
     "id": "syracuse-ny",
@@ -1513,7 +1599,8 @@
     },
     "pop": 652956,
     "politics": 6.9,
-    "aqi": 36.0
+    "aqi": 36.0,
+    "risk": 63.7
   },
   {
     "id": "wichita-ks",
@@ -1530,7 +1617,8 @@
     },
     "pop": 652939,
     "politics": -19.2,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 91.0
   },
   {
     "id": "palm-bay-fl",
@@ -1547,7 +1635,8 @@
     },
     "pop": 643979,
     "politics": -21.0,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 99.4
   },
   {
     "id": "augusta-ga",
@@ -1565,7 +1654,8 @@
     },
     "pop": 629429,
     "politics": -8.3,
-    "aqi": 52.0
+    "aqi": 52.0,
+    "risk": 77.5
   },
   {
     "id": "jackson-ms",
@@ -1582,7 +1672,8 @@
     },
     "pop": 610257,
     "politics": -2.2,
-    "aqi": 48.0
+    "aqi": 48.0,
+    "risk": 83.4
   },
   {
     "id": "durham-nc",
@@ -1599,7 +1690,8 @@
     },
     "pop": 608879,
     "politics": 46.8,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 76.7
   },
   {
     "id": "harrisburg-pa",
@@ -1616,7 +1708,8 @@
     },
     "pop": 606055,
     "politics": -5.6,
-    "aqi": 48.0
+    "aqi": 48.0,
+    "risk": 78.1
   },
   {
     "id": "spokane-wa",
@@ -1633,7 +1726,8 @@
     },
     "pop": 600292,
     "politics": -8.7,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 78.3
   },
   {
     "id": "toledo-oh",
@@ -1650,7 +1744,8 @@
     },
     "pop": 600141,
     "politics": 2.7,
-    "aqi": 53.0
+    "aqi": 53.0,
+    "risk": 76.6
   },
   {
     "id": "fayetteville-ar",
@@ -1667,7 +1762,8 @@
     },
     "pop": 590337,
     "politics": -20.1,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 88.3
   },
   {
     "id": "chattanooga-tn",
@@ -1685,7 +1781,8 @@
     },
     "pop": 580971,
     "politics": -29.7,
-    "aqi": 52.0
+    "aqi": 52.0,
+    "risk": 81.0
   },
   {
     "id": "scranton-pa",
@@ -1702,7 +1799,8 @@
     },
     "pop": 569413,
     "politics": -11.3,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 80.5
   },
   {
     "id": "new-haven-ct",
@@ -1736,7 +1834,8 @@
     },
     "pop": 566329,
     "politics": 25.9,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 80.9
   },
   {
     "id": "reno-nv",
@@ -1753,7 +1852,8 @@
     },
     "pop": 564782,
     "politics": -4.6,
-    "aqi": 50.0
+    "aqi": 50.0,
+    "risk": 97.2
   },
   {
     "id": "lancaster-pa",
@@ -1770,7 +1870,8 @@
     },
     "pop": 558589,
     "politics": -16.1,
-    "aqi": 50.0
+    "aqi": 50.0,
+    "risk": 89.4
   },
   {
     "id": "modesto-ca",
@@ -1787,7 +1888,8 @@
     },
     "pop": 551430,
     "politics": -11.3,
-    "aqi": 53.0
+    "aqi": 53.0,
+    "risk": 95.8
   },
   {
     "id": "port-st-lucie-fl",
@@ -1804,7 +1906,8 @@
     },
     "pop": 536901,
     "politics": -16.8,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 97.7
   },
   {
     "id": "pensacola-fl",
@@ -1821,7 +1924,8 @@
     },
     "pop": 530090,
     "politics": -32.7,
-    "aqi": 46.0
+    "aqi": 46.0,
+    "risk": 97.0
   },
   {
     "id": "huntsville-al",
@@ -1838,7 +1942,8 @@
     },
     "pop": 527254,
     "politics": -16.6,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 87.6
   },
   {
     "id": "lexington-ky",
@@ -1855,7 +1960,8 @@
     },
     "pop": 520045,
     "politics": -1.4,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 73.4
   },
   {
     "id": "killeen-tx",
@@ -1872,7 +1978,8 @@
     },
     "pop": 501333,
     "politics": -23.0,
-    "aqi": 46.0
+    "aqi": 46.0,
+    "risk": 86.4
   },
   {
     "id": "springfield-mo",
@@ -1889,7 +1996,8 @@
     },
     "pop": 491053,
     "politics": -35.6,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 82.5
   },
   {
     "id": "santa-rosa-ca",
@@ -1906,7 +2014,8 @@
     },
     "pop": 481812,
     "politics": 47.8,
-    "aqi": 19.0
+    "aqi": 19.0,
+    "risk": 99.2
   },
   {
     "id": "visalia-ca",
@@ -1923,7 +2032,8 @@
     },
     "pop": 479468,
     "politics": -21.2,
-    "aqi": 71.0
+    "aqi": 71.0,
+    "risk": 95.8
   },
   {
     "id": "lansing-mi",
@@ -1940,7 +2050,8 @@
     },
     "pop": 473177,
     "politics": 14.6,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 75.5
   },
   {
     "id": "wilmington-nc",
@@ -1957,7 +2068,8 @@
     },
     "pop": 467337,
     "politics": -14.0,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 97.4
   },
   {
     "id": "york-pa",
@@ -1974,7 +2086,8 @@
     },
     "pop": 464640,
     "politics": -25.5,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 84.0
   },
   {
     "id": "springfield-ma",
@@ -1991,7 +2104,8 @@
     },
     "pop": 460291,
     "politics": 9.1,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 84.0
   },
   {
     "id": "fort-wayne-in",
@@ -2008,7 +2122,8 @@
     },
     "pop": 457842,
     "politics": -19.5,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 79.0
   },
   {
     "id": "waterbury-ct",
@@ -2041,7 +2156,8 @@
     },
     "pop": 449218,
     "politics": 23.7,
-    "aqi": 36.0
+    "aqi": 36.0,
+    "risk": 98.2
   },
   {
     "id": "corpus-christi-tx",
@@ -2058,7 +2174,8 @@
     },
     "pop": 448323,
     "politics": -19.2,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 95.6
   },
   {
     "id": "santa-maria-ca",
@@ -2075,7 +2192,8 @@
     },
     "pop": 441257,
     "politics": 27.5,
-    "aqi": 49.0
+    "aqi": 49.0,
+    "risk": 99.4
   },
   {
     "id": "salem-or",
@@ -2092,7 +2210,8 @@
     },
     "pop": 436546,
     "politics": -2.5,
-    "aqi": 35.0
+    "aqi": 35.0,
+    "risk": 94.6
   },
   {
     "id": "reading-pa",
@@ -2109,7 +2228,8 @@
     },
     "pop": 432821,
     "politics": -12.3,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 88.5
   },
   {
     "id": "salinas-ca",
@@ -2126,7 +2246,8 @@
     },
     "pop": 430723,
     "politics": 30.8,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 98.4
   },
   {
     "id": "manchester-nh",
@@ -2143,7 +2264,8 @@
     },
     "pop": 427354,
     "politics": 2.9,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 88.6
   },
   {
     "id": "brownsville-tx",
@@ -2160,7 +2282,8 @@
     },
     "pop": 426710,
     "politics": -5.8,
-    "aqi": 61.0
+    "aqi": 61.0,
+    "risk": 98.5
   },
   {
     "id": "youngstown-oh",
@@ -2177,7 +2300,8 @@
     },
     "pop": 425969,
     "politics": -12.9,
-    "aqi": 46.0
+    "aqi": 46.0,
+    "risk": 77.4
   },
   {
     "id": "savannah-ga",
@@ -2194,7 +2318,8 @@
     },
     "pop": 424935,
     "politics": -0.7,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 94.3
   },
   {
     "id": "gulfport-ms",
@@ -2211,7 +2336,8 @@
     },
     "pop": 421916,
     "politics": -38.5,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 95.1
   },
   {
     "id": "asheville-nc",
@@ -2228,7 +2354,8 @@
     },
     "pop": 417202,
     "politics": 11.0,
-    "aqi": 48.0
+    "aqi": 48.0,
+    "risk": 76.0
   },
   {
     "id": "lafayette-la",
@@ -2245,7 +2372,8 @@
     },
     "pop": 414288,
     "politics": -42.3,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 94.9
   },
   {
     "id": "mobile-al",
@@ -2262,7 +2390,8 @@
     },
     "pop": 411640,
     "politics": -16.6,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 98.8
   },
   {
     "id": "ocala-fl",
@@ -2279,7 +2408,8 @@
     },
     "pop": 409959,
     "politics": -31.9,
-    "aqi": 49.0
+    "aqi": 49.0,
+    "risk": 96.2
   },
   {
     "id": "naples-fl",
@@ -2296,7 +2426,8 @@
     },
     "pop": 404310,
     "politics": -33.3,
-    "aqi": 42.0
+    "aqi": 42.0,
+    "risk": 98.9
   },
   {
     "id": "flint-mi",
@@ -2313,7 +2444,8 @@
     },
     "pop": 401522,
     "politics": 4.3,
-    "aqi": 42.0
+    "aqi": 42.0,
+    "risk": 89.3
   },
   {
     "id": "anchorage-ak",
@@ -2330,7 +2462,8 @@
     },
     "pop": 401314,
     "politics": 12.7,
-    "aqi": 26.0
+    "aqi": 26.0,
+    "risk": 93.3
   },
   {
     "id": "canton-oh",
@@ -2347,7 +2480,8 @@
     },
     "pop": 399474,
     "politics": -24.4,
-    "aqi": 48.0
+    "aqi": 48.0,
+    "risk": 77.3
   },
   {
     "id": "myrtle-beach-sc",
@@ -2364,7 +2498,8 @@
     },
     "pop": 397478,
     "politics": -38.9,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 99.0
   },
   {
     "id": "beaumont-tx",
@@ -2381,7 +2516,8 @@
     },
     "pop": 395479,
     "politics": -35.6,
-    "aqi": 54.0
+    "aqi": 54.0,
+    "risk": 95.5
   },
   {
     "id": "tallahassee-fl",
@@ -2398,7 +2534,8 @@
     },
     "pop": 392645,
     "politics": 14.9,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 88.9
   },
   {
     "id": "fayetteville-nc",
@@ -2415,7 +2552,8 @@
     },
     "pop": 392336,
     "politics": 12.5,
-    "aqi": 46.0
+    "aqi": 46.0,
+    "risk": 88.9
   },
   {
     "id": "montgomery-al",
@@ -2432,7 +2570,8 @@
     },
     "pop": 385480,
     "politics": -3.1,
-    "aqi": 42.0
+    "aqi": 42.0,
+    "risk": 72.4
   },
   {
     "id": "spartanburg-sc",
@@ -2449,7 +2588,8 @@
     },
     "pop": 383327,
     "politics": -34.0,
-    "aqi": 49.0
+    "aqi": 49.0,
+    "risk": 81.8
   },
   {
     "id": "shreveport-la",
@@ -2466,7 +2606,8 @@
     },
     "pop": 383295,
     "politics": -14.6,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 87.1
   },
   {
     "id": "trenton-nj",
@@ -2483,7 +2624,8 @@
     },
     "pop": 381671,
     "politics": 34.6,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 93.0
   },
   {
     "id": "eugene-or",
@@ -2500,7 +2642,8 @@
     },
     "pop": 381181,
     "politics": 23.9,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 96.8
   },
   {
     "id": "davenport-ia",
@@ -2518,7 +2661,8 @@
     },
     "pop": 379441,
     "politics": -3.2,
-    "aqi": 46.0
+    "aqi": 46.0,
+    "risk": 74.1
   },
   {
     "id": "fort-collins-co",
@@ -2535,7 +2679,8 @@
     },
     "pop": 370771,
     "politics": 18.1,
-    "aqi": 54.0
+    "aqi": 54.0,
+    "risk": 93.5
   },
   {
     "id": "hickory-nc",
@@ -2552,7 +2697,8 @@
     },
     "pop": 370030,
     "politics": -44.6,
-    "aqi": 46.0
+    "aqi": 46.0,
+    "risk": 66.6
   },
   {
     "id": "atlantic-city-nj",
@@ -2569,7 +2715,8 @@
     },
     "pop": 369823,
     "politics": -8.0,
-    "aqi": 35.0
+    "aqi": 35.0,
+    "risk": 96.4
   },
   {
     "id": "huntington-wv",
@@ -2588,7 +2735,8 @@
     },
     "pop": 368261,
     "politics": -44.2,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 37.8
   },
   {
     "id": "ann-arbor-mi",
@@ -2605,7 +2753,8 @@
     },
     "pop": 365536,
     "politics": 45.5,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 84.8
   },
   {
     "id": "peoria-il",
@@ -2622,7 +2771,8 @@
     },
     "pop": 362240,
     "politics": -15.4,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 77.8
   },
   {
     "id": "lubbock-tx",
@@ -2639,7 +2789,8 @@
     },
     "pop": 360104,
     "politics": -42.7,
-    "aqi": 23.0
+    "aqi": 23.0,
+    "risk": 91.1
   },
   {
     "id": "greeley-co",
@@ -2656,7 +2807,8 @@
     },
     "pop": 359442,
     "politics": -21.5,
-    "aqi": 54.0
+    "aqi": 54.0,
+    "risk": 89.2
   },
   {
     "id": "gainesville-fl",
@@ -2673,7 +2825,8 @@
     },
     "pop": 352126,
     "politics": 5.4,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 90.1
   },
   {
     "id": "lincoln-ne",
@@ -2690,7 +2843,8 @@
     },
     "pop": 344387,
     "politics": 1.5,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 91.0
   },
   {
     "id": "clarksville-tn",
@@ -2708,7 +2862,8 @@
     },
     "pop": 340495,
     "politics": -26.2,
-    "aqi": 42.0
+    "aqi": 42.0,
+    "risk": 81.5
   },
   {
     "id": "rockford-il",
@@ -2725,7 +2880,8 @@
     },
     "pop": 334124,
     "politics": -2.0,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 84.8
   },
   {
     "id": "green-bay-wi",
@@ -2742,7 +2898,8 @@
     },
     "pop": 331882,
     "politics": -14.2,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 67.9
   },
   {
     "id": "boulder-co",
@@ -2759,7 +2916,8 @@
     },
     "pop": 326831,
     "politics": 57.3,
-    "aqi": 49.0
+    "aqi": 49.0,
+    "risk": 89.5
   },
   {
     "id": "south-bend-in",
@@ -2777,7 +2935,8 @@
     },
     "pop": 324490,
     "politics": -5.7,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 67.0
   },
   {
     "id": "columbus-ga",
@@ -2795,7 +2954,8 @@
     },
     "pop": 323768,
     "politics": 6.1,
-    "aqi": 49.0
+    "aqi": 49.0,
+    "risk": 52.9
   },
   {
     "id": "roanoke-va",
@@ -2812,7 +2972,8 @@
     },
     "pop": 314314,
     "politics": -18.8,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 30.1
   },
   {
     "id": "kennewick-wa",
@@ -2829,7 +2990,8 @@
     },
     "pop": 314253,
     "politics": -22.7,
-    "aqi": 36.0
+    "aqi": 36.0,
+    "risk": 81.3
   },
   {
     "id": "kingsport-tn",
@@ -2847,7 +3009,8 @@
     },
     "pop": 313025,
     "politics": -57.9,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 35.1
   },
   {
     "id": "hagerstown-md",
@@ -2865,7 +3028,8 @@
     },
     "pop": 305902,
     "politics": -31.0,
-    "aqi": 42.0
+    "aqi": 42.0,
+    "risk": 62.2
   },
   {
     "id": "waco-tx",
@@ -2882,7 +3046,8 @@
     },
     "pop": 304865,
     "politics": -35.0,
-    "aqi": 53.0
+    "aqi": 53.0,
+    "risk": 83.9
   },
   {
     "id": "crestview-fl",
@@ -2899,7 +3064,8 @@
     },
     "pop": 304818,
     "politics": -47.6,
-    "aqi": 36.0
+    "aqi": 36.0,
+    "risk": 96.7
   },
   {
     "id": "sioux-falls-sd",
@@ -2917,7 +3083,8 @@
     },
     "pop": 304555,
     "politics": -19.6,
-    "aqi": 34.0
+    "aqi": 34.0,
+    "risk": 87.2
   },
   {
     "id": "olympia-wa",
@@ -2934,7 +3101,8 @@
     },
     "pop": 299003,
     "politics": 21.1,
-    "aqi": 26.0
+    "aqi": 26.0,
+    "risk": 96.2
   },
   {
     "id": "longview-tx",
@@ -2951,7 +3119,8 @@
     },
     "pop": 293498,
     "politics": -52.7,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 78.3
   },
   {
     "id": "merced-ca",
@@ -2968,7 +3137,8 @@
     },
     "pop": 291920,
     "politics": -4.5,
-    "aqi": 52.0
+    "aqi": 52.0,
+    "risk": 95.3
   },
   {
     "id": "utica-ny",
@@ -2985,7 +3155,8 @@
     },
     "pop": 287039,
     "politics": -24.6,
-    "aqi": 27.0
+    "aqi": 27.0,
+    "risk": 64.4
   },
   {
     "id": "san-luis-obispo-ca",
@@ -3002,7 +3173,8 @@
     },
     "pop": 281639,
     "politics": 11.2,
-    "aqi": 49.0
+    "aqi": 49.0,
+    "risk": 93.3
   },
   {
     "id": "duluth-mn",
@@ -3020,7 +3192,8 @@
     },
     "pop": 281603,
     "politics": 10.6,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 54.6
   },
   {
     "id": "college-station-tx",
@@ -3037,7 +3210,8 @@
     },
     "pop": 281445,
     "politics": -30.5,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 78.4
   },
   {
     "id": "norwich-ct",
@@ -3071,7 +3245,8 @@
     },
     "pop": 278290,
     "politics": -16.0,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 79.2
   },
   {
     "id": "bremerton-wa",
@@ -3088,7 +3263,8 @@
     },
     "pop": 277658,
     "politics": 21.7,
-    "aqi": 19.0
+    "aqi": 19.0,
+    "risk": 94.5
   },
   {
     "id": "cedar-rapids-ia",
@@ -3105,7 +3281,8 @@
     },
     "pop": 275668,
     "politics": 3.0,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 85.0
   },
   {
     "id": "slidell-la",
@@ -3121,7 +3298,8 @@
       "otherServices": 95.7
     },
     "pop": 275583,
-    "politics": -44.5
+    "politics": -44.5,
+    "risk": 97.8
   },
   {
     "id": "amarillo-tx",
@@ -3138,7 +3316,8 @@
     },
     "pop": 272395,
     "politics": -57.1,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 88.7
   },
   {
     "id": "evansville-in",
@@ -3155,7 +3334,8 @@
     },
     "pop": 270717,
     "politics": -21.1,
-    "aqi": 46.0
+    "aqi": 46.0,
+    "risk": 81.7
   },
   {
     "id": "laredo-tx",
@@ -3172,7 +3352,8 @@
     },
     "pop": 269148,
     "politics": -2.2,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 73.3
   },
   {
     "id": "erie-pa",
@@ -3189,7 +3370,8 @@
     },
     "pop": 267571,
     "politics": -1.0,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 68.0
   },
   {
     "id": "lynchburg-va",
@@ -3206,7 +3388,8 @@
     },
     "pop": 264590,
     "politics": -38.0,
-    "aqi": 28.0
+    "aqi": 28.0,
+    "risk": 27.4
   },
   {
     "id": "fargo-nd",
@@ -3224,7 +3407,8 @@
     },
     "pop": 262620,
     "politics": -6.2,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 82.5
   },
   {
     "id": "kalamazoo-mi",
@@ -3241,7 +3425,8 @@
     },
     "pop": 262215,
     "politics": 18.0,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 80.6
   },
   {
     "id": "santa-cruz-ca",
@@ -3258,7 +3443,8 @@
     },
     "pop": 261547,
     "politics": 56.6,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 97.6
   },
   {
     "id": "bend-or",
@@ -3275,7 +3461,8 @@
     },
     "pop": 260919,
     "politics": 0.5,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 73.5
   },
   {
     "id": "yakima-wa",
@@ -3292,7 +3479,8 @@
     },
     "pop": 256643,
     "politics": -14.7,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 93.2
   },
   {
     "id": "daphne-al",
@@ -3309,7 +3497,8 @@
     },
     "pop": 253507,
     "politics": -58.7,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 97.7
   },
   {
     "id": "prescott-valley-az",
@@ -3325,7 +3514,8 @@
       "otherServices": 99.8
     },
     "pop": 249081,
-    "politics": -34.2
+    "politics": -34.2,
+    "risk": 88.8
   },
   {
     "id": "appleton-wi",
@@ -3342,7 +3532,8 @@
     },
     "pop": 246433,
     "politics": -12.6,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 65.4
   },
   {
     "id": "tyler-tx",
@@ -3359,7 +3550,8 @@
     },
     "pop": 245209,
     "politics": -45.5,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 63.1
   },
   {
     "id": "binghamton-ny",
@@ -3375,7 +3567,8 @@
       "otherServices": 97.8
     },
     "pop": 243792,
-    "politics": -4.6
+    "politics": -4.6,
+    "risk": 81.5
   },
   {
     "id": "lake-charles-la",
@@ -3392,7 +3585,8 @@
     },
     "pop": 240082,
     "politics": -45.0,
-    "aqi": 49.0
+    "aqi": 49.0,
+    "risk": 94.9
   },
   {
     "id": "macon-ga",
@@ -3409,7 +3603,8 @@
     },
     "pop": 236074,
     "politics": -2.4,
-    "aqi": 51.0
+    "aqi": 51.0,
+    "risk": 56.2
   },
   {
     "id": "champaign-il",
@@ -3426,7 +3621,8 @@
     },
     "pop": 235608,
     "politics": 14.9,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 77.6
   },
   {
     "id": "hilton-head-island-sc",
@@ -3442,7 +3638,8 @@
       "otherServices": 98.3
     },
     "pop": 232523,
-    "politics": -13.9
+    "politics": -13.9,
+    "risk": 97.1
   },
   {
     "id": "topeka-ks",
@@ -3459,7 +3656,8 @@
     },
     "pop": 232322,
     "politics": -10.8,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 68.7
   },
   {
     "id": "bellingham-wa",
@@ -3476,7 +3674,8 @@
     },
     "pop": 231919,
     "politics": 25.7,
-    "aqi": 33.0
+    "aqi": 33.0,
+    "risk": 90.9
   },
   {
     "id": "barnstable-town-ma",
@@ -3493,7 +3692,8 @@
     },
     "pop": 231735,
     "politics": 21.1,
-    "aqi": 36.0
+    "aqi": 36.0,
+    "risk": 86.3
   },
   {
     "id": "fort-smith-ar",
@@ -3511,7 +3711,8 @@
     },
     "pop": 231280,
     "politics": -48.7,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 81.0
   },
   {
     "id": "rochester-mn",
@@ -3528,7 +3729,8 @@
     },
     "pop": 229077,
     "politics": -1.0,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 69.6
   },
   {
     "id": "burlington-vt",
@@ -3545,7 +3747,8 @@
     },
     "pop": 227942,
     "politics": 43.1,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 35.2
   },
   {
     "id": "lafayette-in",
@@ -3562,7 +3765,8 @@
     },
     "pop": 226564,
     "politics": -11.2,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 69.2
   },
   {
     "id": "las-cruces-nm",
@@ -3579,7 +3783,8 @@
     },
     "pop": 225210,
     "politics": 10.0,
-    "aqi": 62.0
+    "aqi": 62.0,
+    "risk": 87.6
   },
   {
     "id": "charlottesville-va",
@@ -3596,7 +3801,8 @@
     },
     "pop": 225127,
     "politics": 26.9,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 41.8
   },
   {
     "id": "lake-havasu-city-az",
@@ -3613,7 +3819,8 @@
     },
     "pop": 223682,
     "politics": -56.1,
-    "aqi": 19.0
+    "aqi": 19.0,
+    "risk": 88.4
   },
   {
     "id": "athens-ga",
@@ -3630,7 +3837,8 @@
     },
     "pop": 222060,
     "politics": -2.4,
-    "aqi": 46.0
+    "aqi": 46.0,
+    "risk": 50.8
   },
   {
     "id": "monroe-la",
@@ -3647,7 +3855,8 @@
     },
     "pop": 221885,
     "politics": -31.7,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 76.9
   },
   {
     "id": "medford-or",
@@ -3664,7 +3873,8 @@
     },
     "pop": 220768,
     "politics": -6.6,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 93.2
   },
   {
     "id": "gainesville-ga",
@@ -3681,7 +3891,8 @@
     },
     "pop": 217267,
     "politics": -44.1,
-    "aqi": 52.0
+    "aqi": 52.0,
+    "risk": 81.4
   },
   {
     "id": "columbia-mo",
@@ -3698,7 +3909,8 @@
     },
     "pop": 216511,
     "politics": 2.5,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 80.6
   },
   {
     "id": "panama-city-fl",
@@ -3715,7 +3927,8 @@
     },
     "pop": 216371,
     "politics": -49.9,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 96.3
   },
   {
     "id": "jacksonville-nc",
@@ -3731,7 +3944,8 @@
       "otherServices": 98.2
     },
     "pop": 213676,
-    "politics": -36.3
+    "politics": -36.3,
+    "risk": 97.9
   },
   {
     "id": "yuma-az",
@@ -3748,7 +3962,8 @@
     },
     "pop": 213221,
     "politics": -20.6,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 91.7
   },
   {
     "id": "johnson-city-tn",
@@ -3764,7 +3979,8 @@
       "otherServices": 95.1
     },
     "pop": 213198,
-    "politics": -48.3
+    "politics": -48.3,
+    "risk": 49.3
   },
   {
     "id": "lexington-park-md",
@@ -3780,7 +3996,8 @@
       "otherServices": 100.3
     },
     "pop": 210009,
-    "politics": -14.5
+    "politics": -14.5,
+    "risk": 75.2
   },
   {
     "id": "chico-ca",
@@ -3797,7 +4014,8 @@
     },
     "pop": 207172,
     "politics": -3.2,
-    "aqi": 46.0
+    "aqi": 46.0,
+    "risk": 97.2
   },
   {
     "id": "elkhart-in",
@@ -3814,7 +4032,8 @@
     },
     "pop": 206409,
     "politics": -32.8,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 75.7
   },
   {
     "id": "punta-gorda-fl",
@@ -3830,7 +4049,8 @@
       "otherServices": 98.9
     },
     "pop": 206134,
-    "politics": -34.2
+    "politics": -34.2,
+    "risk": 96.6
   },
   {
     "id": "springfield-il",
@@ -3847,7 +4067,8 @@
     },
     "pop": 205445,
     "politics": -7.3,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 85.2
   },
   {
     "id": "joplin-mo",
@@ -3865,7 +4086,8 @@
     },
     "pop": 204787,
     "politics": -51.8,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 81.9
   },
   {
     "id": "charleston-wv",
@@ -3882,7 +4104,8 @@
     },
     "pop": 203164,
     "politics": -23.4,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 71.0
   },
   {
     "id": "st-cloud-mn",
@@ -3899,7 +4122,8 @@
     },
     "pop": 202577,
     "politics": -29.2,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 75.8
   },
   {
     "id": "st-george-ut",
@@ -3916,7 +4140,8 @@
     },
     "pop": 202452,
     "politics": -53.2,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 95.7
   },
   {
     "id": "auburn-al",
@@ -3932,7 +4157,8 @@
       "otherServices": 96.7
     },
     "pop": 201585,
-    "politics": -19.9
+    "politics": -19.9,
+    "risk": 65.8
   },
   {
     "id": "warner-robins-ga",
@@ -3949,7 +4175,8 @@
     },
     "pop": 200779,
     "politics": -10.6,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 65.5
   },
   {
     "id": "florence-sc",
@@ -3966,7 +4193,8 @@
     },
     "pop": 199630,
     "politics": -9.9,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 88.2
   },
   {
     "id": "houma-la",
@@ -3983,7 +4211,8 @@
     },
     "pop": 198672,
     "politics": -57.7,
-    "aqi": 48.0
+    "aqi": 48.0,
+    "risk": 95.4
   },
   {
     "id": "racine-wi",
@@ -4000,7 +4229,8 @@
     },
     "pop": 196613,
     "politics": -6.2,
-    "aqi": 42.0
+    "aqi": 42.0,
+    "risk": 75.2
   },
   {
     "id": "billings-mt",
@@ -4017,7 +4247,8 @@
     },
     "pop": 191435,
     "politics": -30.6,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 55.1
   },
   {
     "id": "dover-de",
@@ -4034,7 +4265,8 @@
     },
     "pop": 189789,
     "politics": 2.0,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 84.8
   },
   {
     "id": "bowling-green-ky",
@@ -4051,7 +4283,8 @@
     },
     "pop": 188840,
     "politics": -36.2,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 70.5
   },
   {
     "id": "saginaw-mi",
@@ -4067,7 +4300,8 @@
       "otherServices": 99.6
     },
     "pop": 187782,
-    "politics": -3.3
+    "politics": -3.3,
+    "risk": 79.0
   },
   {
     "id": "coeur-d-alene-id",
@@ -4084,7 +4318,8 @@
     },
     "pop": 185010,
     "politics": -53.0,
-    "aqi": 24.0
+    "aqi": 24.0,
+    "risk": 61.3
   },
   {
     "id": "yuba-city-ca",
@@ -4101,7 +4336,8 @@
     },
     "pop": 183670,
     "politics": -29.8,
-    "aqi": 49.0
+    "aqi": 49.0,
+    "risk": 92.9
   },
   {
     "id": "kingston-ny",
@@ -4117,7 +4353,8 @@
       "otherServices": 97.8
     },
     "pop": 182333,
-    "politics": 18.7
+    "politics": 18.7,
+    "risk": 82.2
   },
   {
     "id": "midland-tx",
@@ -4133,7 +4370,8 @@
       "otherServices": 96.2
     },
     "pop": 182324,
-    "politics": -61.6
+    "politics": -61.6,
+    "risk": 86.4
   },
   {
     "id": "jackson-tn",
@@ -4150,7 +4388,8 @@
     },
     "pop": 181826,
     "politics": -36.2,
-    "aqi": 33.0
+    "aqi": 33.0,
+    "risk": 83.0
   },
   {
     "id": "abilene-tx",
@@ -4166,7 +4405,8 @@
       "otherServices": 96.2
     },
     "pop": 181591,
-    "politics": -55.5
+    "politics": -55.5,
+    "risk": 75.7
   },
   {
     "id": "blacksburg-va",
@@ -4183,7 +4423,8 @@
     },
     "pop": 181428,
     "politics": -16.7,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 17.5
   },
   {
     "id": "redding-ca",
@@ -4200,7 +4441,8 @@
     },
     "pop": 180366,
     "politics": -37.4,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 95.3
   },
   {
     "id": "iowa-city-ia",
@@ -4217,7 +4459,8 @@
     },
     "pop": 180088,
     "politics": 31.1,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 89.1
   },
   {
     "id": "burlington-nc",
@@ -4233,7 +4476,8 @@
       "otherServices": 98.2
     },
     "pop": 179165,
-    "politics": -8.3
+    "politics": -8.3,
+    "risk": 74.5
   },
   {
     "id": "el-centro-ca",
@@ -4250,7 +4494,8 @@
     },
     "pop": 179057,
     "politics": -0.9,
-    "aqi": 63.0
+    "aqi": 63.0,
+    "risk": 98.1
   },
   {
     "id": "muskegon-mi",
@@ -4267,7 +4512,8 @@
     },
     "pop": 176564,
     "politics": -1.8,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 60.5
   },
   {
     "id": "greenville-nc",
@@ -4284,7 +4530,8 @@
     },
     "pop": 175119,
     "politics": 6.0,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 94.2
   },
   {
     "id": "eau-claire-wi",
@@ -4301,7 +4548,8 @@
     },
     "pop": 174873,
     "politics": -2.2,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 59.7
   },
   {
     "id": "oshkosh-wi",
@@ -4317,7 +4565,8 @@
       "otherServices": 99.4
     },
     "pop": 171735,
-    "politics": -4.8
+    "politics": -4.8,
+    "risk": 78.2
   },
   {
     "id": "bloomington-il",
@@ -4334,7 +4583,8 @@
     },
     "pop": 170441,
     "politics": 5.0,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 81.1
   },
   {
     "id": "la-crosse-wi",
@@ -4352,7 +4602,8 @@
     },
     "pop": 170238,
     "politics": 3.6,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 65.3
   },
   {
     "id": "sebastian-fl",
@@ -4369,7 +4620,8 @@
     },
     "pop": 169795,
     "politics": -27.5,
-    "aqi": 35.0
+    "aqi": 35.0,
+    "risk": 97.1
   },
   {
     "id": "pueblo-co",
@@ -4386,7 +4638,8 @@
     },
     "pop": 169422,
     "politics": -5.3,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 79.8
   },
   {
     "id": "terre-haute-in",
@@ -4403,7 +4656,8 @@
     },
     "pop": 168787,
     "politics": -32.7,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 63.6
   },
   {
     "id": "idaho-falls-id",
@@ -4420,7 +4674,8 @@
     },
     "pop": 168322,
     "politics": -53.6,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 63.6
   },
   {
     "id": "waterloo-ia",
@@ -4437,7 +4692,8 @@
     },
     "pop": 168162,
     "politics": -6.6,
-    "aqi": 48.0
+    "aqi": 48.0,
+    "risk": 71.9
   },
   {
     "id": "kenosha-wi",
@@ -4453,7 +4709,8 @@
       "otherServices": 100.3
     },
     "pop": 167488,
-    "politics": -6.3
+    "politics": -6.3,
+    "risk": 78.4
   },
   {
     "id": "homosassa-springs-fl",
@@ -4470,7 +4727,8 @@
     },
     "pop": 166696,
     "politics": -46.2,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 95.9
   },
   {
     "id": "odessa-tx",
@@ -4487,7 +4745,8 @@
     },
     "pop": 164494,
     "politics": -53.3,
-    "aqi": 36.0
+    "aqi": 36.0,
+    "risk": 84.9
   },
   {
     "id": "janesville-wi",
@@ -4504,7 +4763,8 @@
     },
     "pop": 164278,
     "politics": 7.4,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 81.3
   },
   {
     "id": "kahului-hi",
@@ -4521,7 +4781,8 @@
     },
     "pop": 164264,
     "politics": 26.5,
-    "aqi": 21.0
+    "aqi": 21.0,
+    "risk": 87.6
   },
   {
     "id": "amherst-town-ma",
@@ -4537,7 +4798,8 @@
       "otherServices": 101.2
     },
     "pop": 162502,
-    "politics": 43.2
+    "politics": 43.2,
+    "risk": 63.4
   },
   {
     "id": "bloomington-in",
@@ -4554,7 +4816,8 @@
     },
     "pop": 160874,
     "politics": 16.5,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 65.1
   },
   {
     "id": "grand-junction-co",
@@ -4571,7 +4834,8 @@
     },
     "pop": 159681,
     "politics": -24.9,
-    "aqi": 48.0
+    "aqi": 48.0,
+    "risk": 47.3
   },
   {
     "id": "jackson-mi",
@@ -4587,7 +4851,8 @@
       "otherServices": 99.6
     },
     "pop": 159424,
-    "politics": -21.6
+    "politics": -21.6,
+    "risk": 73.9
   },
   {
     "id": "decatur-al",
@@ -4604,7 +4869,8 @@
     },
     "pop": 158635,
     "politics": -55.3,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 82.3
   },
   {
     "id": "logan-ut",
@@ -4622,7 +4888,8 @@
     },
     "pop": 157887,
     "politics": -40.4,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 78.8
   },
   {
     "id": "chambersburg-pa",
@@ -4639,7 +4906,8 @@
     },
     "pop": 157854,
     "politics": -43.4,
-    "aqi": 35.0
+    "aqi": 35.0,
+    "risk": 70.0
   },
   {
     "id": "state-college-pa",
@@ -4656,7 +4924,8 @@
     },
     "pop": 157795,
     "politics": 2.9,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 36.6
   },
   {
     "id": "traverse-city-mi",
@@ -4673,7 +4942,8 @@
     },
     "pop": 156371,
     "politics": -5.6,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 26.3
   },
   {
     "id": "rapid-city-sd",
@@ -4690,7 +4960,8 @@
     },
     "pop": 155974,
     "politics": -33.4,
-    "aqi": 50.0
+    "aqi": 50.0,
+    "risk": 81.1
   },
   {
     "id": "santa-fe-nm",
@@ -4707,7 +4978,8 @@
     },
     "pop": 155956,
     "politics": 50.0,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 81.2
   },
   {
     "id": "hattiesburg-ms",
@@ -4724,7 +4996,8 @@
     },
     "pop": 155740,
     "politics": -36.2,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 79.9
   },
   {
     "id": "bangor-me",
@@ -4741,7 +5014,8 @@
     },
     "pop": 155312,
     "politics": -11.1,
-    "aqi": 33.0
+    "aqi": 33.0,
+    "risk": 73.4
   },
   {
     "id": "florence-al",
@@ -4757,7 +5031,8 @@
       "otherServices": 96.7
     },
     "pop": 155175,
-    "politics": -50.0
+    "politics": -50.0,
+    "risk": 74.7
   },
   {
     "id": "monroe-mi",
@@ -4774,7 +5049,8 @@
     },
     "pop": 155045,
     "politics": -27.5,
-    "aqi": 18.0
+    "aqi": 18.0,
+    "risk": 72.7
   },
   {
     "id": "dothan-al",
@@ -4790,7 +5066,8 @@
       "otherServices": 96.7
     },
     "pop": 153349,
-    "politics": -54.1
+    "politics": -54.1,
+    "risk": 81.6
   },
   {
     "id": "hanford-ca",
@@ -4807,7 +5084,8 @@
     },
     "pop": 152682,
     "politics": -23.5,
-    "aqi": 60.0
+    "aqi": 60.0,
+    "risk": 91.1
   },
   {
     "id": "vineland-nj",
@@ -4824,7 +5102,8 @@
     },
     "pop": 152326,
     "politics": -3.8,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 91.8
   },
   {
     "id": "niles-mi",
@@ -4841,7 +5120,8 @@
     },
     "pop": 152261,
     "politics": -8.0,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 66.8
   },
   {
     "id": "wildwood-fl",
@@ -4857,7 +5137,8 @@
       "otherServices": 98.9
     },
     "pop": 151565,
-    "politics": -37.8
+    "politics": -37.8,
+    "risk": 88.9
   },
   {
     "id": "valdosta-ga",
@@ -4874,7 +5155,8 @@
     },
     "pop": 151118,
     "politics": -22.4,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 71.8
   },
   {
     "id": "jefferson-city-mo",
@@ -4891,7 +5173,8 @@
     },
     "pop": 150733,
     "politics": -44.1,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 63.2
   },
   {
     "id": "wichita-falls-tx",
@@ -4907,7 +5190,8 @@
       "otherServices": 96.2
     },
     "pop": 149947,
-    "politics": -51.5
+    "politics": -51.5,
+    "risk": 75.8
   },
   {
     "id": "alexandria-la",
@@ -4924,7 +5208,8 @@
     },
     "pop": 148171,
     "politics": -43.1,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 76.1
   },
   {
     "id": "winchester-va",
@@ -4942,7 +5227,8 @@
     },
     "pop": 147260,
     "politics": -27.5,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 41.4
   },
   {
     "id": "sherman-tx",
@@ -4958,7 +5244,8 @@
       "otherServices": 96.2
     },
     "pop": 146907,
-    "politics": -54.7
+    "politics": -54.7,
+    "risk": 83.5
   },
   {
     "id": "texarkana-tx",
@@ -4976,7 +5263,8 @@
     },
     "pop": 145907,
     "politics": -50.3,
-    "aqi": 49.0
+    "aqi": 49.0,
+    "risk": 75.1
   },
   {
     "id": "albany-ga",
@@ -4993,7 +5281,8 @@
     },
     "pop": 145508,
     "politics": 2.6,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 65.1
   },
   {
     "id": "rocky-mount-nc",
@@ -5010,7 +5299,8 @@
     },
     "pop": 145383,
     "politics": 6.1,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 84.5
   },
   {
     "id": "dalton-ga",
@@ -5027,7 +5317,8 @@
     },
     "pop": 144722,
     "politics": -53.0,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 74.6
   },
   {
     "id": "flagstaff-az",
@@ -5044,7 +5335,8 @@
     },
     "pop": 144472,
     "politics": 20.2,
-    "aqi": 46.0
+    "aqi": 46.0,
+    "risk": 90.2
   },
   {
     "id": "sioux-city-ia",
@@ -5063,7 +5355,8 @@
     },
     "pop": 144402,
     "politics": -26.8,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 75.6
   },
   {
     "id": "lebanon-pa",
@@ -5080,7 +5373,8 @@
     },
     "pop": 144252,
     "politics": -32.3,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 72.6
   },
   {
     "id": "morgantown-wv",
@@ -5097,7 +5391,8 @@
     },
     "pop": 141817,
     "politics": -18.4,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 31.8
   },
   {
     "id": "wausau-wi",
@@ -5114,7 +5409,8 @@
     },
     "pop": 138612,
     "politics": -18.9,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 61.6
   },
   {
     "id": "hammond-la",
@@ -5131,7 +5427,8 @@
     },
     "pop": 138064,
     "politics": -37.9,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 96.2
   },
   {
     "id": "harrisonburg-va",
@@ -5148,7 +5445,8 @@
     },
     "pop": 137650,
     "politics": -21.0,
-    "aqi": 42.0
+    "aqi": 42.0,
+    "risk": 50.8
   },
   {
     "id": "jonesboro-ar",
@@ -5164,7 +5462,8 @@
       "otherServices": 95.3
     },
     "pop": 136390,
-    "politics": -42.6
+    "politics": -42.6,
+    "risk": 89.8
   },
   {
     "id": "bismarck-nd",
@@ -5181,7 +5480,8 @@
     },
     "pop": 135786,
     "politics": -47.1,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 74.8
   },
   {
     "id": "wheeling-wv",
@@ -5199,7 +5499,8 @@
     },
     "pop": 135517,
     "politics": -42.1,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 51.9
   },
   {
     "id": "springfield-oh",
@@ -5216,7 +5517,8 @@
     },
     "pop": 134610,
     "politics": -29.8,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 59.5
   },
   {
     "id": "battle-creek-mi",
@@ -5232,7 +5534,8 @@
       "otherServices": 99.6
     },
     "pop": 133366,
-    "politics": -14.2
+    "politics": -14.2,
+    "risk": 72.6
   },
   {
     "id": "napa-ca",
@@ -5248,7 +5551,8 @@
       "otherServices": 100.3
     },
     "pop": 133216,
-    "politics": 36.0
+    "politics": 36.0,
+    "risk": 97.7
   },
   {
     "id": "manhattan-ks",
@@ -5264,7 +5568,8 @@
       "otherServices": 93.8
     },
     "pop": 132831,
-    "politics": -16.6
+    "politics": -16.6,
+    "risk": 65.8
   },
   {
     "id": "albany-or",
@@ -5281,7 +5586,8 @@
     },
     "pop": 131496,
     "politics": -25.2,
-    "aqi": 25.0
+    "aqi": 25.0,
+    "risk": 91.9
   },
   {
     "id": "mount-vernon-wa",
@@ -5298,7 +5604,8 @@
     },
     "pop": 131417,
     "politics": 9.1,
-    "aqi": 26.0
+    "aqi": 26.0,
+    "risk": 89.1
   },
   {
     "id": "johnstown-pa",
@@ -5315,7 +5622,8 @@
     },
     "pop": 130668,
     "politics": -40.0,
-    "aqi": 42.0
+    "aqi": 42.0,
+    "risk": 52.2
   },
   {
     "id": "salisbury-md",
@@ -5332,7 +5640,8 @@
     },
     "pop": 129710,
     "politics": -7.8,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 85.1
   },
   {
     "id": "cleveland-tn",
@@ -5348,7 +5657,8 @@
       "otherServices": 95.1
     },
     "pop": 129612,
-    "politics": -60.9
+    "politics": -60.9,
+    "risk": 69.1
   },
   {
     "id": "elizabethtown-ky",
@@ -5365,7 +5675,8 @@
     },
     "pop": 127576,
     "politics": -34.0,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 65.4
   },
   {
     "id": "staunton-va",
@@ -5381,7 +5692,8 @@
       "otherServices": 98.6
     },
     "pop": 127344,
-    "politics": -29.1
+    "politics": -29.1,
+    "risk": 33.5
   },
   {
     "id": "lawton-ok",
@@ -5398,7 +5710,8 @@
     },
     "pop": 127001,
     "politics": -26.8,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 85.4
   },
   {
     "id": "missoula-mt",
@@ -5415,7 +5728,8 @@
     },
     "pop": 126939,
     "politics": 19.5,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 75.5
   },
   {
     "id": "pittsfield-ma",
@@ -5432,7 +5746,8 @@
     },
     "pop": 126818,
     "politics": 40.8,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 59.5
   },
   {
     "id": "bozeman-mt",
@@ -5449,7 +5764,8 @@
     },
     "pop": 126409,
     "politics": 3.3,
-    "aqi": 18.0
+    "aqi": 18.0,
+    "risk": 69.8
   },
   {
     "id": "glens-falls-ny",
@@ -5465,7 +5781,8 @@
       "otherServices": 97.8
     },
     "pop": 125427,
-    "politics": -11.8
+    "politics": -11.8,
+    "risk": 39.5
   },
   {
     "id": "ames-ia",
@@ -5481,7 +5798,8 @@
       "otherServices": 92.9
     },
     "pop": 125156,
-    "politics": 2.8
+    "politics": 2.8,
+    "risk": 69.6
   },
   {
     "id": "mansfield-oh",
@@ -5497,7 +5815,8 @@
       "otherServices": 98.9
     },
     "pop": 125064,
-    "politics": -42.7
+    "politics": -42.7,
+    "risk": 60.4
   },
   {
     "id": "wenatchee-wa",
@@ -5514,7 +5833,8 @@
     },
     "pop": 124795,
     "politics": -15.8,
-    "aqi": 28.0
+    "aqi": 28.0,
+    "risk": 78.7
   },
   {
     "id": "sierra-vista-az",
@@ -5531,7 +5851,8 @@
     },
     "pop": 124640,
     "politics": -23.4,
-    "aqi": 48.0
+    "aqi": 48.0,
+    "risk": 85.9
   },
   {
     "id": "morristown-tn",
@@ -5548,7 +5869,8 @@
     },
     "pop": 124054,
     "politics": -62.1,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 38.3
   },
   {
     "id": "farmington-nm",
@@ -5565,7 +5887,8 @@
     },
     "pop": 120675,
     "politics": -32.5,
-    "aqi": 48.0
+    "aqi": 48.0,
+    "risk": 69.8
   },
   {
     "id": "san-angelo-tx",
@@ -5581,7 +5904,8 @@
       "otherServices": 96.2
     },
     "pop": 120606,
-    "politics": -49.0
+    "politics": -49.0,
+    "risk": 77.9
   },
   {
     "id": "lawrence-ks",
@@ -5597,7 +5921,8 @@
       "otherServices": 93.8
     },
     "pop": 120553,
-    "politics": 38.6
+    "politics": 38.6,
+    "risk": 79.6
   },
   {
     "id": "altoona-pa",
@@ -5614,7 +5939,8 @@
     },
     "pop": 120273,
     "politics": -43.8,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 52.4
   },
   {
     "id": "goldsboro-nc",
@@ -5630,7 +5956,8 @@
       "otherServices": 98.2
     },
     "pop": 118686,
-    "politics": -16.5
+    "politics": -16.5,
+    "risk": 94.4
   },
   {
     "id": "st-joseph-mo",
@@ -5648,7 +5975,8 @@
     },
     "pop": 118475,
     "politics": -38.3,
-    "aqi": 48.0
+    "aqi": 48.0,
+    "risk": 61.3
   },
   {
     "id": "sheboygan-wi",
@@ -5665,7 +5993,8 @@
     },
     "pop": 117752,
     "politics": -16.6,
-    "aqi": 40.0
+    "aqi": 40.0,
+    "risk": 65.6
   },
   {
     "id": "anniston-al",
@@ -5681,7 +6010,8 @@
       "otherServices": 96.7
     },
     "pop": 116429,
-    "politics": -45.1
+    "politics": -45.1,
+    "risk": 84.4
   },
   {
     "id": "brunswick-ga",
@@ -5698,7 +6028,8 @@
     },
     "pop": 116074,
     "politics": -34.5,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 84.4
   },
   {
     "id": "watertown-ny",
@@ -5715,7 +6046,8 @@
     },
     "pop": 114787,
     "politics": -23.6,
-    "aqi": 32.0
+    "aqi": 32.0,
+    "risk": 40.8
   },
   {
     "id": "sandusky-oh",
@@ -5731,7 +6063,8 @@
       "otherServices": 98.9
     },
     "pop": 113838,
-    "politics": -18.4
+    "politics": -18.4,
+    "risk": 55.9
   },
   {
     "id": "lewiston-me",
@@ -5748,7 +6081,8 @@
     },
     "pop": 113765,
     "politics": -6.2,
-    "aqi": 31.0
+    "aqi": 31.0,
+    "risk": 67.3
   },
   {
     "id": "weirton-wv",
@@ -5766,7 +6100,8 @@
     },
     "pop": 113544,
     "politics": -45.4,
-    "aqi": 46.0
+    "aqi": 46.0,
+    "risk": 38.2
   },
   {
     "id": "longview-wa",
@@ -5783,7 +6118,8 @@
     },
     "pop": 112864,
     "politics": -20.5,
-    "aqi": 22.0
+    "aqi": 22.0,
+    "risk": 92.1
   },
   {
     "id": "williamsport-pa",
@@ -5800,7 +6136,8 @@
     },
     "pop": 112724,
     "politics": -41.8,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 65.8
   },
   {
     "id": "owensboro-ky",
@@ -5817,7 +6154,8 @@
     },
     "pop": 112512,
     "politics": -34.6,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 80.1
   },
   {
     "id": "muncie-in",
@@ -5834,7 +6172,8 @@
     },
     "pop": 112321,
     "politics": -16.1,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 74.0
   },
   {
     "id": "michigan-city-in",
@@ -5851,7 +6190,8 @@
     },
     "pop": 111706,
     "politics": -14.4,
-    "aqi": 41.0
+    "aqi": 41.0,
+    "risk": 74.1
   },
   {
     "id": "beckley-wv",
@@ -5867,7 +6207,8 @@
       "otherServices": 99.8
     },
     "pop": 111428,
-    "politics": -51.0
+    "politics": -51.0,
+    "risk": 45.9
   },
   {
     "id": "sebring-fl",
@@ -5884,7 +6225,8 @@
     },
     "pop": 107614,
     "politics": -41.0,
-    "aqi": 35.0
+    "aqi": 35.0,
+    "risk": 90.3
   },
   {
     "id": "pinehurst-nc",
@@ -5900,7 +6242,8 @@
       "otherServices": 98.2
     },
     "pop": 106898,
-    "politics": -29.8
+    "politics": -29.8,
+    "risk": 80.7
   },
   {
     "id": "gettysburg-pa",
@@ -5917,7 +6260,8 @@
     },
     "pop": 106748,
     "politics": -34.0,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 61.2
   },
   {
     "id": "kankakee-il",
@@ -5933,7 +6277,8 @@
       "otherServices": 99.6
     },
     "pop": 105940,
-    "politics": -21.2
+    "politics": -21.2,
+    "risk": 71.2
   },
   {
     "id": "mankato-mn",
@@ -5950,7 +6295,8 @@
     },
     "pop": 104248,
     "politics": -1.0,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 62.8
   },
   {
     "id": "sumter-sc",
@@ -5966,7 +6312,8 @@
       "otherServices": 98.3
     },
     "pop": 104165,
-    "politics": 5.0
+    "politics": 5.0,
+    "risk": 87.5
   },
   {
     "id": "fond-du-lac-wi",
@@ -5983,7 +6330,8 @@
     },
     "pop": 103948,
     "politics": -29.0,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 70.5
   },
   {
     "id": "ithaca-ny",
@@ -6000,7 +6348,8 @@
     },
     "pop": 103558,
     "politics": 50.6,
-    "aqi": 35.0
+    "aqi": 35.0,
+    "risk": 47.4
   },
   {
     "id": "gadsden-al",
@@ -6017,7 +6366,8 @@
     },
     "pop": 103241,
     "politics": -56.1,
-    "aqi": 47.0
+    "aqi": 47.0,
+    "risk": 82.2
   },
   {
     "id": "grand-forks-nd",
@@ -6034,7 +6384,8 @@
       "otherServices": 91.4
     },
     "pop": 103120,
-    "politics": -23.7
+    "politics": -23.7,
+    "risk": 76.1
   },
   {
     "id": "bay-city-mi",
@@ -6051,7 +6402,8 @@
     },
     "pop": 102500,
     "politics": -14.9,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 70.9
   },
   {
     "id": "paducah-ky",
@@ -6069,7 +6421,8 @@
     },
     "pop": 102267,
     "politics": -44.2,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 76.0
   },
   {
     "id": "cheyenne-wy",
@@ -6086,7 +6439,8 @@
     },
     "pop": 100984,
     "politics": -32.9,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 80.6
   },
   {
     "id": "lima-oh",
@@ -6103,7 +6457,8 @@
     },
     "pop": 100838,
     "politics": -44.5,
-    "aqi": 42.0
+    "aqi": 42.0,
+    "risk": 50.6
   },
   {
     "id": "decatur-il",
@@ -6120,7 +6475,8 @@
     },
     "pop": 100591,
     "politics": -19.2,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 77.3
   },
   {
     "id": "rome-ga",
@@ -6137,7 +6493,8 @@
     },
     "pop": 100113,
     "politics": -42.2,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 78.7
   },
   {
     "id": "hot-springs-ar",
@@ -6154,7 +6511,8 @@
     },
     "pop": 99784,
     "politics": -37.1,
-    "aqi": 50.0
+    "aqi": 50.0,
+    "risk": 86.1
   },
   {
     "id": "dubuque-ia",
@@ -6170,7 +6528,8 @@
       "otherServices": 92.9
     },
     "pop": 98887,
-    "politics": -8.7
+    "politics": -8.7,
+    "risk": 77.9
   },
   {
     "id": "victoria-tx",
@@ -6187,7 +6546,8 @@
     },
     "pop": 98808,
     "politics": -44.7,
-    "aqi": 35.0
+    "aqi": 35.0,
+    "risk": 89.0
   },
   {
     "id": "cape-girardeau-mo",
@@ -6204,7 +6564,8 @@
       "otherServices": 93.1
     },
     "pop": 98223,
-    "politics": -49.3
+    "politics": -49.3,
+    "risk": 81.9
   },
   {
     "id": "corvallis-or",
@@ -6220,7 +6581,8 @@
       "otherServices": 100.3
     },
     "pop": 97713,
-    "politics": 41.0
+    "politics": 41.0,
+    "risk": 91.3
   },
   {
     "id": "helena-mt",
@@ -6237,7 +6599,8 @@
     },
     "pop": 96091,
     "politics": -15.6,
-    "aqi": 46.0
+    "aqi": 46.0,
+    "risk": 42.5
   },
   {
     "id": "fairbanks-ak",
@@ -6253,7 +6616,8 @@
       "otherServices": 103.3
     },
     "pop": 94840,
-    "aqi": 42.0
+    "aqi": 42.0,
+    "risk": 82.4
   },
   {
     "id": "pocatello-id",
@@ -6270,7 +6634,8 @@
     },
     "pop": 90400,
     "politics": -25.9,
-    "aqi": 39.0
+    "aqi": 39.0,
+    "risk": 65.7
   },
   {
     "id": "hinesville-ga",
@@ -6286,7 +6651,8 @@
       "otherServices": 98.7
     },
     "pop": 88804,
-    "politics": 6.5
+    "politics": 6.5,
+    "risk": 86.7
   },
   {
     "id": "parkersburg-wv",
@@ -6303,7 +6669,8 @@
     },
     "pop": 88052,
     "politics": -45.3,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 26.1
   },
   {
     "id": "grants-pass-or",
@@ -6320,7 +6687,8 @@
     },
     "pop": 87821,
     "politics": -29.8,
-    "aqi": 29.0
+    "aqi": 29.0,
+    "risk": 88.1
   },
   {
     "id": "great-falls-mt",
@@ -6337,7 +6705,8 @@
     },
     "pop": 84900,
     "politics": -23.0,
-    "aqi": 46.0
+    "aqi": 46.0,
+    "risk": 55.8
   },
   {
     "id": "midland-mi",
@@ -6353,7 +6722,8 @@
       "otherServices": 99.6
     },
     "pop": 84039,
-    "politics": -15.4
+    "politics": -15.4,
+    "risk": 64.9
   },
   {
     "id": "columbus-in",
@@ -6370,7 +6740,8 @@
     },
     "pop": 84003,
     "politics": -27.9,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 78.5
   },
   {
     "id": "kokomo-in",
@@ -6387,7 +6758,8 @@
     },
     "pop": 83831,
     "politics": -35.9,
-    "aqi": 44.0
+    "aqi": 44.0,
+    "risk": 68.3
   },
   {
     "id": "elmira-ny",
@@ -6403,7 +6775,8 @@
       "otherServices": 97.8
     },
     "pop": 81325,
-    "politics": -16.8
+    "politics": -16.8,
+    "risk": 48.6
   },
   {
     "id": "casper-wy",
@@ -6420,7 +6793,8 @@
     },
     "pop": 79941,
     "politics": -49.5,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 40.7
   },
   {
     "id": "grand-island-ne",
@@ -6437,7 +6811,8 @@
     },
     "pop": 76479,
     "politics": -45.1,
-    "aqi": 32.0
+    "aqi": 32.0,
+    "risk": 79.1
   },
   {
     "id": "minot-nd",
@@ -6454,7 +6829,8 @@
     },
     "pop": 75742,
     "politics": -50.4,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 72.0
   },
   {
     "id": "lewiston-id",
@@ -6472,7 +6848,8 @@
     },
     "pop": 65536,
     "politics": -34.8,
-    "aqi": 43.0
+    "aqi": 43.0,
+    "risk": 14.3
   },
   {
     "id": "walla-walla-wa",
@@ -6489,7 +6866,8 @@
     },
     "pop": 61568,
     "politics": -8.3,
-    "aqi": 38.0
+    "aqi": 38.0,
+    "risk": 70.8
   },
   {
     "id": "carson-city-nv",
@@ -6506,7 +6884,8 @@
     },
     "pop": 58036,
     "politics": -11.6,
-    "aqi": 45.0
+    "aqi": 45.0,
+    "risk": 90.6
   },
   {
     "id": "eagle-pass-tx",
@@ -6523,6 +6902,7 @@
     },
     "pop": 57762,
     "politics": -18.6,
-    "aqi": 37.0
+    "aqi": 37.0,
+    "risk": 60.2
   }
 ]

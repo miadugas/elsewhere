@@ -29,9 +29,10 @@ ELECTION_CSV = (
     "US_County_Level_Election_Results_08-24/master/2024_US_County_Level_Presidential_Results.csv"
 )
 EPA_AQI_ZIP = "https://aqs.epa.gov/aqsweb/airdata/annual_aqi_by_cbsa_2024.zip"
-FEMA_NRI_ZIP = (
-    "https://hazards.fema.gov/nri/Content/StaticDocuments/DataDownload/"
-    "NRI_Table_Counties/NRI_Table_Counties.zip"
+FEMA_NRI_CSV = (
+    "https://opendata.arcgis.com/api/v3/datasets/"
+    "39485e8035d446a5bff03259508ae355_0/downloads/data"
+    "?format=csv&spatialRefId=4326&where=1%3D1"
 )
 GAZ_CBSA = (
     "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/"
@@ -48,7 +49,7 @@ MSA_SUFFIX = " (Metropolitan Statistical Area)"
 
 def fetch(url: str) -> bytes:
     print(f"  fetch {url}", file=sys.stderr)
-    req = urllib.request.Request(url, headers={"User-Agent": "elsewhere-build/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; elsewhere-data-build)"})
     with urllib.request.urlopen(req) as r:
         return r.read()
 
@@ -174,24 +175,24 @@ def load_aqi() -> dict[str, float]:
 def load_risk(c2cbsa: dict[str, str]) -> dict[str, float]:
     """CBSA code -> population-weighted mean composite risk score (0-100).
 
-    FEMA NRI download may be blocked (returns HTML). Wrapped in safe() in
-    main() so failure skips gracefully.
+    Data sourced from FEMA NRI via ArcGIS Hub (public, no auth required).
+    Wrapped in safe() in main() so failure skips gracefully.
     """
-    raw = fetch(FEMA_NRI_ZIP)
-    # FEMA sometimes returns HTML instead of a zip (access denied / WAF)
-    if not raw[:2] == b"PK":
-        raise RuntimeError("FEMA NRI response is not a ZIP (likely access denied)")
-    zf = zipfile.ZipFile(io.BytesIO(raw))
-    name = next(n for n in zf.namelist() if n.endswith(".csv"))
-    rows = csv.DictReader(io.StringIO(zf.read(name).decode("latin-1")))
+    raw = fetch(FEMA_NRI_CSV)
+    # ArcGIS Hub returns UTF-8 CSV with optional BOM
+    rows = csv.DictReader(io.StringIO(raw.decode("utf-8-sig")))
     agg: dict[str, list[float]] = {}
-    # Column names may vary; try common variants
+    # Detect column names from the header (prefer STCOFIPS = 5-digit national FIPS)
+    header = rows.fieldnames or []
+    fips_key = next(
+        (k for k in header if k.upper() == "STCOFIPS"),
+        next((k for k in header if k.upper() in ("COUNTYFIPS", "FIPS")), None),
+    )
+    risk_key = next((k for k in header if "RISK_SCORE" in k.upper()), None)
+    pop_key = next((k for k in header if k.upper() in ("POPULATION", "POPULATION_2020")), None)
+    if not (fips_key and risk_key):
+        raise RuntimeError(f"FEMA NRI CSV missing expected columns; found: {header[:10]}")
     for r in rows:
-        fips_key = next((k for k in r if k.upper() in ("STCOFIPS", "COUNTYFIPS", "FIPS")), None)
-        risk_key = next((k for k in r if "RISK_SCORE" in k.upper() or k.upper() == "RISK_SCORE"), None)
-        pop_key = next((k for k in r if k.upper() in ("POPULATION", "POPULATION_2020")), None)
-        if not (fips_key and risk_key):
-            break  # header not as expected; bail
         fips = (r.get(fips_key) or "").strip().zfill(5)
         cbsa = c2cbsa.get(fips)
         if not cbsa:
