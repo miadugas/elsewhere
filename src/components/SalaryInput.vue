@@ -86,11 +86,9 @@ const suffix = computed(() => (props.period === "hourly" ? "/ hr" : "/ yr"));
         aria-label="Pay period"
         :style="{
           borderRadius: 'var(--radius-pill)',
-          background: 'var(--slider-track)',
-          border:
-            '1px solid color-mix(in oklch, var(--color-on-dark) 14%, transparent)',
-          boxShadow:
-            'inset 0 1px 3px rgba(0, 0, 0, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.18)',
+          background: 'var(--seg-track)',
+          border: '1px solid var(--seg-border)',
+          boxShadow: 'inset 0 1px 2px rgba(var(--shadow-base), 0.1)',
         }"
       >
         <!-- sliding thumb — moves between Annual / Hourly like the theme switch -->
@@ -105,9 +103,7 @@ const suffix = computed(() => (props.period === "hourly" ? "/ hr" : "/ yr"));
           :style="{
             letterSpacing: 'var(--text-eyebrow--letter-spacing)',
             color:
-              period === opt.id
-                ? 'var(--color-surface-dark)'
-                : 'var(--slider-muted)',
+              period === opt.id ? 'var(--seg-label)' : 'var(--seg-label-muted)',
             opacity: 1,
             transition:
               period === opt.id
@@ -201,11 +197,9 @@ const suffix = computed(() => (props.period === "hourly" ? "/ hr" : "/ yr"));
   z-index: 0;
   width: calc(50% - 4px);
   border-radius: var(--radius-pill);
-  background: var(--slider-thumb);
-  /* same lift as the theme-switch sun knob: drop shadow + a warm glow */
-  box-shadow:
-    0 2px 5px rgba(0, 0, 0, 0.3),
-    0 0 10px 1px var(--slider-thumb-glow);
+  background: var(--seg-thumb);
+  /* plain raised thumb — soft neutral shadow, no warm glow */
+  box-shadow: var(--seg-thumb-shadow);
   transform: translateX(0);
   transition: transform 360ms cubic-bezier(0.34, 1.35, 0.5, 1);
 }

@@ -136,7 +136,6 @@ function choose(m: Metro) {
         :key="m.id"
         @mousedown.prevent="choose(m)"
         class="city-row flex cursor-pointer items-center justify-between px-4 py-3"
-        style="border-bottom: 1px solid var(--color-contour)"
       >
         <div class="flex min-w-0 flex-col">
           <span class="truncate text-[length:var(--text-body)] font-bold">{{
@@ -170,11 +169,29 @@ function choose(m: Metro) {
 </template>
 
 <style scoped>
-/* active/hovered city row — celestial accent tint instead of neutral grey */
+/* highlighted city row — raised paper band with a soft bevel above + below
+   (square corners, full-bleed) so a selection reads as a lifted strip */
 .city-row {
-  transition: background-color 150ms ease;
+  position: relative;
+  border-bottom: 1px solid var(--color-contour);
+  transition:
+    background-color 150ms ease,
+    box-shadow 150ms ease,
+    border-color 150ms ease,
+    transform 150ms ease;
 }
+/* highlighted row mirrors the input's focus state exactly: rounded field,
+   route border + glow ring (faked with box-shadow so there's no layout
+   shift), same lift. Divider hides so the rounded corners read clean. */
 .city-row:hover {
-  background: color-mix(in oklch, var(--color-route) 14%, transparent);
+  z-index: 1;
+  border-radius: var(--radius-sheet);
+  border-bottom-color: transparent;
+  background: var(--color-paper);
+  box-shadow:
+    inset 0 0 0 1.5px var(--color-route),
+    0 0 0 3px color-mix(in oklch, var(--color-route) 26%, transparent),
+    var(--shadow-sheet-lifted);
+  transform: translateY(-1px);
 }
 </style>

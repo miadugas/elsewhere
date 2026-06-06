@@ -267,6 +267,27 @@
   --slider-thumb-glow: oklch(0.9 0.03 255 / 0.45);
 }
 
+/* ── Segmented controls (large pay toggle + bottom nav) ──────────────
+   The big controls were too loud wearing the sky/sun slider treatment, so
+   they get a calm, recessed segmented-control look instead: a faint inset
+   track + a plain paper thumb with a soft shadow. Built from tokens that
+   already flip with the theme, so this needs no per-mode duplication.
+   (The small header theme switch keeps the loud --slider-* tokens.) */
+:root {
+  --seg-track: color-mix(in oklch, var(--color-ink) 7%, transparent);
+  --seg-border: color-mix(in oklch, var(--color-ink) 10%, transparent);
+  --seg-thumb: var(--color-paper);
+  --seg-thumb-shadow:
+    0 1px 2px rgba(var(--shadow-base), 0.16),
+    0 3px 8px -2px rgba(var(--shadow-base), 0.14);
+  --seg-label: var(--color-ink); /* active label */
+  --seg-label-muted: color-mix(
+    in oklch,
+    var(--color-ink) 42%,
+    transparent
+  ); /* inactive label — matches placeholder */
+}
+
 /* ── Page chrome ──────────────────────────────────────────────── */
 html,
 body,

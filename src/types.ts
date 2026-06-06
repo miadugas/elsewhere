@@ -14,6 +14,12 @@ export interface Metro {
     goods: number;
     otherServices: number;
   };
+  // ── lifestyle attributes (optional: not every metro matches every source) ──
+  politics?: number; // signed 2024 pres. margin in points: +8 = D+8, -12 = R+12
+  tempF?: number; // annual avg temperature, °F
+  humidity?: number; // annual avg relative humidity, %
+  aqi?: number; // median AQI for the year (lower = cleaner)
+  risk?: number; // FEMA National Risk Index composite 0–100 (higher = riskier)
 }
 
 export interface BasketItem {

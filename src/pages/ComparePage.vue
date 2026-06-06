@@ -158,7 +158,7 @@ const hasResult = computed(
               If I move,<br />what's my number?
             </p>
             <p
-              class="mt-3 max-w-[26ch] text-[length:var(--text-body)] opacity-85"
+              class="mt-4 max-w-[42ch] text-[length:var(--text-lede)] font-medium leading-snug opacity-90"
             >
               Pick two cities below. We'll show the salary that keeps your life
               the same — and what changes when you swap zip codes.
@@ -220,11 +220,10 @@ const hasResult = computed(
         }"
         :style="{
           borderRadius: 'var(--radius-pill)',
-          background: 'var(--slider-track)',
-          border:
-            '1px solid color-mix(in oklch, var(--color-on-dark) 14%, transparent)',
+          background: 'var(--seg-track)',
+          border: '1px solid var(--seg-border)',
           boxShadow:
-            'inset 0 1px 3px rgba(0, 0, 0, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.18), var(--shadow-sheet-lifted)',
+            'inset 0 1px 2px rgba(var(--shadow-base), 0.1), var(--shadow-sheet-lifted)',
         }"
         aria-label="App sections"
       >
@@ -239,8 +238,8 @@ const hasResult = computed(
           :style="{
             color:
               view === 'compare'
-                ? 'var(--color-surface-dark)'
-                : 'var(--slider-muted)',
+                ? 'var(--seg-label)'
+                : 'var(--seg-label-muted)',
             opacity: view === 'compare' ? 1 : 1,
             transition:
               view === 'compare'
@@ -266,8 +265,8 @@ const hasResult = computed(
           :style="{
             color:
               view === 'explore'
-                ? 'var(--color-surface-dark)'
-                : 'var(--slider-muted)',
+                ? 'var(--seg-label)'
+                : 'var(--seg-label-muted)',
             opacity: view === 'explore' ? 1 : 1,
             transition:
               view === 'explore'
@@ -292,9 +291,7 @@ const hasResult = computed(
           :class="view === 'about' ? 'font-black' : 'font-bold'"
           :style="{
             color:
-              view === 'about'
-                ? 'var(--color-surface-dark)'
-                : 'var(--slider-muted)',
+              view === 'about' ? 'var(--seg-label)' : 'var(--seg-label-muted)',
             opacity: view === 'about' ? 1 : 1,
             transition:
               view === 'about'
@@ -328,10 +325,8 @@ const hasResult = computed(
   z-index: 0;
   width: calc((100% - 12px) / 3);
   border-radius: var(--radius-pill);
-  background: var(--slider-thumb);
-  box-shadow:
-    0 2px 5px rgba(0, 0, 0, 0.3),
-    0 0 10px 1px var(--slider-thumb-glow);
+  background: var(--seg-thumb);
+  box-shadow: var(--seg-thumb-shadow);
   transform: translateX(0);
   transition: transform 380ms cubic-bezier(0.34, 1.3, 0.5, 1);
 }

@@ -223,11 +223,8 @@ const summary = computed(() => {
     <!-- ── Footer note ────────────────────────────────────────── -->
     <p
       v-if="open"
-      class="px-5 py-3 text-[length:var(--text-eyebrow)] uppercase opacity-70"
-      style="
-        letter-spacing: var(--text-eyebrow--letter-spacing);
-        background: var(--color-paper-deep);
-      "
+      class="whitespace-nowrap px-5 py-3 text-center text-[0.5rem] uppercase opacity-70"
+      style="letter-spacing: 0.02em; background: var(--color-paper-deep)"
     >
       Localized via regional price parity · National avg = 100
     </p>

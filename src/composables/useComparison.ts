@@ -5,6 +5,7 @@ import type { Metro, BasketItem, ParityResult, BasketRow } from "../types";
 import { findMetro } from "../engines/places";
 import { requiredSalary } from "../engines/parity";
 import { rankByAffordability, type AffordRow } from "../engines/explore";
+import { applyFilters, type ActiveBands } from "../engines/filters";
 import { localizeBasket } from "../engines/basket";
 import {
   annualFromHourly,
@@ -55,6 +56,17 @@ export function useComparison() {
       : [],
   );
 
+  // ── lifestyle filters (Afford page) — narrow only, never re-rank ──
+  const filters = ref<ActiveBands>({});
+
+  const filteredAffordable = computed(() =>
+    applyFilters(affordable.value, filters.value),
+  );
+
+  const activeFilterCount = computed(
+    () => Object.values(filters.value).filter((v) => v != null).length,
+  );
+
   return {
     metros,
     from,
@@ -82,5 +94,16 @@ export function useComparison() {
           : n),
     setPeriod: (p: PayPeriod) => (period.value = p),
     setHoursPerWeek: (h: number) => (hoursPerWeek.value = h),
+    filters,
+    filteredAffordable,
+    activeFilterCount,
+    // tapping the already-active band clears it (acts as a toggle)
+    setBand: (filterId: string, bandId: string | null) => {
+      filters.value = {
+        ...filters.value,
+        [filterId]: filters.value[filterId] === bandId ? null : bandId,
+      };
+    },
+    clearFilters: () => (filters.value = {}),
   };
 }
