@@ -13,7 +13,9 @@
       "housing": 148.6,
       "otherServices": 105.8
     },
-    "pop": 19498249
+    "pop": 19498249,
+    "politics": 14.9,
+    "aqi": 52.0
   },
   {
     "id": "los-angeles-ca",
@@ -28,7 +30,9 @@
       "housing": 170.4,
       "otherServices": 104.4
     },
-    "pop": 12799100
+    "pop": 12799100,
+    "politics": 25.5,
+    "aqi": 80.0
   },
   {
     "id": "chicago-il",
@@ -44,7 +48,9 @@
       "housing": 112.0,
       "otherServices": 100.5
     },
-    "pop": 9262825
+    "pop": 9262825,
+    "politics": 25.2,
+    "aqi": 56.0
   },
   {
     "id": "dallas-tx",
@@ -59,7 +65,9 @@
       "housing": 117.9,
       "otherServices": 99.7
     },
-    "pop": 8100037
+    "pop": 8100037,
+    "politics": -6.5,
+    "aqi": 59.0
   },
   {
     "id": "houston-tx",
@@ -74,7 +82,9 @@
       "housing": 104.5,
       "otherServices": 95.6
     },
-    "pop": 7510253
+    "pop": 7510253,
+    "politics": -7.0,
+    "aqi": 63.0
   },
   {
     "id": "atlanta-ga",
@@ -89,7 +99,9 @@
       "housing": 111.0,
       "otherServices": 96.7
     },
-    "pop": 6307261
+    "pop": 6307261,
+    "politics": 13.8,
+    "aqi": 56.0
   },
   {
     "id": "washington-dc",
@@ -107,7 +119,9 @@
       "housing": 151.1,
       "otherServices": 102.3
     },
-    "pop": 6304975
+    "pop": 6304975,
+    "politics": 38.1,
+    "aqi": 49.0
   },
   {
     "id": "philadelphia-pa",
@@ -125,7 +139,9 @@
       "housing": 113.1,
       "otherServices": 103.1
     },
-    "pop": 6246160
+    "pop": 6246160,
+    "politics": 25.7,
+    "aqi": 53.0
   },
   {
     "id": "miami-fl",
@@ -140,7 +156,9 @@
       "housing": 155.6,
       "otherServices": 109.1
     },
-    "pop": 6183199
+    "pop": 6183199,
+    "politics": 1.1,
+    "aqi": 51.0
   },
   {
     "id": "phoenix-az",
@@ -155,7 +173,9 @@
       "housing": 121.2,
       "otherServices": 104.0
     },
-    "pop": 5070110
+    "pop": 5070110,
+    "politics": -5.3,
+    "aqi": 86.0
   },
   {
     "id": "boston-ma",
@@ -171,7 +191,9 @@
       "housing": 148.4,
       "otherServices": 103.6
     },
-    "pop": 4919179
+    "pop": 4919179,
+    "politics": 28.9,
+    "aqi": 43.0
   },
   {
     "id": "riverside-ca",
@@ -186,7 +208,9 @@
       "housing": 129.3,
       "otherServices": 101.3
     },
-    "pop": 4688053
+    "pop": 4688053,
+    "politics": -1.7,
+    "aqi": 97.0
   },
   {
     "id": "san-francisco-ca",
@@ -201,7 +225,9 @@
       "housing": 194.7,
       "otherServices": 106.2
     },
-    "pop": 4566961
+    "pop": 4566961,
+    "politics": 54.0,
+    "aqi": 53.0
   },
   {
     "id": "detroit-mi",
@@ -216,7 +242,9 @@
       "housing": 94.7,
       "otherServices": 102.6
     },
-    "pop": 4342304
+    "pop": 4342304,
+    "politics": 7.3,
+    "aqi": 55.0
   },
   {
     "id": "seattle-wa",
@@ -231,7 +259,9 @@
       "housing": 151.3,
       "otherServices": 106.8
     },
-    "pop": 4044837
+    "pop": 4044837,
+    "politics": 37.0,
+    "aqi": 47.0
   },
   {
     "id": "minneapolis-mn",
@@ -247,7 +277,9 @@
       "housing": 111.8,
       "otherServices": 104.4
     },
-    "pop": 3712020
+    "pop": 3712020,
+    "politics": 17.2,
+    "aqi": 47.0
   },
   {
     "id": "tampa-fl",
@@ -262,7 +294,9 @@
       "housing": 125.8,
       "otherServices": 97.6
     },
-    "pop": 3342963
+    "pop": 3342963,
+    "politics": -10.6,
+    "aqi": 51.0
   },
   {
     "id": "san-diego-ca",
@@ -277,7 +311,9 @@
       "housing": 179.3,
       "otherServices": 99.6
     },
-    "pop": 3269973
+    "pop": 3269973,
+    "politics": 17.3,
+    "aqi": 71.0
   },
   {
     "id": "denver-co",
@@ -292,7 +328,9 @@
       "housing": 146.9,
       "otherServices": 99.4
     },
-    "pop": 3005131
+    "pop": 3005131,
+    "politics": 22.0,
+    "aqi": 64.0
   },
   {
     "id": "baltimore-md",
@@ -307,7 +345,9 @@
       "housing": 118.2,
       "otherServices": 101.5
     },
-    "pop": 2834316
+    "pop": 2834316,
+    "politics": 24.1,
+    "aqi": 47.0
   },
   {
     "id": "orlando-fl",
@@ -322,7 +362,9 @@
       "housing": 123.4,
       "otherServices": 98.9
     },
-    "pop": 2817933
+    "pop": 2817933,
+    "politics": 1.2,
+    "aqi": 44.0
   },
   {
     "id": "charlotte-nc",
@@ -338,7 +380,9 @@
       "housing": 97.6,
       "otherServices": 98.2
     },
-    "pop": 2805115
+    "pop": 2805115,
+    "politics": -1.3,
+    "aqi": 53.0
   },
   {
     "id": "st-louis-mo",
@@ -354,7 +398,9 @@
       "housing": 79.0,
       "otherServices": 98.6
     },
-    "pop": 2796999
+    "pop": 2796999,
+    "politics": 0.8,
+    "aqi": 55.0
   },
   {
     "id": "san-antonio-tx",
@@ -369,7 +415,9 @@
       "housing": 94.6,
       "otherServices": 96.2
     },
-    "pop": 2703999
+    "pop": 2703999,
+    "politics": -5.4,
+    "aqi": 53.0
   },
   {
     "id": "portland-or",
@@ -385,7 +433,9 @@
       "housing": 125.1,
       "otherServices": 100.1
     },
-    "pop": 2508050
+    "pop": 2508050,
+    "politics": 30.5,
+    "aqi": 38.0
   },
   {
     "id": "austin-tx",
@@ -400,7 +450,9 @@
       "housing": 120.4,
       "otherServices": 96.2
     },
-    "pop": 2473275
+    "pop": 2473275,
+    "politics": 20.7,
+    "aqi": 52.0
   },
   {
     "id": "pittsburgh-pa",
@@ -415,7 +467,9 @@
       "housing": 72.0,
       "otherServices": 97.7
     },
-    "pop": 2422725
+    "pop": 2422725,
+    "politics": -4.5,
+    "aqi": 53.0
   },
   {
     "id": "sacramento-ca",
@@ -430,7 +484,9 @@
       "housing": 130.2,
       "otherServices": 100.3
     },
-    "pop": 2420608
+    "pop": 2420608,
+    "politics": 12.2,
+    "aqi": 55.0
   },
   {
     "id": "las-vegas-nv",
@@ -445,7 +501,9 @@
       "housing": 115.5,
       "otherServices": 98.7
     },
-    "pop": 2336573
+    "pop": 2336573,
+    "politics": 2.7,
+    "aqi": 64.0
   },
   {
     "id": "cincinnati-oh",
@@ -462,7 +520,9 @@
       "housing": 87.6,
       "otherServices": 99.0
     },
-    "pop": 2271479
+    "pop": 2271479,
+    "politics": -16.0,
+    "aqi": 54.0
   },
   {
     "id": "kansas-city-mo",
@@ -478,7 +538,9 @@
       "housing": 86.6,
       "otherServices": 93.4
     },
-    "pop": 2221343
+    "pop": 2221343,
+    "politics": 2.7,
+    "aqi": 53.0
   },
   {
     "id": "columbus-oh",
@@ -493,7 +555,9 @@
       "housing": 87.9,
       "otherServices": 98.9
     },
-    "pop": 2180271
+    "pop": 2180271,
+    "politics": 5.0,
+    "aqi": 54.0
   },
   {
     "id": "cleveland-oh",
@@ -508,7 +572,8 @@
       "housing": 79.4,
       "otherServices": 98.9
     },
-    "pop": 2158932
+    "pop": 2158932,
+    "politics": 9.6
   },
   {
     "id": "indianapolis-in",
@@ -523,7 +588,9 @@
       "housing": 88.9,
       "otherServices": 99.1
     },
-    "pop": 2138468
+    "pop": 2138468,
+    "politics": -3.4,
+    "aqi": 55.0
   },
   {
     "id": "nashville-tn",
@@ -538,7 +605,9 @@
       "housing": 104.6,
       "otherServices": 95.1
     },
-    "pop": 2102573
+    "pop": 2102573,
+    "politics": -17.8,
+    "aqi": 51.0
   },
   {
     "id": "san-jose-ca",
@@ -553,7 +622,9 @@
       "housing": 211.9,
       "otherServices": 100.3
     },
-    "pop": 1945767
+    "pop": 1945767,
+    "politics": 40.5,
+    "aqi": 51.0
   },
   {
     "id": "virginia-beach-va",
@@ -569,7 +640,9 @@
       "housing": 99.8,
       "otherServices": 98.6
     },
-    "pop": 1787169
+    "pop": 1787169,
+    "politics": 10.4,
+    "aqi": 41.0
   },
   {
     "id": "jacksonville-fl",
@@ -584,7 +657,9 @@
       "housing": 109.8,
       "otherServices": 98.9
     },
-    "pop": 1713240
+    "pop": 1713240,
+    "politics": -18.5,
+    "aqi": 51.0
   },
   {
     "id": "providence-ri",
@@ -600,7 +675,9 @@
       "housing": 103.9,
       "otherServices": 102.3
     },
-    "pop": 1677803
+    "pop": 1677803,
+    "politics": 9.6,
+    "aqi": 42.0
   },
   {
     "id": "milwaukee-wi",
@@ -615,7 +692,9 @@
       "housing": 97.1,
       "otherServices": 99.4
     },
-    "pop": 1560424
+    "pop": 1560424,
+    "politics": 9.6,
+    "aqi": 45.0
   },
   {
     "id": "raleigh-nc",
@@ -630,7 +709,9 @@
       "housing": 103.5,
       "otherServices": 98.2
     },
-    "pop": 1509231
+    "pop": 1509231,
+    "politics": 16.6,
+    "aqi": 47.0
   },
   {
     "id": "oklahoma-city-ok",
@@ -645,7 +726,9 @@
       "housing": 73.9,
       "otherServices": 95.5
     },
-    "pop": 1477926
+    "pop": 1477926,
+    "politics": -18.5,
+    "aqi": 53.0
   },
   {
     "id": "louisville-jefferson-county-ky",
@@ -661,7 +744,9 @@
       "housing": 78.6,
       "otherServices": 96.8
     },
-    "pop": 1365557
+    "pop": 1365557,
+    "politics": -6.8,
+    "aqi": 51.0
   },
   {
     "id": "richmond-va",
@@ -676,7 +761,9 @@
       "housing": 99.1,
       "otherServices": 98.6
     },
-    "pop": 1349732
+    "pop": 1349732,
+    "politics": 13.6,
+    "aqi": 44.0
   },
   {
     "id": "memphis-tn",
@@ -693,7 +780,9 @@
       "housing": 79.8,
       "otherServices": 95.4
     },
-    "pop": 1335674
+    "pop": 1335674,
+    "politics": 6.7,
+    "aqi": 56.0
   },
   {
     "id": "salt-lake-city-ut",
@@ -708,7 +797,9 @@
       "housing": 123.3,
       "otherServices": 99.0
     },
-    "pop": 1267864
+    "pop": 1267864,
+    "politics": 7.2,
+    "aqi": 56.0
   },
   {
     "id": "birmingham-al",
@@ -723,7 +814,9 @@
       "housing": 71.9,
       "otherServices": 96.7
     },
-    "pop": 1184290
+    "pop": 1184290,
+    "politics": -20.1,
+    "aqi": 57.0
   },
   {
     "id": "fresno-ca",
@@ -738,7 +831,9 @@
       "housing": 95.7,
       "otherServices": 100.3
     },
-    "pop": 1180020
+    "pop": 1180020,
+    "politics": -6.9,
+    "aqi": 67.0
   },
   {
     "id": "grand-rapids-mi",
@@ -753,7 +848,9 @@
       "housing": 86.6,
       "otherServices": 99.6
     },
-    "pop": 1162950
+    "pop": 1162950,
+    "politics": -8.4,
+    "aqi": 51.0
   },
   {
     "id": "buffalo-ny",
@@ -768,7 +865,9 @@
       "housing": 81.0,
       "otherServices": 97.8
     },
-    "pop": 1155604
+    "pop": 1155604,
+    "politics": 5.2,
+    "aqi": 44.0
   },
   {
     "id": "hartford-ct",
@@ -783,7 +882,9 @@
       "housing": 110.2,
       "otherServices": 102.7
     },
-    "pop": 1151543
+    "pop": 1151543,
+    "politics": 20.8,
+    "aqi": 40.0
   },
   {
     "id": "tucson-az",
@@ -798,7 +899,9 @@
       "housing": 91.8,
       "otherServices": 99.8
     },
-    "pop": 1063162
+    "pop": 1063162,
+    "politics": 15.3,
+    "aqi": 56.0
   },
   {
     "id": "rochester-ny",
@@ -813,7 +916,9 @@
       "housing": 87.5,
       "otherServices": 97.8
     },
-    "pop": 1052087
+    "pop": 1052087,
+    "politics": 8.6,
+    "aqi": 39.0
   },
   {
     "id": "tulsa-ok",
@@ -828,7 +933,9 @@
       "housing": 68.2,
       "otherServices": 95.5
     },
-    "pop": 1044757
+    "pop": 1044757,
+    "politics": -29.5,
+    "aqi": 51.0
   },
   {
     "id": "urban-honolulu-hi",
@@ -843,7 +950,9 @@
       "housing": 135.5,
       "otherServices": 102.9
     },
-    "pop": 989408
+    "pop": 989408,
+    "politics": 22.0,
+    "aqi": 31.0
   },
   {
     "id": "omaha-ne",
@@ -859,7 +968,9 @@
       "housing": 86.4,
       "otherServices": 93.0
     },
-    "pop": 983969
+    "pop": 983969,
+    "politics": -3.6,
+    "aqi": 50.0
   },
   {
     "id": "greenville-sc",
@@ -874,7 +985,9 @@
       "housing": 76.8,
       "otherServices": 98.3
     },
-    "pop": 975480
+    "pop": 975480,
+    "politics": -33.5,
+    "aqi": 49.0
   },
   {
     "id": "new-orleans-la",
@@ -889,7 +1002,9 @@
       "housing": 86.0,
       "otherServices": 95.7
     },
-    "pop": 962165
+    "pop": 962165,
+    "politics": 17.3,
+    "aqi": 48.0
   },
   {
     "id": "knoxville-tn",
@@ -904,7 +1019,9 @@
       "housing": 82.8,
       "otherServices": 95.1
     },
-    "pop": 946264
+    "pop": 946264,
+    "politics": -36.0,
+    "aqi": 52.0
   },
   {
     "id": "albuquerque-nm",
@@ -919,7 +1036,9 @@
       "housing": 89.2,
       "otherServices": 98.5
     },
-    "pop": 922296
+    "pop": 922296,
+    "politics": 14.7,
+    "aqi": 61.0
   },
   {
     "id": "bakersfield-ca",
@@ -934,7 +1053,9 @@
       "housing": 90.3,
       "otherServices": 100.3
     },
-    "pop": 913820
+    "pop": 913820,
+    "politics": -21.6,
+    "aqi": 72.0
   },
   {
     "id": "north-port-fl",
@@ -949,7 +1070,9 @@
       "housing": 128.0,
       "otherServices": 98.9
     },
-    "pop": 910108
+    "pop": 910108,
+    "politics": -20.7,
+    "aqi": 44.0
   },
   {
     "id": "albany-ny",
@@ -964,7 +1087,9 @@
       "housing": 102.6,
       "otherServices": 97.8
     },
-    "pop": 904682
+    "pop": 904682,
+    "politics": 10.0,
+    "aqi": 37.0
   },
   {
     "id": "mcallen-tx",
@@ -979,7 +1104,9 @@
       "housing": 55.9,
       "otherServices": 96.2
     },
-    "pop": 898471
+    "pop": 898471,
+    "politics": -2.9,
+    "aqi": 54.0
   },
   {
     "id": "baton-rouge-la",
@@ -994,7 +1121,9 @@
       "housing": 74.2,
       "otherServices": 95.7
     },
-    "pop": 873661
+    "pop": 873661,
+    "politics": -15.1,
+    "aqi": 53.0
   },
   {
     "id": "allentown-pa",
@@ -1010,7 +1139,9 @@
       "housing": 105.5,
       "otherServices": 97.8
     },
-    "pop": 873555
+    "pop": 873555,
+    "politics": -5.0,
+    "aqi": 41.0
   },
   {
     "id": "el-paso-tx",
@@ -1025,7 +1156,9 @@
       "housing": 71.2,
       "otherServices": 96.2
     },
-    "pop": 873331
+    "pop": 873331,
+    "politics": 15.1,
+    "aqi": 67.0
   },
   {
     "id": "worcester-ma",
@@ -1040,7 +1173,9 @@
       "housing": 113.0,
       "otherServices": 101.2
     },
-    "pop": 866866
+    "pop": 866866,
+    "politics": 10.2,
+    "aqi": 37.0
   },
   {
     "id": "columbia-sc",
@@ -1055,7 +1190,9 @@
       "housing": 79.5,
       "otherServices": 98.3
     },
-    "pop": 858302
+    "pop": 858302,
+    "politics": 0.2,
+    "aqi": 47.0
   },
   {
     "id": "charleston-sc",
@@ -1070,7 +1207,9 @@
       "housing": 119.8,
       "otherServices": 98.3
     },
-    "pop": 849417
+    "pop": 849417,
+    "politics": -4.4,
+    "aqi": 44.0
   },
   {
     "id": "cape-coral-fl",
@@ -1085,7 +1224,9 @@
       "housing": 125.1,
       "otherServices": 98.9
     },
-    "pop": 834573
+    "pop": 834573,
+    "politics": -28.6,
+    "aqi": 37.0
   },
   {
     "id": "oxnard-ca",
@@ -1100,7 +1241,9 @@
       "housing": 171.1,
       "otherServices": 100.3
     },
-    "pop": 829590
+    "pop": 829590,
+    "politics": 15.6,
+    "aqi": 50.0
   },
   {
     "id": "boise-city-id",
@@ -1115,7 +1258,9 @@
       "housing": 105.6,
       "otherServices": 99.0
     },
-    "pop": 824657
+    "pop": 824657,
+    "politics": -23.2,
+    "aqi": 54.0
   },
   {
     "id": "lakeland-fl",
@@ -1130,7 +1275,9 @@
       "housing": 95.9,
       "otherServices": 98.9
     },
-    "pop": 818330
+    "pop": 818330,
+    "politics": -20.9,
+    "aqi": 39.0
   },
   {
     "id": "dayton-oh",
@@ -1145,7 +1292,8 @@
       "housing": 72.7,
       "otherServices": 98.9
     },
-    "pop": 814363
+    "pop": 814363,
+    "politics": -10.8
   },
   {
     "id": "stockton-ca",
@@ -1160,7 +1308,9 @@
       "housing": 115.6,
       "otherServices": 100.3
     },
-    "pop": 800965
+    "pop": 800965,
+    "politics": -0.9,
+    "aqi": 51.0
   },
   {
     "id": "greensboro-nc",
@@ -1175,7 +1325,9 @@
       "housing": 74.5,
       "otherServices": 98.2
     },
-    "pop": 789842
+    "pop": 789842,
+    "politics": 0.2,
+    "aqi": 45.0
   },
   {
     "id": "colorado-springs-co",
@@ -1190,7 +1342,9 @@
       "housing": 116.2,
       "otherServices": 99.8
     },
-    "pop": 768832
+    "pop": 768832,
+    "politics": -11.2,
+    "aqi": 49.0
   },
   {
     "id": "little-rock-ar",
@@ -1205,7 +1359,9 @@
       "housing": 68.3,
       "otherServices": 95.3
     },
-    "pop": 764045
+    "pop": 764045,
+    "politics": -10.4,
+    "aqi": 55.0
   },
   {
     "id": "des-moines-ia",
@@ -1220,7 +1376,9 @@
       "housing": 84.7,
       "otherServices": 92.9
     },
-    "pop": 737164
+    "pop": 737164,
+    "politics": 1.6,
+    "aqi": 45.0
   },
   {
     "id": "provo-ut",
@@ -1235,7 +1393,9 @@
       "housing": 104.1,
       "otherServices": 99.0
     },
-    "pop": 732197
+    "pop": 732197,
+    "politics": -41.9,
+    "aqi": 47.0
   },
   {
     "id": "deltona-fl",
@@ -1250,7 +1410,9 @@
       "housing": 108.4,
       "otherServices": 98.9
     },
-    "pop": 721796
+    "pop": 721796,
+    "politics": -23.3,
+    "aqi": 41.0
   },
   {
     "id": "kiryas-joel-ny",
@@ -1265,7 +1427,8 @@
       "housing": 115.8,
       "otherServices": 106.5
     },
-    "pop": 704620
+    "pop": 704620,
+    "politics": -2.0
   },
   {
     "id": "akron-oh",
@@ -1280,7 +1443,9 @@
       "housing": 76.8,
       "otherServices": 98.9
     },
-    "pop": 698398
+    "pop": 698398,
+    "politics": 1.7,
+    "aqi": 45.0
   },
   {
     "id": "winston-nc",
@@ -1295,7 +1460,9 @@
       "housing": 71.4,
       "otherServices": 98.2
     },
-    "pop": 695630
+    "pop": 695630,
+    "politics": -15.9,
+    "aqi": 50.0
   },
   {
     "id": "madison-wi",
@@ -1310,7 +1477,9 @@
       "housing": 99.7,
       "otherServices": 99.4
     },
-    "pop": 694345
+    "pop": 694345,
+    "politics": 43.8,
+    "aqi": 42.0
   },
   {
     "id": "ogden-ut",
@@ -1325,7 +1494,9 @@
       "housing": 117.9,
       "otherServices": 99.0
     },
-    "pop": 658133
+    "pop": 658133,
+    "politics": -25.9,
+    "aqi": 50.0
   },
   {
     "id": "syracuse-ny",
@@ -1340,7 +1511,9 @@
       "housing": 80.7,
       "otherServices": 97.8
     },
-    "pop": 652956
+    "pop": 652956,
+    "politics": 6.9,
+    "aqi": 36.0
   },
   {
     "id": "wichita-ks",
@@ -1355,7 +1528,9 @@
       "housing": 66.2,
       "otherServices": 93.8
     },
-    "pop": 652939
+    "pop": 652939,
+    "politics": -19.2,
+    "aqi": 47.0
   },
   {
     "id": "palm-bay-fl",
@@ -1370,7 +1545,9 @@
       "housing": 111.7,
       "otherServices": 98.9
     },
-    "pop": 643979
+    "pop": 643979,
+    "politics": -21.0,
+    "aqi": 40.0
   },
   {
     "id": "augusta-ga",
@@ -1386,7 +1563,9 @@
       "housing": 70.6,
       "otherServices": 98.5
     },
-    "pop": 629429
+    "pop": 629429,
+    "politics": -8.3,
+    "aqi": 52.0
   },
   {
     "id": "jackson-ms",
@@ -1401,7 +1580,9 @@
       "housing": 64.8,
       "otherServices": 96.1
     },
-    "pop": 610257
+    "pop": 610257,
+    "politics": -2.2,
+    "aqi": 48.0
   },
   {
     "id": "durham-nc",
@@ -1416,7 +1597,9 @@
       "housing": 98.9,
       "otherServices": 98.2
     },
-    "pop": 608879
+    "pop": 608879,
+    "politics": 46.8,
+    "aqi": 51.0
   },
   {
     "id": "harrisburg-pa",
@@ -1431,7 +1614,9 @@
       "housing": 96.3,
       "otherServices": 97.7
     },
-    "pop": 606055
+    "pop": 606055,
+    "politics": -5.6,
+    "aqi": 48.0
   },
   {
     "id": "spokane-wa",
@@ -1446,7 +1631,9 @@
       "housing": 97.1,
       "otherServices": 99.5
     },
-    "pop": 600292
+    "pop": 600292,
+    "politics": -8.7,
+    "aqi": 44.0
   },
   {
     "id": "toledo-oh",
@@ -1461,7 +1648,9 @@
       "housing": 67.3,
       "otherServices": 98.9
     },
-    "pop": 600141
+    "pop": 600141,
+    "politics": 2.7,
+    "aqi": 53.0
   },
   {
     "id": "fayetteville-ar",
@@ -1476,7 +1665,9 @@
       "housing": 76.9,
       "otherServices": 95.3
     },
-    "pop": 590337
+    "pop": 590337,
+    "politics": -20.1,
+    "aqi": 41.0
   },
   {
     "id": "chattanooga-tn",
@@ -1492,7 +1683,9 @@
       "housing": 76.5,
       "otherServices": 95.3
     },
-    "pop": 580971
+    "pop": 580971,
+    "politics": -29.7,
+    "aqi": 52.0
   },
   {
     "id": "scranton-pa",
@@ -1507,7 +1700,9 @@
       "housing": 67.0,
       "otherServices": 97.7
     },
-    "pop": 569413
+    "pop": 569413,
+    "politics": -11.3,
+    "aqi": 40.0
   },
   {
     "id": "new-haven-ct",
@@ -1522,7 +1717,9 @@
       "housing": 124.3,
       "otherServices": 102.7
     },
-    "pop": 568158
+    "pop": 568158,
+    "politics": 20.5,
+    "aqi": 41.0
   },
   {
     "id": "portland-me",
@@ -1537,7 +1734,9 @@
       "housing": 105.2,
       "otherServices": 103.2
     },
-    "pop": 566329
+    "pop": 566329,
+    "politics": 25.9,
+    "aqi": 39.0
   },
   {
     "id": "reno-nv",
@@ -1552,7 +1751,9 @@
       "housing": 123.5,
       "otherServices": 98.7
     },
-    "pop": 564782
+    "pop": 564782,
+    "politics": -4.6,
+    "aqi": 50.0
   },
   {
     "id": "lancaster-pa",
@@ -1567,7 +1768,9 @@
       "housing": 93.8,
       "otherServices": 97.7
     },
-    "pop": 558589
+    "pop": 558589,
+    "politics": -16.1,
+    "aqi": 50.0
   },
   {
     "id": "modesto-ca",
@@ -1582,7 +1785,9 @@
       "housing": 108.5,
       "otherServices": 100.3
     },
-    "pop": 551430
+    "pop": 551430,
+    "politics": -11.3,
+    "aqi": 53.0
   },
   {
     "id": "port-st-lucie-fl",
@@ -1597,7 +1802,9 @@
       "housing": 113.6,
       "otherServices": 98.9
     },
-    "pop": 536901
+    "pop": 536901,
+    "politics": -16.8,
+    "aqi": 40.0
   },
   {
     "id": "pensacola-fl",
@@ -1612,7 +1819,9 @@
       "housing": 98.8,
       "otherServices": 98.9
     },
-    "pop": 530090
+    "pop": 530090,
+    "politics": -32.7,
+    "aqi": 46.0
   },
   {
     "id": "huntsville-al",
@@ -1627,7 +1836,9 @@
       "housing": 77.9,
       "otherServices": 96.7
     },
-    "pop": 527254
+    "pop": 527254,
+    "politics": -16.6,
+    "aqi": 44.0
   },
   {
     "id": "lexington-ky",
@@ -1642,7 +1853,9 @@
       "housing": 77.1,
       "otherServices": 96.9
     },
-    "pop": 520045
+    "pop": 520045,
+    "politics": -1.4,
+    "aqi": 43.0
   },
   {
     "id": "killeen-tx",
@@ -1657,7 +1870,9 @@
       "housing": 77.9,
       "otherServices": 96.2
     },
-    "pop": 501333
+    "pop": 501333,
+    "politics": -23.0,
+    "aqi": 46.0
   },
   {
     "id": "springfield-mo",
@@ -1672,7 +1887,9 @@
       "housing": 65.6,
       "otherServices": 93.0
     },
-    "pop": 491053
+    "pop": 491053,
+    "politics": -35.6,
+    "aqi": 45.0
   },
   {
     "id": "santa-rosa-ca",
@@ -1687,7 +1904,9 @@
       "housing": 139.6,
       "otherServices": 100.3
     },
-    "pop": 481812
+    "pop": 481812,
+    "politics": 47.8,
+    "aqi": 19.0
   },
   {
     "id": "visalia-ca",
@@ -1702,7 +1921,9 @@
       "housing": 84.1,
       "otherServices": 100.3
     },
-    "pop": 479468
+    "pop": 479468,
+    "politics": -21.2,
+    "aqi": 71.0
   },
   {
     "id": "lansing-mi",
@@ -1717,7 +1938,9 @@
       "housing": 83.5,
       "otherServices": 99.6
     },
-    "pop": 473177
+    "pop": 473177,
+    "politics": 14.6,
+    "aqi": 40.0
   },
   {
     "id": "wilmington-nc",
@@ -1732,7 +1955,9 @@
       "housing": 93.2,
       "otherServices": 98.2
     },
-    "pop": 467337
+    "pop": 467337,
+    "politics": -14.0,
+    "aqi": 39.0
   },
   {
     "id": "york-pa",
@@ -1747,7 +1972,9 @@
       "housing": 79.8,
       "otherServices": 97.7
     },
-    "pop": 464640
+    "pop": 464640,
+    "politics": -25.5,
+    "aqi": 44.0
   },
   {
     "id": "springfield-ma",
@@ -1762,7 +1989,9 @@
       "housing": 75.8,
       "otherServices": 101.2
     },
-    "pop": 460291
+    "pop": 460291,
+    "politics": 9.1,
+    "aqi": 38.0
   },
   {
     "id": "fort-wayne-in",
@@ -1777,7 +2006,9 @@
       "housing": 72.3,
       "otherServices": 99.1
     },
-    "pop": 457842
+    "pop": 457842,
+    "politics": -19.5,
+    "aqi": 47.0
   },
   {
     "id": "waterbury-ct",
@@ -1792,7 +2023,8 @@
       "housing": 89.1,
       "otherServices": 102.7
     },
-    "pop": 456128
+    "pop": 456128,
+    "politics": -7.5
   },
   {
     "id": "vallejo-ca",
@@ -1807,7 +2039,9 @@
       "housing": 142.0,
       "otherServices": 100.3
     },
-    "pop": 449218
+    "pop": 449218,
+    "politics": 23.7,
+    "aqi": 36.0
   },
   {
     "id": "corpus-christi-tx",
@@ -1822,7 +2056,9 @@
       "housing": 84.9,
       "otherServices": 96.2
     },
-    "pop": 448323
+    "pop": 448323,
+    "politics": -19.2,
+    "aqi": 51.0
   },
   {
     "id": "santa-maria-ca",
@@ -1837,7 +2073,9 @@
       "housing": 151.4,
       "otherServices": 100.3
     },
-    "pop": 441257
+    "pop": 441257,
+    "politics": 27.5,
+    "aqi": 49.0
   },
   {
     "id": "salem-or",
@@ -1852,7 +2090,9 @@
       "housing": 110.3,
       "otherServices": 100.3
     },
-    "pop": 436546
+    "pop": 436546,
+    "politics": -2.5,
+    "aqi": 35.0
   },
   {
     "id": "reading-pa",
@@ -1867,7 +2107,9 @@
       "housing": 85.4,
       "otherServices": 97.7
     },
-    "pop": 432821
+    "pop": 432821,
+    "politics": -12.3,
+    "aqi": 43.0
   },
   {
     "id": "salinas-ca",
@@ -1882,7 +2124,9 @@
       "housing": 145.7,
       "otherServices": 100.3
     },
-    "pop": 430723
+    "pop": 430723,
+    "politics": 30.8,
+    "aqi": 39.0
   },
   {
     "id": "manchester-nh",
@@ -1897,7 +2141,9 @@
       "housing": 134.2,
       "otherServices": 103.7
     },
-    "pop": 427354
+    "pop": 427354,
+    "politics": 2.9,
+    "aqi": 37.0
   },
   {
     "id": "brownsville-tx",
@@ -1912,7 +2158,9 @@
       "housing": 57.7,
       "otherServices": 96.2
     },
-    "pop": 426710
+    "pop": 426710,
+    "politics": -5.8,
+    "aqi": 61.0
   },
   {
     "id": "youngstown-oh",
@@ -1927,7 +2175,9 @@
       "housing": 53.4,
       "otherServices": 98.9
     },
-    "pop": 425969
+    "pop": 425969,
+    "politics": -12.9,
+    "aqi": 46.0
   },
   {
     "id": "savannah-ga",
@@ -1942,7 +2192,9 @@
       "housing": 86.0,
       "otherServices": 98.7
     },
-    "pop": 424935
+    "pop": 424935,
+    "politics": -0.7,
+    "aqi": 44.0
   },
   {
     "id": "gulfport-ms",
@@ -1957,7 +2209,9 @@
       "housing": 67.9,
       "otherServices": 96.1
     },
-    "pop": 421916
+    "pop": 421916,
+    "politics": -38.5,
+    "aqi": 47.0
   },
   {
     "id": "asheville-nc",
@@ -1972,7 +2226,9 @@
       "housing": 93.4,
       "otherServices": 98.2
     },
-    "pop": 417202
+    "pop": 417202,
+    "politics": 11.0,
+    "aqi": 48.0
   },
   {
     "id": "lafayette-la",
@@ -1987,7 +2243,9 @@
       "housing": 58.8,
       "otherServices": 95.7
     },
-    "pop": 414288
+    "pop": 414288,
+    "politics": -42.3,
+    "aqi": 51.0
   },
   {
     "id": "mobile-al",
@@ -2002,7 +2260,9 @@
       "housing": 60.1,
       "otherServices": 96.7
     },
-    "pop": 411640
+    "pop": 411640,
+    "politics": -16.6,
+    "aqi": 45.0
   },
   {
     "id": "ocala-fl",
@@ -2017,7 +2277,9 @@
       "housing": 86.2,
       "otherServices": 98.9
     },
-    "pop": 409959
+    "pop": 409959,
+    "politics": -31.9,
+    "aqi": 49.0
   },
   {
     "id": "naples-fl",
@@ -2032,7 +2294,9 @@
       "housing": 129.4,
       "otherServices": 98.9
     },
-    "pop": 404310
+    "pop": 404310,
+    "politics": -33.3,
+    "aqi": 42.0
   },
   {
     "id": "flint-mi",
@@ -2047,7 +2311,9 @@
       "housing": 74.0,
       "otherServices": 99.6
     },
-    "pop": 401522
+    "pop": 401522,
+    "politics": 4.3,
+    "aqi": 42.0
   },
   {
     "id": "anchorage-ak",
@@ -2062,7 +2328,9 @@
       "housing": 109.9,
       "otherServices": 103.3
     },
-    "pop": 401314
+    "pop": 401314,
+    "politics": 12.7,
+    "aqi": 26.0
   },
   {
     "id": "canton-oh",
@@ -2077,7 +2345,9 @@
       "housing": 58.1,
       "otherServices": 98.9
     },
-    "pop": 399474
+    "pop": 399474,
+    "politics": -24.4,
+    "aqi": 48.0
   },
   {
     "id": "myrtle-beach-sc",
@@ -2092,7 +2362,9 @@
       "housing": 83.1,
       "otherServices": 98.3
     },
-    "pop": 397478
+    "pop": 397478,
+    "politics": -38.9,
+    "aqi": 40.0
   },
   {
     "id": "beaumont-tx",
@@ -2107,7 +2379,9 @@
       "housing": 70.9,
       "otherServices": 96.2
     },
-    "pop": 395479
+    "pop": 395479,
+    "politics": -35.6,
+    "aqi": 54.0
   },
   {
     "id": "tallahassee-fl",
@@ -2122,7 +2396,9 @@
       "housing": 78.5,
       "otherServices": 98.9
     },
-    "pop": 392645
+    "pop": 392645,
+    "politics": 14.9,
+    "aqi": 47.0
   },
   {
     "id": "fayetteville-nc",
@@ -2137,7 +2413,9 @@
       "housing": 73.1,
       "otherServices": 98.2
     },
-    "pop": 392336
+    "pop": 392336,
+    "politics": 12.5,
+    "aqi": 46.0
   },
   {
     "id": "montgomery-al",
@@ -2152,7 +2430,9 @@
       "housing": 64.3,
       "otherServices": 96.7
     },
-    "pop": 385480
+    "pop": 385480,
+    "politics": -3.1,
+    "aqi": 42.0
   },
   {
     "id": "spartanburg-sc",
@@ -2167,7 +2447,9 @@
       "housing": 68.0,
       "otherServices": 98.3
     },
-    "pop": 383327
+    "pop": 383327,
+    "politics": -34.0,
+    "aqi": 49.0
   },
   {
     "id": "shreveport-la",
@@ -2182,7 +2464,9 @@
       "housing": 52.3,
       "otherServices": 95.7
     },
-    "pop": 383295
+    "pop": 383295,
+    "politics": -14.6,
+    "aqi": 51.0
   },
   {
     "id": "trenton-nj",
@@ -2197,7 +2481,9 @@
       "housing": 135.1,
       "otherServices": 97.9
     },
-    "pop": 381671
+    "pop": 381671,
+    "politics": 34.6,
+    "aqi": 43.0
   },
   {
     "id": "eugene-or",
@@ -2212,7 +2498,9 @@
       "housing": 98.3,
       "otherServices": 100.3
     },
-    "pop": 381181
+    "pop": 381181,
+    "politics": 23.9,
+    "aqi": 44.0
   },
   {
     "id": "davenport-ia",
@@ -2228,7 +2516,9 @@
       "housing": 68.3,
       "otherServices": 93.5
     },
-    "pop": 379441
+    "pop": 379441,
+    "politics": -3.2,
+    "aqi": 46.0
   },
   {
     "id": "fort-collins-co",
@@ -2243,7 +2533,9 @@
       "housing": 120.6,
       "otherServices": 99.8
     },
-    "pop": 370771
+    "pop": 370771,
+    "politics": 18.1,
+    "aqi": 54.0
   },
   {
     "id": "hickory-nc",
@@ -2258,7 +2550,9 @@
       "housing": 59.6,
       "otherServices": 98.2
     },
-    "pop": 370030
+    "pop": 370030,
+    "politics": -44.6,
+    "aqi": 46.0
   },
   {
     "id": "atlantic-city-nj",
@@ -2273,7 +2567,9 @@
       "housing": 98.7,
       "otherServices": 97.9
     },
-    "pop": 369823
+    "pop": 369823,
+    "politics": -8.0,
+    "aqi": 35.0
   },
   {
     "id": "huntington-wv",
@@ -2290,7 +2586,9 @@
       "housing": 51.3,
       "otherServices": 99.4
     },
-    "pop": 368261
+    "pop": 368261,
+    "politics": -44.2,
+    "aqi": 44.0
   },
   {
     "id": "ann-arbor-mi",
@@ -2305,7 +2603,9 @@
       "housing": 125.3,
       "otherServices": 99.6
     },
-    "pop": 365536
+    "pop": 365536,
+    "politics": 45.5,
+    "aqi": 43.0
   },
   {
     "id": "peoria-il",
@@ -2320,7 +2620,9 @@
       "housing": 63.8,
       "otherServices": 99.6
     },
-    "pop": 362240
+    "pop": 362240,
+    "politics": -15.4,
+    "aqi": 44.0
   },
   {
     "id": "lubbock-tx",
@@ -2335,7 +2637,9 @@
       "housing": 76.4,
       "otherServices": 96.2
     },
-    "pop": 360104
+    "pop": 360104,
+    "politics": -42.7,
+    "aqi": 23.0
   },
   {
     "id": "greeley-co",
@@ -2350,7 +2654,9 @@
       "housing": 112.6,
       "otherServices": 99.8
     },
-    "pop": 359442
+    "pop": 359442,
+    "politics": -21.5,
+    "aqi": 54.0
   },
   {
     "id": "gainesville-fl",
@@ -2365,7 +2671,9 @@
       "housing": 93.0,
       "otherServices": 98.9
     },
-    "pop": 352126
+    "pop": 352126,
+    "politics": 5.4,
+    "aqi": 38.0
   },
   {
     "id": "lincoln-ne",
@@ -2380,7 +2688,9 @@
       "housing": 84.2,
       "otherServices": 93.0
     },
-    "pop": 344387
+    "pop": 344387,
+    "politics": 1.5,
+    "aqi": 41.0
   },
   {
     "id": "clarksville-tn",
@@ -2396,7 +2706,9 @@
       "housing": 73.8,
       "otherServices": 95.5
     },
-    "pop": 340495
+    "pop": 340495,
+    "politics": -26.2,
+    "aqi": 42.0
   },
   {
     "id": "rockford-il",
@@ -2411,7 +2723,9 @@
       "housing": 70.1,
       "otherServices": 99.6
     },
-    "pop": 334124
+    "pop": 334124,
+    "politics": -2.0,
+    "aqi": 43.0
   },
   {
     "id": "green-bay-wi",
@@ -2426,7 +2740,9 @@
       "housing": 74.7,
       "otherServices": 99.4
     },
-    "pop": 331882
+    "pop": 331882,
+    "politics": -14.2,
+    "aqi": 38.0
   },
   {
     "id": "boulder-co",
@@ -2441,7 +2757,9 @@
       "housing": 157.0,
       "otherServices": 99.8
     },
-    "pop": 326831
+    "pop": 326831,
+    "politics": 57.3,
+    "aqi": 49.0
   },
   {
     "id": "south-bend-in",
@@ -2457,7 +2775,9 @@
       "housing": 74.6,
       "otherServices": 99.2
     },
-    "pop": 324490
+    "pop": 324490,
+    "politics": -5.7,
+    "aqi": 45.0
   },
   {
     "id": "columbus-ga",
@@ -2473,7 +2793,9 @@
       "housing": 61.2,
       "otherServices": 98.6
     },
-    "pop": 323768
+    "pop": 323768,
+    "politics": 6.1,
+    "aqi": 49.0
   },
   {
     "id": "roanoke-va",
@@ -2488,7 +2810,9 @@
       "housing": 78.5,
       "otherServices": 98.6
     },
-    "pop": 314314
+    "pop": 314314,
+    "politics": -18.8,
+    "aqi": 40.0
   },
   {
     "id": "kennewick-wa",
@@ -2503,7 +2827,9 @@
       "housing": 94.8,
       "otherServices": 99.5
     },
-    "pop": 314253
+    "pop": 314253,
+    "politics": -22.7,
+    "aqi": 36.0
   },
   {
     "id": "kingsport-tn",
@@ -2519,7 +2845,9 @@
       "housing": 56.5,
       "otherServices": 95.8
     },
-    "pop": 313025
+    "pop": 313025,
+    "politics": -57.9,
+    "aqi": 41.0
   },
   {
     "id": "hagerstown-md",
@@ -2535,7 +2863,9 @@
       "housing": 75.7,
       "otherServices": 99.5
     },
-    "pop": 305902
+    "pop": 305902,
+    "politics": -31.0,
+    "aqi": 42.0
   },
   {
     "id": "waco-tx",
@@ -2550,7 +2880,9 @@
       "housing": 83.5,
       "otherServices": 96.2
     },
-    "pop": 304865
+    "pop": 304865,
+    "politics": -35.0,
+    "aqi": 53.0
   },
   {
     "id": "crestview-fl",
@@ -2565,7 +2897,9 @@
       "housing": 94.9,
       "otherServices": 98.9
     },
-    "pop": 304818
+    "pop": 304818,
+    "politics": -47.6,
+    "aqi": 36.0
   },
   {
     "id": "sioux-falls-sd",
@@ -2581,7 +2915,9 @@
       "housing": 77.6,
       "otherServices": 91.9
     },
-    "pop": 304555
+    "pop": 304555,
+    "politics": -19.6,
+    "aqi": 34.0
   },
   {
     "id": "olympia-wa",
@@ -2596,7 +2932,9 @@
       "housing": 116.7,
       "otherServices": 99.5
     },
-    "pop": 299003
+    "pop": 299003,
+    "politics": 21.1,
+    "aqi": 26.0
   },
   {
     "id": "longview-tx",
@@ -2611,7 +2949,9 @@
       "housing": 66.7,
       "otherServices": 96.2
     },
-    "pop": 293498
+    "pop": 293498,
+    "politics": -52.7,
+    "aqi": 37.0
   },
   {
     "id": "merced-ca",
@@ -2626,7 +2966,9 @@
       "housing": 78.6,
       "otherServices": 100.3
     },
-    "pop": 291920
+    "pop": 291920,
+    "politics": -4.5,
+    "aqi": 52.0
   },
   {
     "id": "utica-ny",
@@ -2641,7 +2983,9 @@
       "housing": 66.1,
       "otherServices": 97.8
     },
-    "pop": 287039
+    "pop": 287039,
+    "politics": -24.6,
+    "aqi": 27.0
   },
   {
     "id": "san-luis-obispo-ca",
@@ -2656,7 +3000,9 @@
       "housing": 144.4,
       "otherServices": 100.3
     },
-    "pop": 281639
+    "pop": 281639,
+    "politics": 11.2,
+    "aqi": 49.0
   },
   {
     "id": "duluth-mn",
@@ -2672,7 +3018,9 @@
       "housing": 71.1,
       "otherServices": 92.2
     },
-    "pop": 281603
+    "pop": 281603,
+    "politics": 10.6,
+    "aqi": 39.0
   },
   {
     "id": "college-station-tx",
@@ -2687,7 +3035,9 @@
       "housing": 75.1,
       "otherServices": 96.2
     },
-    "pop": 281445
+    "pop": 281445,
+    "politics": -30.5,
+    "aqi": 39.0
   },
   {
     "id": "norwich-ct",
@@ -2702,7 +3052,9 @@
       "housing": 93.7,
       "otherServices": 102.7
     },
-    "pop": 279634
+    "pop": 279634,
+    "politics": 13.2,
+    "aqi": 37.0
   },
   {
     "id": "tuscaloosa-al",
@@ -2717,7 +3069,9 @@
       "housing": 58.2,
       "otherServices": 96.7
     },
-    "pop": 278290
+    "pop": 278290,
+    "politics": -16.0,
+    "aqi": 37.0
   },
   {
     "id": "bremerton-wa",
@@ -2732,7 +3086,9 @@
       "housing": 129.6,
       "otherServices": 99.5
     },
-    "pop": 277658
+    "pop": 277658,
+    "politics": 21.7,
+    "aqi": 19.0
   },
   {
     "id": "cedar-rapids-ia",
@@ -2747,7 +3103,9 @@
       "housing": 71.4,
       "otherServices": 92.9
     },
-    "pop": 275668
+    "pop": 275668,
+    "politics": 3.0,
+    "aqi": 44.0
   },
   {
     "id": "slidell-la",
@@ -2762,7 +3120,8 @@
       "housing": 85.4,
       "otherServices": 95.7
     },
-    "pop": 275583
+    "pop": 275583,
+    "politics": -44.5
   },
   {
     "id": "amarillo-tx",
@@ -2777,7 +3136,9 @@
       "housing": 78.4,
       "otherServices": 96.2
     },
-    "pop": 272395
+    "pop": 272395,
+    "politics": -57.1,
+    "aqi": 44.0
   },
   {
     "id": "evansville-in",
@@ -2792,7 +3153,9 @@
       "housing": 66.7,
       "otherServices": 99.1
     },
-    "pop": 270717
+    "pop": 270717,
+    "politics": -21.1,
+    "aqi": 46.0
   },
   {
     "id": "laredo-tx",
@@ -2807,7 +3170,9 @@
       "housing": 59.7,
       "otherServices": 96.2
     },
-    "pop": 269148
+    "pop": 269148,
+    "politics": -2.2,
+    "aqi": 45.0
   },
   {
     "id": "erie-pa",
@@ -2822,7 +3187,9 @@
       "housing": 56.8,
       "otherServices": 97.7
     },
-    "pop": 267571
+    "pop": 267571,
+    "politics": -1.0,
+    "aqi": 38.0
   },
   {
     "id": "lynchburg-va",
@@ -2837,7 +3204,9 @@
       "housing": 63.9,
       "otherServices": 98.6
     },
-    "pop": 264590
+    "pop": 264590,
+    "politics": -38.0,
+    "aqi": 28.0
   },
   {
     "id": "fargo-nd",
@@ -2853,7 +3222,9 @@
       "housing": 81.1,
       "otherServices": 91.3
     },
-    "pop": 262620
+    "pop": 262620,
+    "politics": -6.2,
+    "aqi": 38.0
   },
   {
     "id": "kalamazoo-mi",
@@ -2868,7 +3239,9 @@
       "housing": 81.6,
       "otherServices": 99.6
     },
-    "pop": 262215
+    "pop": 262215,
+    "politics": 18.0,
+    "aqi": 45.0
   },
   {
     "id": "santa-cruz-ca",
@@ -2883,7 +3256,9 @@
       "housing": 164.3,
       "otherServices": 100.3
     },
-    "pop": 261547
+    "pop": 261547,
+    "politics": 56.6,
+    "aqi": 39.0
   },
   {
     "id": "bend-or",
@@ -2898,7 +3273,9 @@
       "housing": 110.0,
       "otherServices": 100.3
     },
-    "pop": 260919
+    "pop": 260919,
+    "politics": 0.5,
+    "aqi": 39.0
   },
   {
     "id": "yakima-wa",
@@ -2913,7 +3290,9 @@
       "housing": 72.6,
       "otherServices": 99.5
     },
-    "pop": 256643
+    "pop": 256643,
+    "politics": -14.7,
+    "aqi": 37.0
   },
   {
     "id": "daphne-al",
@@ -2928,7 +3307,9 @@
       "housing": 89.2,
       "otherServices": 96.7
     },
-    "pop": 253507
+    "pop": 253507,
+    "politics": -58.7,
+    "aqi": 40.0
   },
   {
     "id": "prescott-valley-az",
@@ -2943,7 +3324,8 @@
       "housing": 98.8,
       "otherServices": 99.8
     },
-    "pop": 249081
+    "pop": 249081,
+    "politics": -34.2
   },
   {
     "id": "appleton-wi",
@@ -2958,7 +3340,9 @@
       "housing": 70.8,
       "otherServices": 99.4
     },
-    "pop": 246433
+    "pop": 246433,
+    "politics": -12.6,
+    "aqi": 37.0
   },
   {
     "id": "tyler-tx",
@@ -2973,7 +3357,9 @@
       "housing": 79.9,
       "otherServices": 96.2
     },
-    "pop": 245209
+    "pop": 245209,
+    "politics": -45.5,
+    "aqi": 39.0
   },
   {
     "id": "binghamton-ny",
@@ -2988,7 +3374,8 @@
       "housing": 69.7,
       "otherServices": 97.8
     },
-    "pop": 243792
+    "pop": 243792,
+    "politics": -4.6
   },
   {
     "id": "lake-charles-la",
@@ -3003,7 +3390,9 @@
       "housing": 51.8,
       "otherServices": 95.7
     },
-    "pop": 240082
+    "pop": 240082,
+    "politics": -45.0,
+    "aqi": 49.0
   },
   {
     "id": "macon-ga",
@@ -3018,7 +3407,9 @@
       "housing": 58.9,
       "otherServices": 98.7
     },
-    "pop": 236074
+    "pop": 236074,
+    "politics": -2.4,
+    "aqi": 51.0
   },
   {
     "id": "champaign-il",
@@ -3033,7 +3424,9 @@
       "housing": 71.6,
       "otherServices": 99.6
     },
-    "pop": 235608
+    "pop": 235608,
+    "politics": 14.9,
+    "aqi": 44.0
   },
   {
     "id": "hilton-head-island-sc",
@@ -3048,7 +3441,8 @@
       "housing": 101.2,
       "otherServices": 98.3
     },
-    "pop": 232523
+    "pop": 232523,
+    "politics": -13.9
   },
   {
     "id": "topeka-ks",
@@ -3063,7 +3457,9 @@
       "housing": 65.0,
       "otherServices": 93.8
     },
-    "pop": 232322
+    "pop": 232322,
+    "politics": -10.8,
+    "aqi": 45.0
   },
   {
     "id": "bellingham-wa",
@@ -3078,7 +3474,9 @@
       "housing": 112.9,
       "otherServices": 99.5
     },
-    "pop": 231919
+    "pop": 231919,
+    "politics": 25.7,
+    "aqi": 33.0
   },
   {
     "id": "barnstable-town-ma",
@@ -3093,7 +3491,9 @@
       "housing": 90.0,
       "otherServices": 101.2
     },
-    "pop": 231735
+    "pop": 231735,
+    "politics": 21.1,
+    "aqi": 36.0
   },
   {
     "id": "fort-smith-ar",
@@ -3109,7 +3509,9 @@
       "housing": 53.4,
       "otherServices": 95.3
     },
-    "pop": 231280
+    "pop": 231280,
+    "politics": -48.7,
+    "aqi": 44.0
   },
   {
     "id": "rochester-mn",
@@ -3124,7 +3526,9 @@
       "housing": 78.6,
       "otherServices": 92.2
     },
-    "pop": 229077
+    "pop": 229077,
+    "politics": -1.0,
+    "aqi": 44.0
   },
   {
     "id": "burlington-vt",
@@ -3139,7 +3543,9 @@
       "housing": 103.8,
       "otherServices": 101.6
     },
-    "pop": 227942
+    "pop": 227942,
+    "politics": 43.1,
+    "aqi": 37.0
   },
   {
     "id": "lafayette-in",
@@ -3154,7 +3560,9 @@
       "housing": 76.4,
       "otherServices": 99.1
     },
-    "pop": 226564
+    "pop": 226564,
+    "politics": -11.2,
+    "aqi": 44.0
   },
   {
     "id": "las-cruces-nm",
@@ -3169,7 +3577,9 @@
       "housing": 63.0,
       "otherServices": 98.5
     },
-    "pop": 225210
+    "pop": 225210,
+    "politics": 10.0,
+    "aqi": 62.0
   },
   {
     "id": "charlottesville-va",
@@ -3184,7 +3594,9 @@
       "housing": 107.0,
       "otherServices": 98.6
     },
-    "pop": 225127
+    "pop": 225127,
+    "politics": 26.9,
+    "aqi": 40.0
   },
   {
     "id": "lake-havasu-city-az",
@@ -3199,7 +3611,9 @@
       "housing": 79.8,
       "otherServices": 99.8
     },
-    "pop": 223682
+    "pop": 223682,
+    "politics": -56.1,
+    "aqi": 19.0
   },
   {
     "id": "athens-ga",
@@ -3214,7 +3628,9 @@
       "housing": 76.8,
       "otherServices": 98.7
     },
-    "pop": 222060
+    "pop": 222060,
+    "politics": -2.4,
+    "aqi": 46.0
   },
   {
     "id": "monroe-la",
@@ -3229,7 +3645,9 @@
       "housing": 42.8,
       "otherServices": 95.7
     },
-    "pop": 221885
+    "pop": 221885,
+    "politics": -31.7,
+    "aqi": 41.0
   },
   {
     "id": "medford-or",
@@ -3244,7 +3662,9 @@
       "housing": 97.7,
       "otherServices": 100.3
     },
-    "pop": 220768
+    "pop": 220768,
+    "politics": -6.6,
+    "aqi": 41.0
   },
   {
     "id": "gainesville-ga",
@@ -3259,7 +3679,9 @@
       "housing": 93.5,
       "otherServices": 98.7
     },
-    "pop": 217267
+    "pop": 217267,
+    "politics": -44.1,
+    "aqi": 52.0
   },
   {
     "id": "columbia-mo",
@@ -3274,7 +3696,9 @@
       "housing": 69.2,
       "otherServices": 93.0
     },
-    "pop": 216511
+    "pop": 216511,
+    "politics": 2.5,
+    "aqi": 39.0
   },
   {
     "id": "panama-city-fl",
@@ -3289,7 +3713,9 @@
       "housing": 96.4,
       "otherServices": 98.9
     },
-    "pop": 216371
+    "pop": 216371,
+    "politics": -49.9,
+    "aqi": 47.0
   },
   {
     "id": "jacksonville-nc",
@@ -3304,7 +3730,8 @@
       "housing": 72.1,
       "otherServices": 98.2
     },
-    "pop": 213676
+    "pop": 213676,
+    "politics": -36.3
   },
   {
     "id": "yuma-az",
@@ -3319,7 +3746,9 @@
       "housing": 73.8,
       "otherServices": 99.8
     },
-    "pop": 213221
+    "pop": 213221,
+    "politics": -20.6,
+    "aqi": 47.0
   },
   {
     "id": "johnson-city-tn",
@@ -3334,7 +3763,8 @@
       "housing": 63.2,
       "otherServices": 95.1
     },
-    "pop": 213198
+    "pop": 213198,
+    "politics": -48.3
   },
   {
     "id": "lexington-park-md",
@@ -3349,7 +3779,8 @@
       "housing": 103.8,
       "otherServices": 100.3
     },
-    "pop": 210009
+    "pop": 210009,
+    "politics": -14.5
   },
   {
     "id": "chico-ca",
@@ -3364,7 +3795,9 @@
       "housing": 91.9,
       "otherServices": 100.3
     },
-    "pop": 207172
+    "pop": 207172,
+    "politics": -3.2,
+    "aqi": 46.0
   },
   {
     "id": "elkhart-in",
@@ -3379,7 +3812,9 @@
       "housing": 64.3,
       "otherServices": 99.1
     },
-    "pop": 206409
+    "pop": 206409,
+    "politics": -32.8,
+    "aqi": 45.0
   },
   {
     "id": "punta-gorda-fl",
@@ -3394,7 +3829,8 @@
       "housing": 113.3,
       "otherServices": 98.9
     },
-    "pop": 206134
+    "pop": 206134,
+    "politics": -34.2
   },
   {
     "id": "springfield-il",
@@ -3409,7 +3845,9 @@
       "housing": 71.6,
       "otherServices": 99.6
     },
-    "pop": 205445
+    "pop": 205445,
+    "politics": -7.3,
+    "aqi": 41.0
   },
   {
     "id": "joplin-mo",
@@ -3425,7 +3863,9 @@
       "housing": 54.0,
       "otherServices": 93.1
     },
-    "pop": 204787
+    "pop": 204787,
+    "politics": -51.8,
+    "aqi": 41.0
   },
   {
     "id": "charleston-wv",
@@ -3440,7 +3880,9 @@
       "housing": 51.4,
       "otherServices": 99.8
     },
-    "pop": 203164
+    "pop": 203164,
+    "politics": -23.4,
+    "aqi": 40.0
   },
   {
     "id": "st-cloud-mn",
@@ -3455,7 +3897,9 @@
       "housing": 65.1,
       "otherServices": 92.2
     },
-    "pop": 202577
+    "pop": 202577,
+    "politics": -29.2,
+    "aqi": 39.0
   },
   {
     "id": "st-george-ut",
@@ -3470,7 +3914,9 @@
       "housing": 98.1,
       "otherServices": 99.0
     },
-    "pop": 202452
+    "pop": 202452,
+    "politics": -53.2,
+    "aqi": 44.0
   },
   {
     "id": "auburn-al",
@@ -3485,7 +3931,8 @@
       "housing": 62.1,
       "otherServices": 96.7
     },
-    "pop": 201585
+    "pop": 201585,
+    "politics": -19.9
   },
   {
     "id": "warner-robins-ga",
@@ -3500,7 +3947,9 @@
       "housing": 79.2,
       "otherServices": 98.7
     },
-    "pop": 200779
+    "pop": 200779,
+    "politics": -10.6,
+    "aqi": 43.0
   },
   {
     "id": "florence-sc",
@@ -3515,7 +3964,9 @@
       "housing": 52.4,
       "otherServices": 98.3
     },
-    "pop": 199630
+    "pop": 199630,
+    "politics": -9.9,
+    "aqi": 47.0
   },
   {
     "id": "houma-la",
@@ -3530,7 +3981,9 @@
       "housing": 51.3,
       "otherServices": 95.7
     },
-    "pop": 198672
+    "pop": 198672,
+    "politics": -57.7,
+    "aqi": 48.0
   },
   {
     "id": "racine-wi",
@@ -3545,7 +3998,9 @@
       "housing": 92.0,
       "otherServices": 99.4
     },
-    "pop": 196613
+    "pop": 196613,
+    "politics": -6.2,
+    "aqi": 42.0
   },
   {
     "id": "billings-mt",
@@ -3560,7 +4015,9 @@
       "housing": 77.4,
       "otherServices": 98.7
     },
-    "pop": 191435
+    "pop": 191435,
+    "politics": -30.6,
+    "aqi": 39.0
   },
   {
     "id": "dover-de",
@@ -3575,7 +4032,9 @@
       "housing": 95.9,
       "otherServices": 98.8
     },
-    "pop": 189789
+    "pop": 189789,
+    "politics": 2.0,
+    "aqi": 41.0
   },
   {
     "id": "bowling-green-ky",
@@ -3590,7 +4049,9 @@
       "housing": 63.4,
       "otherServices": 96.9
     },
-    "pop": 188840
+    "pop": 188840,
+    "politics": -36.2,
+    "aqi": 41.0
   },
   {
     "id": "saginaw-mi",
@@ -3605,7 +4066,8 @@
       "housing": 63.6,
       "otherServices": 99.6
     },
-    "pop": 187782
+    "pop": 187782,
+    "politics": -3.3
   },
   {
     "id": "coeur-d-alene-id",
@@ -3620,7 +4082,9 @@
       "housing": 105.6,
       "otherServices": 99.0
     },
-    "pop": 185010
+    "pop": 185010,
+    "politics": -53.0,
+    "aqi": 24.0
   },
   {
     "id": "yuba-city-ca",
@@ -3635,7 +4099,9 @@
       "housing": 108.3,
       "otherServices": 100.3
     },
-    "pop": 183670
+    "pop": 183670,
+    "politics": -29.8,
+    "aqi": 49.0
   },
   {
     "id": "kingston-ny",
@@ -3650,7 +4116,8 @@
       "housing": 110.2,
       "otherServices": 97.8
     },
-    "pop": 182333
+    "pop": 182333,
+    "politics": 18.7
   },
   {
     "id": "midland-tx",
@@ -3665,7 +4132,8 @@
       "housing": 101.5,
       "otherServices": 96.2
     },
-    "pop": 182324
+    "pop": 182324,
+    "politics": -61.6
   },
   {
     "id": "jackson-tn",
@@ -3680,7 +4148,9 @@
       "housing": 56.6,
       "otherServices": 95.1
     },
-    "pop": 181826
+    "pop": 181826,
+    "politics": -36.2,
+    "aqi": 33.0
   },
   {
     "id": "abilene-tx",
@@ -3695,7 +4165,8 @@
       "housing": 73.8,
       "otherServices": 96.2
     },
-    "pop": 181591
+    "pop": 181591,
+    "politics": -55.5
   },
   {
     "id": "blacksburg-va",
@@ -3710,7 +4181,9 @@
       "housing": 74.4,
       "otherServices": 98.6
     },
-    "pop": 181428
+    "pop": 181428,
+    "politics": -16.7,
+    "aqi": 38.0
   },
   {
     "id": "redding-ca",
@@ -3725,7 +4198,9 @@
       "housing": 89.4,
       "otherServices": 100.3
     },
-    "pop": 180366
+    "pop": 180366,
+    "politics": -37.4,
+    "aqi": 44.0
   },
   {
     "id": "iowa-city-ia",
@@ -3740,7 +4215,9 @@
       "housing": 84.0,
       "otherServices": 92.9
     },
-    "pop": 180088
+    "pop": 180088,
+    "politics": 31.1,
+    "aqi": 39.0
   },
   {
     "id": "burlington-nc",
@@ -3755,7 +4232,8 @@
       "housing": 77.9,
       "otherServices": 98.2
     },
-    "pop": 179165
+    "pop": 179165,
+    "politics": -8.3
   },
   {
     "id": "el-centro-ca",
@@ -3770,7 +4248,9 @@
       "housing": 66.3,
       "otherServices": 100.3
     },
-    "pop": 179057
+    "pop": 179057,
+    "politics": -0.9,
+    "aqi": 63.0
   },
   {
     "id": "muskegon-mi",
@@ -3785,7 +4265,9 @@
       "housing": 74.2,
       "otherServices": 99.6
     },
-    "pop": 176564
+    "pop": 176564,
+    "politics": -1.8,
+    "aqi": 38.0
   },
   {
     "id": "greenville-nc",
@@ -3800,7 +4282,9 @@
       "housing": 57.3,
       "otherServices": 98.2
     },
-    "pop": 175119
+    "pop": 175119,
+    "politics": 6.0,
+    "aqi": 37.0
   },
   {
     "id": "eau-claire-wi",
@@ -3815,7 +4299,9 @@
       "housing": 72.8,
       "otherServices": 99.4
     },
-    "pop": 174873
+    "pop": 174873,
+    "politics": -2.2,
+    "aqi": 38.0
   },
   {
     "id": "oshkosh-wi",
@@ -3830,7 +4316,8 @@
       "housing": 74.4,
       "otherServices": 99.4
     },
-    "pop": 171735
+    "pop": 171735,
+    "politics": -4.8
   },
   {
     "id": "bloomington-il",
@@ -3845,7 +4332,9 @@
       "housing": 74.7,
       "otherServices": 99.6
     },
-    "pop": 170441
+    "pop": 170441,
+    "politics": 5.0,
+    "aqi": 44.0
   },
   {
     "id": "la-crosse-wi",
@@ -3861,7 +4350,9 @@
       "housing": 69.4,
       "otherServices": 99.4
     },
-    "pop": 170238
+    "pop": 170238,
+    "politics": 3.6,
+    "aqi": 37.0
   },
   {
     "id": "sebastian-fl",
@@ -3876,7 +4367,9 @@
       "housing": 101.6,
       "otherServices": 98.9
     },
-    "pop": 169795
+    "pop": 169795,
+    "politics": -27.5,
+    "aqi": 35.0
   },
   {
     "id": "pueblo-co",
@@ -3891,7 +4384,9 @@
       "housing": 71.3,
       "otherServices": 99.8
     },
-    "pop": 169422
+    "pop": 169422,
+    "politics": -5.3,
+    "aqi": 44.0
   },
   {
     "id": "terre-haute-in",
@@ -3906,7 +4401,9 @@
       "housing": 51.9,
       "otherServices": 99.1
     },
-    "pop": 168787
+    "pop": 168787,
+    "politics": -32.7,
+    "aqi": 47.0
   },
   {
     "id": "idaho-falls-id",
@@ -3921,7 +4418,9 @@
       "housing": 84.0,
       "otherServices": 99.0
     },
-    "pop": 168322
+    "pop": 168322,
+    "politics": -53.6,
+    "aqi": 43.0
   },
   {
     "id": "waterloo-ia",
@@ -3936,7 +4435,9 @@
       "housing": 63.1,
       "otherServices": 92.9
     },
-    "pop": 168162
+    "pop": 168162,
+    "politics": -6.6,
+    "aqi": 48.0
   },
   {
     "id": "kenosha-wi",
@@ -3951,7 +4452,8 @@
       "housing": 95.8,
       "otherServices": 100.3
     },
-    "pop": 167488
+    "pop": 167488,
+    "politics": -6.3
   },
   {
     "id": "homosassa-springs-fl",
@@ -3966,7 +4468,9 @@
       "housing": 78.4,
       "otherServices": 98.9
     },
-    "pop": 166696
+    "pop": 166696,
+    "politics": -46.2,
+    "aqi": 43.0
   },
   {
     "id": "odessa-tx",
@@ -3981,7 +4485,9 @@
       "housing": 89.7,
       "otherServices": 96.2
     },
-    "pop": 164494
+    "pop": 164494,
+    "politics": -53.3,
+    "aqi": 36.0
   },
   {
     "id": "janesville-wi",
@@ -3996,7 +4502,9 @@
       "housing": 79.6,
       "otherServices": 99.4
     },
-    "pop": 164278
+    "pop": 164278,
+    "politics": 7.4,
+    "aqi": 41.0
   },
   {
     "id": "kahului-hi",
@@ -4011,7 +4519,9 @@
       "housing": 119.2,
       "otherServices": 102.9
     },
-    "pop": 164264
+    "pop": 164264,
+    "politics": 26.5,
+    "aqi": 21.0
   },
   {
     "id": "amherst-town-ma",
@@ -4026,7 +4536,8 @@
       "housing": 97.5,
       "otherServices": 101.2
     },
-    "pop": 162502
+    "pop": 162502,
+    "politics": 43.2
   },
   {
     "id": "bloomington-in",
@@ -4041,7 +4552,9 @@
       "housing": 85.6,
       "otherServices": 99.1
     },
-    "pop": 160874
+    "pop": 160874,
+    "politics": 16.5,
+    "aqi": 43.0
   },
   {
     "id": "grand-junction-co",
@@ -4056,7 +4569,9 @@
       "housing": 86.4,
       "otherServices": 99.8
     },
-    "pop": 159681
+    "pop": 159681,
+    "politics": -24.9,
+    "aqi": 48.0
   },
   {
     "id": "jackson-mi",
@@ -4071,7 +4586,8 @@
       "housing": 67.1,
       "otherServices": 99.6
     },
-    "pop": 159424
+    "pop": 159424,
+    "politics": -21.6
   },
   {
     "id": "decatur-al",
@@ -4086,7 +4602,9 @@
       "housing": 58.1,
       "otherServices": 96.7
     },
-    "pop": 158635
+    "pop": 158635,
+    "politics": -55.3,
+    "aqi": 44.0
   },
   {
     "id": "logan-ut",
@@ -4102,7 +4620,9 @@
       "housing": 91.0,
       "otherServices": 99.0
     },
-    "pop": 157887
+    "pop": 157887,
+    "politics": -40.4,
+    "aqi": 44.0
   },
   {
     "id": "chambersburg-pa",
@@ -4117,7 +4637,9 @@
       "housing": 71.9,
       "otherServices": 97.7
     },
-    "pop": 157854
+    "pop": 157854,
+    "politics": -43.4,
+    "aqi": 35.0
   },
   {
     "id": "state-college-pa",
@@ -4132,7 +4654,9 @@
       "housing": 85.7,
       "otherServices": 97.7
     },
-    "pop": 157795
+    "pop": 157795,
+    "politics": 2.9,
+    "aqi": 40.0
   },
   {
     "id": "traverse-city-mi",
@@ -4147,7 +4671,9 @@
       "housing": 78.1,
       "otherServices": 99.6
     },
-    "pop": 156371
+    "pop": 156371,
+    "politics": -5.6,
+    "aqi": 38.0
   },
   {
     "id": "rapid-city-sd",
@@ -4162,7 +4688,9 @@
       "housing": 72.6,
       "otherServices": 91.9
     },
-    "pop": 155974
+    "pop": 155974,
+    "politics": -33.4,
+    "aqi": 50.0
   },
   {
     "id": "santa-fe-nm",
@@ -4177,7 +4705,9 @@
       "housing": 108.0,
       "otherServices": 98.5
     },
-    "pop": 155956
+    "pop": 155956,
+    "politics": 50.0,
+    "aqi": 45.0
   },
   {
     "id": "hattiesburg-ms",
@@ -4192,7 +4722,9 @@
       "housing": 60.1,
       "otherServices": 96.1
     },
-    "pop": 155740
+    "pop": 155740,
+    "politics": -36.2,
+    "aqi": 47.0
   },
   {
     "id": "bangor-me",
@@ -4207,7 +4739,9 @@
       "housing": 77.7,
       "otherServices": 103.2
     },
-    "pop": 155312
+    "pop": 155312,
+    "politics": -11.1,
+    "aqi": 33.0
   },
   {
     "id": "florence-al",
@@ -4222,7 +4756,8 @@
       "housing": 47.7,
       "otherServices": 96.7
     },
-    "pop": 155175
+    "pop": 155175,
+    "politics": -50.0
   },
   {
     "id": "monroe-mi",
@@ -4237,7 +4772,9 @@
       "housing": 74.6,
       "otherServices": 99.6
     },
-    "pop": 155045
+    "pop": 155045,
+    "politics": -27.5,
+    "aqi": 18.0
   },
   {
     "id": "dothan-al",
@@ -4252,7 +4789,8 @@
       "housing": 46.9,
       "otherServices": 96.7
     },
-    "pop": 153349
+    "pop": 153349,
+    "politics": -54.1
   },
   {
     "id": "hanford-ca",
@@ -4267,7 +4805,9 @@
       "housing": 93.5,
       "otherServices": 100.3
     },
-    "pop": 152682
+    "pop": 152682,
+    "politics": -23.5,
+    "aqi": 60.0
   },
   {
     "id": "vineland-nj",
@@ -4282,7 +4822,9 @@
       "housing": 83.9,
       "otherServices": 97.9
     },
-    "pop": 152326
+    "pop": 152326,
+    "politics": -3.8,
+    "aqi": 39.0
   },
   {
     "id": "niles-mi",
@@ -4297,7 +4839,9 @@
       "housing": 71.6,
       "otherServices": 99.6
     },
-    "pop": 152261
+    "pop": 152261,
+    "politics": -8.0,
+    "aqi": 41.0
   },
   {
     "id": "wildwood-fl",
@@ -4312,7 +4856,8 @@
       "housing": 51.7,
       "otherServices": 98.9
     },
-    "pop": 151565
+    "pop": 151565,
+    "politics": -37.8
   },
   {
     "id": "valdosta-ga",
@@ -4327,7 +4872,9 @@
       "housing": 58.8,
       "otherServices": 98.7
     },
-    "pop": 151118
+    "pop": 151118,
+    "politics": -22.4,
+    "aqi": 44.0
   },
   {
     "id": "jefferson-city-mo",
@@ -4342,7 +4889,9 @@
       "housing": 62.1,
       "otherServices": 93.0
     },
-    "pop": 150733
+    "pop": 150733,
+    "politics": -44.1,
+    "aqi": 40.0
   },
   {
     "id": "wichita-falls-tx",
@@ -4357,7 +4906,8 @@
       "housing": 68.2,
       "otherServices": 96.2
     },
-    "pop": 149947
+    "pop": 149947,
+    "politics": -51.5
   },
   {
     "id": "alexandria-la",
@@ -4372,7 +4922,9 @@
       "housing": 53.7,
       "otherServices": 95.7
     },
-    "pop": 148171
+    "pop": 148171,
+    "politics": -43.1,
+    "aqi": 39.0
   },
   {
     "id": "winchester-va",
@@ -4388,7 +4940,9 @@
       "housing": 90.0,
       "otherServices": 98.8
     },
-    "pop": 147260
+    "pop": 147260,
+    "politics": -27.5,
+    "aqi": 41.0
   },
   {
     "id": "sherman-tx",
@@ -4403,7 +4957,8 @@
       "housing": 89.5,
       "otherServices": 96.2
     },
-    "pop": 146907
+    "pop": 146907,
+    "politics": -54.7
   },
   {
     "id": "texarkana-tx",
@@ -4419,7 +4974,9 @@
       "housing": 49.9,
       "otherServices": 95.9
     },
-    "pop": 145907
+    "pop": 145907,
+    "politics": -50.3,
+    "aqi": 49.0
   },
   {
     "id": "albany-ga",
@@ -4434,7 +4991,9 @@
       "housing": 54.6,
       "otherServices": 98.7
     },
-    "pop": 145508
+    "pop": 145508,
+    "politics": 2.6,
+    "aqi": 45.0
   },
   {
     "id": "rocky-mount-nc",
@@ -4449,7 +5008,9 @@
       "housing": 56.1,
       "otherServices": 98.2
     },
-    "pop": 145383
+    "pop": 145383,
+    "politics": 6.1,
+    "aqi": 37.0
   },
   {
     "id": "dalton-ga",
@@ -4464,7 +5025,9 @@
       "housing": 63.3,
       "otherServices": 98.7
     },
-    "pop": 144722
+    "pop": 144722,
+    "politics": -53.0,
+    "aqi": 41.0
   },
   {
     "id": "flagstaff-az",
@@ -4479,7 +5042,9 @@
       "housing": 109.0,
       "otherServices": 99.8
     },
-    "pop": 144472
+    "pop": 144472,
+    "politics": 20.2,
+    "aqi": 46.0
   },
   {
     "id": "sioux-city-ia",
@@ -4496,7 +5061,9 @@
       "housing": 57.8,
       "otherServices": 92.7
     },
-    "pop": 144402
+    "pop": 144402,
+    "politics": -26.8,
+    "aqi": 43.0
   },
   {
     "id": "lebanon-pa",
@@ -4511,7 +5078,9 @@
       "housing": 66.0,
       "otherServices": 97.7
     },
-    "pop": 144252
+    "pop": 144252,
+    "politics": -32.3,
+    "aqi": 43.0
   },
   {
     "id": "morgantown-wv",
@@ -4526,7 +5095,9 @@
       "housing": 69.1,
       "otherServices": 99.8
     },
-    "pop": 141817
+    "pop": 141817,
+    "politics": -18.4,
+    "aqi": 43.0
   },
   {
     "id": "wausau-wi",
@@ -4541,7 +5112,9 @@
       "housing": 71.5,
       "otherServices": 99.4
     },
-    "pop": 138612
+    "pop": 138612,
+    "politics": -18.9,
+    "aqi": 37.0
   },
   {
     "id": "hammond-la",
@@ -4556,7 +5129,9 @@
       "housing": 48.2,
       "otherServices": 95.7
     },
-    "pop": 138064
+    "pop": 138064,
+    "politics": -37.9,
+    "aqi": 47.0
   },
   {
     "id": "harrisonburg-va",
@@ -4571,7 +5146,9 @@
       "housing": 82.3,
       "otherServices": 98.6
     },
-    "pop": 137650
+    "pop": 137650,
+    "politics": -21.0,
+    "aqi": 42.0
   },
   {
     "id": "jonesboro-ar",
@@ -4586,7 +5163,8 @@
       "housing": 53.8,
       "otherServices": 95.3
     },
-    "pop": 136390
+    "pop": 136390,
+    "politics": -42.6
   },
   {
     "id": "bismarck-nd",
@@ -4601,7 +5179,9 @@
       "housing": 84.0,
       "otherServices": 91.2
     },
-    "pop": 135786
+    "pop": 135786,
+    "politics": -47.1,
+    "aqi": 40.0
   },
   {
     "id": "wheeling-wv",
@@ -4617,7 +5197,9 @@
       "housing": 51.4,
       "otherServices": 99.7
     },
-    "pop": 135517
+    "pop": 135517,
+    "politics": -42.1,
+    "aqi": 45.0
   },
   {
     "id": "springfield-oh",
@@ -4632,7 +5214,9 @@
       "housing": 61.7,
       "otherServices": 98.9
     },
-    "pop": 134610
+    "pop": 134610,
+    "politics": -29.8,
+    "aqi": 45.0
   },
   {
     "id": "battle-creek-mi",
@@ -4647,7 +5231,8 @@
       "housing": 61.0,
       "otherServices": 99.6
     },
-    "pop": 133366
+    "pop": 133366,
+    "politics": -14.2
   },
   {
     "id": "napa-ca",
@@ -4662,7 +5247,8 @@
       "housing": 197.4,
       "otherServices": 100.3
     },
-    "pop": 133216
+    "pop": 133216,
+    "politics": 36.0
   },
   {
     "id": "manhattan-ks",
@@ -4677,7 +5263,8 @@
       "housing": 72.0,
       "otherServices": 93.8
     },
-    "pop": 132831
+    "pop": 132831,
+    "politics": -16.6
   },
   {
     "id": "albany-or",
@@ -4692,7 +5279,9 @@
       "housing": 101.1,
       "otherServices": 100.3
     },
-    "pop": 131496
+    "pop": 131496,
+    "politics": -25.2,
+    "aqi": 25.0
   },
   {
     "id": "mount-vernon-wa",
@@ -4707,7 +5296,9 @@
       "housing": 108.2,
       "otherServices": 99.5
     },
-    "pop": 131417
+    "pop": 131417,
+    "politics": 9.1,
+    "aqi": 26.0
   },
   {
     "id": "johnstown-pa",
@@ -4722,7 +5313,9 @@
       "housing": 42.3,
       "otherServices": 97.7
     },
-    "pop": 130668
+    "pop": 130668,
+    "politics": -40.0,
+    "aqi": 42.0
   },
   {
     "id": "salisbury-md",
@@ -4737,7 +5330,9 @@
       "housing": 87.2,
       "otherServices": 99.0
     },
-    "pop": 129710
+    "pop": 129710,
+    "politics": -7.8,
+    "aqi": 40.0
   },
   {
     "id": "cleveland-tn",
@@ -4752,7 +5347,8 @@
       "housing": 60.3,
       "otherServices": 95.1
     },
-    "pop": 129612
+    "pop": 129612,
+    "politics": -60.9
   },
   {
     "id": "elizabethtown-ky",
@@ -4767,7 +5363,9 @@
       "housing": 66.7,
       "otherServices": 96.9
     },
-    "pop": 127576
+    "pop": 127576,
+    "politics": -34.0,
+    "aqi": 41.0
   },
   {
     "id": "staunton-va",
@@ -4782,7 +5380,8 @@
       "housing": 68.2,
       "otherServices": 98.6
     },
-    "pop": 127344
+    "pop": 127344,
+    "politics": -29.1
   },
   {
     "id": "lawton-ok",
@@ -4797,7 +5396,9 @@
       "housing": 57.4,
       "otherServices": 95.5
     },
-    "pop": 127001
+    "pop": 127001,
+    "politics": -26.8,
+    "aqi": 43.0
   },
   {
     "id": "missoula-mt",
@@ -4812,7 +5413,9 @@
       "housing": 94.9,
       "otherServices": 98.7
     },
-    "pop": 126939
+    "pop": 126939,
+    "politics": 19.5,
+    "aqi": 43.0
   },
   {
     "id": "pittsfield-ma",
@@ -4827,7 +5430,9 @@
       "housing": 73.5,
       "otherServices": 101.2
     },
-    "pop": 126818
+    "pop": 126818,
+    "politics": 40.8,
+    "aqi": 38.0
   },
   {
     "id": "bozeman-mt",
@@ -4842,7 +5447,9 @@
       "housing": 139.2,
       "otherServices": 98.7
     },
-    "pop": 126409
+    "pop": 126409,
+    "politics": 3.3,
+    "aqi": 18.0
   },
   {
     "id": "glens-falls-ny",
@@ -4857,7 +5464,8 @@
       "housing": 76.2,
       "otherServices": 97.8
     },
-    "pop": 125427
+    "pop": 125427,
+    "politics": -11.8
   },
   {
     "id": "ames-ia",
@@ -4872,7 +5480,8 @@
       "housing": 69.2,
       "otherServices": 92.9
     },
-    "pop": 125156
+    "pop": 125156,
+    "politics": 2.8
   },
   {
     "id": "mansfield-oh",
@@ -4887,7 +5496,8 @@
       "housing": 54.9,
       "otherServices": 98.9
     },
-    "pop": 125064
+    "pop": 125064,
+    "politics": -42.7
   },
   {
     "id": "wenatchee-wa",
@@ -4902,7 +5512,9 @@
       "housing": 115.0,
       "otherServices": 99.5
     },
-    "pop": 124795
+    "pop": 124795,
+    "politics": -15.8,
+    "aqi": 28.0
   },
   {
     "id": "sierra-vista-az",
@@ -4917,7 +5529,9 @@
       "housing": 61.9,
       "otherServices": 99.8
     },
-    "pop": 124640
+    "pop": 124640,
+    "politics": -23.4,
+    "aqi": 48.0
   },
   {
     "id": "morristown-tn",
@@ -4932,7 +5546,9 @@
       "housing": 59.0,
       "otherServices": 95.1
     },
-    "pop": 124054
+    "pop": 124054,
+    "politics": -62.1,
+    "aqi": 40.0
   },
   {
     "id": "farmington-nm",
@@ -4947,7 +5563,9 @@
       "housing": 56.6,
       "otherServices": 98.5
     },
-    "pop": 120675
+    "pop": 120675,
+    "politics": -32.5,
+    "aqi": 48.0
   },
   {
     "id": "san-angelo-tx",
@@ -4962,7 +5580,8 @@
       "housing": 81.4,
       "otherServices": 96.2
     },
-    "pop": 120606
+    "pop": 120606,
+    "politics": -49.0
   },
   {
     "id": "lawrence-ks",
@@ -4977,7 +5596,8 @@
       "housing": 71.6,
       "otherServices": 93.8
     },
-    "pop": 120553
+    "pop": 120553,
+    "politics": 38.6
   },
   {
     "id": "altoona-pa",
@@ -4992,7 +5612,9 @@
       "housing": 55.0,
       "otherServices": 97.7
     },
-    "pop": 120273
+    "pop": 120273,
+    "politics": -43.8,
+    "aqi": 37.0
   },
   {
     "id": "goldsboro-nc",
@@ -5007,7 +5629,8 @@
       "housing": 57.7,
       "otherServices": 98.2
     },
-    "pop": 118686
+    "pop": 118686,
+    "politics": -16.5
   },
   {
     "id": "st-joseph-mo",
@@ -5023,7 +5646,9 @@
       "housing": 55.4,
       "otherServices": 93.1
     },
-    "pop": 118475
+    "pop": 118475,
+    "politics": -38.3,
+    "aqi": 48.0
   },
   {
     "id": "sheboygan-wi",
@@ -5038,7 +5663,9 @@
       "housing": 80.5,
       "otherServices": 99.4
     },
-    "pop": 117752
+    "pop": 117752,
+    "politics": -16.6,
+    "aqi": 40.0
   },
   {
     "id": "anniston-al",
@@ -5053,7 +5680,8 @@
       "housing": 54.7,
       "otherServices": 96.7
     },
-    "pop": 116429
+    "pop": 116429,
+    "politics": -45.1
   },
   {
     "id": "brunswick-ga",
@@ -5068,7 +5696,9 @@
       "housing": 56.3,
       "otherServices": 98.7
     },
-    "pop": 116074
+    "pop": 116074,
+    "politics": -34.5,
+    "aqi": 39.0
   },
   {
     "id": "watertown-ny",
@@ -5083,7 +5713,9 @@
       "housing": 53.2,
       "otherServices": 97.8
     },
-    "pop": 114787
+    "pop": 114787,
+    "politics": -23.6,
+    "aqi": 32.0
   },
   {
     "id": "sandusky-oh",
@@ -5098,7 +5730,8 @@
       "housing": 59.5,
       "otherServices": 98.9
     },
-    "pop": 113838
+    "pop": 113838,
+    "politics": -18.4
   },
   {
     "id": "lewiston-me",
@@ -5113,7 +5746,9 @@
       "housing": 69.0,
       "otherServices": 103.2
     },
-    "pop": 113765
+    "pop": 113765,
+    "politics": -6.2,
+    "aqi": 31.0
   },
   {
     "id": "weirton-wv",
@@ -5129,7 +5764,9 @@
       "housing": 52.4,
       "otherServices": 99.7
     },
-    "pop": 113544
+    "pop": 113544,
+    "politics": -45.4,
+    "aqi": 46.0
   },
   {
     "id": "longview-wa",
@@ -5144,7 +5781,9 @@
       "housing": 82.5,
       "otherServices": 99.5
     },
-    "pop": 112864
+    "pop": 112864,
+    "politics": -20.5,
+    "aqi": 22.0
   },
   {
     "id": "williamsport-pa",
@@ -5159,7 +5798,9 @@
       "housing": 64.4,
       "otherServices": 97.7
     },
-    "pop": 112724
+    "pop": 112724,
+    "politics": -41.8,
+    "aqi": 39.0
   },
   {
     "id": "owensboro-ky",
@@ -5174,7 +5815,9 @@
       "housing": 55.7,
       "otherServices": 96.9
     },
-    "pop": 112512
+    "pop": 112512,
+    "politics": -34.6,
+    "aqi": 43.0
   },
   {
     "id": "muncie-in",
@@ -5189,7 +5832,9 @@
       "housing": 57.5,
       "otherServices": 99.1
     },
-    "pop": 112321
+    "pop": 112321,
+    "politics": -16.1,
+    "aqi": 44.0
   },
   {
     "id": "michigan-city-in",
@@ -5204,7 +5849,9 @@
       "housing": 68.5,
       "otherServices": 99.1
     },
-    "pop": 111706
+    "pop": 111706,
+    "politics": -14.4,
+    "aqi": 41.0
   },
   {
     "id": "beckley-wv",
@@ -5219,7 +5866,8 @@
       "housing": 52.2,
       "otherServices": 99.8
     },
-    "pop": 111428
+    "pop": 111428,
+    "politics": -51.0
   },
   {
     "id": "sebring-fl",
@@ -5234,7 +5882,9 @@
       "housing": 73.5,
       "otherServices": 98.9
     },
-    "pop": 107614
+    "pop": 107614,
+    "politics": -41.0,
+    "aqi": 35.0
   },
   {
     "id": "pinehurst-nc",
@@ -5249,7 +5899,8 @@
       "housing": 59.3,
       "otherServices": 98.2
     },
-    "pop": 106898
+    "pop": 106898,
+    "politics": -29.8
   },
   {
     "id": "gettysburg-pa",
@@ -5264,7 +5915,9 @@
       "housing": 73.9,
       "otherServices": 97.7
     },
-    "pop": 106748
+    "pop": 106748,
+    "politics": -34.0,
+    "aqi": 44.0
   },
   {
     "id": "kankakee-il",
@@ -5279,7 +5932,8 @@
       "housing": 92.9,
       "otherServices": 99.6
     },
-    "pop": 105940
+    "pop": 105940,
+    "politics": -21.2
   },
   {
     "id": "mankato-mn",
@@ -5294,7 +5948,9 @@
       "housing": 79.9,
       "otherServices": 92.2
     },
-    "pop": 104248
+    "pop": 104248,
+    "politics": -1.0,
+    "aqi": 45.0
   },
   {
     "id": "sumter-sc",
@@ -5309,7 +5965,8 @@
       "housing": 60.8,
       "otherServices": 98.3
     },
-    "pop": 104165
+    "pop": 104165,
+    "politics": 5.0
   },
   {
     "id": "fond-du-lac-wi",
@@ -5324,7 +5981,9 @@
       "housing": 67.3,
       "otherServices": 99.4
     },
-    "pop": 103948
+    "pop": 103948,
+    "politics": -29.0,
+    "aqi": 38.0
   },
   {
     "id": "ithaca-ny",
@@ -5339,7 +5998,9 @@
       "housing": 128.4,
       "otherServices": 97.8
     },
-    "pop": 103558
+    "pop": 103558,
+    "politics": 50.6,
+    "aqi": 35.0
   },
   {
     "id": "gadsden-al",
@@ -5354,7 +6015,9 @@
       "housing": 53.7,
       "otherServices": 96.7
     },
-    "pop": 103241
+    "pop": 103241,
+    "politics": -56.1,
+    "aqi": 47.0
   },
   {
     "id": "grand-forks-nd",
@@ -5370,7 +6033,8 @@
       "housing": 59.7,
       "otherServices": 91.4
     },
-    "pop": 103120
+    "pop": 103120,
+    "politics": -23.7
   },
   {
     "id": "bay-city-mi",
@@ -5385,7 +6049,9 @@
       "housing": 66.7,
       "otherServices": 99.6
     },
-    "pop": 102500
+    "pop": 102500,
+    "politics": -14.9,
+    "aqi": 37.0
   },
   {
     "id": "paducah-ky",
@@ -5401,7 +6067,9 @@
       "housing": 48.8,
       "otherServices": 96.9
     },
-    "pop": 102267
+    "pop": 102267,
+    "politics": -44.2,
+    "aqi": 43.0
   },
   {
     "id": "cheyenne-wy",
@@ -5416,7 +6084,9 @@
       "housing": 89.8,
       "otherServices": 100.4
     },
-    "pop": 100984
+    "pop": 100984,
+    "politics": -32.9,
+    "aqi": 45.0
   },
   {
     "id": "lima-oh",
@@ -5431,7 +6101,9 @@
       "housing": 57.3,
       "otherServices": 98.9
     },
-    "pop": 100838
+    "pop": 100838,
+    "politics": -44.5,
+    "aqi": 42.0
   },
   {
     "id": "decatur-il",
@@ -5446,7 +6118,9 @@
       "housing": 56.2,
       "otherServices": 99.6
     },
-    "pop": 100591
+    "pop": 100591,
+    "politics": -19.2,
+    "aqi": 43.0
   },
   {
     "id": "rome-ga",
@@ -5461,7 +6135,9 @@
       "housing": 60.3,
       "otherServices": 98.7
     },
-    "pop": 100113
+    "pop": 100113,
+    "politics": -42.2,
+    "aqi": 38.0
   },
   {
     "id": "hot-springs-ar",
@@ -5476,7 +6152,9 @@
       "housing": 57.3,
       "otherServices": 95.3
     },
-    "pop": 99784
+    "pop": 99784,
+    "politics": -37.1,
+    "aqi": 50.0
   },
   {
     "id": "dubuque-ia",
@@ -5491,7 +6169,8 @@
       "housing": 64.0,
       "otherServices": 92.9
     },
-    "pop": 98887
+    "pop": 98887,
+    "politics": -8.7
   },
   {
     "id": "victoria-tx",
@@ -5506,7 +6185,9 @@
       "housing": 69.3,
       "otherServices": 96.2
     },
-    "pop": 98808
+    "pop": 98808,
+    "politics": -44.7,
+    "aqi": 35.0
   },
   {
     "id": "cape-girardeau-mo",
@@ -5522,7 +6203,8 @@
       "housing": 56.4,
       "otherServices": 93.1
     },
-    "pop": 98223
+    "pop": 98223,
+    "politics": -49.3
   },
   {
     "id": "corvallis-or",
@@ -5537,7 +6219,8 @@
       "housing": 114.4,
       "otherServices": 100.3
     },
-    "pop": 97713
+    "pop": 97713,
+    "politics": 41.0
   },
   {
     "id": "helena-mt",
@@ -5552,7 +6235,9 @@
       "housing": 90.1,
       "otherServices": 98.7
     },
-    "pop": 96091
+    "pop": 96091,
+    "politics": -15.6,
+    "aqi": 46.0
   },
   {
     "id": "fairbanks-ak",
@@ -5567,7 +6252,8 @@
       "housing": 92.6,
       "otherServices": 103.3
     },
-    "pop": 94840
+    "pop": 94840,
+    "aqi": 42.0
   },
   {
     "id": "pocatello-id",
@@ -5582,7 +6268,9 @@
       "housing": 66.4,
       "otherServices": 99.0
     },
-    "pop": 90400
+    "pop": 90400,
+    "politics": -25.9,
+    "aqi": 39.0
   },
   {
     "id": "hinesville-ga",
@@ -5597,7 +6285,8 @@
       "housing": 79.5,
       "otherServices": 98.7
     },
-    "pop": 88804
+    "pop": 88804,
+    "politics": 6.5
   },
   {
     "id": "parkersburg-wv",
@@ -5612,7 +6301,9 @@
       "housing": 45.9,
       "otherServices": 99.8
     },
-    "pop": 88052
+    "pop": 88052,
+    "politics": -45.3,
+    "aqi": 43.0
   },
   {
     "id": "grants-pass-or",
@@ -5627,7 +6318,9 @@
       "housing": 79.9,
       "otherServices": 100.3
     },
-    "pop": 87821
+    "pop": 87821,
+    "politics": -29.8,
+    "aqi": 29.0
   },
   {
     "id": "great-falls-mt",
@@ -5642,7 +6335,9 @@
       "housing": 97.1,
       "otherServices": 98.7
     },
-    "pop": 84900
+    "pop": 84900,
+    "politics": -23.0,
+    "aqi": 46.0
   },
   {
     "id": "midland-mi",
@@ -5657,7 +6352,8 @@
       "housing": 66.7,
       "otherServices": 99.6
     },
-    "pop": 84039
+    "pop": 84039,
+    "politics": -15.4
   },
   {
     "id": "columbus-in",
@@ -5672,7 +6368,9 @@
       "housing": 75.5,
       "otherServices": 99.1
     },
-    "pop": 84003
+    "pop": 84003,
+    "politics": -27.9,
+    "aqi": 44.0
   },
   {
     "id": "kokomo-in",
@@ -5687,7 +6385,9 @@
       "housing": 59.3,
       "otherServices": 99.1
     },
-    "pop": 83831
+    "pop": 83831,
+    "politics": -35.9,
+    "aqi": 44.0
   },
   {
     "id": "elmira-ny",
@@ -5702,7 +6402,8 @@
       "housing": 76.4,
       "otherServices": 97.8
     },
-    "pop": 81325
+    "pop": 81325,
+    "politics": -16.8
   },
   {
     "id": "casper-wy",
@@ -5717,7 +6418,9 @@
       "housing": 74.2,
       "otherServices": 100.4
     },
-    "pop": 79941
+    "pop": 79941,
+    "politics": -49.5,
+    "aqi": 43.0
   },
   {
     "id": "grand-island-ne",
@@ -5732,7 +6435,9 @@
       "housing": 61.7,
       "otherServices": 93.0
     },
-    "pop": 76479
+    "pop": 76479,
+    "politics": -45.1,
+    "aqi": 32.0
   },
   {
     "id": "minot-nd",
@@ -5747,7 +6452,9 @@
       "housing": 63.2,
       "otherServices": 91.2
     },
-    "pop": 75742
+    "pop": 75742,
+    "politics": -50.4,
+    "aqi": 37.0
   },
   {
     "id": "lewiston-id",
@@ -5763,7 +6470,9 @@
       "housing": 71.9,
       "otherServices": 99.4
     },
-    "pop": 65536
+    "pop": 65536,
+    "politics": -34.8,
+    "aqi": 43.0
   },
   {
     "id": "walla-walla-wa",
@@ -5778,7 +6487,9 @@
       "housing": 86.6,
       "otherServices": 99.5
     },
-    "pop": 61568
+    "pop": 61568,
+    "politics": -8.3,
+    "aqi": 38.0
   },
   {
     "id": "carson-city-nv",
@@ -5793,7 +6504,9 @@
       "housing": 101.2,
       "otherServices": 98.7
     },
-    "pop": 58036
+    "pop": 58036,
+    "politics": -11.6,
+    "aqi": 45.0
   },
   {
     "id": "eagle-pass-tx",
@@ -5808,6 +6521,8 @@
       "housing": 53.7,
       "otherServices": 96.2
     },
-    "pop": 57762
+    "pop": 57762,
+    "politics": -18.6,
+    "aqi": 37.0
   }
 ]
