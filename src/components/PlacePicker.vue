@@ -120,7 +120,7 @@ function choose(m: Metro) {
       </button>
     </div>
 
-    <!-- Dropdown — bottom-sheet style -->
+    <!-- Dropdown — bottom-sheet style, celestial-tinted surface -->
     <ul
       v-if="open && matches.length"
       class="absolute z-20 mt-2 max-h-72 w-full overflow-auto"
@@ -135,9 +135,8 @@ function choose(m: Metro) {
         v-for="m in matches"
         :key="m.id"
         @mousedown.prevent="choose(m)"
-        class="flex cursor-pointer items-center justify-between px-4 py-3 transition-colors"
+        class="city-row flex cursor-pointer items-center justify-between px-4 py-3"
         style="border-bottom: 1px solid var(--color-contour)"
-        :class="'hover:bg-[var(--color-paper-deep)]'"
       >
         <div class="flex min-w-0 flex-col">
           <span class="truncate text-[length:var(--text-body)] font-bold">{{
@@ -153,9 +152,14 @@ function choose(m: Metro) {
           class="tnum ml-3 shrink-0 rounded-[var(--radius-chip)] px-2 py-0.5 text-[length:var(--text-eyebrow)] font-black uppercase"
           style="
             letter-spacing: var(--text-eyebrow--letter-spacing);
-            background: var(--color-paper-deep);
-            color: var(--color-ink);
-            border: 1px solid var(--color-contour);
+            background: color-mix(
+              in oklch,
+              var(--color-route) 15%,
+              transparent
+            );
+            color: var(--color-route);
+            border: 1px solid
+              color-mix(in oklch, var(--color-route) 32%, transparent);
           "
         >
           {{ m.states.join("·") }}
@@ -164,3 +168,13 @@ function choose(m: Metro) {
     </ul>
   </div>
 </template>
+
+<style scoped>
+/* active/hovered city row — celestial accent tint instead of neutral grey */
+.city-row {
+  transition: background-color 150ms ease;
+}
+.city-row:hover {
+  background: color-mix(in oklch, var(--color-route) 14%, transparent);
+}
+</style>
