@@ -1,15 +1,21 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { FILTERS, type ActiveBands } from "../engines/filters";
+import { FILTERS, type ActiveBands, type FilterDef } from "../engines/filters";
 
-defineProps<{ active: ActiveBands; activeCount: number }>();
+const props = withDefaults(
+  defineProps<{
+    active: ActiveBands;
+    activeCount: number;
+    filters?: FilterDef[];
+  }>(),
+  { filters: () => FILTERS },
+);
 const emit = defineEmits<{
   "set-band": [filterId: string, bandId: string];
   clear: [];
 }>();
 
 const open = ref(false);
-const filters = FILTERS; // module-level constant, non-reactive
 </script>
 
 <template>
@@ -69,7 +75,7 @@ const filters = FILTERS; // module-level constant, non-reactive
     <div v-if="open" style="border-top: 1px solid var(--color-contour)">
       <ul class="px-5 pb-2 pt-3">
         <li
-          v-for="f in filters"
+          v-for="f in props.filters"
           :key="f.id"
           class="py-3"
           style="border-bottom: 1px solid var(--color-contour)"

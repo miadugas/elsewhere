@@ -4,6 +4,7 @@ import PlacePicker from "../components/PlacePicker.vue";
 import SalaryInput from "../components/SalaryInput.vue";
 import AffordList from "../components/AffordList.vue";
 import FilterSheet from "../components/FilterSheet.vue";
+import { availableFilters } from "../engines/filters";
 
 const props = defineProps<{ comparison: ReturnType<typeof useComparison> }>();
 const c = props.comparison;
@@ -59,6 +60,7 @@ const ready = () => !!c.from.value && c.salary.value > 0;
       <FilterSheet
         :active="c.filters.value"
         :active-count="c.activeFilterCount.value"
+        :filters="availableFilters(c.metros)"
         @set-band="c.setBand"
         @clear="c.clearFilters"
       />

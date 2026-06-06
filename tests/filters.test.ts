@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import {
   applyFilters,
+  availableFilters,
   metroBadges,
   STATE_TOP_RATE,
 } from "../src/engines/filters";
@@ -95,6 +96,26 @@ describe("tax filter", () => {
     expect(noTax.rows.map((r) => r.metro.id)).toContain("red-hot"); // TX = 0
     expect(noTax.rows.map((r) => r.metro.id)).toContain("purple-notemp"); // NV = 0
     expect(noTax.rows.map((r) => r.metro.id)).not.toContain("blue-mild"); // NY ≠ 0
+  });
+});
+
+describe("availableFilters", () => {
+  it("includes a filter when at least one metro has its datum", () => {
+    const metros = [metro("a", { politics: 10 }), metro("b", {})];
+    const ids = availableFilters(metros).map((f) => f.id);
+    expect(ids).toContain("politics");
+  });
+
+  it("omits a filter when no metro has its datum", () => {
+    const metros = [metro("a", { politics: 10 }), metro("b", { aqi: 40 })];
+    const ids = availableFilters(metros).map((f) => f.id);
+    expect(ids).not.toContain("temp"); // no metro has tempF
+    expect(ids).not.toContain("humidity");
+  });
+
+  it("always includes tax (derived from state)", () => {
+    const metros = [metro("a", { states: ["TX"] })];
+    expect(availableFilters(metros).map((f) => f.id)).toContain("tax");
   });
 });
 

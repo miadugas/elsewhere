@@ -217,6 +217,11 @@ export const FILTERS: FilterDef[] = [
 
 export type ActiveBands = Record<string, string | null>;
 
+/** The subset of FILTERS for which at least one metro carries data. */
+export function availableFilters(metros: Metro[]): FilterDef[] {
+  return FILTERS.filter((f) => metros.some((m) => f.has(m)));
+}
+
 /**
  * Narrow ranked rows by the active bands. Ordering is preserved (input is
  * already ranked by required salary). A metro missing the datum for an active
