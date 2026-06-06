@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, ref, type Component } from "vue";
+import { Pizza, Fuel, Beer, Coffee, House } from "lucide-vue-next";
 import type { BasketRow, Metro } from "../types";
 
 const props = defineProps<{ rows: BasketRow[]; from: Metro; to: Metro }>();
@@ -7,14 +8,14 @@ const props = defineProps<{ rows: BasketRow[]; from: Metro; to: Metro }>();
 const money = (n: number) =>
   n.toLocaleString("en-US", { style: "currency", currency: "USD" });
 
-/** Presentation-only: which bundled Fluent-Flat asset stands in for each
- *  unicode glyph. Falls back to the native emoji if a row isn't mapped. */
-const EMOJI_ICON: Record<string, string> = {
-  "🍕": "/emoji/pizza.svg",
-  "⛽": "/emoji/fuel.svg",
-  "🍺": "/emoji/beer.svg",
-  "☕": "/emoji/coffee.svg",
-  "🏠": "/emoji/house.svg",
+/** Presentation-only: which Lucide icon stands in for each unicode glyph.
+ *  Falls back to the native emoji if a row isn't mapped. */
+const EMOJI_ICON: Record<string, Component> = {
+  "🍕": Pizza,
+  "⛽": Fuel,
+  "🍺": Beer,
+  "☕": Coffee,
+  "🏠": House,
 };
 
 const open = ref(true);
@@ -151,7 +152,7 @@ const summary = computed(() => {
           border-bottom: 1px solid var(--color-contour);
         "
       >
-        <!-- emoji medallion (bundled Fluent-Flat icon; native glyph fallback) -->
+        <!-- icon medallion (Lucide line icon; native glyph fallback) -->
         <span
           class="flex h-10 w-10 items-center justify-center text-xl"
           :style="{
@@ -160,12 +161,12 @@ const summary = computed(() => {
             border: '1px solid var(--color-contour)',
           }"
         >
-          <img
+          <component
+            :is="EMOJI_ICON[r.emoji]"
             v-if="EMOJI_ICON[r.emoji]"
-            :src="EMOJI_ICON[r.emoji]"
-            :alt="r.label"
             class="h-6 w-6"
-            draggable="false"
+            :stroke-width="2"
+            :aria-label="r.label"
           />
           <template v-else>{{ r.emoji }}</template>
         </span>

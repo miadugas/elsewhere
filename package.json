@@ -16,6 +16,8 @@
     "@fontsource-variable/overpass": "^5.2.8",
     "@fontsource-variable/public-sans": "^5.2.7",
     "@fontsource/overpass-mono": "^5.2.8",
+    "@heroicons/vue": "^2.2.0",
+    "lucide-vue-next": "^1.0.0",
     "vite-plugin-pwa": "^0.21.1",
     "vue": "^3.5.13"
   },

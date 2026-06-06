@@ -1,4 +1,4 @@
-import { ref, watch } from "vue";
+import { ref, computed, watch } from "vue";
 
 /**
  * Theme controller — display-only state, no business logic.
@@ -38,6 +38,26 @@ const theme = ref<Theme>(readStored());
 // apply once on module load so there's no flash before first component mounts
 applyTheme(theme.value);
 
+// Track the OS preference reactively so `auto` resolves correctly and the
+// binary toggle knows which face to show before any explicit choice.
+const systemDark = ref(
+  typeof window !== "undefined" && typeof window.matchMedia === "function"
+    ? window.matchMedia("(prefers-color-scheme: dark)").matches
+    : false,
+);
+if (typeof window !== "undefined" && typeof window.matchMedia === "function") {
+  window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", (e) => {
+      systemDark.value = e.matches;
+    });
+}
+
+// Resolved light/dark, accounting for `auto` → OS preference.
+const isDark = computed(() =>
+  theme.value === "auto" ? systemDark.value : theme.value === "dark",
+);
+
 watch(theme, (t) => {
   applyTheme(t);
   if (typeof window !== "undefined") {
@@ -63,5 +83,11 @@ export function useTheme() {
     theme.value = t;
   }
 
-  return { theme, cycle, set };
+  // Binary flip for the sun/moon switcher — sets an explicit light/dark
+  // based on what's currently showing (so the first flip leaves `auto`).
+  function toggle() {
+    theme.value = isDark.value ? "light" : "dark";
+  }
+
+  return { theme, isDark, cycle, set, toggle };
 }

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, watch } from "vue";
+import { Wallet } from "lucide-vue-next";
 import type { PayPeriod } from "../engines/pay";
 
 const props = defineProps<{
@@ -66,61 +67,74 @@ const suffix = computed(() => (props.period === "hourly" ? "/ hr" : "/ yr"));
     <!-- label + Annual/Hourly toggle -->
     <div class="flex items-center justify-between pl-1">
       <div class="flex items-center gap-2">
-        <img class="h-4 w-4" src="/emoji/salary.svg" alt="" draggable="false" />
+        <Wallet
+          class="h-4 w-4 opacity-70"
+          :stroke-width="2"
+          aria-hidden="true"
+        />
         <span
-          class="font-display text-[length:var(--text-eyebrow)] font-semibold uppercase opacity-70"
+          class="font-display whitespace-nowrap text-[length:var(--text-eyebrow)] font-semibold uppercase opacity-70"
           style="letter-spacing: var(--text-eyebrow--letter-spacing)"
           >Your current pay</span
         >
       </div>
 
       <div
-        class="flex items-center gap-0.5 p-0.5"
+        class="period-toggle relative flex items-center p-1"
+        :class="{ 'is-hourly': period === 'hourly' }"
         role="group"
         aria-label="Pay period"
         :style="{
           borderRadius: 'var(--radius-pill)',
-          background: 'var(--color-paper-deep)',
-          border: '1px solid var(--color-contour)',
+          background: 'var(--slider-track)',
+          border:
+            '1px solid color-mix(in oklch, var(--color-on-dark) 14%, transparent)',
+          boxShadow:
+            'inset 0 1px 3px rgba(0, 0, 0, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.18)',
         }"
       >
+        <!-- sliding thumb — moves between Annual / Hourly like the theme switch -->
+        <span class="period-thumb" aria-hidden="true" />
         <button
           v-for="opt in PERIODS"
           :key="opt.id"
           type="button"
           @click="opt.id !== period && emit('update:period', opt.id)"
           :aria-pressed="period === opt.id"
-          class="font-display rounded-[var(--radius-pill)] px-2.5 py-1 text-[length:var(--text-eyebrow)] font-bold uppercase transition-colors"
-          style="letter-spacing: var(--text-eyebrow--letter-spacing)"
-          :style="
-            period === opt.id
-              ? {
-                  background: 'var(--color-route)',
-                  color: 'var(--color-on-dark)',
-                }
-              : { color: 'var(--color-ink-soft)' }
-          "
+          class="font-display relative z-10 flex-1 px-3 py-1 text-center text-[length:var(--text-eyebrow)] font-bold uppercase"
+          :style="{
+            letterSpacing: 'var(--text-eyebrow--letter-spacing)',
+            color:
+              period === opt.id
+                ? 'var(--color-surface-dark)'
+                : 'var(--slider-muted)',
+            opacity: 1,
+            transition:
+              period === opt.id
+                ? 'color 160ms ease 200ms, opacity 160ms ease 200ms'
+                : 'color 160ms ease 0ms, opacity 160ms ease 0ms',
+          }"
         >
           {{ opt.label }}
         </button>
       </div>
     </div>
 
-    <!-- the dark pay slab -->
+    <!-- the pay input — matches the From/To city pickers -->
     <div
       class="input-pop mt-1.5 flex items-center gap-2 px-4"
       :style="{
-        background: 'var(--color-surface-dark)',
-        color: 'var(--color-on-dark)',
+        background: 'var(--color-paper)',
+        color: 'var(--color-ink)',
         borderRadius: 'var(--radius-sheet)',
-        border: '1.5px solid transparent',
-        boxShadow: 'var(--shadow-sheet-lifted)',
-        minHeight: '60px',
+        border: '1.5px solid var(--color-contour-ink)',
+        boxShadow: 'var(--shadow-sheet)',
+        minHeight: '56px',
       }"
     >
       <span
         class="tnum text-[length:var(--text-numeric)] font-black"
-        style="color: var(--color-route)"
+        style="color: var(--color-ink-soft)"
         aria-hidden="true"
         >$</span
       >
@@ -134,7 +148,7 @@ const suffix = computed(() => (props.period === "hourly" ? "/ hr" : "/ yr"));
         "
         :inputmode="period === 'hourly' ? 'decimal' : 'numeric'"
         :placeholder="placeholder"
-        class="tnum min-w-0 flex-1 bg-transparent text-[length:var(--text-numeric)] font-black tracking-tight text-[var(--color-on-dark)] outline-none placeholder:opacity-40"
+        class="tnum min-w-0 flex-1 bg-transparent text-[length:var(--text-numeric)] font-black tracking-tight text-[var(--color-ink)] outline-none placeholder:opacity-40"
         :aria-label="
           period === 'hourly'
             ? 'Current hourly pay in dollars'
@@ -154,7 +168,7 @@ const suffix = computed(() => (props.period === "hourly" ? "/ hr" : "/ yr"));
           inputmode="numeric"
           placeholder="40"
           aria-label="Hours per week"
-          class="tnum hrs-chip w-9 bg-transparent py-0.5 text-center text-[length:var(--text-meta)] font-bold text-[var(--color-on-dark)] outline-none"
+          class="tnum hrs-chip w-9 bg-transparent py-0.5 text-center text-[length:var(--text-meta)] font-bold text-[var(--color-ink)] outline-none"
           :class="{ 'hrs-chip--callout': editing }"
           style="border-radius: var(--radius-chip)"
         />
@@ -176,10 +190,38 @@ const suffix = computed(() => (props.period === "hourly" ? "/ hr" : "/ yr"));
 </template>
 
 <style scoped>
+/* Annual/Hourly sliding thumb — slides between the two like the theme switch.
+   Buttons are equal-width (flex-1), so the thumb is one half and translates
+   100% of its own width to land under the other option. */
+.period-thumb {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  z-index: 0;
+  width: calc(50% - 4px);
+  border-radius: var(--radius-pill);
+  background: var(--slider-thumb);
+  /* same lift as the theme-switch sun knob: drop shadow + a warm glow */
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.3),
+    0 0 10px 1px var(--slider-thumb-glow);
+  transform: translateX(0);
+  transition: transform 360ms cubic-bezier(0.34, 1.35, 0.5, 1);
+}
+.period-toggle.is-hourly .period-thumb {
+  transform: translateX(100%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .period-thumb {
+    transition: none;
+  }
+}
+
 /* hours/week chip — quiet by default, called out while the rate is focused */
 .hrs-chip {
-  border: 1px solid color-mix(in oklch, var(--color-on-dark) 24%, transparent);
-  background: color-mix(in oklch, var(--color-on-dark) 8%, transparent);
+  border: 1px solid color-mix(in oklch, var(--color-ink) 22%, transparent);
+  background: color-mix(in oklch, var(--color-ink) 6%, transparent);
   transition:
     border-color 160ms ease,
     background 160ms ease,

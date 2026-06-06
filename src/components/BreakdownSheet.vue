@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
+import { House, ShoppingCart, Wrench, MapPin, Flag } from "lucide-vue-next";
 import type { Metro } from "../types";
 
 const props = defineProps<{ from: Metro; to: Metro }>();
@@ -10,10 +11,11 @@ const LABELS = {
   goods: "Goods & groceries",
   otherServices: "Services",
 } as const;
+// Module-level (non-reactive) so component refs never enter the computed rows.
 const ICONS = {
-  housing: "/emoji/house.svg",
-  goods: "/emoji/cart.svg",
-  otherServices: "/emoji/wrench.svg",
+  housing: House,
+  goods: ShoppingCart,
+  otherServices: Wrench,
 } as const;
 const MIN_PIN_GAP = 5; // keep the two pins visibly separate at tiny diffs
 const MAX_PCT = 50; // bar scale cap (±50% from the home baseline)
@@ -29,7 +31,6 @@ const rows = computed(() => {
     return {
       key: k,
       label: LABELS[k],
-      icon: ICONS[k],
       fromRpp: Math.round(fromRpp),
       toRpp: Math.round(toRpp),
       pct,
@@ -114,11 +115,19 @@ const rows = computed(() => {
         style="letter-spacing: var(--text-eyebrow--letter-spacing)"
       >
         <span class="flex items-center gap-1.5">
-          <img src="/emoji/from.svg" alt="" class="h-3.5 w-3.5" />
+          <MapPin
+            class="h-3.5 w-3.5"
+            :style="{ color: 'var(--color-route-from)' }"
+            aria-hidden="true"
+          />
           {{ from.short }} · where you are
         </span>
         <span class="flex items-center gap-1.5">
-          <img src="/emoji/to.svg" alt="" class="h-3.5 w-3.5" />
+          <Flag
+            class="h-3.5 w-3.5"
+            :style="{ color: 'var(--color-route-to)' }"
+            aria-hidden="true"
+          />
           {{ to.short }} · where you're headed
         </span>
       </div>
@@ -141,7 +150,12 @@ const rows = computed(() => {
           <!-- headline: category ……… the human takeaway -->
           <div class="flex items-baseline justify-between gap-3">
             <span class="flex items-center gap-2">
-              <img :src="r.icon" alt="" draggable="false" class="h-5 w-5" />
+              <component
+                :is="ICONS[r.key]"
+                class="h-5 w-5"
+                :stroke-width="2"
+                aria-hidden="true"
+              />
               <span class="text-[length:var(--text-body)] font-semibold">{{
                 r.label
               }}</span>
@@ -193,22 +207,22 @@ const rows = computed(() => {
               }"
             />
             <!-- home origin pin (baseline) -->
-            <img
-              src="/emoji/from.svg"
-              alt=""
-              draggable="false"
+            <MapPin
               class="pointer-events-none absolute h-4 w-4"
-              style="left: 50%; top: 50%; transform: translate(-50%, -86%)"
+              style="
+                left: 50%;
+                top: 50%;
+                color: var(--color-route-from);
+                transform: translate(-50%, -86%);
+              "
             />
             <!-- To destination pin -->
-            <img
-              src="/emoji/to.svg"
-              alt=""
-              draggable="false"
+            <Flag
               class="pointer-events-none absolute h-4 w-4"
               :style="{
                 left: r.austinPos + '%',
                 top: '50%',
+                color: 'var(--color-route-to)',
                 transform: 'translate(-50%, -86%)',
               }"
             />

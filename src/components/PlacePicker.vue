@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
+import { MapPin, Flag } from "lucide-vue-next";
 import type { Metro } from "../types";
 import { searchMetros, findMetro } from "../engines/places";
 
@@ -29,12 +30,18 @@ function choose(m: Metro) {
 <template>
   <div class="relative">
     <div class="flex items-center gap-2 pl-1">
-      <!-- route waypoint — From (origin) / To (destination) emoji -->
-      <img
-        :src="label === 'From' ? '/emoji/from.svg' : '/emoji/to.svg'"
+      <!-- route waypoint — From (green origin pin) / To (pink destination flag) -->
+      <MapPin
+        v-if="label === 'From'"
         class="h-4 w-4"
-        alt=""
-        draggable="false"
+        :style="{ color: 'var(--color-route-from)' }"
+        aria-hidden="true"
+      />
+      <Flag
+        v-else
+        class="h-4 w-4"
+        :style="{ color: 'var(--color-route-to)' }"
+        aria-hidden="true"
       />
       <span
         class="font-display text-[length:var(--text-eyebrow)] font-semibold uppercase opacity-70"

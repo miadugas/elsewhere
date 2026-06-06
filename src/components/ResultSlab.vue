@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
+import { MapPin, Flag } from "lucide-vue-next";
 import type { Metro, ParityResult } from "../types";
 import {
   formatPayFromAnnual,
@@ -115,19 +116,23 @@ const equivWord = computed(() =>
               stroke-dasharray="1.5 4"
             />
           </svg>
-          <img
-            src="/emoji/from.svg"
-            alt=""
-            draggable="false"
+          <MapPin
             class="pointer-events-none absolute h-4 w-4"
-            style="left: 2%; top: 24px; transform: translate(-50%, -86%)"
+            style="
+              left: 2%;
+              top: 24px;
+              color: var(--color-route-from);
+              transform: translate(-50%, -86%);
+            "
           />
-          <img
-            src="/emoji/to.svg"
-            alt=""
-            draggable="false"
+          <Flag
             class="pointer-events-none absolute h-4 w-4"
-            style="left: 98%; top: 24px; transform: translate(-50%, -86%)"
+            style="
+              left: 98%;
+              top: 24px;
+              color: var(--color-route-to);
+              transform: translate(-50%, -86%);
+            "
           />
         </div>
 
