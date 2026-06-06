@@ -3,6 +3,7 @@ import type { useComparison } from "../composables/useComparison";
 import PlacePicker from "../components/PlacePicker.vue";
 import SalaryInput from "../components/SalaryInput.vue";
 import AffordList from "../components/AffordList.vue";
+import FilterSheet from "../components/FilterSheet.vue";
 
 const props = defineProps<{ comparison: ReturnType<typeof useComparison> }>();
 const c = props.comparison;
@@ -53,17 +54,34 @@ const ready = () => !!c.from.value && c.salary.value > 0;
       />
     </div>
 
-    <!-- ranked list -->
-    <div class="mt-6">
+    <!-- filters + ranked list -->
+    <div v-if="ready()" class="mt-6 flex flex-col gap-4">
+      <FilterSheet
+        :active="c.filters.value"
+        :active-count="c.activeFilterCount.value"
+        @set-band="c.setBand"
+        @clear="c.clearFilters"
+      />
+
       <AffordList
-        v-if="ready()"
-        :rows="c.affordable.value"
+        :rows="c.filteredAffordable.value.rows"
         :period="c.period.value"
         :hours-per-week="c.hoursPerWeek.value"
         :limit="50"
       />
+
+      <p
+        v-if="c.filteredAffordable.value.hiddenNoData > 0"
+        class="text-center text-[length:var(--text-eyebrow)] uppercase opacity-60"
+        style="letter-spacing: var(--text-eyebrow--letter-spacing)"
+      >
+        +{{ c.filteredAffordable.value.hiddenNoData }} hidden · no data
+      </p>
+    </div>
+
+    <div class="mt-6">
       <section
-        v-else
+        v-if="!ready()"
         class="px-5 py-8 text-center"
         :style="{
           borderRadius: 'var(--radius-sheet)',
