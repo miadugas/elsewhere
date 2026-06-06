@@ -7,6 +7,14 @@ import {
   unitSuffix,
   type PayPeriod,
 } from "../engines/pay";
+import { useTheme } from "../composables/useTheme";
+import groundLight from "../assets/scenes/ground-light.jpg";
+import groundDark from "../assets/scenes/ground-dark.jpg";
+
+// same day/night scene the empty hero shows — carried into the slab as a
+// ghosted backdrop so the result keeps the celestial illustration.
+const { isDark } = useTheme();
+const heroScene = computed(() => (isDark.value ? groundDark : groundLight));
 
 const props = defineProps<{
   from: Metro;
@@ -46,11 +54,10 @@ const equivWord = computed(() =>
 
 <template>
   <section
-    class="relative overflow-hidden text-[var(--color-on-dark)]"
+    class="relative overflow-hidden text-[var(--color-ink)]"
     :style="{
       borderRadius: 'var(--radius-slab)',
-      background:
-        'linear-gradient(180deg, var(--color-surface-dark) 0%, var(--color-surface-dark-soft) 100%)',
+      background: 'var(--color-canvas)',
       boxShadow: 'var(--shadow-slab)',
     }"
   >
@@ -60,6 +67,26 @@ const equivWord = computed(() =>
     <!-- ────────────────────────────────────────────────────────── -->
     <!-- <MapCanvas :from="from" :to="to" /> -->
 
+    <!-- day/night scene — ghosted behind the slab so the result keeps the
+         illustration; theme-swapped to match the toggle -->
+    <img
+      :src="heroScene"
+      alt=""
+      draggable="false"
+      class="pointer-events-none absolute inset-0 h-full w-full object-cover"
+      style="object-position: 50% 60%"
+    />
+    <!-- canvas-tinted scrim — flips with the theme (light veil in light mode,
+         dark veil in dark), so the slab reads LIGHT in light / DARK in dark
+         while the day/night scene stays visible toward the right + bottom -->
+    <div
+      class="pointer-events-none absolute inset-0"
+      :style="{
+        background:
+          'linear-gradient(115deg, color-mix(in oklch, var(--color-canvas) 84%, transparent) 0%, color-mix(in oklch, var(--color-canvas) 70%, transparent) 46%, color-mix(in oklch, var(--color-canvas) 40%, transparent) 80%, transparent 100%), linear-gradient(to top, color-mix(in oklch, var(--color-canvas) 62%, transparent) 0%, transparent 36%)',
+      }"
+    />
+
     <!-- decorative contour rings — atlas seal vibe, top-right corner -->
     <svg
       class="pointer-events-none absolute -right-12 -top-12 h-44 w-44 opacity-[0.18]"
@@ -68,7 +95,7 @@ const equivWord = computed(() =>
     >
       <g
         fill="none"
-        stroke="var(--color-on-dark)"
+        stroke="currentColor"
         stroke-width="0.6"
         stroke-dasharray="2 2"
       >

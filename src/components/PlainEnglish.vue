@@ -90,7 +90,7 @@ const stretchPct = computed(() =>
         <span class="tnum font-bold"
           >{{ money(result.fromSalary) }}{{ u }}</span
         >
-        in {{ from.short }} buys the same life as
+        in {{ from.short }} buys the same life you'd have making
         <span class="tnum font-bold"
           >{{ money(result.requiredSalary) }}{{ u }}</span
         >
@@ -102,26 +102,27 @@ const stretchPct = computed(() =>
         v-if="!same"
         class="mt-3 text-[length:var(--text-body)] leading-relaxed"
       >
-        Keep earning
+        Flip it around: that same
         <span class="tnum font-bold"
           >{{ money(result.fromSalary) }}{{ u }}</span
         >
-        and in {{ to.short }} it stretches like
+        spends like
         <span class="tnum font-bold"
           >{{ money(result.buyingPower) }}{{ u }}</span
-        ><template v-if="cheaper">
-          — your money goes about
+        >
+        in {{ to.short }} —<template v-if="cheaper">
+          your money goes about
           <span
             class="tnum font-bold"
             :style="{ color: 'var(--color-cheaper)' }"
             >{{ stretchPct }}% further</span
           ></template
         ><template v-else>
-          — your money goes about
+          your money falls about
           <span
             class="tnum font-bold"
             :style="{ color: 'var(--color-pricier)' }"
-            >{{ stretchPct }}% less far</span
+            >{{ stretchPct }}% short</span
           ></template
         >.
       </p>
