@@ -396,6 +396,7 @@ def main() -> None:
         out.append(entry)
 
     out.sort(key=lambda x: -x.get("pop", 0))  # biggest first (search re-ranks)
+    OUT.parent.mkdir(parents=True, exist_ok=True)  # src/data may not exist (e.g. pipeline container)
     OUT.write_text(json.dumps(out, indent=2) + "\n")
     print(f"  wrote {len(out)} metros -> {OUT}  ({missing} missing pop)", file=sys.stderr)
     print(f"  coverage: {cover} of {len(out)} metros", file=sys.stderr)
