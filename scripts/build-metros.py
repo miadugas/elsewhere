@@ -16,8 +16,9 @@ Sources (no API key needed):
 The two are joined on the CBSA code, which is the BEA GeoFIPS. Bump the
 URLs below to refresh the vintage when new data ships.
 """
-import csv, io, json, math, re, sys, urllib.request, zipfile
+import csv, io, json, math, os, re, sys, urllib.request, zipfile
 from pathlib import Path
+from urllib.parse import quote
 
 BEA_ZIP = "https://apps.bea.gov/regional/zip/MARPP.zip"
 CENSUS_CSV = (
@@ -261,6 +262,78 @@ def slug(s: str) -> str:
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")
 
 
+def wiki_url(short: str) -> str:
+    """Anchor-city Wikipedia URL (curation happens later in the cities table)."""
+    return "https://en.wikipedia.org/wiki/" + quote(short.replace(" ", "_"))
+
+
+def metro_upsert_params(e: dict) -> tuple:
+    """Flatten a metros.json entry into the 15-value row for the metros upsert."""
+    rpp = e["rpp"]
+    return (
+        e["id"],
+        e.get("cbsa"),
+        e["name"],
+        e["short"],
+        e["states"],
+        e.get("pop"),
+        rpp.get("overall"),
+        rpp.get("housing"),
+        rpp.get("goods"),
+        rpp.get("otherServices"),
+        e.get("politics"),
+        e.get("tempF"),
+        e.get("humidity"),
+        e.get("aqi"),
+        e.get("risk"),
+    )
+
+
+def write_postgres(entries: list[dict]) -> None:
+    """UPSERT metros + seed cities(wikipedia_url). Gated on DATABASE_URL so
+    local `npm run data:build` (no Postgres) still works — it just skips this."""
+    dsn = os.environ.get("DATABASE_URL")
+    if not dsn:
+        print("  DATABASE_URL not set — skipping Postgres write", file=sys.stderr)
+        return
+    import psycopg2
+    from psycopg2.extras import execute_values
+
+    conn = psycopg2.connect(dsn)
+    try:
+        with conn, conn.cursor() as cur:
+            execute_values(
+                cur,
+                """
+                insert into metros
+                  (id,cbsa,name,short,states,pop,rpp_overall,rpp_housing,
+                   rpp_goods,rpp_other_services,politics,temp_f,humidity,aqi,risk,updated_at)
+                values %s
+                on conflict (id) do update set
+                  cbsa=excluded.cbsa, name=excluded.name, short=excluded.short,
+                  states=excluded.states, pop=excluded.pop,
+                  rpp_overall=excluded.rpp_overall, rpp_housing=excluded.rpp_housing,
+                  rpp_goods=excluded.rpp_goods, rpp_other_services=excluded.rpp_other_services,
+                  politics=excluded.politics, temp_f=excluded.temp_f,
+                  humidity=excluded.humidity, aqi=excluded.aqi, risk=excluded.risk,
+                  updated_at=now()
+                """,
+                [metro_upsert_params(e) for e in entries],
+                template="(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,now())",
+            )
+            execute_values(
+                cur,
+                """
+                insert into cities (metro_id, wikipedia_url) values %s
+                on conflict (metro_id) do update set wikipedia_url=excluded.wikipedia_url
+                """,
+                [(e["id"], wiki_url(e["short"])) for e in entries],
+            )
+        print(f"  wrote {len(entries)} metros to Postgres", file=sys.stderr)
+    finally:
+        conn.close()
+
+
 def main() -> None:
     print("Building metros.json …", file=sys.stderr)
     pop = load_population()
@@ -296,7 +369,7 @@ def main() -> None:
         base = f"{slug(short)}-{states[0].lower()}" if states else slug(short)
         cid = base if base not in used else f"{base}-{fips}"
         used.add(cid)
-        entry = {"id": cid, "name": m["name"].strip(), "short": short, "states": states, "rpp": rpp}
+        entry = {"id": cid, "cbsa": fips, "name": m["name"].strip(), "short": short, "states": states, "rpp": rpp}
         if fips in pop:
             entry["pop"] = pop[fips]
         else:
@@ -326,6 +399,7 @@ def main() -> None:
     OUT.write_text(json.dumps(out, indent=2) + "\n")
     print(f"  wrote {len(out)} metros -> {OUT}  ({missing} missing pop)", file=sys.stderr)
     print(f"  coverage: {cover} of {len(out)} metros", file=sys.stderr)
+    write_postgres(out)
 
 
 if __name__ == "__main__":
