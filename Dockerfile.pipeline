@@ -1,0 +1,8 @@
+FROM python:3.12-slim
+WORKDIR /app
+COPY scripts/requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+COPY scripts/ ./scripts/
+# DATABASE_URL is provided by compose; the script upserts PG and also writes
+# /app/src/data/metros.json (ignored on the box — the API reads PG).
+CMD ["python3", "scripts/build-metros.py"]
