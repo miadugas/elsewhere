@@ -1,7 +1,11 @@
 import { ref, computed } from "vue";
-import metrosData from "../data/metros.json";
 import basketData from "../data/basket.json";
 import type { Metro, BasketItem, ParityResult, BasketRow } from "../types";
+import {
+  cachedOrBundled,
+  fetchLiveMetros,
+  writeCache,
+} from "../data/metroSource";
 import { findMetro } from "../engines/places";
 import { requiredSalary } from "../engines/parity";
 import { rankByAffordability, type AffordRow } from "../engines/explore";
@@ -13,10 +17,13 @@ import {
   type PayPeriod,
 } from "../engines/pay";
 
-const metros = metrosData as Metro[];
 const basketItems = basketData as BasketItem[];
+const API_BASE = import.meta.env.VITE_API_BASE ?? "https://data.miacodes.com";
 
 export function useComparison() {
+  // Seeded synchronously (cache or bundled) for instant render; revalidated
+  // from the live API by loadMetros().
+  const metros = ref<Metro[]>(cachedOrBundled());
   const fromId = ref<string | null>(null);
   const toId = ref<string | null>(null);
   // `salary` is the canonical ANNUAL figure the parity math runs on.
@@ -33,10 +40,10 @@ export function useComparison() {
   );
 
   const from = computed(() =>
-    fromId.value ? (findMetro(metros, fromId.value) ?? null) : null,
+    fromId.value ? (findMetro(metros.value, fromId.value) ?? null) : null,
   );
   const to = computed(() =>
-    toId.value ? (findMetro(metros, toId.value) ?? null) : null,
+    toId.value ? (findMetro(metros.value, toId.value) ?? null) : null,
   );
 
   const result = computed<ParityResult | null>(() => {
@@ -52,9 +59,19 @@ export function useComparison() {
   // "Where could I afford?" — all metros ranked by your current pay + city.
   const affordable = computed<AffordRow[]>(() =>
     from.value && salary.value > 0
-      ? rankByAffordability(from.value, salary.value, metros)
+      ? rankByAffordability(from.value, salary.value, metros.value)
       : [],
   );
+
+  // Background revalidation — swap to live data when it arrives, cache it.
+  // Fire-and-forget; any failure leaves the seed in place.
+  async function loadMetros() {
+    const live = await fetchLiveMetros(API_BASE);
+    if (live) {
+      metros.value = live;
+      writeCache(live);
+    }
+  }
 
   // ── lifestyle filters (Afford page) — narrow only, never re-rank ──
   const filters = ref<ActiveBands>({});
@@ -69,6 +86,7 @@ export function useComparison() {
 
   return {
     metros,
+    loadMetros,
     from,
     to,
     salary,

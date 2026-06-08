@@ -61,7 +61,7 @@ describe("useComparison filters", () => {
 
   it("filteredAffordable narrows the ranked list (active filter is not a no-op)", () => {
     const c = useComparison();
-    c.setFrom(c.metros[0].id);
+    c.setFrom(c.metros.value[0].id);
     c.salary.value = 80000;
     const before = c.filteredAffordable.value.rows.length;
     c.setBand("tax", "none");
