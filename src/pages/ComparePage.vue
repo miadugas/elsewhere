@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, ref, onMounted } from "vue";
 import { Scale, Telescope, Info } from "lucide-vue-next";
 import { useComparison } from "../composables/useComparison";
 import { useTheme } from "../composables/useTheme";
@@ -16,6 +16,9 @@ import groundLight from "../assets/scenes/ground-light.jpg";
 import groundDark from "../assets/scenes/ground-dark.jpg";
 
 const c = useComparison();
+onMounted(() => {
+  c.loadMetros();
+});
 const { isDark } = useTheme();
 
 // day scene in light, night scene in dark — matches the toggle's sun/moon
@@ -174,7 +177,7 @@ const hasResult = computed(
         <div class="flex flex-col gap-3">
           <PlacePicker
             label="From"
-            :metros="c.metros"
+            :metros="c.metros.value"
             :model-value="c.from.value?.id ?? null"
             @update:model-value="c.setFrom"
             @swap="c.swap"
@@ -182,7 +185,7 @@ const hasResult = computed(
 
           <PlacePicker
             label="To"
-            :metros="c.metros"
+            :metros="c.metros.value"
             :model-value="c.to.value?.id ?? null"
             @update:model-value="c.setTo"
             @swap="c.swap"

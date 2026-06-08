@@ -41,7 +41,7 @@ const ready = () => !!c.from.value && c.salary.value > 0;
         label="From"
         label-text="Your city"
         :swappable="false"
-        :metros="c.metros"
+        :metros="c.metros.value"
         :model-value="c.from.value?.id ?? null"
         @update:model-value="c.setFrom"
       />
@@ -60,7 +60,7 @@ const ready = () => !!c.from.value && c.salary.value > 0;
       <FilterSheet
         :active="c.filters.value"
         :active-count="c.activeFilterCount.value"
-        :filters="availableFilters(c.metros)"
+        :filters="availableFilters(c.metros.value)"
         @set-band="c.setBand"
         @clear="c.clearFilters"
       />

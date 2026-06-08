@@ -5,7 +5,7 @@ import { useComparison } from "../src/composables/useComparison";
 
 function ready() {
   const c = useComparison();
-  c.setFrom(c.metros[0].id);
+  c.setFrom(c.metros.value[0].id);
   c.salary.value = 80000;
   return c;
 }

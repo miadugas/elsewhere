@@ -1,6 +1,18 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { mount } from "@vue/test-utils";
 import ComparePage from "../src/pages/ComparePage.vue";
+
+// ComparePage calls loadMetros() on mount — keep it offline so tests run
+// against the bundled seed (no real network).
+beforeEach(() => {
+  vi.stubGlobal(
+    "fetch",
+    vi.fn().mockRejectedValue(new Error("no network in test")),
+  );
+});
+afterEach(() => {
+  vi.unstubAllGlobals();
+});
 
 describe("ComparePage", () => {
   it("mounts and shows the title and the three inputs without crashing", () => {
