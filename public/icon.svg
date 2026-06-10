@@ -1,6 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <rect width="512" height="512" fill="#f7f5ef"/>
-  <path d="M140 360 Q256 120 372 360" fill="none" stroke="#e0662a" stroke-width="20" stroke-linecap="round"/>
-  <circle cx="140" cy="360" r="34" fill="#e0662a"/>
-  <circle cx="372" cy="360" r="34" fill="#1a1d1a"/>
+  <!-- Elsewhere — journey arc, "celestial atlas" palette (tokens.css dark values) -->
+  <defs>
+    <linearGradient id="journey" x1="140" y1="360" x2="372" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f2b95a"/>
+      <stop offset="1" stop-color="#70a6f5"/>
+    </linearGradient>
+    <radialGradient id="ground" cx="0.5" cy="0.4" r="0.8">
+      <stop offset="0" stop-color="#101627"/>
+      <stop offset="1" stop-color="#060a1a"/>
+    </radialGradient>
+    <mask id="crescent">
+      <circle cx="372" cy="360" r="34" fill="white"/>
+      <circle cx="387" cy="347" r="29" fill="black"/>
+    </mask>
+  </defs>
+  <rect width="512" height="512" fill="url(#ground)"/>
+  <circle cx="186" cy="166" r="5" fill="#e9eff6" opacity="0.5"/>
+  <circle cx="330" cy="138" r="4" fill="#e9eff6" opacity="0.35"/>
+  <circle cx="404" cy="206" r="5" fill="#e9eff6" opacity="0.45"/>
+  <circle cx="116" cy="236" r="4" fill="#e9eff6" opacity="0.3"/>
+  <circle cx="256" cy="108" r="3" fill="#e9eff6" opacity="0.4"/>
+  <path d="M140 360 Q256 120 372 360" fill="none" stroke="url(#journey)" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="140" cy="360" r="34" fill="#f2b95a"/>
+  <circle cx="372" cy="360" r="34" fill="#e9eff6" mask="url(#crescent)"/>
 </svg>

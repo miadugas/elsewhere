@@ -5,25 +5,43 @@ import tailwindcss from "@tailwindcss/vite";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
+  server: { port: Number(process.env.PORT) || 5173 },
   plugins: [
     vue(),
     tailwindcss(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["icon.svg"],
+      includeAssets: [
+        "icon.svg",
+        "icon-192.png",
+        "icon-512.png",
+        "apple-touch-icon.png",
+      ],
       manifest: {
         name: "Elsewhere",
         short_name: "Elsewhere",
         description:
           "Cost-of-living parity — what salary keeps your life the same?",
-        theme_color: "#1a1d1a",
-        background_color: "#f7f5ef",
+        theme_color: "#060a1a",
+        background_color: "#060a1a",
         display: "standalone",
         icons: [
           {
             src: "/icon.svg",
             sizes: "any",
             type: "image/svg+xml",
+            purpose: "any",
+          },
+          {
+            src: "/icon-192.png",
+            sizes: "192x192",
+            type: "image/png",
+            purpose: "any",
+          },
+          {
+            src: "/icon-512.png",
+            sizes: "512x512",
+            type: "image/png",
             purpose: "any maskable",
           },
         ],

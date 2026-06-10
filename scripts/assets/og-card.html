@@ -1,0 +1,129 @@
+<!doctype html>
+<!-- Elsewhere OG share card (1200×630). Render:
+     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu \
+       --force-device-scale-factor=2 --window-size=1200,630 --hide-scrollbars \
+       --allow-file-access-from-files --screenshot=public/og.png scripts/assets/og-card.html
+     then: sips -z 630 1200 public/og.png
+     Colors are hex renders of src/styles/tokens.css dark values (celestial atlas). -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      @font-face {
+        font-family: "Geist Variable";
+        src: url("../../node_modules/@fontsource-variable/geist/files/geist-latin-wght-normal.woff2")
+          format("woff2-variations");
+        font-weight: 100 900;
+      }
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        font-family: "Geist Variable", sans-serif;
+        background: radial-gradient(
+          120% 100% at 50% 30%,
+          #101627 0%,
+          #060a1a 100%
+        );
+        position: relative;
+      }
+      .dots {
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(#272d3d 1.5px, transparent 1.5px);
+        background-size: 30px 30px;
+        opacity: 0.5;
+      }
+      .sky {
+        position: absolute;
+        inset: 0;
+      }
+      .copy {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 330px;
+      }
+      .eyebrow {
+        font-size: 21px;
+        font-weight: 550;
+        letter-spacing: 0.22em;
+        color: #a3acb8;
+      }
+      .eyebrow b {
+        color: #f2b95a;
+        font-weight: 550;
+      }
+      .title {
+        margin-top: 18px;
+        font-size: 124px;
+        font-weight: 650;
+        letter-spacing: -0.035em;
+        line-height: 0.92;
+        color: #f1f6fa;
+      }
+      .tagline {
+        margin-top: 26px;
+        font-size: 31px;
+        font-weight: 420;
+        color: #a3acb8;
+      }
+      .tagline em {
+        font-style: normal;
+        color: #e9eff6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dots"></div>
+    <svg class="sky" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient
+          id="journey"
+          x1="150"
+          y1="300"
+          x2="1050"
+          y2="300"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stop-color="#f2b95a" />
+          <stop offset="1" stop-color="#70a6f5" />
+        </linearGradient>
+        <mask id="crescent">
+          <circle cx="1050" cy="300" r="26" fill="white" />
+          <circle cx="1062" cy="290" r="22" fill="black" />
+        </mask>
+      </defs>
+      <circle cx="320" cy="160" r="4" fill="#e9eff6" opacity="0.45" />
+      <circle cx="540" cy="84" r="3" fill="#e9eff6" opacity="0.35" />
+      <circle cx="760" cy="130" r="4" fill="#e9eff6" opacity="0.5" />
+      <circle cx="935" cy="92" r="3" fill="#e9eff6" opacity="0.3" />
+      <circle cx="180" cy="110" r="3" fill="#e9eff6" opacity="0.3" />
+      <circle cx="1085" cy="170" r="4" fill="#e9eff6" opacity="0.4" />
+      <circle cx="430" cy="220" r="2.5" fill="#e9eff6" opacity="0.25" />
+      <path
+        d="M150 300 Q600 40 1050 300"
+        fill="none"
+        stroke="url(#journey)"
+        stroke-width="13"
+        stroke-linecap="round"
+      />
+      <circle cx="150" cy="300" r="26" fill="#f2b95a" />
+      <circle cx="1050" cy="300" r="26" fill="#e9eff6" mask="url(#crescent)" />
+    </svg>
+    <div class="copy">
+      <div class="eyebrow">COST-OF-LIVING PARITY <b>·</b> 384 U.S. METROS</div>
+      <div class="title">Elsewhere</div>
+      <div class="tagline">
+        The salary that keeps your life <em>the same</em>.
+      </div>
+    </div>
+  </body>
+</html>
