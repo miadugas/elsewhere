@@ -46,7 +46,16 @@
       <p class="about-body">
         384 U.S. metro areas, from the
         <strong>U.S. Bureau of Economic Analysis</strong> Regional Price
-        Parities (2024). Population figures from the U.S. Census Bureau.
+        Parities (2024). Population figures from the U.S. Census Bureau. Typical
+        rent is the <strong>Zillow Observed Rent Index</strong> (ZORI, all
+        homes) —
+        <a
+          href="https://www.zillow.com/research/data/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline underline-offset-2"
+          >data provided by Zillow Group</a
+        >.
       </p>
     </article>
 

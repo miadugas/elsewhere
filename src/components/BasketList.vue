@@ -222,13 +222,22 @@ const summary = computed(() => {
     </ul>
 
     <!-- ── Footer note ────────────────────────────────────────── -->
+    <!-- Zillow terms require "Data provided by Zillow Group" verbatim on
+         every page displaying ZORI-derived values. -->
     <p
       v-if="open"
-      class="whitespace-nowrap px-5 py-3 text-center text-[0.5rem] uppercase opacity-70"
+      class="px-5 py-3 text-center text-[0.5rem] uppercase opacity-70"
       style="letter-spacing: 0.02em; background: var(--color-paper-deep)"
     >
-      Localized via regional price parity · National avg = 100 · Rent data ©
-      Zillow
+      Localized via regional price parity · National avg = 100<br />
+      Rent:
+      <a
+        href="https://www.zillow.com/research/data/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="underline underline-offset-2"
+        >Data provided by Zillow Group</a
+      >
     </p>
   </section>
 </template>
