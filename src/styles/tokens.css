@@ -283,9 +283,9 @@
   --seg-label: var(--color-ink); /* active label */
   --seg-label-muted: color-mix(
     in oklch,
-    var(--color-ink) 42%,
+    var(--color-ink) 62%,
     transparent
-  ); /* inactive label — matches placeholder */
+  ); /* inactive label — readable but clearly not the active tab */
 }
 
 /* ── Page chrome ──────────────────────────────────────────────── */
