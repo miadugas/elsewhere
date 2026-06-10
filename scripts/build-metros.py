@@ -372,9 +372,15 @@ def write_postgres(entries: list[dict]) -> None:
                   states=excluded.states, pop=excluded.pop,
                   rpp_overall=excluded.rpp_overall, rpp_housing=excluded.rpp_housing,
                   rpp_goods=excluded.rpp_goods, rpp_other_services=excluded.rpp_other_services,
-                  politics=excluded.politics, temp_f=excluded.temp_f,
-                  humidity=excluded.humidity, aqi=excluded.aqi, risk=excluded.risk,
-                  rent=excluded.rent, updated_at=now()
+                  -- enrichment sources are safe()-wrapped: a flaky fetch yields
+                  -- NULLs here, so coalesce keeps the last-known-good value
+                  politics=coalesce(excluded.politics, metros.politics),
+                  temp_f=coalesce(excluded.temp_f, metros.temp_f),
+                  humidity=coalesce(excluded.humidity, metros.humidity),
+                  aqi=coalesce(excluded.aqi, metros.aqi),
+                  risk=coalesce(excluded.risk, metros.risk),
+                  rent=coalesce(excluded.rent, metros.rent),
+                  updated_at=now()
                 """,
                 [metro_upsert_params(e) for e in entries],
                 template="(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,now())",
