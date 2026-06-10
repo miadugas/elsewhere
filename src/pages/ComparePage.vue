@@ -223,7 +223,10 @@ const hasResult = computed(
         }"
         :style="{
           borderRadius: 'var(--radius-pill)',
-          background: 'var(--seg-track)',
+          // opaque: same tint as --seg-track but composited over the canvas,
+          // so content scrolling under the floating bar can't show through
+          background:
+            'color-mix(in oklch, var(--color-ink) 7%, var(--color-canvas))',
           border: '1px solid var(--seg-border)',
           boxShadow:
             'inset 0 1px 2px rgba(var(--shadow-base), 0.1), var(--shadow-sheet-lifted)',
