@@ -180,10 +180,18 @@ const summary = computed(() => {
             class="mt-1.5 flex items-center gap-2 text-[length:var(--text-eyebrow)] uppercase"
             style="letter-spacing: var(--text-eyebrow--letter-spacing)"
           >
-            <span class="opacity-75">{{ from.short }}</span>
-            <span class="tnum opacity-80">{{ money(r.fromPrice) }}</span>
-            <span v-if="r.note" class="opacity-60">· {{ r.note }}</span>
+            <span class="whitespace-nowrap opacity-75">{{ from.short }}</span>
+            <span class="tnum whitespace-nowrap opacity-80">{{
+              money(r.fromPrice)
+            }}</span>
           </div>
+          <p
+            v-if="r.note"
+            class="mt-0.5 whitespace-nowrap text-[length:var(--text-eyebrow)] uppercase opacity-60"
+            style="letter-spacing: var(--text-eyebrow--letter-spacing)"
+          >
+            {{ r.note }}
+          </p>
         </div>
 
         <!-- TO price — big, with delta -->
