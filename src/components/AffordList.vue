@@ -26,6 +26,17 @@ const toggle = (id: string) => (open.value[id] = !open.value[id]);
 // derive from the anchor city name for now.
 const wiki = (m: Metro) =>
   `https://en.wikipedia.org/wiki/${encodeURIComponent(m.short.replace(/ /g, "_"))}`;
+
+// Political badge dot — colored by lean, thresholds match the filter bands
+// (blue >5, red <-5, purple between). No purple token; one-off is intentional.
+const politicsDot = (m: Metro) =>
+  m.politics === undefined
+    ? null
+    : m.politics > 5
+      ? "var(--color-route)"
+      : m.politics < -5
+        ? "var(--color-pricier)"
+        : "oklch(0.62 0.18 305)";
 </script>
 
 <template>
@@ -81,9 +92,16 @@ const wiki = (m: Metro) =>
               <span
                 v-for="b in metroBadges(row.metro)"
                 :key="b.text"
-                class="whitespace-nowrap"
+                class="inline-flex items-center gap-1 whitespace-nowrap"
               >
-                {{ b.emoji }} {{ b.text }}
+                <span
+                  v-if="b.id === 'politics'"
+                  class="inline-block h-2 w-2 rounded-full"
+                  :style="{ background: politicsDot(row.metro) ?? undefined }"
+                  aria-hidden="true"
+                />
+                <template v-else>{{ b.emoji }}</template>
+                {{ b.text }}
               </span>
             </p>
           </div>

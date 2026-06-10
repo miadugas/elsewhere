@@ -254,6 +254,7 @@ export function applyFilters(
 }
 
 export interface MetroBadge {
+  id: string;
   emoji: string;
   text: string;
 }
@@ -263,7 +264,7 @@ export function metroBadges(m: Metro): MetroBadge[] {
   const out: MetroBadge[] = [];
   for (const f of FILTERS) {
     const text = f.badge(m);
-    if (text !== null) out.push({ emoji: f.emoji, text });
+    if (text !== null) out.push({ id: f.id, emoji: f.emoji, text });
   }
   return out;
 }
