@@ -21,6 +21,7 @@ export function mapMetro(row) {
   if (row.humidity != null) m.humidity = num(row.humidity);
   if (row.aqi != null) m.aqi = num(row.aqi);
   if (row.risk != null) m.risk = num(row.risk);
+  if (row.rent != null) m.rent = num(row.rent);
   if (row.cbsa != null) m.cbsa = row.cbsa;
   if (row.wikipedia_url != null) m.wikipedia_url = row.wikipedia_url;
   if (row.blurb != null) m.blurb = row.blurb;

@@ -16,6 +16,7 @@ create table if not exists metros (
   humidity            numeric,
   aqi                 numeric,
   risk                numeric,
+  rent                numeric,                  -- typical monthly rent (Zillow ZORI, all homes)
   updated_at          timestamptz not null default now()
 );
 
@@ -28,3 +29,6 @@ create table if not exists cities (
 );
 
 create index if not exists metros_pop_idx on metros (pop desc nulls last);
+
+-- migrations for databases created before these columns existed
+alter table metros add column if not exists rent numeric;

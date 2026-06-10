@@ -39,6 +39,16 @@ GAZ_CBSA = (
     "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/"
     "2023_Gaz_cbsa_national.zip"
 )
+# Zillow ZORI (all-homes, smoothed, seasonally adjusted) — metro level.
+# Free for public use WITH attribution (shown in the app footer).
+ZORI_METRO_CSV = (
+    "https://files.zillowstatic.com/research/public_csvs/zori/"
+    "Metro_zori_uc_sfrcondomfr_sm_sa_month.csv"
+)
+# Zillow → CBSA crosswalk (maps MetroRegionID_Zillow -> CBSACode).
+ZILLOW_XWALK_CSV = (
+    "https://files.zillowstatic.com/research/public/CountyCrossWalk_Zillow.csv"
+)
 
 OUT = Path(__file__).resolve().parent.parent / "src" / "data" / "metros.json"
 
@@ -258,6 +268,53 @@ def load_climate() -> dict[str, dict]:
     return {}
 
 
+def load_zillow_crosswalk() -> dict[str, str]:
+    """Zillow MetroRegionID -> CBSA code."""
+    # latin-1: the crosswalk has extended bytes (county names), not UTF-8
+    raw = fetch(ZILLOW_XWALK_CSV).decode("latin-1")
+    rows = csv.DictReader(io.StringIO(raw))
+    out: dict[str, str] = {}
+    for r in rows:
+        rid = (r.get("MetroRegionID_Zillow") or "").strip()
+        cbsa = (r.get("CBSACode") or "").strip()
+        if rid and cbsa.isdigit():
+            out.setdefault(rid, cbsa)
+    return out
+
+
+def latest_value(row: list[str], date_cols: list[int]) -> float | None:
+    """Most recent non-empty monthly value in a ZORI row."""
+    for i in reversed(date_cols):
+        if i < len(row) and row[i].strip():
+            try:
+                return round(float(row[i]))
+            except ValueError:
+                continue
+    return None
+
+
+def load_rent(region_to_cbsa: dict[str, str]) -> dict[str, int]:
+    """CBSA code -> typical monthly rent (latest ZORI, all-homes)."""
+    raw = fetch(ZORI_METRO_CSV).decode("utf-8-sig")
+    rows = list(csv.reader(io.StringIO(raw)))
+    if not rows:
+        return {}
+    h = rows[0]
+    i_region = h.index("RegionID")
+    date_cols = [i for i, c in enumerate(h) if re.match(r"\d{4}-\d{2}", c.strip())]
+    out: dict[str, int] = {}
+    for r in rows[1:]:
+        if len(r) <= i_region:
+            continue
+        cbsa = region_to_cbsa.get(r[i_region].strip())
+        if not cbsa:
+            continue
+        val = latest_value(r, date_cols)
+        if val is not None:
+            out[cbsa] = val
+    return out
+
+
 def slug(s: str) -> str:
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")
 
@@ -268,7 +325,7 @@ def wiki_url(short: str) -> str:
 
 
 def metro_upsert_params(e: dict) -> tuple:
-    """Flatten a metros.json entry into the 15-value row for the metros upsert."""
+    """Flatten a metros.json entry into the 16-value row for the metros upsert."""
     rpp = e["rpp"]
     return (
         e["id"],
@@ -286,6 +343,7 @@ def metro_upsert_params(e: dict) -> tuple:
         e.get("humidity"),
         e.get("aqi"),
         e.get("risk"),
+        e.get("rent"),
     )
 
 
@@ -307,7 +365,7 @@ def write_postgres(entries: list[dict]) -> None:
                 """
                 insert into metros
                   (id,cbsa,name,short,states,pop,rpp_overall,rpp_housing,
-                   rpp_goods,rpp_other_services,politics,temp_f,humidity,aqi,risk,updated_at)
+                   rpp_goods,rpp_other_services,politics,temp_f,humidity,aqi,risk,rent,updated_at)
                 values %s
                 on conflict (id) do update set
                   cbsa=excluded.cbsa, name=excluded.name, short=excluded.short,
@@ -316,10 +374,10 @@ def write_postgres(entries: list[dict]) -> None:
                   rpp_goods=excluded.rpp_goods, rpp_other_services=excluded.rpp_other_services,
                   politics=excluded.politics, temp_f=excluded.temp_f,
                   humidity=excluded.humidity, aqi=excluded.aqi, risk=excluded.risk,
-                  updated_at=now()
+                  rent=excluded.rent, updated_at=now()
                 """,
                 [metro_upsert_params(e) for e in entries],
-                template="(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,now())",
+                template="(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,now())",
             )
             execute_values(
                 cur,
@@ -353,8 +411,10 @@ def main() -> None:
     aqi = safe("aqi", load_aqi)
     risk = safe("risk", lambda: load_risk(c2cbsa))
     climate = safe("climate", load_climate)
+    xwalk = safe("zillow-xwalk", load_zillow_crosswalk)
+    rent = safe("rent", lambda: load_rent(xwalk))
 
-    cover = {"politics": 0, "tempF": 0, "humidity": 0, "aqi": 0, "risk": 0}
+    cover = {"politics": 0, "tempF": 0, "humidity": 0, "aqi": 0, "risk": 0, "rent": 0}
 
     out, used, missing = [], set(), 0
     for fips, m in metros.items():
@@ -392,6 +452,9 @@ def main() -> None:
             if "humidity" in cl:
                 entry["humidity"] = cl["humidity"]
                 cover["humidity"] += 1
+        if fips in rent:
+            entry["rent"] = rent[fips]
+            cover["rent"] += 1
 
         out.append(entry)
 

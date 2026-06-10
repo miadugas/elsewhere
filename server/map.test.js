@@ -17,6 +17,7 @@ const pgRow = {
   humidity: null,
   aqi: "42",
   risk: "30.5",
+  rent: "1985",
   wikipedia_url: "https://en.wikipedia.org/wiki/Denver",
   blurb: null,
 };
@@ -41,6 +42,7 @@ describe("mapMetro", () => {
     expect(m.politics).toBe(18);
     expect(m.aqi).toBe(42);
     expect(m.risk).toBe(30.5);
+    expect(m.rent).toBe(1985);
   });
   it("omits absent (null) optional fields rather than emitting null", () => {
     const m = mapMetro(pgRow);

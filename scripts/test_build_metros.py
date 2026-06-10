@@ -31,9 +31,10 @@ class TestPureHelpers(unittest.TestCase):
             "rpp": {"overall": 1.0, "housing": 2.0, "goods": 3.0, "otherServices": 4.0},
             "politics": 18.0,
             "aqi": 42.0,
+            "rent": 1850,
         }
         p = bm.metro_upsert_params(entry)
-        self.assertEqual(len(p), 15)
+        self.assertEqual(len(p), 16)
         self.assertEqual(p[0], "denver-co")
         self.assertEqual(p[1], "19740")
         self.assertEqual(p[4], ["CO"])
@@ -42,6 +43,12 @@ class TestPureHelpers(unittest.TestCase):
         self.assertEqual(p[10], 18.0)
         self.assertIsNone(p[11])
         self.assertEqual(p[13], 42.0)
+        self.assertEqual(p[15], 1850)  # rent
+
+    def test_latest_value_walks_back_past_blank_months(self):
+        date_cols = [3, 4, 5]
+        self.assertEqual(bm.latest_value(["x", "y", "z", "1700.4", "1801.6", ""], date_cols), 1802)
+        self.assertIsNone(bm.latest_value(["x", "y", "z", "", "", ""], date_cols))
 
 
 if __name__ == "__main__":
