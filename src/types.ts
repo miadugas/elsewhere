@@ -20,6 +20,7 @@ export interface Metro {
   humidity?: number; // annual avg relative humidity, %
   aqi?: number; // median AQI for the year (lower = cleaner)
   risk?: number; // FEMA National Risk Index composite 0–100 (higher = riskier)
+  rent?: number; // typical monthly market rent — Zillow ZORI, all homes
 }
 
 export interface BasketItem {
@@ -28,6 +29,8 @@ export interface BasketItem {
   emoji: string; // "🍕"
   nationalAvg: number; // dollars
   category: ParityCategory;
+  metroField?: "rent"; // when set, use this per-metro $ value instead of RPP-derived
+  note?: string; // source/freshness label shown when the live value is used
 }
 
 export interface ParityResult {
@@ -44,4 +47,5 @@ export interface BasketRow {
   emoji: string;
   fromPrice: number;
   toPrice: number;
+  note?: string;
 }

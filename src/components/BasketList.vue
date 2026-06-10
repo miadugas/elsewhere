@@ -182,6 +182,7 @@ const summary = computed(() => {
           >
             <span class="opacity-75">{{ from.short }}</span>
             <span class="tnum opacity-80">{{ money(r.fromPrice) }}</span>
+            <span v-if="r.note" class="opacity-60">· {{ r.note }}</span>
           </div>
         </div>
 
@@ -226,7 +227,8 @@ const summary = computed(() => {
       class="whitespace-nowrap px-5 py-3 text-center text-[0.5rem] uppercase opacity-70"
       style="letter-spacing: 0.02em; background: var(--color-paper-deep)"
     >
-      Localized via regional price parity · National avg = 100
+      Localized via regional price parity · National avg = 100 · Rent data ©
+      Zillow
     </p>
   </section>
 </template>

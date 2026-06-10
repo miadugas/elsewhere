@@ -29,9 +29,11 @@
   },
   {
     "id": "rent-1br",
-    "label": "1-bedroom rent",
+    "label": "Typical rent",
     "emoji": "🏠",
-    "nationalAvg": 1500,
-    "category": "housing"
+    "nationalAvg": 2010,
+    "category": "housing",
+    "metroField": "rent",
+    "note": "Zillow ZORI"
   }
 ]
