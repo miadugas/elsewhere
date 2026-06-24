@@ -6,12 +6,18 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
+    "build:ios": "vue-tsc -b && CAP_BUILD=1 vite build && cap sync ios",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
     "data:build": "python3 scripts/build-metros.py"
   },
   "dependencies": {
+    "@capacitor/core": "^8.4.1",
+    "@capacitor/filesystem": "^8.1.2",
+    "@capacitor/ios": "^8.4.1",
+    "@capacitor/share": "^8.0.1",
+    "@capacitor/status-bar": "^8.0.2",
     "@fontsource-variable/geist": "^5.2.9",
     "@fontsource-variable/overpass": "^5.2.8",
     "@fontsource-variable/public-sans": "^5.2.7",
@@ -22,6 +28,8 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.4.1",
     "@tailwindcss/vite": "^4.1.8",
     "@types/node": "^25.9.2",
     "@vitejs/plugin-vue": "^5.2.3",

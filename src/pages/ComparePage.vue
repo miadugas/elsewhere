@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, onMounted } from "vue";
-import { Scale, Telescope, Info } from "lucide-vue-next";
+import { Scale, Telescope, Info, Share2 } from "lucide-vue-next";
 import { useComparison } from "../composables/useComparison";
 import { useTheme } from "../composables/useTheme";
 import PlacePicker from "../components/PlacePicker.vue";
@@ -14,6 +14,8 @@ import ExploreView from "./ExploreView.vue";
 import AboutView from "./AboutView.vue";
 import groundLight from "../assets/scenes/ground-light.jpg";
 import groundDark from "../assets/scenes/ground-dark.jpg";
+import { shareCardImage } from "../native/share";
+import { renderShareCard } from "../native/shareCard";
 
 const c = useComparison();
 onMounted(() => {
@@ -31,15 +33,44 @@ const hasBothMetros = computed(() => !!c.from.value && !!c.to.value);
 const hasResult = computed(
   () => !!c.result.value && !!c.from.value && !!c.to.value,
 );
+
+// ── Share the result as a card image ──
+const sharing = ref(false);
+async function share() {
+  const f = c.from.value;
+  const t = c.to.value;
+  const r = c.result.value;
+  if (!f || !t || !r || sharing.value) return;
+  sharing.value = true;
+  try {
+    const png = await renderShareCard({
+      fromShort: f.short,
+      toShort: t.short,
+      fromSalary: r.fromSalary,
+      requiredSalary: r.requiredSalary,
+      pct: r.pct,
+    });
+    await shareCardImage(png);
+  } catch {
+    // user cancelled the share sheet, or generation failed — no-op
+  } finally {
+    sharing.value = false;
+  }
+}
 </script>
 
 <template>
   <main
     class="relative mx-auto flex min-h-full max-w-md flex-col"
-    :style="{ paddingBottom: 'var(--space-thumb)' }"
+    :style="{
+      paddingBottom: 'calc(var(--space-thumb) + env(safe-area-inset-bottom))',
+    }"
   >
     <!-- ── Brand mark ─────────────────────────────────────────── -->
-    <header class="px-5 pb-2 pt-6">
+    <header
+      class="px-5 pb-2"
+      :style="{ paddingTop: 'calc(env(safe-area-inset-top) + 1.5rem)' }"
+    >
       <div class="flex items-center justify-between">
         <div class="flex flex-col gap-1">
           <h1
@@ -111,6 +142,30 @@ const hasResult = computed(
           :to="c.to.value!"
         />
         <BreakdownSheet :from="c.from.value!" :to="c.to.value!" />
+
+        <!-- Share the result as a card image -->
+        <button
+          v-if="hasResult"
+          type="button"
+          @click="share"
+          :disabled="sharing"
+          class="font-display flex w-full items-center justify-center gap-2 px-4 py-3 text-[length:var(--text-meta)] font-bold uppercase transition active:scale-[0.99] disabled:opacity-60"
+          style="letter-spacing: 0.05em"
+          :style="{
+            borderRadius: 'var(--radius-pill)',
+            background: 'var(--color-paper)',
+            color: 'var(--color-ink)',
+            border: '1px solid var(--seg-border)',
+            boxShadow: 'var(--shadow-sheet)',
+          }"
+        >
+          <Share2
+            class="h-[18px] w-[18px]"
+            :stroke-width="2.2"
+            aria-hidden="true"
+          />
+          {{ sharing ? "Preparing…" : "Share your number" }}
+        </button>
       </div>
 
       <!-- ── Empty hero: nothing picked yet ─────────────────────── -->
@@ -214,7 +269,10 @@ const hasResult = computed(
 
     <!-- ── Pill bottom nav — shares the content column so its edges
          line up with the salary slab above it ─────────────────────── -->
-    <div class="fixed inset-x-0 bottom-3 z-30 mx-auto max-w-md px-5">
+    <div
+      class="fixed inset-x-0 z-30 mx-auto max-w-md px-5"
+      :style="{ bottom: 'calc(env(safe-area-inset-bottom) + 0.75rem)' }"
+    >
       <nav
         class="nav-pill relative flex w-full items-center p-1.5"
         :class="{
