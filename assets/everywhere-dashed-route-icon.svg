@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-labelledby="title desc">
+  <title id="title">Everywhere dashed route app icon concept</title>
+  <desc id="desc">A single dashed route wanders across a clean field and ends at a bold X marker.</desc>
+  <defs>
+    <radialGradient id="paper" cx="50%" cy="44%" r="76%">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset="0.78" stop-color="#fbf7ef"/>
+      <stop offset="1" stop-color="#f0e9de"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1024" height="1024" rx="224" fill="url(#paper)"/>
+
+  <path
+    d="M 126 86
+       C 56 110 42 212 76 296
+       C 118 400 276 388 286 268
+       C 298 124 110 114 82 278
+       C 48 484 204 596 370 564
+       C 552 528 540 312 376 346
+       C 246 372 232 578 374 646
+       C 548 730 752 632 846 736
+       C 940 840 786 936 668 848
+       C 560 768 646 604 792 620
+       C 944 636 988 452 858 352
+       C 762 278 718 214 778 150
+       C 812 114 858 92 902 82"
+    fill="none"
+    stroke="#191919"
+    stroke-width="24"
+    stroke-linecap="butt"
+    stroke-linejoin="miter"
+    stroke-dasharray="34 38"
+    stroke-dashoffset="3"/>
+
+  <g transform="rotate(-8 842 158)">
+    <path d="M 768 84 L 916 232" fill="none" stroke="#191919" stroke-width="50" stroke-linecap="butt"/>
+    <path d="M 916 84 L 768 232" fill="none" stroke="#191919" stroke-width="50" stroke-linecap="butt"/>
+  </g>
+</svg>

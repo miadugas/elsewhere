@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-labelledby="title desc">
+  <title id="title">Everywhere lost-line app icon concept</title>
+  <desc id="desc">One continuous lost route line wanders through every corner of the icon and ends at an X marker.</desc>
+  <defs>
+    <radialGradient id="backgroundDepth" cx="48%" cy="38%" r="78%">
+      <stop offset="0" stop-color="#182335"/>
+      <stop offset="0.58" stop-color="#0d1422"/>
+      <stop offset="1" stop-color="#050812"/>
+    </radialGradient>
+    <linearGradient id="routeInk" x1="134" y1="130" x2="870" y2="858" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff4dc"/>
+      <stop offset="0.52" stop-color="#f8ecd2"/>
+      <stop offset="1" stop-color="#c9f9ff"/>
+    </linearGradient>
+    <linearGradient id="routeCore" x1="134" y1="130" x2="870" y2="858" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset="0.72" stop-color="#fff3dd"/>
+      <stop offset="1" stop-color="#f4ffff"/>
+    </linearGradient>
+    <linearGradient id="destinationInk" x1="812" y1="800" x2="930" y2="918" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f9ffff"/>
+      <stop offset="1" stop-color="#6feaff"/>
+    </linearGradient>
+    <filter id="softLift" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000814" flood-opacity="0.35"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#87ecff" flood-opacity="0.18"/>
+    </filter>
+    <filter id="xLift" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000814" flood-opacity="0.38"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#7aefff" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" rx="224" fill="url(#backgroundDepth)"/>
+  <path
+    d="M 142 138
+       C 78 220 92 330 196 358
+       C 316 390 386 252 258 232
+       C 132 214 82 506 220 566
+       C 358 626 498 500 386 432
+       C 248 348 184 782 424 812
+       C 636 838 650 624 506 610
+       C 360 596 424 188 654 150
+       C 824 122 914 238 812 330
+       C 704 428 692 742 812 784
+       C 852 798 872 818 884 846"
+    fill="none"
+    stroke="#000814"
+    stroke-width="58"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.4"/>
+  <path
+    d="M 142 138
+       C 78 220 92 330 196 358
+       C 316 390 386 252 258 232
+       C 132 214 82 506 220 566
+       C 358 626 498 500 386 432
+       C 248 348 184 782 424 812
+       C 636 838 650 624 506 610
+       C 360 596 424 188 654 150
+       C 824 122 914 238 812 330
+       C 704 428 692 742 812 784
+       C 852 798 872 818 884 846"
+    fill="none"
+    stroke="url(#routeInk)"
+    stroke-width="40"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#softLift)"/>
+  <path
+    d="M 142 138
+       C 78 220 92 330 196 358
+       C 316 390 386 252 258 232
+       C 132 214 82 506 220 566
+       C 358 626 498 500 386 432
+       C 248 348 184 782 424 812
+       C 636 838 650 624 506 610
+       C 360 596 424 188 654 150
+       C 824 122 914 238 812 330
+       C 704 428 692 742 812 784
+       C 852 798 872 818 884 846"
+    fill="none"
+    stroke="url(#routeCore)"
+    stroke-width="20"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.72"/>
+
+  <g filter="url(#xLift)">
+    <path d="M 829 810 L 914 895" fill="none" stroke="#000814" stroke-width="52" stroke-linecap="round"/>
+    <path d="M 914 810 L 829 895" fill="none" stroke="#000814" stroke-width="52" stroke-linecap="round"/>
+    <path d="M 829 810 L 914 895" fill="none" stroke="url(#destinationInk)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M 914 810 L 829 895" fill="none" stroke="url(#destinationInk)" stroke-width="34" stroke-linecap="round"/>
+  </g>
+</svg>

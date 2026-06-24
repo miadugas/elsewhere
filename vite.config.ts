@@ -10,6 +10,10 @@ export default defineConfig({
     vue(),
     tailwindcss(),
     VitePWA({
+      // Native (Capacitor) builds serve assets locally — the service worker is
+      // redundant there and its autoUpdate cache can fight WKWebView. CAP_BUILD=1
+      // (see `build:ios`) disables it; web builds keep the PWA.
+      disable: process.env.CAP_BUILD === "1",
       registerType: "autoUpdate",
       includeAssets: [
         "icon.svg",
